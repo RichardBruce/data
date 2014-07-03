@@ -1,0 +1,112 @@
+# The following was converted from RADIANCE scene input
+o Untitled
+# Begin conversion from: materials
+# 
+#  Materials used in ship
+# 
+m wall_paint =
+	c
+		cxy 0.3478 0.3465
+	rd 0.6154
+m ceil_paint = wall_paint
+m black_paint =
+	c
+		cxy 0.3333 0.3333
+	rd 0.0686
+	c
+	rs 0.0200 0.1000
+m rubber =
+	c
+		cxy 0.3333 0.3333
+	rd 0.0297
+	c
+	rs 0.0100 0.0800
+m dark_grey =
+	c
+		cxy 0.3333 0.3333
+	rd 0.2000
+m grey_paint =
+	c
+		cxy 0.3333 0.3333
+	rd 0.3000
+m dark =
+	c
+		cxy 0.3333 0.3333
+	rd 0.0800
+m red_paint =
+	c
+		cxy 0.5754 0.3307
+	rd 0.1828
+	c
+	rs 0.0300 0.0500
+m dull_brass =
+	c
+		cxy 0.5018 0.3724
+	rd 0.1949
+	rs 0.1299 0.1000
+m porthole_glass =
+	ir 1.520000 0
+	c
+		cxy 0.3323 0.3343
+	rs 0.0789 0
+	c
+		cxy 0.3312 0.3355
+	ts 0.8521 0
+m brass =
+	c
+		cxy 0.4924 0.3811
+	rd 0.1042
+	rs 0.1934 0.0300
+m aluminum =
+	c
+		cxy 0.3333 0.3333
+	rd 0.2925
+	rs 0.3575 0.0800
+m stainless =
+	c
+		cxy 0.3333 0.3333
+	rd 0.3300
+	rs 0.2200 0.0500
+
+# Unsupported RADIANCE primitive:
+# void brightfunc dirty
+# 4 dirt dirt.cal -s .04
+# 0
+# 1 0.65
+
+m dark_green =
+	c
+		cxy 0.2992 0.4154
+	rd 0.1965
+m green_paint =
+	c
+		cxy 0.2900 0.6000
+	rd 0.6366
+	c
+	rs 0.0500 0.1000
+# void colorpict deck_pat
+# 7 clip clip clip pat/floor.pic picture.cal tile_u tile_v
+# 0
+# 0
+
+# Unsupported RADIANCE primitive:
+# void colorfunc deck_pat
+# 4 deckr deckg deckb deck.cal
+# 0
+# 0
+
+m deck_mat =
+	c
+		cxy 0.3333 0.3333
+	rd 0.3300
+
+# Unsupported RADIANCE primitive:
+# void brightfunc baseboard
+# 2 if(Pz-.417,1,.07) .
+# 0
+# 0
+
+m wallbase_mat = wall_paint
+# End conversion from: materials
+o
+# End of data converted from RADIANCE scene input

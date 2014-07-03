@@ -1,0 +1,5 @@
+# NRC Lighting Design #5
+
+# The 12 2x4' fluorescent troffers
+ies itl41123.pho -rz 90 -t 1.524 1.8288 2.74 \
+		-a 6 -t 1.8288 0 0 -a 2 -t 0 3.048 0

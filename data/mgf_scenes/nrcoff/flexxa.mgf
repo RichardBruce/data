@@ -1,0 +1,98 @@
+# A Ledalite "FLEXXA" furniture-mounted indirect system
+
+# Materials
+m white_enamel =
+	sides 1
+	c
+	rd .7
+	rs .04 .03
+m white_fluorescent =
+	sides 1
+	c
+	ed 29300
+	rs .04 0
+	rd .6
+
+# Conversion feet to meters
+xf -s .3048
+
+# Our 2-lamp fixture is symmetric about the XZ-plane
+xf -a 2 -my
+
+# We're working in an odd set of units for the vertices, 1 unit = .15 feet
+xf -s .15
+
+v v0 =
+	p 0 0 -1
+v v1 =
+	p 0 .5 -.95
+v v2 =
+	p 0 1 -.82
+v v3 =
+	p 0 1.5 -.55
+v v4 =
+	p 0 2 -.1
+v v5 =
+	p 0 2.25 .3
+v v6 =
+	p 0 2 .575
+v v7 =
+	p 0 1.5 .7
+v v8 =
+	p 0 1 .85
+v v9 =
+	p 0 .5 .92
+v v10 =
+	p 0 0 .95
+
+v iv8 =
+	p 0 1.5 0
+v iv9 =
+	p 0 0 0
+
+# End faces
+m white_enamel
+xf -t 13.33 0 0 -a 2 -mx
+o end
+	prism v10 v9 v8 v7 v6 v5 v4 v3 v2 v1 v0 .02
+o
+xf
+
+# main body
+xf -t 13.33 0 0
+m white_enamel
+o body
+	prism v0 v1 v2 v3 v4 v5 v6 v7 iv8 iv9 26.67
+o
+xf
+
+# end vertex conversion
+xf
+
+# Fluorescent tube
+v tv1 =
+	p -1.95 .15 .045
+v tv2 =
+	p 1.95 .15 .045
+o lamp
+	m white_fluorescent
+	cyl tv1 .04167 tv2
+o
+
+# end XZ-plane symmetry
+xf
+
+# The support posts
+v pvt =
+	p -1.8 0 -.14
+v pvb =
+	p -1.8 0 -2.7
+m white_enamel
+xf -a 2 -mx
+o post
+	cyl pvb .02 pvt
+o
+xf
+
+# end conversion of feet to meters
+xf

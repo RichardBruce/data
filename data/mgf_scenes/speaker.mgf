@@ -1,0 +1,146 @@
+# The following was converted from Radiance scene input
+o Untitled
+# Begin conversion from: speaker.rad
+# ###############################
+#  Copyright (c) 1991 Greg Ward #
+#  Windows and Lighting Program #
+#  Lawrence Berkeley Laboratory #
+#  Berkeley, CA	94720	       #
+# ###############################
+# 
+#  The intercom speaker from the conference room
+# 
+#  This is really dumb
+# 
+#  Depends on:
+# 	woodpat.cal
+# 
+# 	Units = meters
+# 	(0,0,0) at back lower right corner
+# 	X-axis towards left of speaker
+# 	Y-axis towards front of speaker
+# 	Z-axis up
+# 
+#  Overall dimensions are .264 by .102 by .264 meters
+# 
+# ###############################
+#  xform -e -rz 180 -t 10.375 4 0 -s .0254
+# 
+#  Intercom speaker
+# 
+m dark_fabric =
+	c
+		cxy 0.3330 0.3330
+	rd 0.0800
+m wood_mat =
+	c
+		cxy 0.4041 0.3433
+	rd 0.1821
+	c
+	rs 0.0200 0.1500
+m xwood_mat = wood_mat
+m zwood_mat = wood_mat
+#  genbox xwood_mat speaker.lower 9.625 4 .75
+m xwood_mat
+o
+o speaker.lower
+v v0 =
+	p 0.01905 0.1016 0
+v v1 =
+	p 0.01905 0.1016 0.01905
+v v2 =
+	p 0.263525 0.1016 0.01905
+v v3 =
+	p 0.263525 0.1016 0
+f v0 v1 v2 v3
+v v4 =
+	p 0.263525 0 0.01905
+v v5 =
+	p 0.263525 0 0
+f v2 v4 v5 v3
+v v6 =
+	p 0.01905 0 0
+f v5 v6 v0 v3
+v v7 =
+	p 0.01905 0 0.01905
+f v6 v5 v4 v7
+f v1 v0 v6 v7
+f v4 v2 v1 v7
+#  xform -t .75 0 9.625
+#  genbox xwood_mat speaker.upper 9.625 4 .75
+o
+o speaker.upper
+v v8 =
+	p 0 0.1016 0.244475
+v v9 =
+	p 0 0.1016 0.263525
+v v10 =
+	p 0.244475 0.1016 0.263525
+v v11 =
+	p 0.244475 0.1016 0.244475
+f v8 v9 v10 v11
+v v12 =
+	p 0.244475 0 0.263525
+v v13 =
+	p 0.244475 0 0.244475
+f v10 v12 v13 v11
+v v14 =
+	p 0 0 0.244475
+f v13 v14 v8 v11
+v v15 =
+	p 0 0 0.263525
+f v14 v13 v12 v15
+f v9 v8 v14 v15
+f v12 v10 v9 v15
+#  xform -t 0 0 .75
+#  genbox zwood_mat speaker.left .75 4 9.625
+m zwood_mat
+o
+o speaker.left
+v v16 =
+	p 0.244475 0.1016 0.01905
+v v17 =
+	p 0.263525 0.1016 0.263525
+f v16 v10 v17 v2
+v v18 =
+	p 0.263525 0 0.263525
+f v17 v18 v4 v2
+v v19 =
+	p 0.244475 0 0.01905
+f v4 v19 v16 v2
+f v19 v4 v18 v12
+f v10 v16 v19 v12
+f v18 v17 v10 v12
+#  xform -t 9.625 0 0
+#  genbox zwood_mat speaker.right .75 4 9.625
+o
+o speaker.right
+v v20 =
+	p 0 0.1016 0
+v v21 =
+	p 0.01905 0.1016 0.244475
+f v20 v8 v21 v0
+v v22 =
+	p 0.01905 0 0.244475
+f v21 v22 v6 v0
+v v23 =
+	p 0 0 0
+f v6 v23 v20 v0
+f v23 v6 v22 v14
+f v8 v20 v23 v14
+f v22 v21 v8 v14
+m dark_fabric
+o
+o cover
+v v24 =
+	p 0.244475 0.09525 0.01905
+v v25 =
+	p 0.01905 0.09525 0.01905
+v v26 =
+	p 0.01905 0.09525 0.244475
+v v27 =
+	p 0.244475 0.09525 0.244475
+f v24 v25 v26 v27
+# End conversion from: speaker.rad
+o
+# End of data converted from Radiance scene input

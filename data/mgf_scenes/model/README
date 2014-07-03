@@ -1,0 +1,77 @@
+This directory contains MGF input files for a conference room and
+five possible lighting systems.  The data originated from the WWW
+site:
+
+	http://radsite.lbl.gov/mgf/compare.html
+
+The above site also contains numerous renderings and measurements
+(captured images) of this space, and a parser for the MGF scene
+format.  This data is provided for comparison, validation and
+experimentation with different lighting simulation and rendering
+packages, and comes without warranty or recommendation.
+
+The files in this directory are named below:
+
+	README		This file
+	basic.mgf	The basic conference room model, sans lighting
+	df.mgf		The direct fluorescent lighting system
+	dfl.mgf		MGF file referenced in df.mgf
+	dif.mgf		The direct/indirect fluorescent lighting system
+	difl.mgf	MGF file referenced in dif.mgf
+	dl.mgf		The downlights
+	dl0.mgf		Downlights, switched off
+	dll.ies		IES file referenced in dl.mgf
+	f0.mgf		Fluorescent fixtures, switched off
+	if.mgf		The indirect fluorescent lighting system
+	ifl.mgf		MGF file referenced in if.mgf
+	materials.mgf	The materials required by all
+	ww.mgf		The wall-washers
+	ww0.mgf		Wall-washers, switched off
+	wwl.ies		IES file referenced in ww.mgf
+
+Here is a list of configurations whose simulations and measurements have
+been provided, and the corresponding input file combinations:
+
+	Model ID	Description		Files
+	________	___________		___________
+
+	df+dl+ww	Direct fluorescents,	materials.mgf basic.mgf
+			downlights and		df.mgf dl.mgf ww.mgf
+			wall-washers
+
+	df+ww		Direct fluorescents	materials.mgf basic.mgf
+			and wall-washers	df.mgf dl0.mgf ww.mgf
+
+	df		Direct fluorescents	materials.mgf basic.mgf
+						df.mgf dl0.mgf ww0.mgf
+
+	dif+dl+ww	Direct/indirect		materials.mgf basic.mgf
+			fluorescents,		dif.mgf dl.mgf ww.mgf
+			downlights and
+			wall-washers
+
+	dif+ww		Direct/indirect		materials.mgf basic.mgf
+			fluorescents and	dif.mgf dl0.mgf ww.mgf
+			wall-washers
+
+	dif		Direct/indirect		materials.mgf basic.mgf
+			fluorescents		dif.mgf dl0.mgf ww0.mgf
+
+	dl		Downlights		materials.mgf basic.mgf
+						f0.mgf dl.mgf ww0.mgf
+
+	if+dl+ww	Indirect fluorescents,	materials.mgf basic.mgf
+			downlights and		if.mgf dl.mgf ww.mgf
+			wall-washers
+
+	if+dl		Indirect fluorescents	materials.mgf basic.mgf
+			and downlights		if.mgf dl.mgf ww0.mgf
+
+	if+ww		Indirect fluorescents	materials.mgf basic.mgf
+			and wall-washers	if.mgf dl0.mgf ww.mgf
+
+	if		Indirect fluorescents	materials.mgf basic.mgf
+						if.mgf dl0.mgf ww0.mgf
+
+	ww		Wall-washers		materials.mgf basic.mgf
+						f0.mgf dl0.mgf ww.mgf

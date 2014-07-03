@@ -1,0 +1,124 @@
+# Lighting Quality Study test model built by NRC
+# 40' x 22' x 9' office space with no windows and one door
+# Partitions will create 6 furnished cubicles
+# This model was hand-built in MGF by Greg Ward of LBL
+# April 13, 1995
+
+# All measurements in inches, so here is the metric conversion:
+xf -s .0254
+
+# The room corner vertices:
+v rc.xyz =
+	p 0 0 0
+v rc.Xyz =
+	p 480 0 0
+v rc.xYz =
+	p 0 264 0
+v rc.xyZ =
+	p 0 0 108
+v rc.XYz =
+	p 480 264 0
+v rc.xYZ =
+	p 0 264 108
+v rc.XyZ =
+	p 480 0 108
+v rc.XYZ =
+	p 480 264 108
+
+# The floor:
+o floor
+	m mottled_carpet
+	f rc.xyz rc.Xyz rc.XYz rc.xYz
+o
+
+# The ceiling:
+o ceiling
+	m ceiling_tile
+	f rc.xyZ rc.xYZ rc.XYZ rc.XyZ
+o
+
+# The door outline vertices:
+v do.xz =
+	p 216 0 0
+v do.Xz =
+	p 264 0 0
+v do.xZ =
+	p 216 0 84
+v do.XZ =
+	p 264 0 84
+
+# The walls:
+o wall
+	m beige_paint
+	o x
+		f rc.xyz rc.xYz rc.xYZ rc.xyZ
+	o
+	o X
+		f rc.Xyz rc.XyZ rc.XYZ rc.XYz
+	o
+	o y
+		f rc.xyz rc.xyZ rc.XyZ rc.Xyz do.Xz do.XZ do.xZ do.xz
+	o
+	o Y
+		f rc.xYz rc.XYz rc.XYZ rc.xYZ
+	o
+o
+
+# The door and jam vertices:
+v djo.xz =
+	p 216 .5 0
+v djo.xZ =
+	p 216 .5 84
+v djo.XZ =
+	p 264 .5 84
+v djo.Xz =
+	p 264 .5 0
+v dji.Xz =
+	p 262 .5 0
+v dji.XZ =
+	p 262 .5 82
+v dji.xZ =
+	p 218 .5 82
+v dji.xz =
+	p 218 .5 0
+v door.xz =
+	p 218 0 0
+v door.xZ =
+	p 218 0 82
+v door.XZ =
+	p 262 0 82
+v door.Xz =
+	p 262 0 0
+
+# The door, jam and knob
+o door
+	m burgundy_formica
+	f door.xz door.xZ door.XZ door.Xz
+	o jam
+		m beige_paint
+		f djo.xz djo.xZ djo.XZ djo.Xz dji.Xz dji.XZ dji.xZ dji.xz
+		f djo.xz do.xz do.xZ djo.xZ
+		f djo.xZ do.xZ do.XZ djo.XZ
+		f djo.Xz djo.XZ do.XZ do.Xz
+		f dji.xz dji.xZ door.xZ door.xz
+		f dji.xZ dji.XZ door.XZ door.xZ
+		f dji.Xz door.Xz door.XZ dji.XZ
+	o
+	o knob
+		m stainless_steel
+		v kb1 =
+			p 257 0 36
+		v kb2 =
+			p 257 .25 36
+			n 0 1 0
+		v kb3 =
+			p 257 2 36
+		cyl kb1 1 kb2
+		ring kb2 .4 1
+		cyl kb2 .4 kb3
+		sph kb3 .85
+	o
+o
+
+# End of transform from inches to meters:
+xf

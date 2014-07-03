@@ -1,0 +1,15 @@
+A decorated Christmas tree by Greg Ward.
+
+The enclosed files are:
+
+	README		This file
+	lights.mgf	Christmas tree lights
+	n.150.mgf	Included file for spray of pine needles
+	ornaments.mgf	Gold ball ornaments
+	sapling.mgf	Included file for branches (small tree)
+	tree.mgf	Tree minus trimmings
+
+To get the full tree with trimmings, concatenate tree.mgf, lights.mgf and
+ornaments.mgf.
+
+The tree is about 2.5 meters high, aligned with the z-axis.

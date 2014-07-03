@@ -1,0 +1,443 @@
+# The following was converted from Radiance scene input
+o Untitled
+# Begin conversion from: DL.rad
+# Begin conversion from: !xform -t 0.0238 1.0992 .03 -mz -rz -90 -t .4883 1 3.091 \
+#	-a 6 -t 0 1 0 cenlight.rad
+#  xform -n a0 -t 0.0238 1.0992 .03 -mz -rz -90 -t .4883 1 3.091 -i 0 -t 0 1 0
+#  void metal light_bar_paint
+#  0
+#  0
+#  5 .9 .9 .9 0 0
+# Begin conversion from: !genbox light_bar_paint cen_light .0508 .1016 .0508 | xform -e -n a0 -t 0.0238 1.0992 .03 -mz -rz -90 -t .4883 1 3.091 -i 0 -t 0 1 0
+#  xform -e -n a0 -t 0.0238 1.0992 .03 -mz -rz -90 -t .4883 1 3.091 -i 0 -t 0 1 0
+#  genbox light_bar_paint cen_light .0508 .1016 .0508
+m light_bar_paint
+o
+o a0.cen_light
+v v0 =
+	p 1.5875 0.9762 3.061
+v v1 =
+	p 1.5875 0.9762 3.0102
+v v2 =
+	p 1.5875 0.9254 3.0102
+v v3 =
+	p 1.5875 0.9254 3.061
+f v0 v1 v2 v3
+v v4 =
+	p 1.6891 0.9762 3.061
+v v5 =
+	p 1.6891 0.9762 3.0102
+f v0 v4 v5 v1
+v v6 =
+	p 1.6891 0.9254 3.061
+f v0 v3 v6 v4
+v v7 =
+	p 1.6891 0.9254 3.0102
+f v7 v5 v4 v6
+f v7 v6 v3 v2
+f v7 v2 v1 v5
+# End conversion from: !genbox light_bar_paint cen_light .0508 .1016 .0508 | xform -e -n a0 -t 0.0238 1.0992 .03 -mz -rz -90 -t .4883 1 3.091 -i 0 -t 0 1 0
+o
+o a0
+v v8 =
+	p 1.6383 0.9508 3.0102
+v v9 =
+	p 1.6383 0.9508 2.9975
+cyl v8 0.1143 v9
+v cent =
+	p 1.6383 0.9508 2.9975
+	n 0 0 -1
+ring cent 0.0508 0.1143
+v cent =
+	p 1.6383 0.9508 3.0102
+	n 0 0 1
+ring cent 0 0.1143
+v v10 =
+	p 1.6383 0.9508 2.9721
+cone v9 0.0508 v10 0.01905
+#  xform -n a1 -t 0.0238 1.0992 .03 -mz -rz -90 -t .4883 1 3.091 -i 1 -t 0 1 0
+#  void metal light_bar_paint
+#  0
+#  0
+#  5 .9 .9 .9 0 0
+# Begin conversion from: !genbox light_bar_paint cen_light .0508 .1016 .0508 | xform -e -n a1 -t 0.0238 1.0992 .03 -mz -rz -90 -t .4883 1 3.091 -i 1 -t 0 1 0
+#  xform -e -n a1 -t 0.0238 1.0992 .03 -mz -rz -90 -t .4883 1 3.091 -i 1 -t 0 1 0
+#  genbox light_bar_paint cen_light .0508 .1016 .0508
+o
+o a1.cen_light
+v v11 =
+	p 1.5875 1.9762 3.061
+v v12 =
+	p 1.5875 1.9762 3.0102
+v v13 =
+	p 1.5875 1.9254 3.0102
+v v14 =
+	p 1.5875 1.9254 3.061
+f v11 v12 v13 v14
+v v15 =
+	p 1.6891 1.9762 3.061
+v v16 =
+	p 1.6891 1.9762 3.0102
+f v11 v15 v16 v12
+v v17 =
+	p 1.6891 1.9254 3.061
+f v11 v14 v17 v15
+v v18 =
+	p 1.6891 1.9254 3.0102
+f v18 v16 v15 v17
+f v18 v17 v14 v13
+f v18 v13 v12 v16
+# End conversion from: !genbox light_bar_paint cen_light .0508 .1016 .0508 | xform -e -n a1 -t 0.0238 1.0992 .03 -mz -rz -90 -t .4883 1 3.091 -i 1 -t 0 1 0
+o
+o a1
+v v19 =
+	p 1.6383 1.9508 3.0102
+v v20 =
+	p 1.6383 1.9508 2.9975
+cyl v19 0.1143 v20
+v cent =
+	p 1.6383 1.9508 2.9975
+	n 0 0 -1
+ring cent 0.0508 0.1143
+v cent =
+	p 1.6383 1.9508 3.0102
+	n 0 0 1
+ring cent 0 0.1143
+v v21 =
+	p 1.6383 1.9508 2.9721
+cone v20 0.0508 v21 0.01905
+#  xform -n a2 -t 0.0238 1.0992 .03 -mz -rz -90 -t .4883 1 3.091 -i 2 -t 0 1 0
+#  void metal light_bar_paint
+#  0
+#  0
+#  5 .9 .9 .9 0 0
+# Begin conversion from: !genbox light_bar_paint cen_light .0508 .1016 .0508 | xform -e -n a2 -t 0.0238 1.0992 .03 -mz -rz -90 -t .4883 1 3.091 -i 2 -t 0 1 0
+#  xform -e -n a2 -t 0.0238 1.0992 .03 -mz -rz -90 -t .4883 1 3.091 -i 2 -t 0 1 0
+#  genbox light_bar_paint cen_light .0508 .1016 .0508
+o
+o a2.cen_light
+v v22 =
+	p 1.5875 2.9762 3.061
+v v23 =
+	p 1.5875 2.9762 3.0102
+v v24 =
+	p 1.5875 2.9254 3.0102
+v v25 =
+	p 1.5875 2.9254 3.061
+f v22 v23 v24 v25
+v v26 =
+	p 1.6891 2.9762 3.061
+v v27 =
+	p 1.6891 2.9762 3.0102
+f v22 v26 v27 v23
+v v28 =
+	p 1.6891 2.9254 3.061
+f v22 v25 v28 v26
+v v29 =
+	p 1.6891 2.9254 3.0102
+f v29 v27 v26 v28
+f v29 v28 v25 v24
+f v29 v24 v23 v27
+# End conversion from: !genbox light_bar_paint cen_light .0508 .1016 .0508 | xform -e -n a2 -t 0.0238 1.0992 .03 -mz -rz -90 -t .4883 1 3.091 -i 2 -t 0 1 0
+o
+o a2
+v v30 =
+	p 1.6383 2.9508 3.0102
+v v31 =
+	p 1.6383 2.9508 2.9975
+cyl v30 0.1143 v31
+v cent =
+	p 1.6383 2.9508 2.9975
+	n 0 0 -1
+ring cent 0.0508 0.1143
+v cent =
+	p 1.6383 2.9508 3.0102
+	n 0 0 1
+ring cent 0 0.1143
+v v32 =
+	p 1.6383 2.9508 2.9721
+cone v31 0.0508 v32 0.01905
+#  xform -n a3 -t 0.0238 1.0992 .03 -mz -rz -90 -t .4883 1 3.091 -i 3 -t 0 1 0
+#  void metal light_bar_paint
+#  0
+#  0
+#  5 .9 .9 .9 0 0
+# Begin conversion from: !genbox light_bar_paint cen_light .0508 .1016 .0508 | xform -e -n a3 -t 0.0238 1.0992 .03 -mz -rz -90 -t .4883 1 3.091 -i 3 -t 0 1 0
+#  xform -e -n a3 -t 0.0238 1.0992 .03 -mz -rz -90 -t .4883 1 3.091 -i 3 -t 0 1 0
+#  genbox light_bar_paint cen_light .0508 .1016 .0508
+o
+o a3.cen_light
+v v33 =
+	p 1.5875 3.9762 3.061
+v v34 =
+	p 1.5875 3.9762 3.0102
+v v35 =
+	p 1.5875 3.9254 3.0102
+v v36 =
+	p 1.5875 3.9254 3.061
+f v33 v34 v35 v36
+v v37 =
+	p 1.6891 3.9762 3.061
+v v38 =
+	p 1.6891 3.9762 3.0102
+f v33 v37 v38 v34
+v v39 =
+	p 1.6891 3.9254 3.061
+f v33 v36 v39 v37
+v v40 =
+	p 1.6891 3.9254 3.0102
+f v40 v38 v37 v39
+f v40 v39 v36 v35
+f v40 v35 v34 v38
+# End conversion from: !genbox light_bar_paint cen_light .0508 .1016 .0508 | xform -e -n a3 -t 0.0238 1.0992 .03 -mz -rz -90 -t .4883 1 3.091 -i 3 -t 0 1 0
+o
+o a3
+v v41 =
+	p 1.6383 3.9508 3.0102
+v v42 =
+	p 1.6383 3.9508 2.9975
+cyl v41 0.1143 v42
+v cent =
+	p 1.6383 3.9508 2.9975
+	n 0 0 -1
+ring cent 0.0508 0.1143
+v cent =
+	p 1.6383 3.9508 3.0102
+	n 0 0 1
+ring cent 0 0.1143
+v v43 =
+	p 1.6383 3.9508 2.9721
+cone v42 0.0508 v43 0.01905
+#  xform -n a4 -t 0.0238 1.0992 .03 -mz -rz -90 -t .4883 1 3.091 -i 4 -t 0 1 0
+#  void metal light_bar_paint
+#  0
+#  0
+#  5 .9 .9 .9 0 0
+# Begin conversion from: !genbox light_bar_paint cen_light .0508 .1016 .0508 | xform -e -n a4 -t 0.0238 1.0992 .03 -mz -rz -90 -t .4883 1 3.091 -i 4 -t 0 1 0
+#  xform -e -n a4 -t 0.0238 1.0992 .03 -mz -rz -90 -t .4883 1 3.091 -i 4 -t 0 1 0
+#  genbox light_bar_paint cen_light .0508 .1016 .0508
+o
+o a4.cen_light
+v v44 =
+	p 1.5875 4.9762 3.061
+v v45 =
+	p 1.5875 4.9762 3.0102
+v v46 =
+	p 1.5875 4.9254 3.0102
+v v47 =
+	p 1.5875 4.9254 3.061
+f v44 v45 v46 v47
+v v48 =
+	p 1.6891 4.9762 3.061
+v v49 =
+	p 1.6891 4.9762 3.0102
+f v44 v48 v49 v45
+v v50 =
+	p 1.6891 4.9254 3.061
+f v44 v47 v50 v48
+v v51 =
+	p 1.6891 4.9254 3.0102
+f v51 v49 v48 v50
+f v51 v50 v47 v46
+f v51 v46 v45 v49
+# End conversion from: !genbox light_bar_paint cen_light .0508 .1016 .0508 | xform -e -n a4 -t 0.0238 1.0992 .03 -mz -rz -90 -t .4883 1 3.091 -i 4 -t 0 1 0
+o
+o a4
+v v52 =
+	p 1.6383 4.9508 3.0102
+v v53 =
+	p 1.6383 4.9508 2.9975
+cyl v52 0.1143 v53
+v cent =
+	p 1.6383 4.9508 2.9975
+	n 0 0 -1
+ring cent 0.0508 0.1143
+v cent =
+	p 1.6383 4.9508 3.0102
+	n 0 0 1
+ring cent 0 0.1143
+v v54 =
+	p 1.6383 4.9508 2.9721
+cone v53 0.0508 v54 0.01905
+#  xform -n a5 -t 0.0238 1.0992 .03 -mz -rz -90 -t .4883 1 3.091 -i 5 -t 0 1 0
+#  void metal light_bar_paint
+#  0
+#  0
+#  5 .9 .9 .9 0 0
+# Begin conversion from: !genbox light_bar_paint cen_light .0508 .1016 .0508 | xform -e -n a5 -t 0.0238 1.0992 .03 -mz -rz -90 -t .4883 1 3.091 -i 5 -t 0 1 0
+#  xform -e -n a5 -t 0.0238 1.0992 .03 -mz -rz -90 -t .4883 1 3.091 -i 5 -t 0 1 0
+#  genbox light_bar_paint cen_light .0508 .1016 .0508
+o
+o a5.cen_light
+v v55 =
+	p 1.5875 5.9762 3.061
+v v56 =
+	p 1.5875 5.9762 3.0102
+v v57 =
+	p 1.5875 5.9254 3.0102
+v v58 =
+	p 1.5875 5.9254 3.061
+f v55 v56 v57 v58
+v v59 =
+	p 1.6891 5.9762 3.061
+v v60 =
+	p 1.6891 5.9762 3.0102
+f v55 v59 v60 v56
+v v61 =
+	p 1.6891 5.9254 3.061
+f v55 v58 v61 v59
+v v62 =
+	p 1.6891 5.9254 3.0102
+f v62 v60 v59 v61
+f v62 v61 v58 v57
+f v62 v57 v56 v60
+# End conversion from: !genbox light_bar_paint cen_light .0508 .1016 .0508 | xform -e -n a5 -t 0.0238 1.0992 .03 -mz -rz -90 -t .4883 1 3.091 -i 5 -t 0 1 0
+o
+o a5
+v v63 =
+	p 1.6383 5.9508 3.0102
+v v64 =
+	p 1.6383 5.9508 2.9975
+cyl v63 0.1143 v64
+v cent =
+	p 1.6383 5.9508 2.9975
+	n 0 0 -1
+ring cent 0.0508 0.1143
+v cent =
+	p 1.6383 5.9508 3.0102
+	n 0 0 1
+ring cent 0 0.1143
+v v65 =
+	p 1.6383 5.9508 2.9721
+cone v64 0.0508 v65 0.01905
+# End conversion from: !xform -t 0.0238 1.0992 .03 -mz -rz -90 -t .4883 1 3.091 \
+#	-a 6 -t 0 1 0 cenlight.rad
+# Begin conversion from: !xform -t .0254 .053 .07 -t 0.0238 1.0992 .03 \
+#	-mz -rz -90 -t .4883 1 3.091 -a 6 -t 0 1 0 bulb_cen.rad cen_ON.rad
+#  xform -n a0 -t .0254 .053 .07 -t 0.0238 1.0992 .03 -mz -rz -90 -t .4883 1 3.091 -i 0 -t 0 1 0
+o
+o a0
+v cent =
+	p 1.6405 0.9508 3.011
+	n 0 0 1
+ring cent 0 0.023
+v v66 =
+	p 1.6405 0.9508 3.011
+v v67 =
+	p 1.6405 0.9508 2.9402
+cyl v66 0.023 v67
+v v68 =
+	p 1.6405 0.9508 2.930675
+cone v67 0.023 v68 0.060325
+#  file for when center
+#  downlights (Sylvania 38 par)
+#  are ON
+# m spot_center =
+# 	c
+# 		cxy 0.4369 0.4034
+# 	ed 4.923e+04
+# v cent =
+# 	p 1.6405 0.9508 2.9307
+# 	n 0 0 -1
+# ring cent 0 0.0603
+ies dll.ies -t 1.6405 0.9508 2.9307 -a 6 -t 0 1 0
+#  xform -n a1 -t .0254 .053 .07 -t 0.0238 1.0992 .03 -mz -rz -90 -t .4883 1 3.091 -i 1 -t 0 1 0
+m light_bar_paint
+o
+o a1
+v cent =
+	p 1.6405 1.9508 3.011
+	n 0 0 1
+ring cent 0 0.023
+v v69 =
+	p 1.6405 1.9508 3.011
+v v70 =
+	p 1.6405 1.9508 2.9402
+cyl v69 0.023 v70
+v v71 =
+	p 1.6405 1.9508 2.930675
+cone v70 0.023 v71 0.060325
+#  file for when center
+#  downlights (Sylvania 38 par)
+#  are ON
+#  xform -n a2 -t .0254 .053 .07 -t 0.0238 1.0992 .03 -mz -rz -90 -t .4883 1 3.091 -i 2 -t 0 1 0
+m light_bar_paint
+o
+o a2
+v cent =
+	p 1.6405 2.9508 3.011
+	n 0 0 1
+ring cent 0 0.023
+v v72 =
+	p 1.6405 2.9508 3.011
+v v73 =
+	p 1.6405 2.9508 2.9402
+cyl v72 0.023 v73
+v v74 =
+	p 1.6405 2.9508 2.930675
+cone v73 0.023 v74 0.060325
+#  file for when center
+#  downlights (Sylvania 38 par)
+#  are ON
+#  xform -n a3 -t .0254 .053 .07 -t 0.0238 1.0992 .03 -mz -rz -90 -t .4883 1 3.091 -i 3 -t 0 1 0
+m light_bar_paint
+o
+o a3
+v cent =
+	p 1.6405 3.9508 3.011
+	n 0 0 1
+ring cent 0 0.023
+v v75 =
+	p 1.6405 3.9508 3.011
+v v76 =
+	p 1.6405 3.9508 2.9402
+cyl v75 0.023 v76
+v v77 =
+	p 1.6405 3.9508 2.930675
+cone v76 0.023 v77 0.060325
+#  file for when center
+#  downlights (Sylvania 38 par)
+#  are ON
+#  xform -n a4 -t .0254 .053 .07 -t 0.0238 1.0992 .03 -mz -rz -90 -t .4883 1 3.091 -i 4 -t 0 1 0
+m light_bar_paint
+o
+o a4
+v cent =
+	p 1.6405 4.9508 3.011
+	n 0 0 1
+ring cent 0 0.023
+v v78 =
+	p 1.6405 4.9508 3.011
+v v79 =
+	p 1.6405 4.9508 2.9402
+cyl v78 0.023 v79
+v v80 =
+	p 1.6405 4.9508 2.930675
+cone v79 0.023 v80 0.060325
+#  file for when center
+#  downlights (Sylvania 38 par)
+#  are ON
+#  xform -n a5 -t .0254 .053 .07 -t 0.0238 1.0992 .03 -mz -rz -90 -t .4883 1 3.091 -i 5 -t 0 1 0
+m light_bar_paint
+o
+o a5
+v cent =
+	p 1.6405 5.9508 3.011
+	n 0 0 1
+ring cent 0 0.023
+v v81 =
+	p 1.6405 5.9508 3.011
+v v82 =
+	p 1.6405 5.9508 2.9402
+cyl v81 0.023 v82
+v v83 =
+	p 1.6405 5.9508 2.930675
+cone v82 0.023 v83 0.060325
+#  file for when center
+#  downlights (Sylvania 38 par)
+#  are ON
+# End conversion from: !xform -t .0254 .053 .07 -t 0.0238 1.0992 .03 \
+#	-mz -rz -90 -t .4883 1 3.091 -a 6 -t 0 1 0 bulb_cen.rad cen_ON.rad
+# End conversion from: DL.rad
+o
+# End of data converted from Radiance scene input

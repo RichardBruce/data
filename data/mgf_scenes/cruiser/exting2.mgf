@@ -1,0 +1,243 @@
+# The following was converted from RADIANCE scene input
+o Untitled
+# Begin conversion from: exting2.rad
+# 
+#  A red carbon-dioxide fire extinguisher with holder
+# 
+#  Units are in inches, origin is at center of bottom
+# 
+m red_paint =
+	c
+		cxy 0.5896 0.3305
+	rd 0.2366
+	c
+	rs 0.0200 0.0500
+m brass =
+	c
+		cxy 0.4924 0.3811
+	rd 0.0446
+	rs 0.2530 0.0300
+m rubber =
+	c
+		cxy 0.3333 0.3333
+	rd 0.0396
+	c
+	rs 0.0100 0.0700
+m stainless =
+	c
+		cxy 0.3333 0.3333
+	rd 0.0800
+	rs 0.7200 0.0350
+# Begin conversion from: !genrev red_paint bottom 'hermite(0,2,0,4,t)' 'hermite(0,4,6,0,t)' 8
+#  genrev red_paint bottom hermite(0,2,0,4,t) hermite(0,4,6,0,t) 8
+m red_paint
+o
+o bottom
+v v0 =
+	p 0 0 0
+v v1 =
+	p 0 0 0.03125
+cone v0 0 v1 0.74609375
+v v2 =
+	p 0 0 0.125
+cone v1 0.74609375 v2 1.46875
+v v3 =
+	p 0 0 0.28125
+cone v2 1.46875 v3 2.14453125
+v v4 =
+	p 0 0 0.5
+cone v3 2.14453125 v4 2.75
+v v5 =
+	p 0 0 0.78125
+cone v4 2.75 v5 3.26171875
+v v6 =
+	p 0 0 1.125
+cone v5 3.26171875 v6 3.65625
+v v7 =
+	p 0 0 1.53125
+cone v6 3.65625 v7 3.91015625
+v v8 =
+	p 0 0 2
+cone v7 3.91015625 v8 4
+# End conversion from: !genrev red_paint bottom 'hermite(0,2,0,4,t)' 'hermite(0,4,6,0,t)' 8
+# Begin conversion from: !genrev red_paint top 'hermite(20,23,4,6,t)' 'hermite(4,1,0,0,t)' 12
+#  genrev red_paint top hermite(20,23,4,6,t) hermite(4,1,0,0,t) 12
+o
+o top
+v v9 =
+	p 0 0 20
+v v10 =
+	p 0 0 20.3009259
+cone v9 4 v10 3.94097222
+v v11 =
+	p 0 0 20.5462963
+cone v10 3.94097222 v11 3.77777778
+v v12 =
+	p 0 0 20.75
+cone v11 3.77777778 v12 3.53125
+v v13 =
+	p 0 0 20.9259259
+cone v12 3.53125 v13 3.22222222
+v v14 =
+	p 0 0 21.087963
+cone v13 3.22222222 v14 2.87152778
+v v15 =
+	p 0 0 21.25
+cone v14 2.87152778 v15 2.5
+v v16 =
+	p 0 0 21.4259259
+cone v15 2.5 v16 2.12847222
+v v17 =
+	p 0 0 21.6296296
+cone v16 2.12847222 v17 1.77777778
+v v18 =
+	p 0 0 21.875
+cone v17 1.77777778 v18 1.46875
+v v19 =
+	p 0 0 22.1759259
+cone v18 1.46875 v19 1.22222222
+v v20 =
+	p 0 0 22.5462963
+cone v19 1.22222222 v20 1.05902778
+v v21 =
+	p 0 0 23
+cone v20 1.05902778 v21 1
+# End conversion from: !genrev red_paint top 'hermite(20,23,4,6,t)' 'hermite(4,1,0,0,t)' 12
+
+# Unsupported RADIANCE primitive:
+# void colortext label_text
+# 4 helvet.fnt . CARBON DIOXIDE
+# 0
+# 16 -3 2.7 20 0 0 -1.2 2 0.3 0 1 20 20 1 1 1 -0.2
+
+
+# Unsupported RADIANCE primitive:
+# void mixfunc label
+# 4 label_text void if(Py,1,0) .
+# 0
+# 0
+
+m labeled_red_paint = red_paint
+o
+o body
+cyl v8 4 v9
+m stainless
+o
+o band
+v v22 =
+	p 0 0 9
+v v23 =
+	p 0 0 11
+cyl v22 4.05 v23
+# Begin conversion from: !genbox brass valve_block 3 2 2 | xform -t -1.5 -1 23
+#  xform -t -1.5 -1 23
+#  genbox brass valve_block 3 2 2
+m brass
+o
+o valve_block
+v v24 =
+	p 1.5 -1 23
+v v25 =
+	p 1.5 -1 25
+v v26 =
+	p -1.5 -1 25
+v v27 =
+	p -1.5 -1 23
+f v24 v25 v26 v27
+v v28 =
+	p -1.5 1 25
+v v29 =
+	p -1.5 1 23
+f v26 v28 v29 v27
+v v30 =
+	p 1.5 1 23
+f v29 v30 v24 v27
+v v31 =
+	p 1.5 1 25
+f v30 v29 v28 v31
+f v25 v24 v30 v31
+f v28 v26 v25 v31
+# End conversion from: !genbox brass valve_block 3 2 2 | xform -t -1.5 -1 23
+#  xform -t -7 -.5 0 -ry -15 -t -1 0 23
+#  genbox brass valve_handle 7 1 1
+o
+o valve_handle
+v v32 =
+	p -1 -0.5 23
+v v33 =
+	p -1.2588190451 -0.5 23.9659258263
+v v34 =
+	p -8.02029982913 -0.5 22.1541925106
+v v35 =
+	p -7.76148078402 -0.5 21.1882666843
+f v32 v33 v34 v35
+# brass polygon valve_handle.4620
+# 0
+# 0
+# 12
+#      -8.02029982913               -0.5      22.1541925106
+#      -8.02029982913                0.5      22.1541925106
+#      -7.76148078402                0.5      21.1882666843
+#      -7.76148078402               -0.5      21.1882666843
+v v36 =
+	p -7.76148078402 0.5 21.1882666843
+v v37 =
+	p -1 0.5 23
+f v36 v37 v32 v35
+v v38 =
+	p -8.02029982913 0.5 22.1541925106
+v v39 =
+	p -1.2588190451 0.5 23.9659258263
+f v37 v36 v38 v39
+f v33 v32 v37 v39
+# brass polygon valve_handle.6457
+# 0
+# 0
+# 12
+#      -8.02029982913                0.5      22.1541925106
+#      -8.02029982913               -0.5      22.1541925106
+#       -1.2588190451               -0.5      23.9659258263
+#       -1.2588190451                0.5      23.9659258263
+#  xform -t -5.7 -.5 24.4
+#  genbox brass valve_actuator 7 1 1
+o
+o valve_actuator
+v v40 =
+	p 1.3 -0.5 24.4
+v v41 =
+	p 1.3 -0.5 25.4
+v v42 =
+	p -5.7 -0.5 25.4
+v v43 =
+	p -5.7 -0.5 24.4
+f v40 v41 v42 v43
+# brass polygon valve_actuator.4620
+# 0
+# 0
+# 12
+#                -5.7               -0.5               25.4
+#                -5.7                0.5               25.4
+#                -5.7                0.5               24.4
+#                -5.7               -0.5               24.4
+# brass polygon valve_actuator.2310
+# 0
+# 0
+# 12
+#                -5.7                0.5               24.4
+#                 1.3                0.5               24.4
+#                 1.3               -0.5               24.4
+#                -5.7               -0.5               24.4
+v v44 =
+	p 1.3 0.5 24.4
+v v45 =
+	p -5.7 0.5 24.4
+v v46 =
+	p -5.7 0.5 25.4
+v v47 =
+	p 1.3 0.5 25.4
+f v44 v45 v46 v47
+f v41 v40 v44 v47
+f v46 v42 v41 v47
+# End conversion from: exting2.rad
+o
+# End of data converted from RADIANCE scene input

@@ -1,0 +1,307 @@
+# The following was converted from Radiance scene input
+o Untitled
+# Begin conversion from: medcab.rad
+# ###############################
+#  Copyright (c) 1991 Greg Ward #
+#  Windows and Lighting Program #
+#  Lawrence Berkeley Laboratory #
+#  Berkeley, CA	94720	       #
+# ###############################
+# 
+#  Medicine cabinet from Creston bathroom model
+# 
+#  Depends on:
+# 	woodpat.cal
+# 
+# 	Units = meters
+# 	(0,0,0) at point where lower right corner meets wall
+# 	X-axis points left (viewed from front)
+# 	Y-axis points towards front
+# 	Z-axis points up
+# 
+#  Overall dimensions are 1.23 by .124 by .743 meters
+# 
+# ###############################
+#  MATERIALS:
+m zwood =
+	c
+		cxy 0.4446 0.3621
+	rd 0.3119
+	c
+	rs 0.0300 0.0800
+m ywood = zwood
+m xwood = zwood
+m mirror =
+	c
+		cxy 0.3330 0.3330
+	rd 0.0000
+	rs 0.9000 0.0000
+# ###############################
+#  xform -e -rz 90 -t 47.5 0 .875 -s .0254
+# 
+#   A mirrored wooden medicine cabinet.
+# 
+#  genbox zwood cabinet 4 46.5 27.5
+m zwood
+o
+o cabinet
+v v0 =
+	p 1.2065 0.1016 0.022225
+v v1 =
+	p 1.2065 0.1016 0.720725
+v v2 =
+	p 1.2065 0 0.720725
+v v3 =
+	p 1.2065 0 0.022225
+f v0 v1 v2 v3
+v v4 =
+	p 0.0254 0 0.720725
+v v5 =
+	p 0.0254 0 0.022225
+f v2 v4 v5 v3
+v v6 =
+	p 0.0254 0.1016 0.022225
+f v5 v6 v0 v3
+v v7 =
+	p 0.0254 0.1016 0.720725
+f v6 v5 v4 v7
+f v1 v0 v6 v7
+f v4 v2 v1 v7
+#  xform -ry 90 -t 4 -1 -.875
+#  genprism zwood left_frame 4 0 0 -1.75 1.75 -27.5 1.75 -29.25 0 -l 0 0 .875
+o
+o left_frame
+v v8 =
+	p 1.2319 0.1016 0
+v v9 =
+	p 1.18745 0.1016 0.04445
+v v10 =
+	p 1.18745 0.1016 0.6985
+v v11 =
+	p 1.2319 0.1016 0.74295
+f v8 v9 v10 v11
+v v12 =
+	p 1.2319 0.123825 0.74295
+v v13 =
+	p 1.18745 0.123825 0.6985
+v v14 =
+	p 1.18745 0.123825 0.04445
+v v15 =
+	p 1.2319 0.123825 0
+f v12 v13 v14 v15
+f v8 v15 v14 v9
+f v9 v14 v13 v10
+f v10 v13 v12 v11
+f v11 v12 v15 v8
+o
+o left_frame_inner
+v v16 =
+	p 1.18745 0.11938 0.04445
+v v17 =
+	p 1.18745 0.11938 0.6985
+cyl v16 0.003175 v17
+#  xform -ry 90 -t 4 -1 -.875 -t 0 -23.25 0 -my -t 0 23.25 0
+#  genprism zwood right_frame 4 0 0 -1.75 1.75 -27.5 1.75 -29.25 0 -l 0 0 .875
+o
+o right_frame
+v v18 =
+	p 0 0.1016 0.74295
+v v19 =
+	p 0.04445 0.1016 0.6985
+v v20 =
+	p 0.04445 0.1016 0.04445
+v v21 =
+	p 0 0.1016 0
+f v18 v19 v20 v21
+v v22 =
+	p 0 0.123825 0
+v v23 =
+	p 0.04445 0.123825 0.04445
+v v24 =
+	p 0.04445 0.123825 0.6985
+v v25 =
+	p 0 0.123825 0.74295
+f v22 v23 v24 v25
+f v20 v23 v22 v21
+f v19 v24 v23 v20
+f v18 v25 v24 v19
+f v21 v22 v25 v18
+o
+o right_frame_inner
+v v26 =
+	p 0.04445 0.11938 0.04445
+v v27 =
+	p 0.04445 0.11938 0.6985
+cyl v26 0.003175 v27
+#  xform -ry 90 -t 4 -1 -.875
+#  genprism ywood lower_left_frame 4 0 0 0 16.5 -1.75 16.5 -1.75 1.75 -l 0 0 .875
+m ywood
+o
+o lower_left_frame
+v v28 =
+	p 0.8128 0.1016 0
+v v29 =
+	p 0.8128 0.1016 0.04445
+f v8 v28 v29 v9
+v v30 =
+	p 0.8128 0.123825 0.04445
+v v31 =
+	p 0.8128 0.123825 0
+f v14 v30 v31 v15
+f v8 v15 v31 v28
+f v28 v31 v30 v29
+f v29 v30 v14 v9
+f v9 v14 v15 v8
+o
+o lower_left_frame_inner
+v v32 =
+	p 0.8128 0.11938 0.04445
+cyl v16 0.003175 v32
+#  xform -ry 90 -t 4 -1 -.875 -t 0 0 -13.75 -mz -t 0 0 13.75
+#  genprism ywood upper_left_frame 4 0 0 0 16.5 -1.75 16.5 -1.75 1.75 -l 0 0 .875
+o
+o upper_left_frame
+v v33 =
+	p 0.8128 0.1016 0.6985
+v v34 =
+	p 0.8128 0.1016 0.74295
+f v10 v33 v34 v11
+v v35 =
+	p 0.8128 0.123825 0.74295
+v v36 =
+	p 0.8128 0.123825 0.6985
+f v12 v35 v36 v13
+f v34 v35 v12 v11
+f v33 v36 v35 v34
+f v10 v13 v36 v33
+f v11 v12 v13 v10
+o
+o upper_left_frame_inner
+v v37 =
+	p 0.8128 0.11938 0.6985
+cyl v17 0.003175 v37
+#  xform -ry 90 -t 4 -1 -.875 -t 0 -23.25 0 -my -t 0 23.25 0
+#  genprism ywood lower_right_frame 4 0 0 0 16.5 -1.75 16.5 -1.75 1.75 -l 0 0 .875
+o
+o lower_right_frame
+v v38 =
+	p 0.4191 0.1016 0.04445
+v v39 =
+	p 0.4191 0.1016 0
+f v20 v38 v39 v21
+v v40 =
+	p 0.4191 0.123825 0
+v v41 =
+	p 0.4191 0.123825 0.04445
+f v22 v40 v41 v23
+f v39 v40 v22 v21
+f v38 v41 v40 v39
+f v20 v23 v41 v38
+f v21 v22 v23 v20
+o
+o lower_right_frame_inner
+v v42 =
+	p 0.4191 0.11938 0.04445
+cyl v26 0.003175 v42
+#  xform -ry 90 -t 4 -1 -.875 -t 0 -23.25 -13.75 -my -mz -t 0 23.25 13.75
+#  genprism ywood upper_right_frame 4 0 0 0 16.5 -1.75 16.5 -1.75 1.75 -l 0 0 .875
+o
+o upper_right_frame
+v v43 =
+	p 0.4191 0.1016 0.74295
+v v44 =
+	p 0.4191 0.1016 0.6985
+f v18 v43 v44 v19
+v v45 =
+	p 0.4191 0.123825 0.6985
+v v46 =
+	p 0.4191 0.123825 0.74295
+f v24 v45 v46 v25
+f v18 v25 v46 v43
+f v43 v46 v45 v44
+f v44 v45 v24 v19
+f v19 v24 v25 v18
+o
+o upper_right_frame_inner
+v v47 =
+	p 0.4191 0.11938 0.6985
+cyl v27 0.003175 v47
+#  xform -t 4 15.625 -.875
+#  genbox ywood lower_middle_frame .875 15.25 1.75
+o
+o lower_middle_frame
+v v48 =
+	p 0.809625 0.123825 0
+v v49 =
+	p 0.809625 0.123825 0.04445
+v v50 =
+	p 0.809625 0.1016 0.04445
+v v51 =
+	p 0.809625 0.1016 0
+f v48 v49 v50 v51
+v v52 =
+	p 0.422275 0.1016 0.04445
+v v53 =
+	p 0.422275 0.1016 0
+f v50 v52 v53 v51
+v v54 =
+	p 0.422275 0.123825 0
+f v53 v54 v48 v51
+v v55 =
+	p 0.422275 0.123825 0.04445
+f v54 v53 v52 v55
+f v49 v48 v54 v55
+f v52 v50 v49 v55
+o
+o lower_middle_frame_inner
+v v56 =
+	p 0.809625 0.11938 0.04445
+v v57 =
+	p 0.422275 0.11938 0.04445
+cyl v56 0.003175 v57
+#  xform -t 4 15.625 26.625
+#  genbox ywood upper_middle_frame .875 15.25 1.75
+o
+o upper_middle_frame
+v v58 =
+	p 0.809625 0.123825 0.6985
+v v59 =
+	p 0.809625 0.123825 0.74295
+v v60 =
+	p 0.809625 0.1016 0.74295
+v v61 =
+	p 0.809625 0.1016 0.6985
+f v58 v59 v60 v61
+v v62 =
+	p 0.422275 0.1016 0.74295
+v v63 =
+	p 0.422275 0.1016 0.6985
+f v60 v62 v63 v61
+v v64 =
+	p 0.422275 0.123825 0.6985
+f v63 v64 v58 v61
+v v65 =
+	p 0.422275 0.123825 0.74295
+f v64 v63 v62 v65
+f v59 v58 v64 v65
+f v62 v60 v59 v65
+o
+o upper_middle_frame_inner
+v v66 =
+	p 0.809625 0.11938 0.6985
+v v67 =
+	p 0.422275 0.11938 0.6985
+cyl v66 0.003175 v67
+m mirror
+o
+o left_mirror
+f v16 v32 v37 v17
+o
+o right_mirror
+f v42 v26 v27 v47
+o
+o middle_mirror
+f v56 v57 v67 v66
+# End conversion from: medcab.rad
+o
+# End of data converted from Radiance scene input

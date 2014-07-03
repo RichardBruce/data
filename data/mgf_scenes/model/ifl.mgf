@@ -1,0 +1,193 @@
+# The following was converted from Radiance scene input
+o Untitled
+# Begin conversion from: florbox.rad
+# box that florescents sit in
+# Begin conversion from: !genprism lighthouse housing 10   0 0   0 1.1176   .3048 1.1176   .3048 0   \
+# 0 0  .0127 .0127 .0127 1.1049   .2921 1.1049   .2921 .0127   .0127 .0127 \
+# -l 0 0 .0889
+#  genprism lighthouse housing 10 0 0 0 1.1176 .3048 1.1176 .3048 0 0 0 .0127 .0127 .0127 1.1049 .2921 1.1049 .2921 .0127 .0127 .0127 -l 0 0 .0889
+m lighthouse
+o
+o housing
+v v0 =
+	p 0 0 0
+v v1 =
+	p 0 1.1176 0
+v v2 =
+	p 0.3048 1.1176 0
+v v3 =
+	p 0.3048 0 0
+v v4 =
+	p 0.0127 0.0127 0
+v v5 =
+	p 0.0127 1.1049 0
+v v6 =
+	p 0.2921 1.1049 0
+v v7 =
+	p 0.2921 0.0127 0
+f v0 v1 v2 v3 v0 v4 v5 v6 v7 v4
+v v8 =
+	p 0.0127 0.0127 0.0889
+v v9 =
+	p 0.2921 0.0127 0.0889
+v v10 =
+	p 0.2921 1.1049 0.0889
+v v11 =
+	p 0.0127 1.1049 0.0889
+v v12 =
+	p 0 0 0.0889
+v v13 =
+	p 0.3048 0 0.0889
+v v14 =
+	p 0.3048 1.1176 0.0889
+v v15 =
+	p 0 1.1176 0.0889
+f v8 v9 v10 v11 v8 v12 v13 v14 v15 v12
+f v0 v12 v15 v1
+f v1 v15 v14 v2
+f v2 v14 v13 v3
+f v3 v13 v12 v0
+f v0 v12 v8 v4
+f v4 v8 v11 v5
+f v5 v11 v10 v6
+f v6 v10 v9 v7
+f v7 v9 v8 v4
+f v4 v8 v12 v0
+# End conversion from: !genprism lighthouse housing 10   0 0   0 1.1176   .3048 1.1176   .3048 0   \
+# 0 0  .0127 .0127 .0127 1.1049   .2921 1.1049   .2921 .0127   .0127 .0127 \
+# -l 0 0 .0889
+m blocker
+o
+o b2
+v v16 =
+	p 0.291 1.104 0.001
+v v17 =
+	p 0.291 0.013 0.001
+v v18 =
+	p 0.291 0.013 0.0888
+v v19 =
+	p 0.291 1.104 0.0888
+f v16 v17 v18 v19
+o
+o b1
+v v20 =
+	p 0.0128 1.104 0.001
+v v21 =
+	p 0.0128 1.104 0.0888
+v v22 =
+	p 0.0128 0.013 0.0888
+v v23 =
+	p 0.0128 0.013 0.001
+f v20 v21 v22 v23
+# Reflector inside the florescent box.
+# Begin conversion from: !genprism lighthouse reflector 6 .1084 .0762  .1206 .0576  .1359 .0381 \
+#	.1689 .0381  .1842 .0576  .1964 .0762   -l 0 0 1.1049 -e \
+#	| xform -rx -90 -mz -t 0 .0127 0
+#  xform -rx -90 -mz -t 0 .0127 0
+#  genprism lighthouse reflector 6 .1084 .0762 .1206 .0576 .1359 .0381 .1689 .0381 .1842 .0576 .1964 .0762 -l 0 0 1.1049 -e
+m lighthouse
+o
+o reflector
+v v24 =
+	p 0.1206 0.0127 0.0576
+v v25 =
+	p 0.1206 1.1176 0.0576
+v v26 =
+	p 0.1084 1.1176 0.0762
+v v27 =
+	p 0.1084 0.0127 0.0762
+f v24 v25 v26 v27
+v v28 =
+	p 0.1359 0.0127 0.0381
+v v29 =
+	p 0.1359 1.1176 0.0381
+f v28 v29 v25 v24
+v v30 =
+	p 0.1689 0.0127 0.0381
+v v31 =
+	p 0.1689 1.1176 0.0381
+f v30 v31 v29 v28
+v v32 =
+	p 0.1842 0.0127 0.0576
+v v33 =
+	p 0.1842 1.1176 0.0576
+f v32 v33 v31 v30
+v v34 =
+	p 0.1964 0.0127 0.0762
+v v35 =
+	p 0.1964 1.1176 0.0762
+f v34 v35 v33 v32
+f v27 v26 v35 v34
+# End conversion from: !genprism lighthouse reflector 6 .1084 .0762  .1206 .0576  .1359 .0381 \
+#	.1689 .0381  .1842 .0576  .1964 .0762   -l 0 0 1.1049 -e \
+#	| xform -rx -90 -mz -t 0 .0127 0
+#  Next two cylinders are the flourescent tubes.
+m fluorescent
+o
+o tube1
+v v36 =
+	p 0.0889 0.0254 0.0381
+v v37 =
+	p 0.0889 1.0795 0.0381
+cyl v36 0.0195 v37
+m block_flor
+o
+o end1
+v cent =
+	p 0.0889 0.0254 0.0381
+	n 0 -1 0
+ring cent 0 0.0195
+v cent =
+	p 0.0889 1.0795 0.0381
+	n 0 1 0
+ring cent 0 0.0195
+m fluorescent
+o
+o tube2
+v v38 =
+	p 0.2159 0.0254 0.0381
+v v39 =
+	p 0.2159 1.0795 0.0381
+cyl v38 0.0195 v39
+m block_flor
+o
+o end2
+v cent =
+	p 0.2159 0.0254 0.0381
+	n 0 -1 0
+ring cent 0 0.0195
+v cent =
+	p 0.2159 1.0795 0.0381
+	n 0 1 0
+ring cent 0 0.0195
+# End conversion from: florbox.rad
+# Begin conversion from: bd.rad
+# **********************************************
+# blocks direct light from florbox.rad
+m block_specular
+o
+o direct_reflector
+v v40 =
+	p 0.012 0.012 0
+v v41 =
+	p 0.3061 0.012 0
+v v42 =
+	p 0.3061 1.1056 0
+v v43 =
+	p 0.012 1.1056 0
+f v40 v41 v42 v43
+m block_aluminum
+o
+o block_direct
+v v44 =
+	p 0.012 0.012 -1e-05
+v v45 =
+	p 0.3061 0.012 -1e-05
+v v46 =
+	p 0.3061 1.1056 -1e-05
+v v47 =
+	p 0.012 1.1056 -1e-05
+f v44 v45 v46 v47
+# End conversion from: bd.rad
+o
+# End of data converted from Radiance scene input

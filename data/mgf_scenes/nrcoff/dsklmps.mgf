@@ -1,0 +1,14 @@
+# Symmetric about room center line:
+xf -s 39.37 -t 0 -132 0 -a 2 -my -i 1 -t 0 132 0 -s .0254
+o desklamp
+	xf -s 39.37 -t 75 133.5 0 -a 2 -t 111 0 0 -i 1 -s .0254
+		i desklamp.mgf -rz 77 -t 2.391 1.987 .762
+		i desklamp.mgf -rz -158 -t .723 .379 .762
+	xf
+	xf -s 39.37 -mx -t 405 133.5 0 -s .0254
+		i desklamp.mgf -rz 77 -t 2.391 1.987 .762
+		i desklamp.mgf -rz -158 -t .723 .379 .762
+	xf
+o
+# End of symmetry:
+xf

@@ -1,0 +1,43 @@
+		Canadian National Resource Council
+		Office Space Model
+
+		Created by Greg Ward, LBL 5/95
+
+This model was created as part of a lighting design study conducted by
+Jennifer Veitch and Guy Newsham of the NRC.  The actual lighting designs
+were done by Don Ayotte of Wood, Banani and Associates in Kanata, Ontario.
+
+With the exception of a few furniture items, this model was created
+entirely by hand in MGF using a text editor, and is an excellent place
+to discover just what this language can do.
+
+The following files are the ones you will need to work with.  The others
+are included from these main files, and may be ignored for the most part.
+
+	material.mgf	- materials file (used by room.mgf and furn.mgf)
+	room.mgf	- basic room geometry
+	furn.mgf	- room partitions and furniture
+	design1.mgf	- lighting design #1
+	design2.mgf	- lighting design #2
+	design3.mgf	- lighting design #3
+	design4.mgf	- lighting design #4
+	design5.mgf	- lighting design #5
+	design6.mgf	- lighting design #6
+	design7.mgf	- lighting design #7
+	design8.mgf	- lighting design #8
+	design9.mgf	- lighting design #9
+
+To create just the room with no lighting and no furniture, use:
+
+	material.mgf room.mgf
+
+To create an empty room with the lights from the first design, use:
+
+	material.mgf room.mgf design1.mgf
+
+I'll warn you, however, that this will have a dozen desk lamps floating
+in midair where the desks should have been.
+
+To create a furnished room with the fourth lighting design, use:
+
+	material.mgf room.mgf furn.mgf design4.mgf

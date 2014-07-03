@@ -1,0 +1,97 @@
+# The following was converted from Radiance scene input
+o Untitled
+# Begin conversion from: coord.rad
+# 
+#  Test coordinate system
+# 
+#  The idea is to include this with an
+#  object in order to see its orientation
+#  and size.
+# 
+#  Each coordinate axis is one unit long.
+# 
+#  The x-axis has a red tip, the y-axis
+#  has a green tip, and the z-axis has
+#  a blue tip.
+# 
+m black =
+	c
+		cxy 0.3330 0.3330
+	rd 0.0475
+	c
+	rs 0.0500 0.0500
+m white =
+	c
+		cxy 0.3330 0.3330
+	rd 0.7600
+	c
+	rs 0.0500 0.0500
+m red =
+	c
+		cxy 0.5787 0.3306
+	rd 0.2362
+	c
+	rs 0.0500 0.0500
+m green =
+	c
+		cxy 0.2965 0.5594
+	rd 0.5250
+	c
+	rs 0.0500 0.0500
+m blue =
+	c
+		cxy 0.1785 0.1026
+	rd 0.0938
+	c
+	rs 0.0500 0.0500
+m white
+o
+o origin
+v v0 =
+	p 0 0 0
+sph v0 0.15
+m black
+o
+o x-axis
+v v1 =
+	p 0.8 0 0
+cyl v0 0.05 v1
+m red
+o
+o x-arrow
+v v2 =
+	p 0.75 0 0
+v v3 =
+	p 1 0 0
+cone v2 0.15 v3 0
+m black
+o
+o y-axis
+v v4 =
+	p 0 0.8 0
+cyl v0 0.05 v4
+m green
+o
+o y-arrow
+v v5 =
+	p 0 0.75 0
+v v6 =
+	p 0 1 0
+cone v5 0.15 v6 0
+m black
+o
+o z-axis
+v v7 =
+	p 0 0 0.8
+cyl v0 0.05 v7
+m blue
+o
+o z-arrow
+v v8 =
+	p 0 0 0.75
+v v9 =
+	p 0 0 1
+cone v8 0.15 v9 0
+# End conversion from: coord.rad
+o
+# End of data converted from Radiance scene input

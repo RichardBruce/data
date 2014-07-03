@@ -1,0 +1,282 @@
+# 
+# Wavefront material file
+# Converted by the DEEP Exploration  3.5.7.1088
+# Right Hemisphere, LTD
+# http://www.righthemisphere.com/
+# 
+
+newmtl sp_00_zid
+Ka 0 0 0
+Kd 0.784314 0.784314 0.784314
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd kamen.jpg
+
+newmtl sp_vijenac
+Ka 0 0 0
+Kd 0.784314 0.784314 0.784314
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd sp_00_stup_kapitel.jpg
+
+newmtl sp_vijenac_ploha
+Ka 0 0 0
+Kd 0.784314 0.784314 0.784314
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd sp_luk.jpg
+
+newmtl sp_00_pod
+Ka 0 0 0
+Kd 0.784314 0.784314 0.784314
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd kamen.jpg
+
+newmtl sp_02_prozor
+Ka 0 0 0
+Kd 0.627451 0.627451 0.627451
+Ks 0 0 0
+illum 2
+Ns 8
+
+newmtl sp_02_prozor_krug
+Ka 0 0 0
+Kd 0.627451 0.627451 0.627451
+Ks 0 0 0
+illum 2
+Ns 8
+
+newmtl sp_00_luk_mali_V
+Ka 0 0 0
+Kd 0.784314 0.784314 0.784314
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd sp_luk.jpg
+
+newmtl sp_00_luk_mali
+Ka 0 0 0
+Kd 0.784314 0.784314 0.784314
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd sp_luk.jpg
+
+newmtl sp_01_luk_Va
+Ka 0 0 0
+Kd 0.784314 0.784314 0.784314
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd sp_00_stup_kapitel.jpg
+
+newmtl sp_01_luk_a
+Ka 0 0 0
+Kd 0.784314 0.784314 0.784314
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd sp_luk.jpg
+
+newmtl sp_01_stup_baza
+Ka 0 0 0
+Kd 0.784314 0.784314 0.784314
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd sp_01_stup_baza.jpg
+
+newmtl sp_01_stup
+Ka 0 0 0
+Kd 0.784314 0.784314 0.784314
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd sp_01_stup.jpg
+
+newmtl sp_01_stup_kapitel
+Ka 0 0 0
+Kd 0.784314 0.784314 0.784314
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd sp_01_stup_kapitel.jpg
+
+newmtl sp_zid_vani
+Ka 0 0 0
+Kd 0.784314 0.784314 0.784314
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd kamen.jpg
+
+newmtl sp_01_stub
+Ka 0 0 0
+Kd 0.784314 0.784314 0.784314
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd sp_01_stub.jpg
+
+newmtl sp_01_stub_kapitel
+Ka 0 0 0
+Kd 0.784314 0.784314 0.784314
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd sp_01_stub_kapitel.jpg
+
+newmtl sp_01_stub_baza
+Ka 0 0 0
+Kd 0.784314 0.784314 0.784314
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd sp_01_stup_baza.jpg
+
+newmtl sp_00_stup
+Ka 0 0 0
+Kd 0.784314 0.784314 0.784314
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd sp_01_stub.jpg
+
+newmtl sp_00_stup_kapitel
+Ka 0 0 0
+Kd 0.784314 0.784314 0.784314
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd sp_00_stup_kapitel.jpg
+
+newmtl sp_01_stub_kut
+Ka 0 0 0
+Kd 0.784314 0.784314 0.784314
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd sp_01_stub.jpg
+
+newmtl sp_01_stub_kapitel_kut
+Ka 0 0 0
+Kd 0.784314 0.784314 0.784314
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd sp_01_stub_kapitel.jpg
+
+newmtl sp_01_stub_baza_kut
+Ka 0 0 0
+Kd 0.784314 0.784314 0.784314
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd sp_01_stup_baza.jpg
+
+newmtl sp_00_stup_kut
+Ka 0 0 0
+Kd 0.784314 0.784314 0.784314
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd sp_01_stub.jpg
+
+newmtl sp_00_stup_kapitel_kut
+Ka 0 0 0
+Kd 0.784314 0.784314 0.784314
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd sp_00_stup_kapitel.jpg
+
+newmtl sp_svod_kapitel
+Ka 0 0 0
+Kd 0.784314 0.784314 0.784314
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd sp_00_stup_kapitel.jpg
+
+newmtl sp_00_lukveliki_V
+Ka 0 0 0
+Kd 0.784314 0.784314 0.784314
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd sp_luk.jpg
+
+newmtl sp_00_luk_veliki
+Ka 0 0 0
+Kd 0.784314 0.784314 0.784314
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd sp_luk.jpg
+
+newmtl sp_01_luk_veliki_V
+Ka 0 0 0
+Kd 0.784314 0.784314 0.784314
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd sp_luk.jpg
+
+newmtl sp_01_luk_veliki
+Ka 0 0 0
+Kd 0.784314 0.784314 0.784314
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd sp_luk.jpg
+
+newmtl sp_00_prozor
+Ka 0 0 0
+Kd 0.784314 0.784314 0.784314
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd prozor1.jpg
+
+newmtl sp_00_vrata_krug
+Ka 0 0 0
+Kd 0.784314 0.784314 0.784314
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd vrata_krug.jpg
+
+newmtl sp_00_vrata_kocka
+Ka 0 0 0
+Kd 0.784314 0.784314 0.784314
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd vrata_kocka.jpg
+
+newmtl sp_02_reljef
+Ka 0 0 0
+Kd 0.784314 0.784314 0.784314
+Ks 0 0 0
+illum 2
+Ns 8
+map_Kd reljef.jpg
+
+newmtl sp_00_svod
+Ka 0 0 0
+Kd 0.89803 0.756855 0.521563
+Ks 0 0 0
+illum 2
+Ns 8
+
+newmtl sp_00_svod_zid
+Ka 0 0 0
+Kd 0.89803 0.756855 0.521563
+Ks 0 0 0
+illum 2
+Ns 8

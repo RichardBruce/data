@@ -1,0 +1,5 @@
+# NRC Lighting Design #6
+
+# The 14 2x4' fluorescent troffers
+ies k87023.ies -t 1.2192 1.524 2.74 -a 5 -t 2.4384 0 0 -a 2 -t 0 3.6576 0
+ies k87023.ies -t 2.4384 3.3528 2.74 -a 4 -t 2.4384 0 0

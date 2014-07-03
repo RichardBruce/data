@@ -1,0 +1,30 @@
+	US Naval Cruiser (U.S.S. Generic) lower deck
+
+This model was created by Saba Rofchaei and Greg Ward under contract
+from the U.S. Navy.  It is an H-shaped deck space with three lighting
+configurations.  The files used for each are:
+
+	materials.mgf shipfull.mgf	- Ship under full lighting
+	materials.mgf shipemer.mgf	- Ship under emergency lighting
+	materials.mgf shipbatl.mgf	- Ship under "battle" lanterns
+
+This is an extremely complex model, and contains hundreds of thousands
+of surfaces once all the include files have been expanded.  We don't
+recommend using this model on small memory machines!
+
+Here are some good Radiance view parameters for the model:
+
+default:
+	-vp 20.1168 7.0104  1.6764 -vd -0.987384 -0.0541911 -0.148783 -vu 0 0 1 -vh 60 -vv 50
+
+stairs:
+	-vp 9.7536  0.6096  1.6764 -vd -0.976725 0.181042 -0.115027 -vu 0 0 1 -vh 50 -vv 50
+
+cables:
+	-vp 1.03632 1.03632 1.524 -vd 0.943918 -0.300911 -0.135909 -vu 0 0 1 -vh 30 -vv 40
+
+valves:
+	-vp 3.3528  0.1524  1.524 -vd -0.757547 0.598705 -0.260144 -vu 0 0 1 -vh 65 -vv 50
+
+plan:
+	-vtl -vp 12.192  3.81    0.9144 -vd 0 0 -1 -vu 0 1 0 -vh 24.384 -vv 8.2296

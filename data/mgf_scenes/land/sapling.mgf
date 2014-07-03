@@ -1,0 +1,1057 @@
+# The following was converted from RADIANCE scene input
+o Untitled
+# Begin conversion from: standard input
+#  genpine -r 2
+m bark_mat =
+	c
+		cxy 0.3635 0.3532
+	rd 0.2600
+m leaf_mat =
+	c
+		cxy 0.3425 0.5257
+	rd 0.2720
+#  xform -ry 12.5 -t 0 0 5.76
+#  xform -ry 25 -t 0 0 2.4
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 25 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -ry 25 -t 0 0 2.4 -i 1 -ry 12.5 -t 0 0 5.76
+# 0
+# 2 1.52252 1
+
+m my_bark_mat = bark_mat
+o
+o top
+v v0 =
+	p 0.519455073451 0 8.10311041709
+v v1 =
+	p 1.12821650246 0 8.89646375738
+cone v0 0.035 v1 0.02
+o
+o tip
+sph v1 0.02
+m leaf_mat
+o
+o needles
+i n.150.mgf -i 1 -ry 25 -t 0 0 2.4 -i 1 -ry 12.5 -t 0 0 5.76
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 17 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s 0.071 -i 1 -ry 12.5 -t 0 0 5.76
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o level0
+v v0 =
+	p 0 0 5.76
+v v1 =
+	p 0.519455073451 0 8.10311041709
+cone v0 0.071 v1 0.035
+#  xform -n b1 -s 1.1 -rz 263.656731 -ry -80 -rz 343.610466 -rz 5 -t 0 0 1.008
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 33 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -s 1.1 -rz 263.656731 -ry -80 -rz 343.610466 -rz 5 -t 0 0 1.008 -i 1 -ry 12.5 -t 0 0 5.76
+# 0
+# 2 1.52252 1
+
+o
+o b1
+v v2 =
+	p 0.21817113085 0 6.74410637518
+v v3 =
+	p -0.777269114726 0.213925949586 7.16044086279
+cone v2 0.0385 v3 0.022
+sph v3 0.022
+m leaf_mat
+i n.150.mgf -i 1 -s 1.1 -rz 263.656731 -ry -80 -rz 343.610466 -rz 5 -t 0 0 1.008 -i 1 -ry 12.5 -t 0 0 5.76
+#  xform -n b2 -s 1.1 -rz 144.006649 -ry -78 -rz 343.610466 -rz 128 -t 0 0 1.056
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 33 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -s 1.1 -rz 144.006649 -ry -78 -rz 343.610466 -rz 128 -t 0 0 1.056 -i 1 -ry 12.5 -t 0 0 5.76
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b2
+v v0 =
+	p 0.228560232319 0 6.79096858352
+v v1 =
+	p 0.664938284736 -1.00033213419 6.92848155266
+cone v0 0.0385 v1 0.022
+sph v1 0.022
+m leaf_mat
+i n.150.mgf -i 1 -s 1.1 -rz 144.006649 -ry -78 -rz 343.610466 -rz 128 -t 0 0 1.056 -i 1 -ry 12.5 -t 0 0 5.76
+#  xform -n b3 -s 1.1 -rz 213.721604 -ry -75 -rz 343.610466 -rz 255 -t 0 0 0.96
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 33 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -s 1.1 -rz 213.721604 -ry -75 -rz 343.610466 -rz 255 -t 0 0 0.96 -i 1 -ry 12.5 -t 0 0 5.76
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b3
+v v0 =
+	p 0.207782029381 0 6.69724416684
+v v1 =
+	p 0.809701062014 0.907014540678 6.85541528035
+cone v0 0.0385 v1 0.022
+sph v1 0.022
+m leaf_mat
+i n.150.mgf -i 1 -s 1.1 -rz 213.721604 -ry -75 -rz 343.610466 -rz 255 -t 0 0 0.96 -i 1 -ry 12.5 -t 0 0 5.76
+#  xform -n b4 -rz 298.906391 -ry -80 -rz 343.610466 -rz 58 -t 0 0 2.208
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 31 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -rz 298.906391 -ry -80 -rz 343.610466 -rz 58 -t 0 0 2.208 -i 1 -ry 12.5 -t 0 0 5.76
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b4
+v v0 =
+	p 0.477898667575 0 7.91566158372
+v v1 =
+	p -0.203381223921 -0.653974192923 8.24456197052
+cone v0 0.035 v1 0.02
+sph v1 0.02
+m leaf_mat
+i n.150.mgf -i 1 -rz 298.906391 -ry -80 -rz 343.610466 -rz 58 -t 0 0 2.208 -i 1 -ry 12.5 -t 0 0 5.76
+#  xform -n b5 -rz 300.588789 -ry -78 -rz 343.610466 -rz 181 -t 0 0 2.016
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 31 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -rz 300.588789 -ry -78 -rz 343.610466 -rz 181 -t 0 0 2.016 -i 1 -ry 12.5 -t 0 0 5.76
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b5
+v v0 =
+	p 0.436342261699 0 7.72821275035
+v v1 =
+	p 1.40206298268 -0.259580815616 7.7270773066
+cone v0 0.035 v1 0.02
+sph v1 0.02
+m leaf_mat
+i n.150.mgf -i 1 -rz 300.588789 -ry -78 -rz 343.610466 -rz 181 -t 0 0 2.016 -i 1 -ry 12.5 -t 0 0 5.76
+#  xform -n b6 -rz 50.6217821 -ry -75 -rz 343.610466 -rz 297 -t 0 0 2.112
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 31 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -rz 50.6217821 -ry -75 -rz 343.610466 -rz 297 -t 0 0 2.112 -i 1 -ry 12.5 -t 0 0 5.76
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b6
+v v0 =
+	p 0.457120464637 0 7.82193716704
+v v1 =
+	p 0.339498286472 0.949410166739 8.11311642196
+cone v0 0.035 v1 0.02
+sph v1 0.02
+m leaf_mat
+i n.150.mgf -i 1 -rz 50.6217821 -ry -75 -rz 343.610466 -rz 297 -t 0 0 2.112 -i 1 -ry 12.5 -t 0 0 5.76
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 9 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s 0.1574
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o level1
+v v0 =
+	p 0 0 0
+v v1 =
+	p 0 0 5.76
+cone v0 0.1574 v1 0.071
+#  xform -n b1 -s 1.1 -rz 114.609306 -ry -80 -rz 126.029902 -rz 5 -t 0 0 2.4192
+#  xform -ry 25 -t 0 0 2.4
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 33 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -ry 25 -t 0 0 2.4 -i 1 -s 1.1 -rz 114.609306 -ry -80 -rz 126.029902 -rz 5 -t 0 0 2.4192
+# 0
+# 2 1.52252 1
+
+o
+o b1
+v v2 =
+	p 1.70670672608 -1.96127330988 2.87763118904
+v v3 =
+	p 2.05443847841 -3.00471725597 2.8600995092
+cone v2 0.0385 v3 0.022
+sph v3 0.022
+m leaf_mat
+i n.150.mgf -i 1 -ry 25 -t 0 0 2.4 -i 1 -s 1.1 -rz 114.609306 -ry -80 -rz 126.029902 -rz 5 -t 0 0 2.4192
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 25 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s 0.071 -i 1 -s 1.1 -rz 114.609306 -ry -80 -rz 126.029902 -rz 5 -t 0 0 2.4192
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+v v0 =
+	p 0 0 2.4192
+v v1 =
+	p 1.70670672608 -1.96127330988 2.87763118904
+cone v0 0.0781 v1 0.0385
+#  xform -n b1 -s 1.1 -rz 263.656731 -ry -80 -rz 343.610466 -rz 5 -t 0 0 1.008
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 41 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -s 1.1 -rz 263.656731 -ry -80 -rz 343.610466 -rz 5 -t 0 0 1.008 -i 1 -s 1.1 -rz 114.609306 -ry -80 -rz 126.029902 -rz 5 -t 0 0 2.4192
+# 0
+# 2 1.52252 1
+
+o
+o b1.b1
+v v2 =
+	p 0.716816824954 -0.823734790151 2.6117410994
+v v3 =
+	p 1.69668355596 -0.182621899974 2.91659426323
+cone v2 0.04235 v3 0.0242
+sph v3 0.0242
+m leaf_mat
+i n.150.mgf -i 1 -s 1.1 -rz 263.656731 -ry -80 -rz 343.610466 -rz 5 -t 0 0 1.008 -i 1 -s 1.1 -rz 114.609306 -ry -80 -rz 126.029902 -rz 5 -t 0 0 2.4192
+#  xform -n b2 -s 1.1 -rz 144.006649 -ry -78 -rz 343.610466 -rz 128 -t 0 0 1.056
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 41 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -s 1.1 -rz 144.006649 -ry -78 -rz 343.610466 -rz 128 -t 0 0 1.056 -i 1 -s 1.1 -rz 114.609306 -ry -80 -rz 126.029902 -rz 5 -t 0 0 2.4192
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b1.b2
+v v0 =
+	p 0.750950959476 -0.862960256349 2.62090972318
+v v1 =
+	p 0.175612408468 -1.50354201332 3.47105121985
+cone v0 0.04235 v1 0.0242
+sph v1 0.0242
+m leaf_mat
+i n.150.mgf -i 1 -s 1.1 -rz 144.006649 -ry -78 -rz 343.610466 -rz 128 -t 0 0 1.056 -i 1 -s 1.1 -rz 114.609306 -ry -80 -rz 126.029902 -rz 5 -t 0 0 2.4192
+#  xform -n b3 -s 1.1 -rz 213.721604 -ry -75 -rz 343.610466 -rz 255 -t 0 0 0.96
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 41 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -s 1.1 -rz 213.721604 -ry -75 -rz 343.610466 -rz 255 -t 0 0 0.96 -i 1 -s 1.1 -rz 114.609306 -ry -80 -rz 126.029902 -rz 5 -t 0 0 2.4192
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b1.b3
+v v0 =
+	p 0.682682690432 -0.784509323954 2.60257247562
+v v1 =
+	p 0.913347442373 -1.25977948566 1.51398989005
+cone v0 0.04235 v1 0.0242
+sph v1 0.0242
+m leaf_mat
+i n.150.mgf -i 1 -s 1.1 -rz 213.721604 -ry -75 -rz 343.610466 -rz 255 -t 0 0 0.96 -i 1 -s 1.1 -rz 114.609306 -ry -80 -rz 126.029902 -rz 5 -t 0 0 2.4192
+#  xform -n b4 -rz 298.906391 -ry -80 -rz 343.610466 -rz 58 -t 0 0 2.208
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 39 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -rz 298.906391 -ry -80 -rz 343.610466 -rz 58 -t 0 0 2.208 -i 1 -s 1.1 -rz 114.609306 -ry -80 -rz 126.029902 -rz 5 -t 0 0 2.4192
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b1.b4
+v v0 =
+	p 1.57017018799 -1.80437144509 2.84095669392
+v v1 =
+	p 1.91017234236 -1.52967159226 3.85038154297
+cone v0 0.0385 v1 0.022
+sph v1 0.022
+m leaf_mat
+i n.150.mgf -i 1 -rz 298.906391 -ry -80 -rz 343.610466 -rz 58 -t 0 0 2.208 -i 1 -s 1.1 -rz 114.609306 -ry -80 -rz 126.029902 -rz 5 -t 0 0 2.4192
+#  xform -n b5 -rz 300.588789 -ry -78 -rz 343.610466 -rz 181 -t 0 0 2.016
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 39 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -rz 300.588789 -ry -78 -rz 343.610466 -rz 181 -t 0 0 2.016 -i 1 -s 1.1 -rz 114.609306 -ry -80 -rz 126.029902 -rz 5 -t 0 0 2.4192
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b1.b5
+v v0 =
+	p 1.43363364991 -1.6474695803 2.80428219879
+v v1 =
+	p 0.799952141055 -2.53715053274 2.67422241173
+cone v0 0.0385 v1 0.022
+sph v1 0.022
+m leaf_mat
+i n.150.mgf -i 1 -rz 300.588789 -ry -78 -rz 343.610466 -rz 181 -t 0 0 2.016 -i 1 -s 1.1 -rz 114.609306 -ry -80 -rz 126.029902 -rz 5 -t 0 0 2.4192
+#  xform -n b6 -rz 50.6217821 -ry -75 -rz 343.610466 -rz 297 -t 0 0 2.112
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 39 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -rz 50.6217821 -ry -75 -rz 343.610466 -rz 297 -t 0 0 2.112 -i 1 -s 1.1 -rz 114.609306 -ry -80 -rz 126.029902 -rz 5 -t 0 0 2.4192
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b1.b6
+v v0 =
+	p 1.50190191895 -1.7259205127 2.82261944636
+v v1 =
+	p 2.24715570335 -1.64887826719 2.01722433261
+cone v0 0.0385 v1 0.022
+sph v1 0.022
+m leaf_mat
+i n.150.mgf -i 1 -rz 50.6217821 -ry -75 -rz 343.610466 -rz 297 -t 0 0 2.112 -i 1 -s 1.1 -rz 114.609306 -ry -80 -rz 126.029902 -rz 5 -t 0 0 2.4192
+#  xform -n b2 -s 1.1 -rz 69.0987454 -ry -78 -rz 126.029902 -rz 128 -t 0 0 2.5344
+#  xform -ry 25 -t 0 0 2.4
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 33 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -ry 25 -t 0 0 2.4 -i 1 -s 1.1 -rz 69.0987454 -ry -78 -rz 126.029902 -rz 128 -t 0 0 2.5344
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b2
+v v0 =
+	p 0.710485440742 2.48264650107 3.08328686376
+v v1 =
+	p 1.38682575373 3.26752412883 3.45278773044
+cone v0 0.0385 v1 0.022
+sph v1 0.022
+m leaf_mat
+i n.150.mgf -i 1 -ry 25 -t 0 0 2.4 -i 1 -s 1.1 -rz 69.0987454 -ry -78 -rz 126.029902 -rz 128 -t 0 0 2.5344
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 25 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s 0.071 -i 1 -s 1.1 -rz 69.0987454 -ry -78 -rz 126.029902 -rz 128 -t 0 0 2.5344
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+v v0 =
+	p 0 0 2.5344
+v v1 =
+	p 0.710485440742 2.48264650107 3.08328686376
+cone v0 0.0781 v1 0.0385
+#  xform -n b1 -s 1.1 -rz 263.656731 -ry -80 -rz 343.610466 -rz 5 -t 0 0 1.008
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 41 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -s 1.1 -rz 263.656731 -ry -80 -rz 343.610466 -rz 5 -t 0 0 1.008 -i 1 -s 1.1 -rz 69.0987454 -ry -78 -rz 126.029902 -rz 128 -t 0 0 2.5344
+# 0
+# 2 1.52252 1
+
+o
+o b2.b1
+v v2 =
+	p 0.298403885111 1.04271153045 2.76493248278
+v v3 =
+	p -0.577088032379 1.64469959589 2.18594692902
+cone v2 0.04235 v3 0.0242
+sph v3 0.0242
+m leaf_mat
+i n.150.mgf -i 1 -s 1.1 -rz 263.656731 -ry -80 -rz 343.610466 -rz 5 -t 0 0 1.008 -i 1 -s 1.1 -rz 69.0987454 -ry -78 -rz 126.029902 -rz 128 -t 0 0 2.5344
+#  xform -n b2 -s 1.1 -rz 144.006649 -ry -78 -rz 343.610466 -rz 128 -t 0 0 1.056
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 41 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -s 1.1 -rz 144.006649 -ry -78 -rz 343.610466 -rz 128 -t 0 0 1.056 -i 1 -s 1.1 -rz 69.0987454 -ry -78 -rz 126.029902 -rz 128 -t 0 0 2.5344
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b2.b2
+v v0 =
+	p 0.312613593926 1.09236446047 2.77591022005
+v v1 =
+	p 0.326703179389 1.08835190143 3.98582153208
+cone v0 0.04235 v1 0.0242
+sph v1 0.0242
+m leaf_mat
+i n.150.mgf -i 1 -s 1.1 -rz 144.006649 -ry -78 -rz 343.610466 -rz 128 -t 0 0 1.056 -i 1 -s 1.1 -rz 69.0987454 -ry -78 -rz 126.029902 -rz 128 -t 0 0 2.5344
+#  xform -n b3 -s 1.1 -rz 213.721604 -ry -75 -rz 343.610466 -rz 255 -t 0 0 0.96
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 41 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -s 1.1 -rz 213.721604 -ry -75 -rz 343.610466 -rz 255 -t 0 0 0.96 -i 1 -s 1.1 -rz 69.0987454 -ry -78 -rz 126.029902 -rz 128 -t 0 0 2.5344
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b2.b3
+v v0 =
+	p 0.284194176297 0.993058600429 2.7539547455
+v v1 =
+	p 1.29832728926 1.17605728445 2.11980530662
+cone v0 0.04235 v1 0.0242
+sph v1 0.0242
+m leaf_mat
+i n.150.mgf -i 1 -s 1.1 -rz 213.721604 -ry -75 -rz 343.610466 -rz 255 -t 0 0 0.96 -i 1 -s 1.1 -rz 69.0987454 -ry -78 -rz 126.029902 -rz 128 -t 0 0 2.5344
+#  xform -n b4 -rz 298.906391 -ry -80 -rz 343.610466 -rz 58 -t 0 0 2.208
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 39 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -rz 298.906391 -ry -80 -rz 343.610466 -rz 58 -t 0 0 2.208 -i 1 -s 1.1 -rz 69.0987454 -ry -78 -rz 126.029902 -rz 128 -t 0 0 2.5344
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b2.b4
+v v0 =
+	p 0.653646605482 2.28403478099 3.03937591466
+v v1 =
+	p -0.2910474689 2.66588356739 3.45379672754
+cone v0 0.0385 v1 0.022
+sph v1 0.022
+m leaf_mat
+i n.150.mgf -i 1 -rz 298.906391 -ry -80 -rz 343.610466 -rz 58 -t 0 0 2.208 -i 1 -s 1.1 -rz 69.0987454 -ry -78 -rz 126.029902 -rz 128 -t 0 0 2.5344
+#  xform -n b5 -rz 300.588789 -ry -78 -rz 343.610466 -rz 181 -t 0 0 2.016
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 39 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -rz 300.588789 -ry -78 -rz 343.610466 -rz 181 -t 0 0 2.016 -i 1 -s 1.1 -rz 69.0987454 -ry -78 -rz 126.029902 -rz 128 -t 0 0 2.5344
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b2.b5
+v v0 =
+	p 0.596807770223 2.0854230609 2.99546496556
+v v1 =
+	p 1.45570674017 1.93458556834 3.66594286248
+cone v0 0.0385 v1 0.022
+sph v1 0.022
+m leaf_mat
+i n.150.mgf -i 1 -rz 300.588789 -ry -78 -rz 343.610466 -rz 181 -t 0 0 2.016 -i 1 -s 1.1 -rz 69.0987454 -ry -78 -rz 126.029902 -rz 128 -t 0 0 2.5344
+#  xform -n b6 -rz 50.6217821 -ry -75 -rz 343.610466 -rz 297 -t 0 0 2.112
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 39 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -rz 50.6217821 -ry -75 -rz 343.610466 -rz 297 -t 0 0 2.112 -i 1 -s 1.1 -rz 69.0987454 -ry -78 -rz 126.029902 -rz 128 -t 0 0 2.5344
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b2.b6
+v v0 =
+	p 0.625227187853 2.18472892094 3.01742044011
+v v1 =
+	p 0.944136168202 2.60920407478 2.05403167848
+cone v0 0.0385 v1 0.022
+sph v1 0.022
+m leaf_mat
+i n.150.mgf -i 1 -rz 50.6217821 -ry -75 -rz 343.610466 -rz 297 -t 0 0 2.112 -i 1 -s 1.1 -rz 69.0987454 -ry -78 -rz 126.029902 -rz 128 -t 0 0 2.5344
+#  xform -n b3 -s 1.1 -rz 347.297586 -ry -75 -rz 126.029902 -rz 255 -t 0 0 2.304
+#  xform -ry 25 -t 0 0 2.4
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 33 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -ry 25 -t 0 0 2.4 -i 1 -s 1.1 -rz 347.297586 -ry -75 -rz 126.029902 -rz 255 -t 0 0 2.304
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b3
+v v0 =
+	p -2.38019408046 -0.915096424673 2.98728227907
+v v1 =
+	p -3.13278292054 -1.31395465951 3.68335852942
+cone v0 0.0385 v1 0.022
+sph v1 0.022
+m leaf_mat
+i n.150.mgf -i 1 -ry 25 -t 0 0 2.4 -i 1 -s 1.1 -rz 347.297586 -ry -75 -rz 126.029902 -rz 255 -t 0 0 2.304
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 25 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s 0.071 -i 1 -s 1.1 -rz 347.297586 -ry -75 -rz 126.029902 -rz 255 -t 0 0 2.304
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+v v0 =
+	p 0 0 2.304
+v v1 =
+	p -2.38019408046 -0.915096424673 2.98728227907
+cone v0 0.0781 v1 0.0385
+#  xform -n b1 -s 1.1 -rz 263.656731 -ry -80 -rz 343.610466 -rz 5 -t 0 0 1.008
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 41 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -s 1.1 -rz 263.656731 -ry -80 -rz 343.610466 -rz 5 -t 0 0 1.008 -i 1 -s 1.1 -rz 347.297586 -ry -75 -rz 126.029902 -rz 255 -t 0 0 2.304
+# 0
+# 2 1.52252 1
+
+o
+o b3.b1
+v v2 =
+	p -0.999681513793 -0.384340498362 2.59097855721
+v v3 =
+	p -1.62646766798 -0.104184868962 1.5946091778
+cone v2 0.04235 v3 0.0242
+sph v3 0.0242
+m leaf_mat
+i n.150.mgf -i 1 -s 1.1 -rz 263.656731 -ry -80 -rz 343.610466 -rz 5 -t 0 0 1.008 -i 1 -s 1.1 -rz 347.297586 -ry -75 -rz 126.029902 -rz 255 -t 0 0 2.304
+#  xform -n b2 -s 1.1 -rz 144.006649 -ry -78 -rz 343.610466 -rz 128 -t 0 0 1.056
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 41 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -s 1.1 -rz 144.006649 -ry -78 -rz 343.610466 -rz 128 -t 0 0 1.056 -i 1 -s 1.1 -rz 347.297586 -ry -75 -rz 126.029902 -rz 255 -t 0 0 2.304
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b3.b2
+v v0 =
+	p -1.0472853954 -0.402642426856 2.60464420279
+v v1 =
+	p -0.810222705916 -1.56422299543 2.846784377
+cone v0 0.04235 v1 0.0242
+sph v1 0.0242
+m leaf_mat
+i n.150.mgf -i 1 -s 1.1 -rz 144.006649 -ry -78 -rz 343.610466 -rz 128 -t 0 0 1.056 -i 1 -s 1.1 -rz 347.297586 -ry -75 -rz 126.029902 -rz 255 -t 0 0 2.304
+#  xform -n b3 -s 1.1 -rz 213.721604 -ry -75 -rz 343.610466 -rz 255 -t 0 0 0.96
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 41 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -s 1.1 -rz 213.721604 -ry -75 -rz 343.610466 -rz 255 -t 0 0 0.96 -i 1 -s 1.1 -rz 347.297586 -ry -75 -rz 126.029902 -rz 255 -t 0 0 2.304
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b3.b3
+v v0 =
+	p -0.952077632184 -0.366038569869 2.57731291163
+v v1 =
+	p -1.33920256599 0.384467357215 3.44390112932
+cone v0 0.04235 v1 0.0242
+sph v1 0.0242
+m leaf_mat
+i n.150.mgf -i 1 -s 1.1 -rz 213.721604 -ry -75 -rz 343.610466 -rz 255 -t 0 0 0.96 -i 1 -s 1.1 -rz 347.297586 -ry -75 -rz 126.029902 -rz 255 -t 0 0 2.304
+#  xform -n b4 -rz 298.906391 -ry -80 -rz 343.610466 -rz 58 -t 0 0 2.208
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 39 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -rz 298.906391 -ry -80 -rz 343.610466 -rz 58 -t 0 0 2.208 -i 1 -s 1.1 -rz 347.297586 -ry -75 -rz 126.029902 -rz 255 -t 0 0 2.304
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b3.b4
+v v0 =
+	p -2.18977855402 -0.841888710699 2.93261969675
+v v1 =
+	p -2.40316491212 -1.48496418912 2.06606318316
+cone v0 0.0385 v1 0.022
+sph v1 0.022
+m leaf_mat
+i n.150.mgf -i 1 -rz 298.906391 -ry -80 -rz 343.610466 -rz 58 -t 0 0 2.208 -i 1 -s 1.1 -rz 347.297586 -ry -75 -rz 126.029902 -rz 255 -t 0 0 2.304
+#  xform -n b5 -rz 300.588789 -ry -78 -rz 343.610466 -rz 181 -t 0 0 2.016
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 39 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -rz 300.588789 -ry -78 -rz 343.610466 -rz 181 -t 0 0 2.016 -i 1 -s 1.1 -rz 347.297586 -ry -75 -rz 126.029902 -rz 255 -t 0 0 2.304
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b3.b5
+v v0 =
+	p -1.99936302759 -0.768680996725 2.87795711442
+v v1 =
+	p -1.79443296631 -1.23270562112 3.85401285972
+cone v0 0.0385 v1 0.022
+sph v1 0.022
+m leaf_mat
+i n.150.mgf -i 1 -rz 300.588789 -ry -78 -rz 343.610466 -rz 181 -t 0 0 2.016 -i 1 -s 1.1 -rz 347.297586 -ry -75 -rz 126.029902 -rz 255 -t 0 0 2.304
+#  xform -n b6 -rz 50.6217821 -ry -75 -rz 343.610466 -rz 297 -t 0 0 2.112
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 39 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -rz 50.6217821 -ry -75 -rz 343.610466 -rz 297 -t 0 0 2.112 -i 1 -s 1.1 -rz 347.297586 -ry -75 -rz 126.029902 -rz 255 -t 0 0 2.304
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b3.b6
+v v0 =
+	p -2.09457079081 -0.805284853712 2.90528840558
+v v1 =
+	p -2.72292022625 0.0907188848013 3.01643824831
+cone v0 0.0385 v1 0.022
+sph v1 0.022
+m leaf_mat
+i n.150.mgf -i 1 -rz 50.6217821 -ry -75 -rz 343.610466 -rz 297 -t 0 0 2.112 -i 1 -s 1.1 -rz 347.297586 -ry -75 -rz 126.029902 -rz 255 -t 0 0 2.304
+#  xform -n b4 -rz 49.384414 -ry -80 -rz 126.029902 -rz 58 -t 0 0 5.2992
+#  xform -ry 25 -t 0 0 2.4
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 31 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -ry 25 -t 0 0 2.4 -i 1 -rz 49.384414 -ry -80 -rz 126.029902 -rz 58 -t 0 0 5.2992
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b4
+v v0 =
+	p 2.35769478005 0.166102594809 5.7159556264
+v v1 =
+	p 3.22291697442 -0.0945436530185 6.14427103339
+cone v0 0.035 v1 0.02
+sph v1 0.02
+m leaf_mat
+i n.150.mgf -i 1 -ry 25 -t 0 0 2.4 -i 1 -rz 49.384414 -ry -80 -rz 126.029902 -rz 58 -t 0 0 5.2992
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 23 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s 0.071 -i 1 -rz 49.384414 -ry -80 -rz 126.029902 -rz 58 -t 0 0 5.2992
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+v v0 =
+	p 0 0 5.2992
+v v1 =
+	p 2.35769478005 0.166102594809 5.7159556264
+cone v0 0.071 v1 0.035
+#  xform -n b1 -s 1.1 -rz 263.656731 -ry -80 -rz 343.610466 -rz 5 -t 0 0 1.008
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 39 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -s 1.1 -rz 263.656731 -ry -80 -rz 343.610466 -rz 5 -t 0 0 1.008 -i 1 -rz 49.384414 -ry -80 -rz 126.029902 -rz 58 -t 0 0 5.2992
+# 0
+# 2 1.52252 1
+
+o
+o b4.b1
+v v2 =
+	p 0.99023180762 0.0697630898196 5.47423736309
+v v3 =
+	p 1.27888998723 0.758615052839 4.66667347807
+cone v2 0.0385 v3 0.022
+sph v3 0.022
+m leaf_mat
+i n.150.mgf -i 1 -s 1.1 -rz 263.656731 -ry -80 -rz 343.610466 -rz 5 -t 0 0 1.008 -i 1 -rz 49.384414 -ry -80 -rz 126.029902 -rz 58 -t 0 0 5.2992
+#  xform -n b2 -s 1.1 -rz 144.006649 -ry -78 -rz 343.610466 -rz 128 -t 0 0 1.056
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 39 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -s 1.1 -rz 144.006649 -ry -78 -rz 343.610466 -rz 128 -t 0 0 1.056 -i 1 -rz 49.384414 -ry -80 -rz 126.029902 -rz 58 -t 0 0 5.2992
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b4.b2
+v v0 =
+	p 1.03738570322 0.0730851417157 5.48257247562
+v v1 =
+	p 1.06121535075 0.426022443248 6.5241421608
+cone v0 0.0385 v1 0.022
+sph v1 0.022
+m leaf_mat
+i n.150.mgf -i 1 -s 1.1 -rz 144.006649 -ry -78 -rz 343.610466 -rz 128 -t 0 0 1.056 -i 1 -rz 49.384414 -ry -80 -rz 126.029902 -rz 58 -t 0 0 5.2992
+#  xform -n b3 -s 1.1 -rz 213.721604 -ry -75 -rz 343.610466 -rz 255 -t 0 0 0.96
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 39 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -s 1.1 -rz 213.721604 -ry -75 -rz 343.610466 -rz 255 -t 0 0 0.96 -i 1 -rz 49.384414 -ry -80 -rz 126.029902 -rz 58 -t 0 0 5.2992
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b4.b3
+v v0 =
+	p 0.943077912019 0.0664410379234 5.46590225056
+v v1 =
+	p 1.35063687824 -0.917895062175 5.1920809017
+cone v0 0.0385 v1 0.022
+sph v1 0.022
+m leaf_mat
+i n.150.mgf -i 1 -s 1.1 -rz 213.721604 -ry -75 -rz 343.610466 -rz 255 -t 0 0 0.96 -i 1 -rz 49.384414 -ry -80 -rz 126.029902 -rz 58 -t 0 0 5.2992
+#  xform -n b4 -rz 298.906391 -ry -80 -rz 343.610466 -rz 58 -t 0 0 2.208
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 37 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -rz 298.906391 -ry -80 -rz 343.610466 -rz 58 -t 0 0 2.208 -i 1 -rz 49.384414 -ry -80 -rz 126.029902 -rz 58 -t 0 0 5.2992
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b4.b4
+v v0 =
+	p 2.16907919764 0.152814387224 5.68261517629
+v v1 =
+	p 2.26750555074 1.14684853817 5.72960836472
+cone v0 0.035 v1 0.02
+sph v1 0.02
+m leaf_mat
+i n.150.mgf -i 1 -rz 298.906391 -ry -80 -rz 343.610466 -rz 58 -t 0 0 2.208 -i 1 -rz 49.384414 -ry -80 -rz 126.029902 -rz 58 -t 0 0 5.2992
+#  xform -n b5 -rz 300.588789 -ry -78 -rz 343.610466 -rz 181 -t 0 0 2.016
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 37 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -rz 300.588789 -ry -78 -rz 343.610466 -rz 181 -t 0 0 2.016 -i 1 -rz 49.384414 -ry -80 -rz 126.029902 -rz 58 -t 0 0 5.2992
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b4.b5
+v v0 =
+	p 1.98046361524 0.139526179639 5.64927472618
+v v1 =
+	p 2.08266972163 -0.401529558874 6.48402774333
+cone v0 0.035 v1 0.02
+sph v1 0.02
+m leaf_mat
+i n.150.mgf -i 1 -rz 300.588789 -ry -78 -rz 343.610466 -rz 181 -t 0 0 2.016 -i 1 -rz 49.384414 -ry -80 -rz 126.029902 -rz 58 -t 0 0 5.2992
+#  xform -n b6 -rz 50.6217821 -ry -75 -rz 343.610466 -rz 297 -t 0 0 2.112
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 37 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -rz 50.6217821 -ry -75 -rz 343.610466 -rz 297 -t 0 0 2.112 -i 1 -rz 49.384414 -ry -80 -rz 126.029902 -rz 58 -t 0 0 5.2992
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b4.b6
+v v0 =
+	p 2.07477140644 0.146170283431 5.66594495123
+v v1 =
+	p 2.50786758259 -0.307552469705 4.88712317092
+cone v0 0.035 v1 0.02
+sph v1 0.02
+m leaf_mat
+i n.150.mgf -i 1 -rz 50.6217821 -ry -75 -rz 343.610466 -rz 297 -t 0 0 2.112 -i 1 -rz 49.384414 -ry -80 -rz 126.029902 -rz 58 -t 0 0 5.2992
+#  xform -n b5 -rz 114.983006 -ry -78 -rz 126.029902 -rz 181 -t 0 0 4.8384
+#  xform -ry 25 -t 0 0 2.4
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 31 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -ry 25 -t 0 0 2.4 -i 1 -rz 114.983006 -ry -78 -rz 126.029902 -rz 181 -t 0 0 4.8384
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b5
+v v0 =
+	p -1.41377167517 1.87410260352 5.33738805796
+v v1 =
+	p -1.66418394592 2.84214297046 5.35122795111
+cone v0 0.035 v1 0.02
+sph v1 0.02
+m leaf_mat
+i n.150.mgf -i 1 -ry 25 -t 0 0 2.4 -i 1 -rz 114.983006 -ry -78 -rz 126.029902 -rz 181 -t 0 0 4.8384
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 23 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s 0.071 -i 1 -rz 114.983006 -ry -78 -rz 126.029902 -rz 181 -t 0 0 4.8384
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+v v0 =
+	p 0 0 4.8384
+v v1 =
+	p -1.41377167517 1.87410260352 5.33738805796
+cone v0 0.071 v1 0.035
+#  xform -n b1 -s 1.1 -rz 263.656731 -ry -80 -rz 343.610466 -rz 5 -t 0 0 1.008
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 39 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -s 1.1 -rz 263.656731 -ry -80 -rz 343.610466 -rz 5 -t 0 0 1.008 -i 1 -rz 114.983006 -ry -78 -rz 126.029902 -rz 181 -t 0 0 4.8384
+# 0
+# 2 1.52252 1
+
+o
+o b5.b1
+v v2 =
+	p -0.593784103569 0.787123093477 5.04797498434
+v v3 =
+	p -1.51501186612 0.259905027684 5.33673183812
+cone v2 0.0385 v3 0.022
+sph v3 0.022
+m leaf_mat
+i n.150.mgf -i 1 -s 1.1 -rz 263.656731 -ry -80 -rz 343.610466 -rz 5 -t 0 0 1.008 -i 1 -rz 114.983006 -ry -78 -rz 126.029902 -rz 181 -t 0 0 4.8384
+#  xform -n b2 -s 1.1 -rz 144.006649 -ry -78 -rz 343.610466 -rz 128 -t 0 0 1.056
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 39 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -s 1.1 -rz 144.006649 -ry -78 -rz 343.610466 -rz 128 -t 0 0 1.056 -i 1 -rz 114.983006 -ry -78 -rz 126.029902 -rz 181 -t 0 0 4.8384
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b5.b2
+v v0 =
+	p -0.622059537073 0.824605145548 5.0579547455
+v v1 =
+	p -0.0401706728305 1.35122713423 5.82871711531
+cone v0 0.0385 v1 0.022
+sph v1 0.022
+m leaf_mat
+i n.150.mgf -i 1 -s 1.1 -rz 144.006649 -ry -78 -rz 343.610466 -rz 128 -t 0 0 1.056 -i 1 -rz 114.983006 -ry -78 -rz 126.029902 -rz 181 -t 0 0 4.8384
+#  xform -n b3 -s 1.1 -rz 213.721604 -ry -75 -rz 343.610466 -rz 255 -t 0 0 0.96
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 39 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -s 1.1 -rz 213.721604 -ry -75 -rz 343.610466 -rz 255 -t 0 0 0.96 -i 1 -rz 114.983006 -ry -78 -rz 126.029902 -rz 181 -t 0 0 4.8384
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b5.b3
+v v0 =
+	p -0.565508670066 0.749641041407 5.03799522319
+v v1 =
+	p -0.770778651682 1.21861250151 4.06437825319
+cone v0 0.0385 v1 0.022
+sph v1 0.022
+m leaf_mat
+i n.150.mgf -i 1 -s 1.1 -rz 213.721604 -ry -75 -rz 343.610466 -rz 255 -t 0 0 0.96 -i 1 -rz 114.983006 -ry -78 -rz 126.029902 -rz 181 -t 0 0 4.8384
+#  xform -n b4 -rz 298.906391 -ry -80 -rz 343.610466 -rz 58 -t 0 0 2.208
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 37 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -rz 298.906391 -ry -80 -rz 343.610466 -rz 58 -t 0 0 2.208 -i 1 -rz 114.983006 -ry -78 -rz 126.029902 -rz 181 -t 0 0 4.8384
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b5.b4
+v v0 =
+	p -1.30066994115 1.72417439524 5.29746901333
+v v1 =
+	p -1.60211662173 1.47416103171 6.21759031882
+cone v0 0.035 v1 0.02
+sph v1 0.02
+m leaf_mat
+i n.150.mgf -i 1 -rz 298.906391 -ry -80 -rz 343.610466 -rz 58 -t 0 0 2.208 -i 1 -rz 114.983006 -ry -78 -rz 126.029902 -rz 181 -t 0 0 4.8384
+#  xform -n b5 -rz 300.588789 -ry -78 -rz 343.610466 -rz 181 -t 0 0 2.016
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 37 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -rz 300.588789 -ry -78 -rz 343.610466 -rz 181 -t 0 0 2.016 -i 1 -rz 114.983006 -ry -78 -rz 126.029902 -rz 181 -t 0 0 4.8384
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b5.b5
+v v0 =
+	p -1.18756820714 1.57424618695 5.25754996869
+v v1 =
+	p -0.560498727577 2.34449005058 5.14132493544
+cone v0 0.035 v1 0.02
+sph v1 0.02
+m leaf_mat
+i n.150.mgf -i 1 -rz 300.588789 -ry -78 -rz 343.610466 -rz 181 -t 0 0 2.016 -i 1 -rz 114.983006 -ry -78 -rz 126.029902 -rz 181 -t 0 0 4.8384
+#  xform -n b6 -rz 50.6217821 -ry -75 -rz 343.610466 -rz 297 -t 0 0 2.112
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 37 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -rz 50.6217821 -ry -75 -rz 343.610466 -rz 297 -t 0 0 2.112 -i 1 -rz 114.983006 -ry -78 -rz 126.029902 -rz 181 -t 0 0 4.8384
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b5.b6
+v v0 =
+	p -1.24411907415 1.6492102911 5.27750949101
+v v1 =
+	p -1.94374488628 1.64311310223 4.56302607813
+cone v0 0.035 v1 0.02
+sph v1 0.02
+m leaf_mat
+i n.150.mgf -i 1 -rz 50.6217821 -ry -75 -rz 343.610466 -rz 297 -t 0 0 2.112 -i 1 -rz 114.983006 -ry -78 -rz 126.029902 -rz 181 -t 0 0 4.8384
+#  xform -n b6 -rz 291.514602 -ry -75 -rz 126.029902 -rz 297 -t 0 0 5.0688
+#  xform -ry 25 -t 0 0 2.4
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 31 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -ry 25 -t 0 0 2.4 -i 1 -rz 291.514602 -ry -75 -rz 126.029902 -rz 297 -t 0 0 5.0688
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b6
+v v0 =
+	p -1.05137262637 -2.06609989193 5.68996570825
+v v1 =
+	p -1.07979580792 -2.98887932145 6.0742445747
+cone v0 0.035 v1 0.02
+sph v1 0.02
+m leaf_mat
+i n.150.mgf -i 1 -ry 25 -t 0 0 2.4 -i 1 -rz 291.514602 -ry -75 -rz 126.029902 -rz 297 -t 0 0 5.0688
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 23 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s 0.071 -i 1 -rz 291.514602 -ry -75 -rz 126.029902 -rz 297 -t 0 0 5.0688
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+v v0 =
+	p 0 0 5.0688
+v v1 =
+	p -1.05137262637 -2.06609989193 5.68996570825
+cone v0 0.071 v1 0.035
+#  xform -n b1 -s 1.1 -rz 263.656731 -ry -80 -rz 343.610466 -rz 5 -t 0 0 1.008
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 39 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -s 1.1 -rz 263.656731 -ry -80 -rz 343.610466 -rz 5 -t 0 0 1.008 -i 1 -rz 291.514602 -ry -75 -rz 126.029902 -rz 297 -t 0 0 5.0688
+# 0
+# 2 1.52252 1
+
+o
+o b6.b1
+v v2 =
+	p -0.441576503076 -0.867761954609 5.32968959746
+v v3 =
+	p -1.49804564114 -0.592481462673 5.19517710332
+cone v2 0.0385 v3 0.022
+sph v3 0.022
+m leaf_mat
+i n.150.mgf -i 1 -s 1.1 -rz 263.656731 -ry -80 -rz 343.610466 -rz 5 -t 0 0 1.008 -i 1 -rz 291.514602 -ry -75 -rz 126.029902 -rz 297 -t 0 0 5.0688
+#  xform -n b2 -s 1.1 -rz 144.006649 -ry -78 -rz 343.610466 -rz 128 -t 0 0 1.056
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 39 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -s 1.1 -rz 144.006649 -ry -78 -rz 343.610466 -rz 128 -t 0 0 1.056 -i 1 -rz 291.514602 -ry -75 -rz 126.029902 -rz 297 -t 0 0 5.0688
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b6.b2
+v v0 =
+	p -0.462603955603 -0.909083952447 5.34211291163
+v v1 =
+	p 0.000555554266103 -1.62069276214 4.64275880218
+cone v0 0.0385 v1 0.022
+sph v1 0.022
+m leaf_mat
+i n.150.mgf -i 1 -s 1.1 -rz 144.006649 -ry -78 -rz 343.610466 -rz 128 -t 0 0 1.056 -i 1 -rz 291.514602 -ry -75 -rz 126.029902 -rz 297 -t 0 0 5.0688
+#  xform -n b3 -s 1.1 -rz 213.721604 -ry -75 -rz 343.610466 -rz 255 -t 0 0 0.96
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 39 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -s 1.1 -rz 213.721604 -ry -75 -rz 343.610466 -rz 255 -t 0 0 0.96 -i 1 -rz 291.514602 -ry -75 -rz 126.029902 -rz 297 -t 0 0 5.0688
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b6.b3
+v v0 =
+	p -0.420549050548 -0.82643995677 5.3172662833
+v v1 =
+	p -0.259994596167 -0.912712471085 6.40206088158
+cone v0 0.0385 v1 0.022
+sph v1 0.022
+m leaf_mat
+i n.150.mgf -i 1 -s 1.1 -rz 213.721604 -ry -75 -rz 343.610466 -rz 255 -t 0 0 0.96 -i 1 -rz 291.514602 -ry -75 -rz 126.029902 -rz 297 -t 0 0 5.0688
+#  xform -n b4 -rz 298.906391 -ry -80 -rz 343.610466 -rz 58 -t 0 0 2.208
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 37 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -rz 298.906391 -ry -80 -rz 343.610466 -rz 58 -t 0 0 2.208 -i 1 -rz 291.514602 -ry -75 -rz 126.029902 -rz 297 -t 0 0 5.0688
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b6.b4
+v v0 =
+	p -0.967262816261 -1.90081190057 5.64027245159
+v v1 =
+	p -1.54320681715 -2.05103354505 4.83670418108
+cone v0 0.035 v1 0.02
+sph v1 0.02
+m leaf_mat
+i n.150.mgf -i 1 -rz 298.906391 -ry -80 -rz 343.610466 -rz 58 -t 0 0 2.208 -i 1 -rz 291.514602 -ry -75 -rz 126.029902 -rz 297 -t 0 0 5.0688
+#  xform -n b5 -rz 300.588789 -ry -78 -rz 343.610466 -rz 181 -t 0 0 2.016
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 37 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -rz 300.588789 -ry -78 -rz 343.610466 -rz 181 -t 0 0 2.016 -i 1 -rz 291.514602 -ry -75 -rz 126.029902 -rz 297 -t 0 0 5.0688
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b6.b5
+v v0 =
+	p -0.883153006152 -1.73552390922 5.59057919493
+v v1 =
+	p -0.095191601279 -2.33151772817 5.74520193648
+cone v0 0.035 v1 0.02
+sph v1 0.02
+m leaf_mat
+i n.150.mgf -i 1 -rz 300.588789 -ry -78 -rz 343.610466 -rz 181 -t 0 0 2.016 -i 1 -rz 291.514602 -ry -75 -rz 126.029902 -rz 297 -t 0 0 5.0688
+#  xform -n b6 -rz 50.6217821 -ry -75 -rz 343.610466 -rz 297 -t 0 0 2.112
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 37 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s .035 -i 1 -rz 50.6217821 -ry -75 -rz 343.610466 -rz 297 -t 0 0 2.112 -i 1 -rz 291.514602 -ry -75 -rz 126.029902 -rz 297 -t 0 0 5.0688
+# 0
+# 2 1.52252 1
+
+m my_bark_mat
+o
+o b6.b6
+v v0 =
+	p -0.925207911207 -1.81816790489 5.61542582326
+v v1 =
+	p -1.40035455766 -1.61932947669 6.47257163572
+cone v0 0.035 v1 0.02
+sph v1 0.02
+m leaf_mat
+i n.150.mgf -i 1 -rz 50.6217821 -ry -75 -rz 343.610466 -rz 297 -t 0 0 2.112 -i 1 -rz 291.514602 -ry -75 -rz 126.029902 -rz 297 -t 0 0 5.0688
+# End conversion from: standard input
+o
+# End of data converted from RADIANCE scene input

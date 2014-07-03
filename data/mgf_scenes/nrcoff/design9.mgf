@@ -1,0 +1,5 @@
+# NRC Lighting Design #9
+
+# The 24 4' hanging indirect fixtures
+ies lsi9898.ies -s 3.28084 -t 6 3.75 8 -a 8 -t 4 0 0 \
+	-a 3 -t 0 7.25 0 -i 1 -s .3048

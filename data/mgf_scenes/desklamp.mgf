@@ -1,0 +1,125 @@
+# The following was converted from Radiance scene input
+o Untitled
+# Begin conversion from: desklamp.rad
+# ###############################
+#  Copyright (c) 1991 Greg Ward #
+#  Windows and Lighting Program #
+#  Lawrence Berkeley Laboratory #
+#  Berkeley, CA	94720	       #
+# ###############################
+# 
+#  Low budget desk lamp from office model
+# 	(Luxo Reject)
+# 
+# 	Units = centimeters
+# 	(0,0,0) at center of base
+# 	Y-axis towards front of lamp
+# 	Z-axis up
+# 
+#  Overall dimensions are 15.3 by 34 by 50 centimeters
+# 
+# ###############################
+#  xform -rx 90 -rz -90 -s 2.54
+m incandescent60 =
+	c
+		cxy 0.3330 0.3330
+	ed 716
+m tan_paint =
+	c
+		cxy 0.3692 0.3326
+	rd 0.2152
+	c
+	rs 0.0500 0.0000
+m white_paint =
+	c
+		cxy 0.3330 0.3330
+	rd 0.8100
+	c
+	rs 0.1000 0.0000
+m tan_paint
+o
+o base_bottom
+v cent =
+	p 0 0 0
+	n 0 0 -2.54
+ring cent 0 7.62
+o
+o base_side
+v v0 =
+	p 0 0 0
+v v1 =
+	p 0 0 1.905
+cyl v0 7.62 v1
+o
+o base_rim
+v v2 =
+	p 0 0 2.54
+cone v1 7.62 v2 6.985
+o
+o base_top
+v cent =
+	p 0 0 2.54
+	n 0 0 2.54
+ring cent 0 6.985
+o
+o base_pivot
+v v3 =
+	p 0 -5.08 2.54
+sph v3 1.27
+o
+o lower_arm
+v v4 =
+	p 0 -16.3735051326 33.5686503383
+cyl v3 0.635 v4
+o
+o arm_pivot
+sph v4 1.27
+o
+o upper_arm
+v v5 =
+	p 0 -16.37284 33.56864
+v v6 =
+	p 0 5.62420525611 46.26864
+cyl v5 0.635 v6
+o
+o head_pivot
+sph v6 1.27
+o
+o head
+v cent =
+	p 0 6.43319947505 48.9905848782
+	n 0 -0.441066371274 2.50141169265
+ring cent 0 1.905
+v v7 =
+	p 0 6.43319947505 48.9905848782
+v v8 =
+	p 0 7.75639858887 41.4863498003
+cone v7 1.905 v8 2.54
+m white_paint
+cone v7 -1.8796 v8 -2.286
+m tan_paint
+v v9 =
+	p 0 8.19746496016 38.9849381077
+cone v8 2.54 v9 5.08
+m white_paint
+cone v8 -2.286 v9 -4.826
+m tan_paint
+v v10 =
+	p 0 9.30013088832 32.7314088761
+cone v9 5.08 v10 7.62
+m white_paint
+cone v9 -4.826 v10 -7.366
+m tan_paint
+v cent =
+	p 0 9.30013088832 32.7314088761
+	n 0 0.441066371274 -2.50141169265
+ring cent 7.366 7.62
+m incandescent60
+o
+o lightbulb
+v v11 =
+	p 0 8.63853133141 36.4835264151
+sph v11 3.175
+# End conversion from: desklamp.rad
+o
+# End of data converted from Radiance scene input

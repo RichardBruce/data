@@ -1,0 +1,5 @@
+This directory contains a landscape with trees with over 1 million pine
+needles for testing programs in complicated geometries.  The file
+"landscape.mgf" references the other files indirectly.  A small tree
+can be accessed individually as "sapling.mgf", and this file is
+referenced in "tree.mgf".

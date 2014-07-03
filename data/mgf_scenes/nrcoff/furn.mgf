@@ -1,0 +1,72 @@
+# Furniture for room.mgf, consisting of 6 cubicle spaces
+# This model was hand-built in MGF by Greg Ward of LBL
+# April 18, 1995
+
+# All measurements in inches, so here is the metric conversion:
+xf -s .0254
+
+# The central partition:
+i pv62x30.inc
+o cpart1
+	i partn.inc -t 75 130.5 0
+o
+o cpart4
+	i partn.inc -t 186 130.5 0
+o
+o cpart9
+	i partn.inc -t 375 130.5 0
+o
+i pv62x36.inc
+o cpart2
+	i partn.inc -t 105 130.5 0
+o
+o cpart5
+	i partn.inc -t 216 130.5 0
+o
+o cpart8
+	i partn.inc -t 339 130.5 0
+o
+i pv62x42.inc
+o cpart3
+	i partn.inc -t 141 130.5 0
+o
+o cpart6
+	i partn.inc -t 252 130.5 0
+o
+o cpart7
+	i partn.inc -t 297 130.5 0
+o
+
+# The cubicle-forming partitions and cubicle furniture:
+# Symmetric about room center line:
+xf -t 0 -132 0 -a 2 -my -i 1 -t 0 132 0
+i pv62x42.inc
+o wpart62x42.y
+	i partn.inc -t 0 -3 0 -rz 90 -t 72 133.5 0 -a 2 -t 0 42 0 -a 4 -t 111 0 0
+o
+o wpart62x42.x
+	i partn.inc -t 141 217.5 0 -a 2 -t 111 0 0
+	i partn.inc -t 297 217.5 0
+o
+i pv62x30.inc
+o wpart62x30.x
+	i partn.inc -t 111 217.5 0 -a 2 -t 111 0 0
+	i partn.inc -t 339 217.5 0
+o
+o cub
+	i cubfurn.inc -t 75 133.5 0 -a 2 -t 111 0 0
+	i cubfurn.inc -mx -t 405 133.5 0
+o
+# End of symmetry:
+xf
+
+# Six file cabinets (36" wide each)
+o filecab.x
+	i filecab.inc -t -36 0 0 -rz -90 -t 1 54 0 -a 3 -t 0 36 0
+o
+o filecab.X
+	i filecab.inc -rz 90 -t 479 54 0 -a 3 -t 0 36 0
+o
+
+# End of transform from inches to meters:
+xf

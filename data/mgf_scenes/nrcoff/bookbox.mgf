@@ -1,0 +1,193 @@
+# The following was converted from Radiance scene input
+o Untitled
+# Begin conversion from: bookbox.rad
+# ###############################
+#  Copyright (c) 1991 Greg Ward #
+#  Windows and Lighting Program #
+#  Lawrence Berkeley Laboratory #
+#  Berkeley, CA	94720	       #
+# ###############################
+# 
+#  The enclosed book shelf from the daylighted office model
+# 
+#  Depends on:
+# 	woodpat.cal
+# 
+# 	Units = meters
+# 	(0,0,0) at back right corner (as seen from front)
+# 	X-axis points along length of box
+# 	Y-axis points towards front
+# 	Z-axis point up
+# 
+#  Overall dimensions are .9 by .25 by .3 meters
+# 
+# ###############################
+#  xform -t 2 0 0 -rx 90 -rz 180 -t 36 0 0 -s .0254
+# 
+#   An enclosed book shelf.
+# 
+m xpine =
+	c
+		cxy 0.4664 0.3831
+	rd 0.3313
+	c
+	rs 0.0050 0.0800
+m ypine =
+	c
+		cxy 0.4664 0.3831
+	rd 0.3313
+	c
+	rs 0.0050 0.0800
+m zpine =
+	c
+		cxy 0.4664 0.3831
+	rd 0.3313
+	c
+	rs 0.0050 0.0800
+m orange_plastic =
+	c
+		cxy 0.5404 0.4068
+	rd 0.3194
+m xpine
+o
+o base
+v v0 =
+	p -0.0254 0 -0.0508
+v v1 =
+	p -0.0254 0.2286 -0.0508
+v v2 =
+	p 0.8382 0.2286 -0.0508
+v v3 =
+	p 0.8382 0 -0.0508
+f v0 v1 v2 v3
+m zpine
+v v4 =
+	p 0.8382 0.2286 0
+v v5 =
+	p 0.8382 0 0
+f v2 v4 v5 v3
+m xpine
+v v6 =
+	p -0.0254 0 0
+f v5 v6 v0 v3
+m zpine
+v v7 =
+	p -0.0254 0.2286 0
+f v1 v0 v6 v7
+m xpine
+f v4 v2 v1 v7
+m ypine
+o
+o side
+v v8 =
+	p 0.8636 0.2286 0.0254
+v v9 =
+	p 0.8636 0.2286 0.2794
+v v10 =
+	p 0.8636 0.0254 0.2794
+v v11 =
+	p 0.8636 0.0254 0.0254
+f v8 v9 v10 v11
+m xpine
+v v12 =
+	p 0.8382 0 0.2794
+v v13 =
+	p -0.0254 0 0.2794
+v v14 =
+	p -0.0254 0 0.0254
+v v15 =
+	p 0.8382 0 0.0254
+f v12 v13 v14 v15
+v v16 =
+	p -0.0254 0.0254 0.3048
+v v17 =
+	p 0.8382 0.0254 0.3048
+v v18 =
+	p 0.8382 0.2286 0.3048
+v v19 =
+	p -0.0254 0.2286 0.3048
+f v16 v17 v18 v19
+m ypine
+v v20 =
+	p -0.0508 0.2286 0.0254
+v v21 =
+	p -0.0508 0.0254 0.0254
+v v22 =
+	p -0.0508 0.0254 0.2794
+v v23 =
+	p -0.0508 0.2286 0.2794
+f v20 v21 v22 v23
+m orange_plastic
+o
+o front
+v v24 =
+	p 0.8382 0.2286 0.2794
+v v25 =
+	p 0.8382 0.2286 0.0762
+v v26 =
+	p -0.0254 0.2286 0.0762
+v v27 =
+	p -0.0254 0.2286 0.2794
+f v24 v25 v26 v27
+o
+o lip_upper
+v v28 =
+	p 0.8382 0.2032 0.0762
+v v29 =
+	p -0.0254 0.2032 0.0762
+f v28 v29 v26 v25
+o
+o lip_inner
+v v30 =
+	p 0.8382 0.2032 0.0508
+v v31 =
+	p -0.0254 0.2032 0.0508
+f v30 v31 v29 v28
+m xpine
+o
+o side
+v v32 =
+	p 0.8382 0.0254 0.0254
+v v33 =
+	p -0.0254 0.0254 0.0254
+cyl v32 0.0254 v33
+m zpine
+v v34 =
+	p 0.8382 0.2286 0.0254
+cyl v32 0.0254 v34
+m ypine
+v v35 =
+	p 0.8382 0.0254 0.2794
+cyl v32 0.0254 v35
+v v36 =
+	p -0.0254 0.0254 0.2794
+cyl v36 0.0254 v33
+m xpine
+cyl v36 0.0254 v35
+m zpine
+cyl v36 0.0254 v27
+v v37 =
+	p -0.0254 0.2286 0.0254
+cyl v37 0.0254 v33
+m xpine
+cyl v37 0.0254 v34
+m ypine
+cyl v37 0.0254 v27
+m zpine
+cyl v24 0.0254 v35
+m ypine
+cyl v24 0.0254 v34
+m xpine
+cyl v24 0.0254 v27
+m ypine
+sph v32 0.0254
+sph v33 0.0254
+sph v35 0.0254
+sph v36 0.0254
+sph v34 0.0254
+sph v37 0.0254
+sph v24 0.0254
+sph v27 0.0254
+# End conversion from: bookbox.rad
+o
+# End of data converted from Radiance scene input

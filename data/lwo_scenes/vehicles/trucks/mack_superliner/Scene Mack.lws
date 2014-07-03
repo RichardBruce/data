@@ -1,0 +1,124 @@
+LWSC
+1
+
+FirstFrame 1
+LastFrame 30
+FrameStep 1
+PreviewFirstFrame 1
+PreviewLastFrame 30
+PreviewFrameStep 1
+FramesPerSecond 30.000000
+
+LoadObject Objects\Véhicules 3D Truks Bus Trailer\Mack Superliner\Mack Superliner.lwo
+ShowObject 8 7
+ObjectMotion (unnamed)
+  9
+  1
+  -4.702795 -0.7099994 -2.63798 281.1049 0.000136337 0.09995721 0.45 0.45 0.45
+  0 0 0 0 0
+EndBehavior 1
+LockedChannels 21
+ShadowOptions 7
+
+LoadObject Objects\Véhicules 3D Truks Bus Trailer\Mack Superliner\Sol 3Dcar.lwo
+ShowObject 8 7
+ObjectMotion (unnamed)
+  9
+  1
+  -94.1468 -1.559999 -67.34959 0 0 0 1 1 1
+  0 0 0 0 0
+EndBehavior 1
+ShadowOptions 4
+
+LoadObject Objects\Véhicules 3D\Sol 3Dcar.lwo
+ShowObject 8 7
+ObjectMotion (unnamed)
+  9
+  1
+  -167.0505 -0.8799999 -123.0677 90.20003 83.20005 0 1 1 1
+  0 0 0 0 0
+EndBehavior 1
+LockedChannels 40
+ShadowOptions 4
+
+AmbientColor 255 255 255
+AmbIntensity 0.315000
+
+EnableLensFlare 0
+AddLight
+LightName Light
+ShowLight 0 7
+LightMotion (unnamed)
+  9
+  1
+  3.16492 2.35 2.16993 -137.8 37 0 1 1 1
+  0 0 0 0 0
+EndBehavior 1
+LightColor 255 255 255
+LgtIntensity 0.940000
+LightType 0
+ShadowType 1
+
+AddLight
+LightName Light
+ShowLight 1 7
+LightMotion (unnamed)
+  9
+  1
+  0.9433571 0.18 2.903338 8.500037 130.3 -0.6 1 1 1
+  0 0 0 0 0
+EndBehavior 1
+LightColor 255 255 255
+LgtIntensity 0.000000
+LightType 0
+ShadowType 1
+
+ShowCamera 1 7
+CameraMotion (unnamed)
+  9
+  1
+  4.302121 1.34267 1.421788 -121.6996 12.10004 20.20001 1 1 1
+  0 0 0 0 0
+EndBehavior 1
+ZoomFactor 3.200000
+Resolution 1
+CustomSize 800 600
+PixelAspectRatio 2
+SegmentMemory 160000000
+Antialiasing 2
+EnhancedAA 1
+AdaptiveSampling 1
+AdaptiveThreshold 16
+FilmSize 2
+FieldRendering 0
+MotionBlur 0
+DepthOfField 0
+
+SolidBackdrop 1
+BackdropColor 0 0 0
+ZenithColor 0 40 80
+SkyColor 87 162 236
+GroundColor 50 40 30
+NadirColor 100 80 60
+FogType 0
+DitherIntensity 1
+AnimatedDither 0
+
+RenderMode 2
+RayTraceEffects 3
+RayRecursionLimit 16
+DataOverlayLabel  
+FullSceneParamEval 0
+
+ViewMode 5
+ViewAimpoint 0.390001 -1.439999 -1.180001
+ViewDirection 0.102974 -0.499164 0.000000
+ViewZoomFactor 24.299995
+GridNumber 30
+GridSize 2.000000
+ShowMotionPath 1
+ShowBGImage 0
+ShowFogRadius 0
+ShowRedraw 0
+ShowSafeAreas 0
+ShowFieldChart 0

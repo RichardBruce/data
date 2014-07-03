@@ -1,0 +1,7214 @@
+# The following was converted from Radiance scene input
+xf -s 3.0480e-01
+o Untitled
+# Begin conversion from: conf
+#  Input file for the conference room building 90 third floor
+# 
+#  all values are in FEET !!
+# 
+# ############
+#  MATERIALS #
+# ############
+m wall_mat =
+	c
+		cxy 0.3373 0.3313
+	rd 0.6112
+m door_mat =
+	c
+		cxy 0.4412 0.3908
+	rd 0.4649
+	c
+	rs 0.0200 0.1500
+m floor_mat =
+	c
+		cxy 0.4392 0.3394
+	rd 0.0950
+m ceiling_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.9000
+m baseboard_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.0669
+	c
+	rs 0.0300 0.1000
+m wood_base_mat =
+	c
+		cxy 0.4275 0.3933
+	rd 0.4564
+	c
+	rs 0.0500 0.2000
+m xwood_base_mat = wood_base_mat
+m ywood_base_mat = wood_base_mat
+m zwood_base_mat = wood_base_mat
+m door_jam_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.6860
+	c
+	rs 0.0200 0.0800
+m on_door_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.1850
+	rs 0.1850 0.0000
+# ###########
+#  SURFACES #
+# ###########
+m wall_mat
+o
+o right_wall
+v v0 =
+	p 35.5 1.167 0
+v v1 =
+	p 35.5 1.167 8.9
+v v2 =
+	p 35.5 21.05 8.9
+v v3 =
+	p 35.5 21.05 0
+f v0 v1 v2 v3
+o
+o rear_wall
+v v4 =
+	p 0 22 0
+v v5 =
+	p 2.9 22 0
+v v6 =
+	p 2.9 22 7.17
+v v7 =
+	p 6.34 22 7.17
+v v8 =
+	p 6.34 22 0
+v v9 =
+	p 25.33 22 0
+v v10 =
+	p 25.33 22 7.17
+v v11 =
+	p 28.77 22 7.17
+v v12 =
+	p 28.77 22 0
+v v13 =
+	p 35.08 22 0
+v v14 =
+	p 35.08 22 8.9
+v v15 =
+	p 0 22 8.9
+f v4 v5 v6 v7 v8 v9 v10 v11 v12 v13 v14 v15
+o
+o left_wall
+v v16 =
+	p 0 0 0
+v v17 =
+	p 0 0 8.9
+f v16 v4 v15 v17
+#  xform -t 11 0 0
+#  genbox wall_mat shaft1 1.58 1.16 8.9
+o
+o shaft1
+v v18 =
+	p 11 0 8.9
+v v19 =
+	p 11 1.16 8.9
+v v20 =
+	p 11 1.16 0
+v v21 =
+	p 11 0 0
+f v18 v19 v20 v21
+v v22 =
+	p 12.58 1.16 0
+v v23 =
+	p 12.58 1.16 8.9
+f v22 v20 v19 v23
+v v24 =
+	p 12.58 0 8.9
+v v25 =
+	p 12.58 0 0
+f v24 v25 v22 v23
+#  xform -t 34.95 0 0
+#  genbox wall_mat shaft2 .55 1.167 8.9
+o
+o shaft2
+v v26 =
+	p 35.5 0 0
+v v27 =
+	p 35.5 0 8.9
+v v28 =
+	p 34.95 0 8.9
+v v29 =
+	p 34.95 0 0
+f v26 v27 v28 v29
+v v30 =
+	p 34.95 1.167 8.9
+v v31 =
+	p 34.95 1.167 0
+f v28 v30 v31 v29
+f v0 v31 v30 v1
+f v27 v26 v0 v1
+m shaft_wood_mat =
+	c
+		cxy 0.4369 0.4050
+	rd 0.4424
+#  xform -t 29 6.75 0
+#  genbox shaft_wood_mat big_shaft 6.5 6.45 8.9
+o
+o big_shaft
+v v32 =
+	p 35.5 6.75 0
+v v33 =
+	p 35.5 6.75 8.9
+v v34 =
+	p 29 6.75 8.9
+v v35 =
+	p 29 6.75 0
+f v32 v33 v34 v35
+v v36 =
+	p 29 13.2 8.9
+v v37 =
+	p 29 13.2 0
+v v38 =
+	p 29 6.75 4.625
+v v39 =
+	p 29 12.575 4.625
+v v40 =
+	p 29 12.575 6.975
+v v41 =
+	p 29 7.375 6.975
+v v42 =
+	p 29 7.375 4.625
+f v34 v36 v37 v35 v38 v39 v40 v41 v42 v38
+v v43 =
+	p 35.5 13.2 0
+v v44 =
+	p 35.5 13.2 8.9
+f v43 v37 v36 v44
+#  xform -t 35.08 21.05 0
+#  genbox wall_mat shaft3 .4167 .95 8.9
+m wall_mat
+o
+o shaft3
+v v45 =
+	p 35.08 21.05 8.9
+v v46 =
+	p 35.08 21.05 0
+f v3 v2 v45 v46
+f v45 v14 v13 v46
+#  xform -t 11 21.05 0
+#  genbox wall_mat shaft4 1.25 .95 8.9
+o
+o shaft4
+v v47 =
+	p 12.25 21.05 0
+v v48 =
+	p 12.25 21.05 8.9
+v v49 =
+	p 11 21.05 8.9
+v v50 =
+	p 11 21.05 0
+f v47 v48 v49 v50
+v v51 =
+	p 11 22 8.9
+v v52 =
+	p 11 22 0
+f v49 v51 v52 v50
+v v53 =
+	p 12.25 22 0
+v v54 =
+	p 12.25 22 8.9
+f v48 v47 v53 v54
+m door_mat
+o
+o door1
+v v55 =
+	p 3.17 22.237 0
+v v56 =
+	p 6.07 22.237 0
+v v57 =
+	p 6.07 22.237 6.9
+v v58 =
+	p 3.17 22.237 6.9
+f v55 v56 v57 v58
+m on_door_mat
+o
+o hand_door
+v v59 =
+	p 6.0075 22.2369 2.8958
+v v60 =
+	p 6.0075 22.2369 4.3958
+v v61 =
+	p 5.674 22.2369 4.3958
+v v62 =
+	p 5.674 22.2369 2.8958
+f v59 v60 v61 v62
+o
+o down_door
+v v63 =
+	p 6.01 22.2369 0.0416
+v v64 =
+	p 6.01 22.2369 1.0625
+v v65 =
+	p 3.26 22.2369 1.0625
+v v66 =
+	p 3.26 22.2369 0.0416
+f v63 v64 v65 v66
+m door_mat
+o
+o door2
+v v67 =
+	p 25.6 22.237 0
+v v68 =
+	p 28.5 22.237 0
+v v69 =
+	p 28.5 22.237 6.9
+v v70 =
+	p 25.6 22.237 6.9
+f v67 v68 v69 v70
+m on_door_mat
+o
+o hand_door
+v v71 =
+	p 28.4375 22.2369 2.8958
+v v72 =
+	p 28.4375 22.2369 4.3958
+v v73 =
+	p 28.1041 22.2369 4.3958
+v v74 =
+	p 28.1041 22.2369 2.8958
+f v71 v72 v73 v74
+o
+o down_door
+v v75 =
+	p 28.44 22.2369 0.0416
+v v76 =
+	p 28.44 22.2369 1.0625
+v v77 =
+	p 25.69 22.2369 1.0625
+v v78 =
+	p 25.69 22.2369 0.0416
+f v75 v76 v77 v78
+m floor_mat
+o
+o floor
+v v79 =
+	p 35.5 23 0
+v v80 =
+	p 0 23 0
+f v16 v26 v79 v80
+m ceiling_mat
+o
+o ceiling
+v v81 =
+	p 35.5 22 8.9
+f v17 v27 v81 v15
+# ###########
+# baseboards#
+# ###########
+# Begin conversion from: !genbox baseboard_mat before_door1 2.9 .041 .333 | xform -t 0 21.958 0
+#  xform -t 0 21.958 0
+#  genbox baseboard_mat before_door1 2.9 .041 .333
+m baseboard_mat
+o
+o before_door1
+v v82 =
+	p 2.9 21.958 0
+v v83 =
+	p 2.9 21.958 0.333
+v v84 =
+	p 0 21.958 0.333
+v v85 =
+	p 0 21.958 0
+f v82 v83 v84 v85
+v v86 =
+	p 0 21.999 0.333
+v v87 =
+	p 0 21.999 0
+f v84 v86 v87 v85
+v v88 =
+	p 2.9 21.999 0
+f v87 v88 v82 v85
+v v89 =
+	p 2.9 21.999 0.333
+f v88 v87 v86 v89
+f v83 v82 v88 v89
+f v86 v84 v83 v89
+# End conversion from: !genbox baseboard_mat before_door1 2.9 .041 .333 | xform -t 0 21.958 0
+# Begin conversion from: !genbox baseboard_mat after_door1 4.66 .041 .333 | xform -t 6.34 21.958 0
+#  xform -t 6.34 21.958 0
+#  genbox baseboard_mat after_door1 4.66 .041 .333
+o
+o after_door1
+v v90 =
+	p 11 21.958 0
+v v91 =
+	p 11 21.958 0.333
+v v92 =
+	p 6.34 21.958 0.333
+v v93 =
+	p 6.34 21.958 0
+f v90 v91 v92 v93
+v v94 =
+	p 6.34 21.999 0.333
+v v95 =
+	p 6.34 21.999 0
+f v92 v94 v95 v93
+v v96 =
+	p 11 21.999 0
+f v95 v96 v90 v93
+v v97 =
+	p 11 21.999 0.333
+f v96 v95 v94 v97
+f v91 v90 v96 v97
+f v94 v92 v91 v97
+# End conversion from: !genbox baseboard_mat after_door1 4.66 .041 .333 | xform -t 6.34 21.958 0
+# Begin conversion from: !genbox baseboard_mat shaft1.1 .041 .909 .333 | xform -t 10.959 21.05 0
+#  xform -t 10.959 21.05 0
+#  genbox baseboard_mat shaft1.1 .041 .909 .333
+o
+o shaft1.1
+v v98 =
+	p 11 21.05 0.333
+v v99 =
+	p 10.959 21.05 0.333
+v v100 =
+	p 10.959 21.05 0
+f v50 v98 v99 v100
+v v101 =
+	p 10.959 21.959 0.333
+v v102 =
+	p 10.959 21.959 0
+f v99 v101 v102 v100
+v v103 =
+	p 11 21.959 0
+f v102 v103 v50 v100
+v v104 =
+	p 11 21.959 0.333
+f v103 v102 v101 v104
+f v98 v50 v103 v104
+f v101 v99 v98 v104
+# End conversion from: !genbox baseboard_mat shaft1.1 .041 .909 .333 | xform -t 10.959 21.05 0
+# Begin conversion from: !genbox baseboard_mat shaft1.2 1.25 .041 .333 | xform -t 11 21.009 0
+#  xform -t 11 21.009 0
+#  genbox baseboard_mat shaft1.2 1.25 .041 .333
+o
+o shaft1.2
+v v105 =
+	p 12.25 21.009 0
+v v106 =
+	p 12.25 21.009 0.333
+v v107 =
+	p 11 21.009 0.333
+v v108 =
+	p 11 21.009 0
+f v105 v106 v107 v108
+f v107 v98 v50 v108
+f v50 v47 v105 v108
+v v109 =
+	p 12.25 21.05 0.333
+f v47 v50 v98 v109
+f v106 v105 v47 v109
+f v98 v107 v106 v109
+# End conversion from: !genbox baseboard_mat shaft1.2 1.25 .041 .333 | xform -t 11 21.009 0
+# Begin conversion from: !genbox baseboard_mat shaft1.3 .041 .909 .333 | xform -t 12.25 21.05 0
+#  xform -t 12.25 21.05 0
+#  genbox baseboard_mat shaft1.3 .041 .909 .333
+o
+o shaft1.3
+v v110 =
+	p 12.291 21.05 0
+v v111 =
+	p 12.291 21.05 0.333
+f v110 v111 v109 v47
+v v112 =
+	p 12.25 21.959 0.333
+v v113 =
+	p 12.25 21.959 0
+f v109 v112 v113 v47
+v v114 =
+	p 12.291 21.959 0
+f v113 v114 v110 v47
+v v115 =
+	p 12.291 21.959 0.333
+f v114 v113 v112 v115
+f v111 v110 v114 v115
+f v112 v109 v111 v115
+# End conversion from: !genbox baseboard_mat shaft1.3 .041 .909 .333 | xform -t 12.25 21.05 0
+# Begin conversion from: !genbox baseboard_mat before_door2 13.08 .041 .333 | xform -t 12.25 21.958 0
+#  xform -t 12.25 21.958 0
+#  genbox baseboard_mat before_door2 13.08 .041 .333
+o
+o before_door2
+v v116 =
+	p 25.33 21.958 0
+v v117 =
+	p 25.33 21.958 0.333
+v v118 =
+	p 12.25 21.958 0.333
+v v119 =
+	p 12.25 21.958 0
+f v116 v117 v118 v119
+v v120 =
+	p 12.25 21.999 0.333
+v v121 =
+	p 12.25 21.999 0
+f v118 v120 v121 v119
+v v122 =
+	p 25.33 21.999 0
+f v121 v122 v116 v119
+v v123 =
+	p 25.33 21.999 0.333
+f v122 v121 v120 v123
+f v117 v116 v122 v123
+f v120 v118 v117 v123
+# End conversion from: !genbox baseboard_mat before_door2 13.08 .041 .333 | xform -t 12.25 21.958 0
+# Begin conversion from: !genbox baseboard_mat after_door2 6.31 .041 .333 | xform -t 28.77 21.958 0
+#  xform -t 28.77 21.958 0
+#  genbox baseboard_mat after_door2 6.31 .041 .333
+o
+o after_door2
+v v124 =
+	p 35.08 21.958 0
+v v125 =
+	p 35.08 21.958 0.333
+v v126 =
+	p 28.77 21.958 0.333
+v v127 =
+	p 28.77 21.958 0
+f v124 v125 v126 v127
+v v128 =
+	p 28.77 21.999 0.333
+v v129 =
+	p 28.77 21.999 0
+f v126 v128 v129 v127
+v v130 =
+	p 35.08 21.999 0
+f v129 v130 v124 v127
+v v131 =
+	p 35.08 21.999 0.333
+f v130 v129 v128 v131
+f v125 v124 v130 v131
+f v128 v126 v125 v131
+# End conversion from: !genbox baseboard_mat after_door2 6.31 .041 .333 | xform -t 28.77 21.958 0
+# Begin conversion from: !genbox baseboard_mat shaft2.1 .041 .95 .333 | xform -t 35.0423 21.05 0
+#  xform -t 35.0423 21.05 0
+#  genbox baseboard_mat shaft2.1 .041 .95 .333
+o
+o shaft2.1
+v v132 =
+	p 35.0833 21.05 0
+v v133 =
+	p 35.0833 21.05 0.333
+v v134 =
+	p 35.0423 21.05 0.333
+v v135 =
+	p 35.0423 21.05 0
+f v132 v133 v134 v135
+v v136 =
+	p 35.0423 22 0.333
+v v137 =
+	p 35.0423 22 0
+f v134 v136 v137 v135
+v v138 =
+	p 35.0833 22 0
+f v137 v138 v132 v135
+v v139 =
+	p 35.0833 22 0.333
+f v138 v137 v136 v139
+f v133 v132 v138 v139
+f v136 v134 v133 v139
+# End conversion from: !genbox baseboard_mat shaft2.1 .041 .95 .333 | xform -t 35.0423 21.05 0
+# Begin conversion from: !genbox baseboard_mat shaft2.2 .4577 .041 .333 | xform -t 35.0423 21.009 0
+#  xform -t 35.0423 21.009 0
+#  genbox baseboard_mat shaft2.2 .4577 .041 .333
+o
+o shaft2.2
+v v140 =
+	p 35.5 21.009 0
+v v141 =
+	p 35.5 21.009 0.333
+v v142 =
+	p 35.0423 21.009 0.333
+v v143 =
+	p 35.0423 21.009 0
+f v140 v141 v142 v143
+f v142 v134 v135 v143
+f v135 v3 v140 v143
+v v144 =
+	p 35.5 21.05 0.333
+f v3 v135 v134 v144
+f v141 v140 v3 v144
+f v134 v142 v141 v144
+# End conversion from: !genbox baseboard_mat shaft2.2 .4577 .041 .333 | xform -t 35.0423 21.009 0
+# Begin conversion from: !genbox baseboard_mat before_big_shaft .041 7.809 .333 | xform -t 35.459 13.2 0
+#  xform -t 35.459 13.2 0
+#  genbox baseboard_mat before_big_shaft .041 7.809 .333
+o
+o before_big_shaft
+v v145 =
+	p 35.5 13.2 0.333
+v v146 =
+	p 35.459 13.2 0.333
+v v147 =
+	p 35.459 13.2 0
+f v43 v145 v146 v147
+v v148 =
+	p 35.459 21.009 0.333
+v v149 =
+	p 35.459 21.009 0
+f v146 v148 v149 v147
+f v149 v140 v43 v147
+f v140 v149 v148 v141
+f v145 v43 v140 v141
+f v148 v146 v145 v141
+# End conversion from: !genbox baseboard_mat before_big_shaft .041 7.809 .333 | xform -t 35.459 13.2 0
+# Begin conversion from: !genbox baseboard_mat big_shaft1 6.5 .041 1 | xform -t 29 13.2 0
+#  xform -t 29 13.2 0
+#  genbox baseboard_mat big_shaft1 6.5 .041 1
+o
+o big_shaft1
+v v150 =
+	p 35.5 13.2 1
+v v151 =
+	p 29 13.2 1
+f v43 v150 v151 v37
+v v152 =
+	p 29 13.241 1
+v v153 =
+	p 29 13.241 0
+f v151 v152 v153 v37
+v v154 =
+	p 35.5 13.241 0
+f v153 v154 v43 v37
+v v155 =
+	p 35.5 13.241 1
+f v154 v153 v152 v155
+f v150 v43 v154 v155
+f v152 v151 v150 v155
+# End conversion from: !genbox baseboard_mat big_shaft1 6.5 .041 1 | xform -t 29 13.2 0
+# Begin conversion from: !genbox baseboard_mat big_shaft2 .041 6.532 1 | xform -t 28.959 6.709 0
+#  xform -t 28.959 6.709 0
+#  genbox baseboard_mat big_shaft2 .041 6.532 1
+o
+o big_shaft2
+v v156 =
+	p 29 6.709 0
+v v157 =
+	p 29 6.709 1
+v v158 =
+	p 28.959 6.709 1
+v v159 =
+	p 28.959 6.709 0
+f v156 v157 v158 v159
+v v160 =
+	p 28.959 13.241 1
+v v161 =
+	p 28.959 13.241 0
+f v158 v160 v161 v159
+f v161 v153 v156 v159
+f v153 v161 v160 v152
+f v157 v156 v153 v152
+f v160 v158 v157 v152
+# End conversion from: !genbox baseboard_mat big_shaft2 .041 6.532 1 | xform -t 28.959 6.709 0
+# Begin conversion from: !genbox baseboard_mat big_shaft3 6.5 .041 1 | xform -t 29 6.709 0
+#  xform -t 29 6.709 0
+#  genbox baseboard_mat big_shaft3 6.5 .041 1
+o
+o big_shaft3
+v v162 =
+	p 35.5 6.709 0
+v v163 =
+	p 35.5 6.709 1
+f v162 v163 v157 v156
+v v164 =
+	p 29 6.75 1
+f v157 v164 v35 v156
+f v35 v32 v162 v156
+v v165 =
+	p 35.5 6.75 1
+f v32 v35 v164 v165
+f v163 v162 v32 v165
+f v164 v157 v163 v165
+# End conversion from: !genbox baseboard_mat big_shaft3 6.5 .041 1 | xform -t 29 6.709 0
+# Begin conversion from: !genbox baseboard_mat after_big_shaft .041 5.039 .333 | xform -t 35.459 1.167 0
+#  xform -t 35.459 1.167 0
+#  genbox baseboard_mat after_big_shaft .041 5.039 .333
+o
+o after_big_shaft
+v v166 =
+	p 35.5 1.167 0.333
+v v167 =
+	p 35.459 1.167 0.333
+v v168 =
+	p 35.459 1.167 0
+f v0 v166 v167 v168
+v v169 =
+	p 35.459 6.206 0.333
+v v170 =
+	p 35.459 6.206 0
+f v167 v169 v170 v168
+v v171 =
+	p 35.5 6.206 0
+f v170 v171 v0 v168
+v v172 =
+	p 35.5 6.206 0.333
+f v171 v170 v169 v172
+f v166 v0 v171 v172
+f v169 v167 v166 v172
+# End conversion from: !genbox baseboard_mat after_big_shaft .041 5.039 .333 | xform -t 35.459 1.167 0
+# Begin conversion from: !genbox baseboard_mat shaft3.1 .509 .041 .333 | xform -t 34.95 1.167 0
+#  xform -t 34.95 1.167 0
+#  genbox baseboard_mat shaft3.1 .509 .041 .333
+o
+o shaft3.1
+v v173 =
+	p 34.95 1.167 0.333
+f v168 v167 v173 v31
+v v174 =
+	p 34.95 1.208 0.333
+v v175 =
+	p 34.95 1.208 0
+f v173 v174 v175 v31
+v v176 =
+	p 35.459 1.208 0
+f v175 v176 v168 v31
+v v177 =
+	p 35.459 1.208 0.333
+f v176 v175 v174 v177
+f v167 v168 v176 v177
+f v174 v173 v167 v177
+# End conversion from: !genbox baseboard_mat shaft3.1 .509 .041 .333 | xform -t 34.95 1.167 0
+# Begin conversion from: !genbox baseboard_mat shaft3.2 .041 1.208 .333 | xform -t 34.909 0 0
+#  xform -t 34.909 0 0
+#  genbox baseboard_mat shaft3.2 .041 1.208 .333
+o
+o shaft3.2
+v v178 =
+	p 34.95 0 0.333
+v v179 =
+	p 34.909 0 0.333
+v v180 =
+	p 34.909 0 0
+f v29 v178 v179 v180
+v v181 =
+	p 34.909 1.208 0.333
+v v182 =
+	p 34.909 1.208 0
+f v179 v181 v182 v180
+f v182 v175 v29 v180
+f v175 v182 v181 v174
+f v178 v29 v175 v174
+f v181 v179 v178 v174
+# End conversion from: !genbox baseboard_mat shaft3.2 .041 1.208 .333 | xform -t 34.909 0 0
+# Begin conversion from: !genbox baseboard_mat before_shaft4 22.37 .041 .333 | xform -t 12.58 0 0
+#  xform -t 12.58 0 0
+#  genbox baseboard_mat before_shaft4 22.37 .041 .333
+o
+o before_shaft4
+v v183 =
+	p 12.58 0 0.333
+f v29 v178 v183 v25
+v v184 =
+	p 12.58 0.041 0.333
+v v185 =
+	p 12.58 0.041 0
+f v183 v184 v185 v25
+v v186 =
+	p 34.95 0.041 0
+f v185 v186 v29 v25
+v v187 =
+	p 34.95 0.041 0.333
+f v186 v185 v184 v187
+f v178 v29 v186 v187
+f v184 v183 v178 v187
+# End conversion from: !genbox baseboard_mat before_shaft4 22.37 .041 .333 | xform -t 12.58 0 0
+# Begin conversion from: !genbox baseboard_mat shaft4.1 .041 1.16 .333 | xform -t 12.58 0 0
+#  xform -t 12.58 0 0
+#  genbox baseboard_mat shaft4.1 .041 1.16 .333
+o
+o shaft4.1
+v v188 =
+	p 12.621 0 0
+v v189 =
+	p 12.621 0 0.333
+f v188 v189 v183 v25
+v v190 =
+	p 12.58 1.16 0.333
+f v183 v190 v22 v25
+v v191 =
+	p 12.621 1.16 0
+f v22 v191 v188 v25
+v v192 =
+	p 12.621 1.16 0.333
+f v191 v22 v190 v192
+f v189 v188 v191 v192
+f v190 v183 v189 v192
+# End conversion from: !genbox baseboard_mat shaft4.1 .041 1.16 .333 | xform -t 12.58 0 0
+# Begin conversion from: !genbox baseboard_mat shaft4.2 1.662 .041 .333 | xform -t 10.959 1.16 0
+#  xform -t 10.959 1.16 0
+#  genbox baseboard_mat shaft4.2 1.662 .041 .333
+o
+o shaft4.2
+v v193 =
+	p 10.959 1.16 0.333
+v v194 =
+	p 10.959 1.16 0
+f v191 v192 v193 v194
+v v195 =
+	p 10.959 1.201 0.333
+v v196 =
+	p 10.959 1.201 0
+f v193 v195 v196 v194
+v v197 =
+	p 12.621 1.201 0
+f v196 v197 v191 v194
+v v198 =
+	p 12.621 1.201 0.333
+f v197 v196 v195 v198
+f v192 v191 v197 v198
+f v195 v193 v192 v198
+# End conversion from: !genbox baseboard_mat shaft4.2 1.662 .041 .333 | xform -t 10.959 1.16 0
+# Begin conversion from: !genbox baseboard_mat shaft4.3 .041 1.16 .333 | xform -t 10.959 0 0
+#  xform -t 10.959 0 0
+#  genbox baseboard_mat shaft4.3 .041 1.16 .333
+o
+o shaft4.3
+v v199 =
+	p 11 0 0.333
+v v200 =
+	p 10.959 0 0.333
+v v201 =
+	p 10.959 0 0
+f v21 v199 v200 v201
+f v200 v193 v194 v201
+f v194 v20 v21 v201
+v v202 =
+	p 11 1.16 0.333
+f v20 v194 v193 v202
+f v199 v21 v20 v202
+f v193 v200 v199 v202
+# End conversion from: !genbox baseboard_mat shaft4.3 .041 1.16 .333 | xform -t 10.959 0 0
+# Begin conversion from: !genbox baseboard_mat after_shaft4 11 .041 .333
+#  genbox baseboard_mat after_shaft4 11 .041 .333
+o
+o after_shaft4
+v v203 =
+	p 0 0 0.333
+f v21 v199 v203 v16
+v v204 =
+	p 0 0.041 0.333
+v v205 =
+	p 0 0.041 0
+f v203 v204 v205 v16
+v v206 =
+	p 11 0.041 0
+f v205 v206 v21 v16
+v v207 =
+	p 11 0.041 0.333
+f v206 v205 v204 v207
+f v199 v21 v206 v207
+f v204 v203 v199 v207
+# End conversion from: !genbox baseboard_mat after_shaft4 11 .041 .333
+# Begin conversion from: !genbox baseboard_mat base_left_wall .041 21.9167 .333 | xform -t 0 .041 0
+#  xform -t 0 .041 0
+#  genbox baseboard_mat base_left_wall .041 21.9167 .333
+o
+o base_left_wall
+v v208 =
+	p 0.041 0.041 0
+v v209 =
+	p 0.041 0.041 0.333
+f v208 v209 v204 v205
+v v210 =
+	p 0 21.9577 0.333
+v v211 =
+	p 0 21.9577 0
+f v204 v210 v211 v205
+v v212 =
+	p 0.041 21.9577 0
+f v211 v212 v208 v205
+v v213 =
+	p 0.041 21.9577 0.333
+f v212 v211 v210 v213
+f v209 v208 v212 v213
+f v210 v204 v209 v213
+# End conversion from: !genbox baseboard_mat base_left_wall .041 21.9167 .333 | xform -t 0 .041 0
+# #############
+#  door jams ##
+# #############
+# Begin conversion from: !genprism door_jam_mat door1_right.jam door_jam.pts -l 0 0 7.17 -e -c | xform -t 6.07 21.958 0
+#  xform -t 6.07 21.958 0
+#  genprism door_jam_mat door1_right.jam door_jam.pts -l 0 0 7.17 -e -c
+m door_jam_mat
+o
+o door1_right.jam
+v v214 =
+	p 6.07 22.237 7.17
+v v215 =
+	p 6.07 22.07038 7.17
+v v216 =
+	p 6.07 22.07038 0
+f v56 v214 v215 v216
+v v217 =
+	p 6.11165 22.07038 7.17
+v v218 =
+	p 6.11165 22.07038 0
+f v216 v215 v217 v218
+v v219 =
+	p 6.11165 22.00798 7.17
+v v220 =
+	p 6.11165 22.00798 0
+f v218 v217 v219 v220
+v v221 =
+	p 6.1324 22.00798 7.17
+v v222 =
+	p 6.1324 22.00798 0
+f v220 v219 v221 v222
+v v223 =
+	p 6.1324 21.958 7.17
+v v224 =
+	p 6.1324 21.958 0
+f v222 v221 v223 v224
+v v225 =
+	p 6.3407 21.958 7.17
+v v226 =
+	p 6.3407 21.958 0
+f v224 v223 v225 v226
+v v227 =
+	p 6.3407 21.99965 7.17
+v v228 =
+	p 6.3407 21.99965 0
+f v226 v225 v227 v228
+# End conversion from: !genprism door_jam_mat door1_right.jam door_jam.pts -l 0 0 7.17 -e -c | xform -t 6.07 21.958 0
+# Begin conversion from: !genprism door_jam_mat door1_left.jam door_jam.pts -l 0 0 7.17 -e -c | xform -mx -t 3.17 21.958 0
+#  xform -mx -t 3.17 21.958 0
+#  genprism door_jam_mat door1_left.jam door_jam.pts -l 0 0 7.17 -e -c
+o
+o door1_left.jam
+v v229 =
+	p 3.17 22.07038 0
+v v230 =
+	p 3.17 22.07038 7.17
+v v231 =
+	p 3.17 22.237 7.17
+f v229 v230 v231 v55
+v v232 =
+	p 3.12835 22.07038 0
+v v233 =
+	p 3.12835 22.07038 7.17
+f v232 v233 v230 v229
+v v234 =
+	p 3.12835 22.00798 0
+v v235 =
+	p 3.12835 22.00798 7.17
+f v234 v235 v233 v232
+v v236 =
+	p 3.1076 22.00798 0
+v v237 =
+	p 3.1076 22.00798 7.17
+f v236 v237 v235 v234
+v v238 =
+	p 3.1076 21.958 0
+v v239 =
+	p 3.1076 21.958 7.17
+f v238 v239 v237 v236
+v v240 =
+	p 2.8993 21.958 0
+v v241 =
+	p 2.8993 21.958 7.17
+f v240 v241 v239 v238
+v v242 =
+	p 2.8993 21.99965 0
+v v243 =
+	p 2.8993 21.99965 7.17
+f v242 v243 v241 v240
+# End conversion from: !genprism door_jam_mat door1_left.jam door_jam.pts -l 0 0 7.17 -e -c | xform -mx -t 3.17 21.958 0
+# Begin conversion from: !genprism door_jam_mat door1_top.jam door_jam.pts -l 0 0 3.44 -e -c | xform -ry -90 -t 6.34 21.958 6.9
+#  xform -ry -90 -t 6.34 21.958 6.9
+#  genprism door_jam_mat door1_top.jam door_jam.pts -l 0 0 3.44 -e -c
+o
+o door1_top.jam
+v v244 =
+	p 6.34 22.237 6.9
+v v245 =
+	p 2.9 22.237 6.9
+v v246 =
+	p 2.9 22.07038 6.9
+v v247 =
+	p 6.34 22.07038 6.9
+f v244 v245 v246 v247
+v v248 =
+	p 2.9 22.07038 6.94165
+v v249 =
+	p 6.34 22.07038 6.94165
+f v247 v246 v248 v249
+v v250 =
+	p 2.9 22.00798 6.94165
+v v251 =
+	p 6.34 22.00798 6.94165
+f v249 v248 v250 v251
+v v252 =
+	p 2.9 22.00798 6.9624
+v v253 =
+	p 6.34 22.00798 6.9624
+f v251 v250 v252 v253
+v v254 =
+	p 2.9 21.958 6.9624
+v v255 =
+	p 6.34 21.958 6.9624
+f v253 v252 v254 v255
+v v5 =
+	p 2.9 21.958 7.1707
+v v6 =
+	p 6.34 21.958 7.1707
+f v255 v254 v5 v6
+v v7 =
+	p 2.9 21.99965 7.1707
+v v8 =
+	p 6.34 21.99965 7.1707
+f v6 v5 v7 v8
+# End conversion from: !genprism door_jam_mat door1_top.jam door_jam.pts -l 0 0 3.44 -e -c | xform -ry -90 -t 6.34 21.958 6.9
+# Begin conversion from: !genprism door_jam_mat door2_right.jam door_jam.pts -l 0 0 7.17 -e -c | xform -t 6.07 21.958 0 -t 22.43 0 0
+#  xform -t 6.07 21.958 0 -t 22.43 0 0
+#  genprism door_jam_mat door2_right.jam door_jam.pts -l 0 0 7.17 -e -c
+o
+o door2_right.jam
+v v9 =
+	p 28.5 22.237 7.17
+v v10 =
+	p 28.5 22.07038 7.17
+v v11 =
+	p 28.5 22.07038 0
+f v68 v9 v10 v11
+v v12 =
+	p 28.54165 22.07038 7.17
+v v4 =
+	p 28.54165 22.07038 0
+f v11 v10 v12 v4
+v v18 =
+	p 28.54165 22.00798 7.17
+v v19 =
+	p 28.54165 22.00798 0
+f v4 v12 v18 v19
+v v24 =
+	p 28.5624 22.00798 7.17
+v v23 =
+	p 28.5624 22.00798 0
+f v19 v18 v24 v23
+v v28 =
+	p 28.5624 21.958 7.17
+v v30 =
+	p 28.5624 21.958 0
+f v23 v24 v28 v30
+v v1 =
+	p 28.7707 21.958 7.17
+v v33 =
+	p 28.7707 21.958 0
+f v30 v28 v1 v33
+v v34 =
+	p 28.7707 21.99965 7.17
+v v39 =
+	p 28.7707 21.99965 0
+f v33 v1 v34 v39
+# End conversion from: !genprism door_jam_mat door2_right.jam door_jam.pts -l 0 0 7.17 -e -c | xform -t 6.07 21.958 0 -t 22.43 0 0
+# Begin conversion from: !genprism door_jam_mat door2_left.jam door_jam.pts -l 0 0 7.17 -e -c | xform -mx -t 3.17 21.958 0 -t 22.43 0 0
+#  xform -mx -t 3.17 21.958 0 -t 22.43 0 0
+#  genprism door_jam_mat door2_left.jam door_jam.pts -l 0 0 7.17 -e -c
+o
+o door2_left.jam
+v v40 =
+	p 25.6 22.07038 0
+v v41 =
+	p 25.6 22.07038 7.17
+v v42 =
+	p 25.6 22.237 7.17
+f v40 v41 v42 v67
+v v38 =
+	p 25.55835 22.07038 0
+v v36 =
+	p 25.55835 22.07038 7.17
+f v38 v36 v41 v40
+v v44 =
+	p 25.55835 22.00798 0
+v v2 =
+	p 25.55835 22.00798 7.17
+f v44 v2 v36 v38
+v v45 =
+	p 25.5376 22.00798 0
+v v14 =
+	p 25.5376 22.00798 7.17
+f v45 v14 v2 v44
+v v13 =
+	p 25.5376 21.958 0
+v v46 =
+	p 25.5376 21.958 7.17
+f v13 v46 v14 v45
+v v49 =
+	p 25.3293 21.958 0
+v v51 =
+	p 25.3293 21.958 7.17
+f v49 v51 v46 v13
+v v52 =
+	p 25.3293 21.99965 0
+v v48 =
+	p 25.3293 21.99965 7.17
+f v52 v48 v51 v49
+# End conversion from: !genprism door_jam_mat door2_left.jam door_jam.pts -l 0 0 7.17 -e -c | xform -mx -t 3.17 21.958 0 -t 22.43 0 0
+# Begin conversion from: !genprism door_jam_mat door2_top.jam door_jam.pts -l 0 0 3.44 -e -c | xform -ry -90 -t 6.34 21.958 6.9 -t 22.43 0 0
+#  xform -ry -90 -t 6.34 21.958 6.9 -t 22.43 0 0
+#  genprism door_jam_mat door2_top.jam door_jam.pts -l 0 0 3.44 -e -c
+o
+o door2_top.jam
+v v53 =
+	p 28.77 22.237 6.9
+v v54 =
+	p 25.33 22.237 6.9
+v v57 =
+	p 25.33 22.07038 6.9
+v v58 =
+	p 28.77 22.07038 6.9
+f v53 v54 v57 v58
+v v59 =
+	p 25.33 22.07038 6.94165
+v v60 =
+	p 28.77 22.07038 6.94165
+f v58 v57 v59 v60
+v v61 =
+	p 25.33 22.00798 6.94165
+v v62 =
+	p 28.77 22.00798 6.94165
+f v60 v59 v61 v62
+v v63 =
+	p 25.33 22.00798 6.9624
+v v64 =
+	p 28.77 22.00798 6.9624
+f v62 v61 v63 v64
+v v65 =
+	p 25.33 21.958 6.9624
+v v66 =
+	p 28.77 21.958 6.9624
+f v64 v63 v65 v66
+v v69 =
+	p 25.33 21.958 7.1707
+v v70 =
+	p 28.77 21.958 7.1707
+f v66 v65 v69 v70
+v v71 =
+	p 25.33 21.99965 7.1707
+v v72 =
+	p 28.77 21.99965 7.1707
+f v70 v69 v71 v72
+# End conversion from: !genprism door_jam_mat door2_top.jam door_jam.pts -l 0 0 3.44 -e -c | xform -ry -90 -t 6.34 21.958 6.9 -t 22.43 0 0
+# ##################
+#  wood baseboards #
+# ##################
+# !genbox xwood_base_mat wood_base.1 2.9 0.075 .291 -b .02 | xform -t 0 21.925 2.4167
+# Begin conversion from: !genbox  xwood_base_mat wood_base.2 5.66 .075 .291 -b .02 | xform -t 6.34 21.925 2.4167
+#  xform -t 6.34 21.925 2.4167
+#  genbox xwood_base_mat wood_base.2 5.66 .075 .291 -b .02
+m xwood_base_mat
+o
+o wood_base.2
+v v73 =
+	p 11.98 21.925 2.4367
+v v74 =
+	p 11.98 21.925 2.6877
+v v75 =
+	p 6.36 21.925 2.6877
+v v76 =
+	p 6.36 21.925 2.4367
+f v73 v74 v75 v76
+v v77 =
+	p 6.34 21.945 2.6877
+v v78 =
+	p 6.34 21.98 2.6877
+v v26 =
+	p 6.34 21.98 2.4367
+v v79 =
+	p 6.34 21.945 2.4367
+f v77 v78 v26 v79
+v v80 =
+	p 6.36 21.98 2.4167
+v v17 =
+	p 11.98 21.98 2.4167
+v v27 =
+	p 11.98 21.945 2.4167
+v v81 =
+	p 6.36 21.945 2.4167
+f v80 v17 v27 v81
+v v15 =
+	p 11.98 22 2.4367
+v v85 =
+	p 6.36 22 2.4367
+v v87 =
+	p 6.36 22 2.6877
+v v82 =
+	p 11.98 22 2.6877
+f v15 v85 v87 v82
+v v88 =
+	p 12 21.945 2.6877
+v v86 =
+	p 12 21.945 2.4367
+v v84 =
+	p 12 21.98 2.4367
+v v83 =
+	p 12 21.98 2.6877
+f v88 v86 v84 v83
+v v89 =
+	p 6.36 21.98 2.7077
+v v93 =
+	p 6.36 21.945 2.7077
+v v95 =
+	p 11.98 21.945 2.7077
+v v90 =
+	p 11.98 21.98 2.7077
+f v89 v93 v95 v90
+f v27 v73 v76 v81
+f v79 v26 v80 v81
+f v76 v75 v77 v79
+f v93 v89 v78 v77
+f v90 v82 v87 v89
+f v85 v26 v78 v87
+f v85 v15 v17 v80
+f v82 v83 v84 v15
+f v86 v27 v17 v84
+f v88 v83 v90 v95
+f v74 v73 v86 v88
+f v93 v75 v74 v95
+f v81 v76 v79
+f v73 v27 v86
+f v80 v26 v85
+f v77 v75 v93
+f v89 v87 v78
+f v88 v95 v74
+f v15 v84 v17
+f v90 v83 v82
+# End conversion from: !genbox  xwood_base_mat wood_base.2 5.66 .075 .291 -b .02 | xform -t 6.34 21.925 2.4167
+# Begin conversion from: !genbox      xwood_base_mat wood_base.3 13.079 .075 .291 -b .02 | xform -t 12.25 21.925 2.4167
+#  xform -t 12.25 21.925 2.4167
+#  genbox xwood_base_mat wood_base.3 13.079 .075 .291 -b .02
+o
+o wood_base.3
+v v96 =
+	p 25.309 21.925 2.4367
+v v94 =
+	p 25.309 21.925 2.6877
+v v92 =
+	p 12.27 21.925 2.6877
+v v91 =
+	p 12.27 21.925 2.4367
+f v96 v94 v92 v91
+v v97 =
+	p 12.25 21.945 2.6877
+v v100 =
+	p 12.25 21.98 2.6877
+v v102 =
+	p 12.25 21.98 2.4367
+v v103 =
+	p 12.25 21.945 2.4367
+f v97 v100 v102 v103
+v v101 =
+	p 12.27 21.98 2.4167
+v v99 =
+	p 25.309 21.98 2.4167
+v v104 =
+	p 25.309 21.945 2.4167
+v v108 =
+	p 12.27 21.945 2.4167
+f v101 v99 v104 v108
+v v50 =
+	p 25.309 22 2.4367
+v v105 =
+	p 12.27 22 2.4367
+v v98 =
+	p 12.27 22 2.6877
+v v107 =
+	p 25.309 22 2.6877
+f v50 v105 v98 v107
+v v106 =
+	p 25.329 21.945 2.6877
+v v47 =
+	p 25.329 21.945 2.4367
+v v113 =
+	p 25.329 21.98 2.4367
+v v110 =
+	p 25.329 21.98 2.6877
+f v106 v47 v113 v110
+v v114 =
+	p 12.27 21.98 2.7077
+v v112 =
+	p 12.27 21.945 2.7077
+v v109 =
+	p 25.309 21.945 2.7077
+v v111 =
+	p 25.309 21.98 2.7077
+f v114 v112 v109 v111
+f v104 v96 v91 v108
+f v103 v102 v101 v108
+f v91 v92 v97 v103
+f v112 v114 v100 v97
+f v111 v107 v98 v114
+f v105 v102 v100 v98
+f v105 v50 v99 v101
+f v107 v110 v113 v50
+f v47 v104 v99 v113
+f v106 v110 v111 v109
+f v94 v96 v47 v106
+f v112 v92 v94 v109
+f v108 v91 v103
+f v96 v104 v47
+f v101 v102 v105
+f v97 v92 v112
+f v114 v98 v100
+f v106 v109 v94
+f v50 v113 v99
+f v111 v110 v107
+# End conversion from: !genbox      xwood_base_mat wood_base.3 13.079 .075 .291 -b .02 | xform -t 12.25 21.925 2.4167
+# Begin conversion from: !genbox xwood_base_mat wood_base.4 6.31 .075 .291 -b .02 | xform -t 28.77 21.925 2.4167
+#  xform -t 28.77 21.925 2.4167
+#  genbox xwood_base_mat wood_base.4 6.31 .075 .291 -b .02
+o
+o wood_base.4
+v v115 =
+	p 35.06 21.925 2.4367
+v v119 =
+	p 35.06 21.925 2.6877
+v v121 =
+	p 28.79 21.925 2.6877
+v v116 =
+	p 28.79 21.925 2.4367
+f v115 v119 v121 v116
+v v122 =
+	p 28.77 21.945 2.6877
+v v120 =
+	p 28.77 21.98 2.6877
+v v118 =
+	p 28.77 21.98 2.4367
+v v117 =
+	p 28.77 21.945 2.4367
+f v122 v120 v118 v117
+v v123 =
+	p 28.79 21.98 2.4167
+v v127 =
+	p 35.06 21.98 2.4167
+v v129 =
+	p 35.06 21.945 2.4167
+v v124 =
+	p 28.79 21.945 2.4167
+f v123 v127 v129 v124
+v v130 =
+	p 35.06 22 2.4367
+v v128 =
+	p 28.79 22 2.4367
+v v126 =
+	p 28.79 22 2.6877
+v v125 =
+	p 35.06 22 2.6877
+f v130 v128 v126 v125
+v v131 =
+	p 35.08 21.945 2.6877
+v v137 =
+	p 35.08 21.945 2.4367
+v v132 =
+	p 35.08 21.98 2.4367
+v v138 =
+	p 35.08 21.98 2.6877
+f v131 v137 v132 v138
+v v136 =
+	p 28.79 21.98 2.7077
+v v133 =
+	p 28.79 21.945 2.7077
+v v139 =
+	p 35.06 21.945 2.7077
+v v143 =
+	p 35.06 21.98 2.7077
+f v136 v133 v139 v143
+f v129 v115 v116 v124
+f v117 v118 v123 v124
+f v116 v121 v122 v117
+f v133 v136 v120 v122
+f v143 v125 v126 v136
+f v128 v118 v120 v126
+f v128 v130 v127 v123
+f v125 v138 v132 v130
+f v137 v129 v127 v132
+f v131 v138 v143 v139
+f v119 v115 v137 v131
+f v133 v121 v119 v139
+f v124 v116 v117
+f v115 v129 v137
+f v123 v118 v128
+f v122 v121 v133
+f v136 v126 v120
+f v131 v139 v119
+f v130 v132 v127
+f v143 v138 v125
+# End conversion from: !genbox xwood_base_mat wood_base.4 6.31 .075 .291 -b .02 | xform -t 28.77 21.925 2.4167
+# Begin conversion from: !genbox ywood_base_mat wood_base.5 .075 7.85 .291 -b .02 | xform -t 35.08 13.2 2.4167
+#  xform -t 35.08 13.2 2.4167
+#  genbox ywood_base_mat wood_base.5 .075 7.85 .291 -b .02
+m ywood_base_mat
+o
+o wood_base.5
+v v135 =
+	p 35.135 13.2 2.4367
+v v3 =
+	p 35.135 13.2 2.6877
+v v134 =
+	p 35.1 13.2 2.6877
+v v142 =
+	p 35.1 13.2 2.4367
+f v135 v3 v134 v142
+v v144 =
+	p 35.08 13.22 2.6877
+v v147 =
+	p 35.08 21.03 2.6877
+v v149 =
+	p 35.08 21.03 2.4367
+v v140 =
+	p 35.08 13.22 2.4367
+f v144 v147 v149 v140
+v v148 =
+	p 35.1 21.03 2.4167
+v v146 =
+	p 35.135 21.03 2.4167
+v v145 =
+	p 35.135 13.22 2.4167
+v v141 =
+	p 35.1 13.22 2.4167
+f v148 v146 v145 v141
+v v37 =
+	p 35.135 21.05 2.4367
+v v43 =
+	p 35.1 21.05 2.4367
+v v154 =
+	p 35.1 21.05 2.6877
+v v151 =
+	p 35.135 21.05 2.6877
+f v37 v43 v154 v151
+v v150 =
+	p 35.155 13.22 2.6877
+v v155 =
+	p 35.155 13.22 2.4367
+v v159 =
+	p 35.155 21.03 2.4367
+v v161 =
+	p 35.155 21.03 2.6877
+f v150 v155 v159 v161
+v v153 =
+	p 35.1 21.03 2.7077
+v v160 =
+	p 35.1 13.22 2.7077
+v v158 =
+	p 35.135 13.22 2.7077
+v v152 =
+	p 35.135 21.03 2.7077
+f v153 v160 v158 v152
+f v145 v135 v142 v141
+f v140 v149 v148 v141
+f v142 v134 v144 v140
+f v160 v153 v147 v144
+f v152 v151 v154 v153
+f v43 v149 v147 v154
+f v43 v37 v146 v148
+f v151 v161 v159 v37
+f v155 v145 v146 v159
+f v150 v161 v152 v158
+f v3 v135 v155 v150
+f v160 v134 v3 v158
+f v141 v142 v140
+f v135 v145 v155
+f v148 v149 v43
+f v144 v134 v160
+f v153 v154 v147
+f v150 v158 v3
+f v37 v159 v146
+f v152 v161 v151
+# End conversion from: !genbox ywood_base_mat wood_base.5 .075 7.85 .291 -b .02 | xform -t 35.08 13.2 2.4167
+# Begin conversion from: !genbox xwood_base_mat wood_base.6 6.5 .075 .291 -b .02 | xform -t 29 13.2 2.4167
+#  xform -t 29 13.2 2.4167
+#  genbox xwood_base_mat wood_base.6 6.5 .075 .291 -b .02
+m xwood_base_mat
+o
+o wood_base.6
+v v156 =
+	p 35.48 13.2 2.4367
+v v35 =
+	p 35.48 13.2 2.6877
+v v162 =
+	p 29.02 13.2 2.6877
+v v32 =
+	p 29.02 13.2 2.4367
+f v156 v35 v162 v32
+v v164 =
+	p 29 13.22 2.6877
+v v157 =
+	p 29 13.255 2.6877
+v v163 =
+	p 29 13.255 2.4367
+v v165 =
+	p 29 13.22 2.4367
+f v164 v157 v163 v165
+v v170 =
+	p 29.02 13.255 2.4167
+v v0 =
+	p 35.48 13.255 2.4167
+v v171 =
+	p 35.48 13.22 2.4167
+v v169 =
+	p 29.02 13.22 2.4167
+f v170 v0 v171 v169
+v v166 =
+	p 35.48 13.275 2.4367
+v v172 =
+	p 29.02 13.275 2.4367
+v v31 =
+	p 29.02 13.275 2.6877
+v v168 =
+	p 35.48 13.275 2.6877
+f v166 v172 v31 v168
+v v176 =
+	p 35.5 13.22 2.6877
+v v173 =
+	p 35.5 13.22 2.4367
+v v167 =
+	p 35.5 13.255 2.4367
+v v177 =
+	p 35.5 13.255 2.6877
+f v176 v173 v167 v177
+v v180 =
+	p 29.02 13.255 2.7077
+v v182 =
+	p 29.02 13.22 2.7077
+v v175 =
+	p 35.48 13.22 2.7077
+v v181 =
+	p 35.48 13.255 2.7077
+f v180 v182 v175 v181
+f v171 v156 v32 v169
+f v165 v163 v170 v169
+f v32 v162 v164 v165
+f v182 v180 v157 v164
+f v181 v168 v31 v180
+f v172 v163 v157 v31
+f v172 v166 v0 v170
+f v168 v177 v167 v166
+f v173 v171 v0 v167
+f v176 v177 v181 v175
+f v35 v156 v173 v176
+f v182 v162 v35 v175
+f v169 v32 v165
+f v156 v171 v173
+f v170 v163 v172
+f v164 v162 v182
+f v180 v31 v157
+f v176 v175 v35
+f v166 v167 v0
+f v181 v177 v168
+# End conversion from: !genbox xwood_base_mat wood_base.6 6.5 .075 .291 -b .02 | xform -t 29 13.2 2.4167
+# Begin conversion from: !genbox ywood_base_mat wood_base.7 .075 6.6 .291 -b .02 | xform -t 28.925 6.675  2.4167
+#  xform -t 28.925 6.675 2.4167
+#  genbox ywood_base_mat wood_base.7 .075 6.6 .291 -b .02
+m ywood_base_mat
+o
+o wood_base.7
+v v179 =
+	p 28.98 6.675 2.4367
+v v174 =
+	p 28.98 6.675 2.6877
+v v185 =
+	p 28.945 6.675 2.6877
+v v29 =
+	p 28.945 6.675 2.4367
+f v179 v174 v185 v29
+v v186 =
+	p 28.925 6.695 2.6877
+v v184 =
+	p 28.925 13.255 2.6877
+v v178 =
+	p 28.925 13.255 2.4367
+v v187 =
+	p 28.925 6.695 2.4367
+f v186 v184 v178 v187
+v v25 =
+	p 28.945 13.255 2.4167
+v v22 =
+	p 28.98 13.255 2.4167
+v v188 =
+	p 28.98 6.695 2.4167
+v v190 =
+	p 28.945 6.695 2.4167
+f v25 v22 v188 v190
+v v183 =
+	p 28.98 13.275 2.4367
+v v189 =
+	p 28.945 13.275 2.4367
+v v196 =
+	p 28.945 13.275 2.6877
+v v191 =
+	p 28.98 13.275 2.6877
+f v183 v189 v196 v191
+v v197 =
+	p 29 6.695 2.6877
+v v195 =
+	p 29 6.695 2.4367
+f v197 v195 v163 v157
+v v192 =
+	p 28.945 13.255 2.7077
+v v198 =
+	p 28.945 6.695 2.7077
+v v201 =
+	p 28.98 6.695 2.7077
+v v194 =
+	p 28.98 13.255 2.7077
+f v192 v198 v201 v194
+f v188 v179 v29 v190
+f v187 v178 v25 v190
+f v29 v185 v186 v187
+f v198 v192 v184 v186
+f v194 v191 v196 v192
+f v189 v178 v184 v196
+f v189 v183 v22 v25
+f v191 v157 v163 v183
+f v195 v188 v22 v163
+f v197 v157 v194 v201
+f v174 v179 v195 v197
+f v198 v185 v174 v201
+f v190 v29 v187
+f v179 v188 v195
+f v25 v178 v189
+f v186 v185 v198
+f v192 v196 v184
+f v197 v201 v174
+f v183 v163 v22
+f v194 v157 v191
+# End conversion from: !genbox ywood_base_mat wood_base.7 .075 6.6 .291 -b .02 | xform -t 28.925 6.675  2.4167
+# Begin conversion from: !genbox xwood_base_mat wood_base.8 6.5 .075 .291 -b .02 | xform -t 29 6.675 2.4167
+#  xform -t 29 6.675 2.4167
+#  genbox xwood_base_mat wood_base.8 6.5 .075 .291 -b .02
+m xwood_base_mat
+o
+o wood_base.8
+v v20 =
+	p 35.48 6.675 2.4367
+v v193 =
+	p 35.48 6.675 2.6877
+v v200 =
+	p 29.02 6.675 2.6877
+v v202 =
+	p 29.02 6.675 2.4367
+f v20 v193 v200 v202
+v v16 =
+	p 29 6.73 2.6877
+v v21 =
+	p 29 6.73 2.4367
+f v197 v16 v21 v195
+v v206 =
+	p 29.02 6.73 2.4167
+v v203 =
+	p 35.48 6.73 2.4167
+v v199 =
+	p 35.48 6.695 2.4167
+v v207 =
+	p 29.02 6.695 2.4167
+f v206 v203 v199 v207
+v v205 =
+	p 35.48 6.75 2.4367
+v v211 =
+	p 29.02 6.75 2.4367
+v v208 =
+	p 29.02 6.75 2.6877
+v v212 =
+	p 35.48 6.75 2.6877
+f v205 v211 v208 v212
+v v210 =
+	p 35.5 6.695 2.6877
+v v204 =
+	p 35.5 6.695 2.4367
+v v209 =
+	p 35.5 6.73 2.4367
+v v213 =
+	p 35.5 6.73 2.6877
+f v210 v204 v209 v213
+v v56 =
+	p 29.02 6.73 2.7077
+v v214 =
+	p 29.02 6.695 2.7077
+v v216 =
+	p 35.48 6.695 2.7077
+v v215 =
+	p 35.48 6.73 2.7077
+f v56 v214 v216 v215
+f v199 v20 v202 v207
+f v195 v21 v206 v207
+f v202 v200 v197 v195
+f v214 v56 v16 v197
+f v215 v212 v208 v56
+f v211 v21 v16 v208
+f v211 v205 v203 v206
+f v212 v213 v209 v205
+f v204 v199 v203 v209
+f v210 v213 v215 v216
+f v193 v20 v204 v210
+f v214 v200 v193 v216
+f v207 v202 v195
+f v20 v199 v204
+f v206 v21 v211
+f v197 v200 v214
+f v56 v208 v16
+f v210 v216 v193
+f v205 v209 v203
+f v215 v213 v212
+# End conversion from: !genbox xwood_base_mat wood_base.8 6.5 .075 .291 -b .02 | xform -t 29 6.675 2.4167
+#  2 lines of screws along the wood board
+# Begin conversion from: !xform -e -n screws_bottom screws
+#  xform -e -n screws_bottom
+# ############################
+#  screws on wood baseboards #
+# ############################
+#  screws on left wall after door1 
+#  xform -n screw1 -rz 180 -t 6.41 21.925 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_bottom.screw1
+v v218 =
+	p 6.41 21.925 2.476
+v v217 =
+	p 6.41 21.92 2.476
+cone v218 0.03 v217 0.025
+v cent =
+	p 6.41 21.92 2.476
+	n -1.22460635382e-16 -1 0
+ring cent 0 0.025
+#  xform -n screw2 -rz 180 -t 8.43 21.925 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_bottom.screw2
+v v220 =
+	p 8.43 21.925 2.476
+v v219 =
+	p 8.43 21.92 2.476
+cone v220 0.03 v219 0.025
+v cent =
+	p 8.43 21.92 2.476
+	n -1.22460635382e-16 -1 0
+ring cent 0 0.025
+#  xform -n screw3 -rz 180 -t 10.6 21.925 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_bottom.screw3
+v v222 =
+	p 10.6 21.925 2.476
+v v221 =
+	p 10.6 21.92 2.476
+cone v222 0.03 v221 0.025
+v cent =
+	p 10.6 21.92 2.476
+	n -1.22460635382e-16 -1 0
+ring cent 0 0.025
+#  screws after shaft4
+#  xform -n screw4 -rz 180 -t 12.62 21.925 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_bottom.screw4
+v v224 =
+	p 12.62 21.925 2.476
+v v223 =
+	p 12.62 21.92 2.476
+cone v224 0.03 v223 0.025
+v cent =
+	p 12.62 21.92 2.476
+	n -1.22460635382e-16 -1 0
+ring cent 0 0.025
+#  xform -n screw5 -rz 180 -t 13.646 21.925 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_bottom.screw5
+v v226 =
+	p 13.646 21.925 2.476
+v v225 =
+	p 13.646 21.92 2.476
+cone v226 0.03 v225 0.025
+v cent =
+	p 13.646 21.92 2.476
+	n -1.22460635382e-16 -1 0
+ring cent 0 0.025
+#  xform -n screw6 -rz 180 -t 16.31 21.925 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_bottom.screw6
+v v227 =
+	p 16.31 21.925 2.476
+v v228 =
+	p 16.31 21.92 2.476
+cone v227 0.03 v228 0.025
+v cent =
+	p 16.31 21.92 2.476
+	n -1.22460635382e-16 -1 0
+ring cent 0 0.025
+#  xform -n screw7 -rz 180 -t 18.98 21.925 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_bottom.screw7
+v v231 =
+	p 18.98 21.925 2.476
+v v55 =
+	p 18.98 21.92 2.476
+cone v231 0.03 v55 0.025
+v cent =
+	p 18.98 21.92 2.476
+	n -1.22460635382e-16 -1 0
+ring cent 0 0.025
+#  xform -n screw8 -rz 180 -t 21.687 21.925 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_bottom.screw8
+v v230 =
+	p 21.687 21.925 2.476
+v v229 =
+	p 21.687 21.92 2.476
+cone v230 0.03 v229 0.025
+v cent =
+	p 21.687 21.92 2.476
+	n -1.22460635382e-16 -1 0
+ring cent 0 0.025
+#  xform -n screw9 -rz 180 -t 24.35 21.925 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_bottom.screw9
+v v233 =
+	p 24.35 21.925 2.476
+v v232 =
+	p 24.35 21.92 2.476
+cone v233 0.03 v232 0.025
+v cent =
+	p 24.35 21.92 2.476
+	n -1.22460635382e-16 -1 0
+ring cent 0 0.025
+#  screws after door2
+#  xform -n screw10 -rz 180 -t 30 21.925 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_bottom.screw10
+v v235 =
+	p 30 21.925 2.476
+v v234 =
+	p 30 21.92 2.476
+cone v235 0.03 v234 0.025
+v cent =
+	p 30 21.92 2.476
+	n -1.22460635382e-16 -1 0
+ring cent 0 0.025
+#  xform -n screw11 -rz 180 -t 32.66 21.925 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_bottom.screw11
+v v237 =
+	p 32.66 21.925 2.476
+v v236 =
+	p 32.66 21.92 2.476
+cone v237 0.03 v236 0.025
+v cent =
+	p 32.66 21.92 2.476
+	n -1.22460635382e-16 -1 0
+ring cent 0 0.025
+#  xform -n screw12 -rz 180 -t 35.18 21.925 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_bottom.screw12
+v v239 =
+	p 35.18 21.925 2.476
+v v238 =
+	p 35.18 21.92 2.476
+cone v239 0.03 v238 0.025
+v cent =
+	p 35.18 21.92 2.476
+	n -1.22460635382e-16 -1 0
+ring cent 0 0.025
+#  after shaft3
+#  xform -n screw13 -rz 90 -t 35.085 21 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_bottom.screw13
+v v242 =
+	p 35.085 21 2.476
+v v243 =
+	p 35.08 21 2.476
+cone v242 0.03 v243 0.025
+v cent =
+	p 35.08 21 2.476
+	n -1 6.12303176911e-17 0
+ring cent 0 0.025
+#  xform -n screw14 -rz 90 -t 35.085 19.9 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_bottom.screw14
+v v241 =
+	p 35.085 19.9 2.476
+v v240 =
+	p 35.08 19.9 2.476
+cone v241 0.03 v240 0.025
+v cent =
+	p 35.08 19.9 2.476
+	n -1 6.12303176911e-17 0
+ring cent 0 0.025
+#  xform -n screw15 -rz 90 -t 35.085 16.33 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_bottom.screw15
+v v244 =
+	p 35.085 16.33 2.476
+v v245 =
+	p 35.08 16.33 2.476
+cone v244 0.03 v245 0.025
+v cent =
+	p 35.08 16.33 2.476
+	n -1 6.12303176911e-17 0
+ring cent 0 0.025
+#  xform -n screw16 -rz 90 -t 35.085 13.66 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_bottom.screw16
+v v247 =
+	p 35.085 13.66 2.476
+v v246 =
+	p 35.08 13.66 2.476
+cone v247 0.03 v246 0.025
+v cent =
+	p 35.08 13.66 2.476
+	n -1 6.12303176911e-17 0
+ring cent 0 0.025
+#  Big_shaft 1
+#  xform -n screw17 -t 32.05 13.28 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_bottom.screw17
+v v249 =
+	p 32.05 13.28 2.476
+v v248 =
+	p 32.05 13.285 2.476
+cone v249 0.03 v248 0.025
+v cent =
+	p 32.05 13.285 2.476
+	n 0 1 0
+ring cent 0 0.025
+#  xform -n screw18 -t 29.3 13.28 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_bottom.screw18
+v v251 =
+	p 29.3 13.28 2.476
+v v250 =
+	p 29.3 13.285 2.476
+cone v251 0.03 v250 0.025
+v cent =
+	p 29.3 13.285 2.476
+	n 0 1 0
+ring cent 0 0.025
+#  Big_shaft 2 (front)
+#  xform -n screw19 -rz 90 -t 28.925 13.03 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_bottom.screw19
+v v253 =
+	p 28.925 13.03 2.476
+v v252 =
+	p 28.92 13.03 2.476
+cone v253 0.03 v252 0.025
+v cent =
+	p 28.92 13.03 2.476
+	n -1 6.12303176911e-17 0
+ring cent 0 0.025
+#  xform -n screw20 -rz 90 -t 28.925 10.9 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_bottom.screw20
+v v255 =
+	p 28.925 10.9 2.476
+v v254 =
+	p 28.92 10.9 2.476
+cone v255 0.03 v254 0.025
+v cent =
+	p 28.92 10.9 2.476
+	n -1 6.12303176911e-17 0
+ring cent 0 0.025
+#  xform -n screw21 -rz 90 -t 28.925 8.9 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_bottom.screw21
+v v6 =
+	p 28.925 8.9 2.476
+v v5 =
+	p 28.92 8.9 2.476
+cone v6 0.03 v5 0.025
+v cent =
+	p 28.92 8.9 2.476
+	n -1 6.12303176911e-17 0
+ring cent 0 0.025
+#  xform -n screw22 -rz 90 -t 28.925 6.95 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_bottom.screw22
+v v7 =
+	p 28.925 6.95 2.476
+v v8 =
+	p 28.92 6.95 2.476
+cone v7 0.03 v8 0.025
+v cent =
+	p 28.92 6.95 2.476
+	n -1 6.12303176911e-17 0
+ring cent 0 0.025
+#  Big_shaft 3
+#  xform -n screw23 -rz 180 -t 29.18 6.675 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_bottom.screw23
+v v68 =
+	p 29.18 6.675 2.476
+v v9 =
+	p 29.18 6.67 2.476
+cone v68 0.03 v9 0.025
+v cent =
+	p 29.18 6.67 2.476
+	n -1.22460635382e-16 -1 0
+ring cent 0 0.025
+#  xform -n screw24 -rz 180 -t 30.8 6.675 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_bottom.screw24
+v v11 =
+	p 30.8 6.675 2.476
+v v10 =
+	p 30.8 6.67 2.476
+cone v11 0.03 v10 0.025
+v cent =
+	p 30.8 6.67 2.476
+	n -1.22460635382e-16 -1 0
+ring cent 0 0.025
+#  xform -n screw25 -rz 180 -t 32.5 6.675 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_bottom.screw25
+v v4 =
+	p 32.5 6.675 2.476
+v v12 =
+	p 32.5 6.67 2.476
+cone v4 0.03 v12 0.025
+v cent =
+	p 32.5 6.67 2.476
+	n -1.22460635382e-16 -1 0
+ring cent 0 0.025
+# End conversion from: !xform -e -n screws_bottom screws
+# Begin conversion from: !xform -e -n screws_top -t 0 0 .166 screws
+#  xform -e -n screws_top -t 0 0 .166
+# ############################
+#  screws on wood baseboards #
+# ############################
+#  screws on left wall after door1 
+#  xform -n screw1 -rz 180 -t 6.41 21.925 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_top.screw1
+v v19 =
+	p 6.41 21.925 2.642
+v v18 =
+	p 6.41 21.92 2.642
+cone v19 0.03 v18 0.025
+v cent =
+	p 6.41 21.92 2.642
+	n -1.22460635382e-16 -1 0
+ring cent 0 0.025
+#  xform -n screw2 -rz 180 -t 8.43 21.925 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_top.screw2
+v v23 =
+	p 8.43 21.925 2.642
+v v24 =
+	p 8.43 21.92 2.642
+cone v23 0.03 v24 0.025
+v cent =
+	p 8.43 21.92 2.642
+	n -1.22460635382e-16 -1 0
+ring cent 0 0.025
+#  xform -n screw3 -rz 180 -t 10.6 21.925 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_top.screw3
+v v30 =
+	p 10.6 21.925 2.642
+v v28 =
+	p 10.6 21.92 2.642
+cone v30 0.03 v28 0.025
+v cent =
+	p 10.6 21.92 2.642
+	n -1.22460635382e-16 -1 0
+ring cent 0 0.025
+#  screws after shaft4
+#  xform -n screw4 -rz 180 -t 12.62 21.925 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_top.screw4
+v v33 =
+	p 12.62 21.925 2.642
+v v1 =
+	p 12.62 21.92 2.642
+cone v33 0.03 v1 0.025
+v cent =
+	p 12.62 21.92 2.642
+	n -1.22460635382e-16 -1 0
+ring cent 0 0.025
+#  xform -n screw5 -rz 180 -t 13.646 21.925 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_top.screw5
+v v34 =
+	p 13.646 21.925 2.642
+v v39 =
+	p 13.646 21.92 2.642
+cone v34 0.03 v39 0.025
+v cent =
+	p 13.646 21.92 2.642
+	n -1.22460635382e-16 -1 0
+ring cent 0 0.025
+#  xform -n screw6 -rz 180 -t 16.31 21.925 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_top.screw6
+v v42 =
+	p 16.31 21.925 2.642
+v v67 =
+	p 16.31 21.92 2.642
+cone v42 0.03 v67 0.025
+v cent =
+	p 16.31 21.92 2.642
+	n -1.22460635382e-16 -1 0
+ring cent 0 0.025
+#  xform -n screw7 -rz 180 -t 18.98 21.925 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_top.screw7
+v v41 =
+	p 18.98 21.925 2.642
+v v40 =
+	p 18.98 21.92 2.642
+cone v41 0.03 v40 0.025
+v cent =
+	p 18.98 21.92 2.642
+	n -1.22460635382e-16 -1 0
+ring cent 0 0.025
+#  xform -n screw8 -rz 180 -t 21.687 21.925 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_top.screw8
+v v36 =
+	p 21.687 21.925 2.642
+v v38 =
+	p 21.687 21.92 2.642
+cone v36 0.03 v38 0.025
+v cent =
+	p 21.687 21.92 2.642
+	n -1.22460635382e-16 -1 0
+ring cent 0 0.025
+#  xform -n screw9 -rz 180 -t 24.35 21.925 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_top.screw9
+v v2 =
+	p 24.35 21.925 2.642
+v v44 =
+	p 24.35 21.92 2.642
+cone v2 0.03 v44 0.025
+v cent =
+	p 24.35 21.92 2.642
+	n -1.22460635382e-16 -1 0
+ring cent 0 0.025
+#  screws after door2
+#  xform -n screw10 -rz 180 -t 30 21.925 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_top.screw10
+v v14 =
+	p 30 21.925 2.642
+v v45 =
+	p 30 21.92 2.642
+cone v14 0.03 v45 0.025
+v cent =
+	p 30 21.92 2.642
+	n -1.22460635382e-16 -1 0
+ring cent 0 0.025
+#  xform -n screw11 -rz 180 -t 32.66 21.925 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_top.screw11
+v v46 =
+	p 32.66 21.925 2.642
+v v13 =
+	p 32.66 21.92 2.642
+cone v46 0.03 v13 0.025
+v cent =
+	p 32.66 21.92 2.642
+	n -1.22460635382e-16 -1 0
+ring cent 0 0.025
+#  xform -n screw12 -rz 180 -t 35.18 21.925 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_top.screw12
+v v52 =
+	p 35.18 21.925 2.642
+v v48 =
+	p 35.18 21.92 2.642
+cone v52 0.03 v48 0.025
+v cent =
+	p 35.18 21.92 2.642
+	n -1.22460635382e-16 -1 0
+ring cent 0 0.025
+#  after shaft3
+#  xform -n screw13 -rz 90 -t 35.085 21 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_top.screw13
+v v51 =
+	p 35.085 21 2.642
+v v49 =
+	p 35.08 21 2.642
+cone v51 0.03 v49 0.025
+v cent =
+	p 35.08 21 2.642
+	n -1 6.12303176911e-17 0
+ring cent 0 0.025
+#  xform -n screw14 -rz 90 -t 35.085 19.9 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_top.screw14
+v v53 =
+	p 35.085 19.9 2.642
+v v54 =
+	p 35.08 19.9 2.642
+cone v53 0.03 v54 0.025
+v cent =
+	p 35.08 19.9 2.642
+	n -1 6.12303176911e-17 0
+ring cent 0 0.025
+#  xform -n screw15 -rz 90 -t 35.085 16.33 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_top.screw15
+v v58 =
+	p 35.085 16.33 2.642
+v v57 =
+	p 35.08 16.33 2.642
+cone v58 0.03 v57 0.025
+v cent =
+	p 35.08 16.33 2.642
+	n -1 6.12303176911e-17 0
+ring cent 0 0.025
+#  xform -n screw16 -rz 90 -t 35.085 13.66 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_top.screw16
+v v60 =
+	p 35.085 13.66 2.642
+v v59 =
+	p 35.08 13.66 2.642
+cone v60 0.03 v59 0.025
+v cent =
+	p 35.08 13.66 2.642
+	n -1 6.12303176911e-17 0
+ring cent 0 0.025
+#  Big_shaft 1
+#  xform -n screw17 -t 32.05 13.28 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_top.screw17
+v v62 =
+	p 32.05 13.28 2.642
+v v61 =
+	p 32.05 13.285 2.642
+cone v62 0.03 v61 0.025
+v cent =
+	p 32.05 13.285 2.642
+	n 0 1 0
+ring cent 0 0.025
+#  xform -n screw18 -t 29.3 13.28 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_top.screw18
+v v64 =
+	p 29.3 13.28 2.642
+v v63 =
+	p 29.3 13.285 2.642
+cone v64 0.03 v63 0.025
+v cent =
+	p 29.3 13.285 2.642
+	n 0 1 0
+ring cent 0 0.025
+#  Big_shaft 2 (front)
+#  xform -n screw19 -rz 90 -t 28.925 13.03 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_top.screw19
+v v66 =
+	p 28.925 13.03 2.642
+v v65 =
+	p 28.92 13.03 2.642
+cone v66 0.03 v65 0.025
+v cent =
+	p 28.92 13.03 2.642
+	n -1 6.12303176911e-17 0
+ring cent 0 0.025
+#  xform -n screw20 -rz 90 -t 28.925 10.9 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_top.screw20
+v v70 =
+	p 28.925 10.9 2.642
+v v69 =
+	p 28.92 10.9 2.642
+cone v70 0.03 v69 0.025
+v cent =
+	p 28.92 10.9 2.642
+	n -1 6.12303176911e-17 0
+ring cent 0 0.025
+#  xform -n screw21 -rz 90 -t 28.925 8.9 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_top.screw21
+v v71 =
+	p 28.925 8.9 2.642
+v v72 =
+	p 28.92 8.9 2.642
+cone v71 0.03 v72 0.025
+v cent =
+	p 28.92 8.9 2.642
+	n -1 6.12303176911e-17 0
+ring cent 0 0.025
+#  xform -n screw22 -rz 90 -t 28.925 6.95 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_top.screw22
+v v81 =
+	p 28.925 6.95 2.642
+v v76 =
+	p 28.92 6.95 2.642
+cone v81 0.03 v76 0.025
+v cent =
+	p 28.92 6.95 2.642
+	n -1 6.12303176911e-17 0
+ring cent 0 0.025
+#  Big_shaft 3
+#  xform -n screw23 -rz 180 -t 29.18 6.675 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_top.screw23
+v v79 =
+	p 29.18 6.675 2.642
+v v73 =
+	p 29.18 6.67 2.642
+cone v79 0.03 v73 0.025
+v cent =
+	p 29.18 6.67 2.642
+	n -1.22460635382e-16 -1 0
+ring cent 0 0.025
+#  xform -n screw24 -rz 180 -t 30.8 6.675 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_top.screw24
+v v27 =
+	p 30.8 6.675 2.642
+v v86 =
+	p 30.8 6.67 2.642
+cone v27 0.03 v86 0.025
+v cent =
+	p 30.8 6.67 2.642
+	n -1.22460635382e-16 -1 0
+ring cent 0 0.025
+#  xform -n screw25 -rz 180 -t 32.5 6.675 2.476
+# 
+#  description of a screw
+# 
+m screw_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2127
+	rs 0.4963 0.0000
+o
+o screws_top.screw25
+v v80 =
+	p 32.5 6.675 2.642
+v v26 =
+	p 32.5 6.67 2.642
+cone v80 0.03 v26 0.025
+v cent =
+	p 32.5 6.67 2.642
+	n -1.22460635382e-16 -1 0
+ring cent 0 0.025
+# End conversion from: !xform -e -n screws_top -t 0 0 .166 screws
+#  Addition of the window frames
+# Begin conversion from: !xform -e -n window1.1 -t 32 -.54 2.83 window1.frame
+#  xform -e -n window1.1 -t 32 -.54 2.83
+#  description of a frame at window unit number 1
+m window_board_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.6000
+o
+o window1.1.border1
+v v85 =
+	p 32 -0.54 2.83
+v v77 =
+	p 32 -0.54 8.89
+v v75 =
+	p 32.166 -0.54 8.89
+v v93 =
+	p 32.166 -0.54 2.83
+f v85 v77 v75 v93
+v v89 =
+	p 35.83 -0.54 2.83
+v v87 =
+	p 35.83 -0.54 8.89
+v v78 =
+	p 36 -0.54 8.89
+v v88 =
+	p 36 -0.54 2.83
+f v89 v87 v78 v88
+# End conversion from: !xform -e -n window1.1 -t 32 -.54 2.83 window1.frame
+# Begin conversion from: !xform -e -n window2.1 -t 28 -.54 2.83 window2.frame
+#  xform -e -n window2.1 -t 28 -.54 2.83
+#  description of a frame at window unit number 2
+m window_board_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.6000
+o
+o window2.1.border2
+v v95 =
+	p 28 -0.54 2.83
+v v74 =
+	p 28 -0.54 8.89
+v v15 =
+	p 28.166 -0.54 8.89
+v v84 =
+	p 28.166 -0.54 2.83
+f v95 v74 v15 v84
+v v17 =
+	p 31.83 -0.54 2.83
+v v90 =
+	p 31.83 -0.54 8.89
+f v17 v90 v77 v85
+#  xform -t 2 0 1.33
+o
+o window2.1
+v v83 =
+	p 28.166 -0.54 4.16
+v v82 =
+	p 28.166 -0.54 4.33
+v v108 =
+	p 31.83 -0.54 4.33
+v v91 =
+	p 31.83 -0.54 4.16
+f v83 v82 v108 v91
+# End conversion from: !xform -e -n window2.1 -t 28 -.54 2.83 window2.frame
+# Begin conversion from: !xform -e -n window1.2 -t 24 -.54 2.83 window1.frame
+#  xform -e -n window1.2 -t 24 -.54 2.83
+#  description of a frame at window unit number 1
+m window_board_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.6000
+o
+o window1.2.border1
+v v103 =
+	p 24 -0.54 2.83
+v v96 =
+	p 24 -0.54 8.89
+v v104 =
+	p 24.166 -0.54 8.89
+v v47 =
+	p 24.166 -0.54 2.83
+f v103 v96 v104 v47
+v v101 =
+	p 27.83 -0.54 2.83
+v v102 =
+	p 27.83 -0.54 8.89
+f v101 v102 v74 v95
+# End conversion from: !xform -e -n window1.2 -t 24 -.54 2.83 window1.frame
+# Begin conversion from: !xform -e -n window2.2 -t 20 -.54 2.83 window2.frame
+#  xform -e -n window2.2 -t 20 -.54 2.83
+#  description of a frame at window unit number 2
+m window_board_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.6000
+o
+o window2.2.border2
+v v105 =
+	p 20 -0.54 2.83
+v v97 =
+	p 20 -0.54 8.89
+v v92 =
+	p 20.166 -0.54 8.89
+v v112 =
+	p 20.166 -0.54 2.83
+f v105 v97 v92 v112
+v v114 =
+	p 23.83 -0.54 2.83
+v v98 =
+	p 23.83 -0.54 8.89
+f v114 v98 v96 v103
+#  xform -t 2 0 1.33
+o
+o window2.2
+v v100 =
+	p 20.166 -0.54 4.16
+v v106 =
+	p 20.166 -0.54 4.33
+v v109 =
+	p 23.83 -0.54 4.33
+v v94 =
+	p 23.83 -0.54 4.16
+f v100 v106 v109 v94
+# End conversion from: !xform -e -n window2.2 -t 20 -.54 2.83 window2.frame
+# Begin conversion from: !xform -e -n window1.3 -t 16 -.54 2.83 window1.frame
+#  xform -e -n window1.3 -t 16 -.54 2.83
+#  description of a frame at window unit number 1
+m window_board_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.6000
+o
+o window1.3.border1
+v v50 =
+	p 16 -0.54 2.83
+v v113 =
+	p 16 -0.54 8.89
+v v99 =
+	p 16.166 -0.54 8.89
+v v111 =
+	p 16.166 -0.54 2.83
+f v50 v113 v99 v111
+v v110 =
+	p 19.83 -0.54 2.83
+v v107 =
+	p 19.83 -0.54 8.89
+f v110 v107 v97 v105
+# End conversion from: !xform -e -n window1.3 -t 16 -.54 2.83 window1.frame
+# Begin conversion from: !xform -e -n window2.3 -t 12 -.54 2.83 window2.frame
+#  xform -e -n window2.3 -t 12 -.54 2.83
+#  description of a frame at window unit number 2
+m window_board_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.6000
+o
+o window2.3.border2
+v v124 =
+	p 12 -0.54 2.83
+v v116 =
+	p 12 -0.54 8.89
+v v117 =
+	p 12.166 -0.54 8.89
+v v115 =
+	p 12.166 -0.54 2.83
+f v124 v116 v117 v115
+v v129 =
+	p 15.83 -0.54 2.83
+v v137 =
+	p 15.83 -0.54 8.89
+f v129 v137 v113 v50
+#  xform -t 2 0 1.33
+o
+o window2.3
+v v123 =
+	p 12.166 -0.54 4.16
+v v118 =
+	p 12.166 -0.54 4.33
+v v128 =
+	p 15.83 -0.54 4.33
+v v122 =
+	p 15.83 -0.54 4.16
+f v123 v118 v128 v122
+# End conversion from: !xform -e -n window2.3 -t 12 -.54 2.83 window2.frame
+# Begin conversion from: !xform -e -n window1.4 -t 8 -.54 2.83 window1.frame
+#  xform -e -n window1.4 -t 8 -.54 2.83
+#  description of a frame at window unit number 1
+m window_board_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.6000
+o
+o window1.4.border1
+v v121 =
+	p 8 -0.54 2.83
+v v133 =
+	p 8 -0.54 8.89
+v v136 =
+	p 8.166 -0.54 8.89
+v v126 =
+	p 8.166 -0.54 2.83
+f v121 v133 v136 v126
+v v120 =
+	p 11.83 -0.54 2.83
+v v131 =
+	p 11.83 -0.54 8.89
+f v120 v131 v116 v124
+# End conversion from: !xform -e -n window1.4 -t 8 -.54 2.83 window1.frame
+# Begin conversion from: !xform -e -n window2.4 -t 4 -.54  2.83 window2.frame
+#  xform -e -n window2.4 -t 4 -.54 2.83
+#  description of a frame at window unit number 2
+m window_board_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.6000
+o
+o window2.4.border2
+v v139 =
+	p 4 -0.54 2.83
+v v119 =
+	p 4 -0.54 8.89
+v v130 =
+	p 4.166 -0.54 8.89
+v v132 =
+	p 4.166 -0.54 2.83
+f v139 v119 v130 v132
+v v127 =
+	p 7.83 -0.54 2.83
+v v143 =
+	p 7.83 -0.54 8.89
+f v127 v143 v133 v121
+#  xform -t 2 0 1.33
+o
+o window2.4
+v v138 =
+	p 4.166 -0.54 4.16
+v v125 =
+	p 4.166 -0.54 4.33
+v v141 =
+	p 7.83 -0.54 4.33
+v v142 =
+	p 7.83 -0.54 4.16
+f v138 v125 v141 v142
+# End conversion from: !xform -e -n window2.4 -t 4 -.54  2.83 window2.frame
+# Begin conversion from: !xform -e -n window1.5 -t 0 -.54  2.83 window1.frame
+#  xform -e -n window1.5 -t 0 -.54 2.83
+#  description of a frame at window unit number 1
+m window_board_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.6000
+o
+o window1.5.border1
+v v140 =
+	p 0 -0.54 2.83
+v v135 =
+	p 0 -0.54 8.89
+v v145 =
+	p 0.166 -0.54 8.89
+v v155 =
+	p 0.166 -0.54 2.83
+f v140 v135 v145 v155
+v v148 =
+	p 3.83 -0.54 2.83
+v v149 =
+	p 3.83 -0.54 8.89
+f v148 v149 v119 v139
+# End conversion from: !xform -e -n window1.5 -t 0 -.54  2.83 window1.frame
+m wall_mat
+o
+o window_sill
+v v43 =
+	p 0 0 2.875
+v v144 =
+	p 0 -0.54 2.875
+v v134 =
+	p 35 -0.54 2.875
+v v160 =
+	p 35 0 2.875
+f v43 v144 v134 v160
+# Begin conversion from: !genbox xwood_base_mat window_trim.down 34.95 .0525 .33 |xform -t 0 0 2.83
+#  xform -t 0 0 2.83
+#  genbox xwood_base_mat window_trim.down 34.95 .0525 .33
+m xwood_base_mat
+o
+o window_trim.down
+v v153 =
+	p 34.95 0 2.83
+v v154 =
+	p 34.95 0 3.16
+v v147 =
+	p 0 0 3.16
+v v150 =
+	p 0 0 2.83
+f v153 v154 v147 v150
+v v158 =
+	p 0 0.0525 3.16
+v v3 =
+	p 0 0.0525 2.83
+f v147 v158 v3 v150
+v v37 =
+	p 34.95 0.0525 2.83
+f v3 v37 v153 v150
+v v159 =
+	p 34.95 0.0525 3.16
+f v37 v3 v158 v159
+f v154 v153 v37 v159
+f v158 v147 v154 v159
+# End conversion from: !genbox xwood_base_mat window_trim.down 34.95 .0525 .33 |xform -t 0 0 2.83
+# Begin conversion from: !genbox xwood_base_mat window_trim.top  34.95 .0525 .5 |xform -t 0 .105 8.4
+#  xform -t 0 .105 8.4
+#  genbox xwood_base_mat window_trim.top 34.95 .0525 .5
+o
+o window_trim.top
+v v146 =
+	p 34.95 0.105 8.4
+v v152 =
+	p 34.95 0.105 8.9
+v v161 =
+	p 0 0.105 8.9
+v v151 =
+	p 0 0.105 8.4
+f v146 v152 v161 v151
+v v169 =
+	p 0 0.1575 8.9
+v v32 =
+	p 0 0.1575 8.4
+f v161 v169 v32 v151
+v v165 =
+	p 34.95 0.1575 8.4
+f v32 v165 v146 v151
+v v156 =
+	p 34.95 0.1575 8.9
+f v165 v32 v169 v156
+f v152 v146 v165 v156
+f v169 v161 v152 v156
+# End conversion from: !genbox xwood_base_mat window_trim.top  34.95 .0525 .5 |xform -t 0 .105 8.4
+# Begin conversion from: !genbox zwood_base_mat window_trim.right .5 .0525 6.06 | xform -t 0 .0525 2.83
+#  xform -t 0 .0525 2.83
+#  genbox zwood_base_mat window_trim.right .5 .0525 6.06
+m zwood_base_mat
+o
+o window_trim.right
+v v171 =
+	p 0.5 0.0525 2.83
+v v173 =
+	p 0.5 0.0525 8.89
+v v170 =
+	p 0 0.0525 8.89
+f v171 v173 v170 v3
+v v172 =
+	p 0 0.105 8.89
+v v164 =
+	p 0 0.105 2.83
+f v170 v172 v164 v3
+v v162 =
+	p 0.5 0.105 2.83
+f v164 v162 v171 v3
+v v182 =
+	p 0.5 0.105 8.89
+f v162 v164 v172 v182
+f v173 v171 v162 v182
+f v172 v170 v173 v182
+# End conversion from: !genbox zwood_base_mat window_trim.right .5 .0525 6.06 | xform -t 0 .0525 2.83
+# Begin conversion from: !genbox zwood_base_mat window_trim.left  .5 .0525 6.06 | xform -t 34.45 .0525 2.83
+#  xform -t 34.45 .0525 2.83
+#  genbox zwood_base_mat window_trim.left .5 .0525 6.06
+o
+o window_trim.left
+v v180 =
+	p 34.95 0.0525 8.89
+v v31 =
+	p 34.45 0.0525 8.89
+v v176 =
+	p 34.45 0.0525 2.83
+f v37 v180 v31 v176
+v v175 =
+	p 34.45 0.105 8.89
+v v35 =
+	p 34.45 0.105 2.83
+f v31 v175 v35 v176
+v v166 =
+	p 34.95 0.105 2.83
+f v35 v166 v37 v176
+v v167 =
+	p 34.95 0.105 8.89
+f v166 v35 v175 v167
+f v180 v37 v166 v167
+f v175 v31 v180 v167
+# End conversion from: !genbox zwood_base_mat window_trim.left  .5 .0525 6.06 | xform -t 34.45 .0525 2.83
+# Begin conversion from: !genbox zwood_base_mat window_trim.midright .5 .0525 6.06 | xform -t 10.5 .0525 2.83
+#  xform -t 10.5 .0525 2.83
+#  genbox zwood_base_mat window_trim.midright .5 .0525 6.06
+o
+o window_trim.midright
+v v0 =
+	p 11 0.0525 2.83
+v v181 =
+	p 11 0.0525 8.89
+v v177 =
+	p 10.5 0.0525 8.89
+v v168 =
+	p 10.5 0.0525 2.83
+f v0 v181 v177 v168
+v v190 =
+	p 10.5 0.105 8.89
+v v29 =
+	p 10.5 0.105 2.83
+f v177 v190 v29 v168
+v v187 =
+	p 11 0.105 2.83
+f v29 v187 v0 v168
+v v179 =
+	p 11 0.105 8.89
+f v187 v29 v190 v179
+f v181 v0 v187 v179
+f v190 v177 v181 v179
+# End conversion from: !genbox zwood_base_mat window_trim.midright .5 .0525 6.06 | xform -t 10.5 .0525 2.83
+# Begin conversion from: !genbox zwood_base_mat window_trim.midleft  .5 .0525 6.06 | xform -t 12.58 .0525 2.83
+#  xform -t 12.58 .0525 2.83
+#  genbox zwood_base_mat window_trim.midleft .5 .0525 6.06
+o
+o window_trim.midleft
+v v188 =
+	p 13.08 0.0525 2.83
+v v25 =
+	p 13.08 0.0525 8.89
+v v178 =
+	p 12.58 0.0525 8.89
+v v189 =
+	p 12.58 0.0525 2.83
+f v188 v25 v178 v189
+v v186 =
+	p 12.58 0.105 8.89
+v v185 =
+	p 12.58 0.105 2.83
+f v178 v186 v185 v189
+v v198 =
+	p 13.08 0.105 2.83
+f v185 v198 v188 v189
+v v192 =
+	p 13.08 0.105 8.89
+f v198 v185 v186 v192
+f v25 v188 v198 v192
+f v186 v178 v25 v192
+# End conversion from: !genbox zwood_base_mat window_trim.midleft  .5 .0525 6.06 | xform -t 12.58 .0525 2.83
+#  Creation of the blackboard on the left wall
+#  Creation of the small blackboard and of the pinboard on the rear wall
+# Begin conversion from: !xform -e -t .001 .916 3.958 blackboard
+#  xform -e -t .001 .916 3.958
+#  creation of the blackboard
+m green_board =
+	c
+		cxy 0.3109 0.3932
+	rd 0.2186
+m edge_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2150
+	rs 0.2150 0.0000
+m green_board
+o
+o blackboard
+v v196 =
+	p 0.051 0.916 3.958
+v v184 =
+	p 0.051 0.916 7.978
+v v201 =
+	p 0.051 20.976 7.978
+v v174 =
+	p 0.051 20.976 3.958
+f v196 v184 v201 v174
+#  xform -t 0 19.998 0
+#  genbox edge_mat board_right .052 .062 4.02
+m edge_mat
+o
+o board_right
+v v183 =
+	p 0.053 20.914 3.958
+v v163 =
+	p 0.053 20.914 7.978
+v v22 =
+	p 0.001 20.914 7.978
+v v194 =
+	p 0.001 20.914 3.958
+f v183 v163 v22 v194
+v v157 =
+	p 0.001 20.976 7.978
+v v191 =
+	p 0.001 20.976 3.958
+f v22 v157 v191 v194
+v v207 =
+	p 0.053 20.976 3.958
+f v191 v207 v183 v194
+v v202 =
+	p 0.053 20.976 7.978
+f v207 v191 v157 v202
+f v163 v183 v207 v202
+f v157 v22 v163 v202
+#  genbox edge_mat board_left .052 .062 4.02
+o
+o board_left
+v v195 =
+	p 0.053 0.916 3.958
+v v20 =
+	p 0.053 0.916 7.978
+v v199 =
+	p 0.001 0.916 7.978
+v v204 =
+	p 0.001 0.916 3.958
+f v195 v20 v199 v204
+v v206 =
+	p 0.001 0.978 7.978
+v v21 =
+	p 0.001 0.978 3.958
+f v199 v206 v21 v204
+v v211 =
+	p 0.053 0.978 3.958
+f v21 v211 v195 v204
+v v197 =
+	p 0.053 0.978 7.978
+f v211 v21 v206 v197
+f v20 v195 v211 v197
+f v206 v199 v20 v197
+#  xform -t 0 0 3.958
+#  genbox edge_mat board_top .052 20.06 .062
+o
+o board_top
+v v200 =
+	p 0.053 0.916 7.916
+v v214 =
+	p 0.001 0.916 7.916
+f v200 v20 v199 v214
+v v56 =
+	p 0.001 20.976 7.916
+f v199 v157 v56 v214
+v v208 =
+	p 0.053 20.976 7.916
+f v56 v208 v200 v214
+f v208 v56 v157 v202
+f v20 v200 v208 v202
+f v157 v199 v20 v202
+#  genbox edge_mat board_down.1 .052 20.06 .062
+o
+o board_down.1
+v v16 =
+	p 0.053 0.916 4.02
+v v210 =
+	p 0.001 0.916 4.02
+f v195 v16 v210 v204
+v v216 =
+	p 0.001 20.976 4.02
+f v210 v216 v191 v204
+f v191 v207 v195 v204
+v v193 =
+	p 0.053 20.976 4.02
+f v207 v191 v216 v193
+f v16 v195 v207 v193
+f v216 v210 v16 v193
+#  xform -t 0 0 .0623
+#  genbox edge_mat board_down.2 .052 20.06 .062
+o
+o board_down.2
+v v205 =
+	p 0.053 0.916 4.0203
+v v209 =
+	p 0.053 0.916 4.0823
+v v203 =
+	p 0.001 0.916 4.0823
+v v215 =
+	p 0.001 0.916 4.0203
+f v205 v209 v203 v215
+v v213 =
+	p 0.001 20.976 4.0823
+v v212 =
+	p 0.001 20.976 4.0203
+f v203 v213 v212 v215
+v v218 =
+	p 0.053 20.976 4.0203
+f v212 v218 v205 v215
+v v217 =
+	p 0.053 20.976 4.0823
+f v218 v212 v213 v217
+f v209 v205 v218 v217
+f v213 v203 v209 v217
+o
+o bord_support_horiz
+v v220 =
+	p 0.001 0.978 4.0203
+v v219 =
+	p 0.001 20.852 4.0203
+v v222 =
+	p 0.261 20.852 4.0203
+v v221 =
+	p 0.261 0.978 4.0203
+f v220 v219 v222 v221
+o
+o bord_support_vert
+v v224 =
+	p 0.261 20.876 4.0203
+v v223 =
+	p 0.261 20.896 4.0613
+v v226 =
+	p 0.261 0.978 4.0613
+f v221 v224 v223 v226
+# End conversion from: !xform -e -t .001 .916 3.958 blackboard
+# Begin conversion from: !xform -e -rz 180 -t 18.63 22 3.125 small_board
+#  xform -e -rz 180 -t 18.63 22 3.125
+#  creation of the small green board
+m green_board =
+	c
+		cxy 0.3109 0.3932
+	rd 0.2186
+m edge_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.1980
+	rs 0.1320 0.0500
+m green_board
+o
+o small_board
+v v225 =
+	p 18.63 21.95 3.125
+v v227 =
+	p 12.6 21.95 3.125
+v v228 =
+	p 12.6 21.95 7.165
+v v231 =
+	p 18.63 21.95 7.165
+f v225 v227 v228 v231
+#  xform -t 5.968 0 0
+#  genbox edge_mat Sboard_right .062 .052 4.04
+m edge_mat
+o
+o Sboard_right
+v v55 =
+	p 12.6 22 3.125
+v v230 =
+	p 12.6 22 7.165
+v v229 =
+	p 12.662 22 7.165
+v v233 =
+	p 12.662 22 3.125
+f v55 v230 v229 v233
+v v232 =
+	p 12.662 21.948 7.165
+v v235 =
+	p 12.662 21.948 3.125
+f v229 v232 v235 v233
+v v234 =
+	p 12.6 21.948 3.125
+f v235 v234 v55 v233
+v v237 =
+	p 12.6 21.948 7.165
+f v234 v235 v232 v237
+f v230 v55 v234 v237
+f v232 v229 v230 v237
+#  genbox edge_mat Sboard_left .062 .052 4.04
+o
+o Sboard_left
+v v236 =
+	p 18.568 22 3.125
+v v239 =
+	p 18.568 22 7.165
+v v238 =
+	p 18.63 22 7.165
+v v242 =
+	p 18.63 22 3.125
+f v236 v239 v238 v242
+v v243 =
+	p 18.63 21.948 7.165
+v v241 =
+	p 18.63 21.948 3.125
+f v238 v243 v241 v242
+v v240 =
+	p 18.568 21.948 3.125
+f v241 v240 v236 v242
+v v244 =
+	p 18.568 21.948 7.165
+f v240 v241 v243 v244
+f v239 v236 v240 v244
+f v243 v238 v239 v244
+#  xform -t 0 0 3.978
+#  genbox edge_mat Sboard_top 6.03 .052 .062
+o
+o Sboard_top
+v v245 =
+	p 12.6 22 7.103
+v v247 =
+	p 18.63 22 7.103
+f v245 v230 v238 v247
+v v246 =
+	p 18.63 21.948 7.103
+f v238 v243 v246 v247
+v v249 =
+	p 12.6 21.948 7.103
+f v246 v249 v245 v247
+f v249 v246 v243 v237
+f v230 v245 v249 v237
+f v243 v238 v230 v237
+#  genbox edge_mat Sboard_down.1 6.03 .052 .062
+o
+o Sboard_down.1
+v v248 =
+	p 12.6 22 3.187
+v v251 =
+	p 18.63 22 3.187
+f v55 v248 v251 v242
+v v250 =
+	p 18.63 21.948 3.187
+f v251 v250 v241 v242
+f v241 v234 v55 v242
+v v253 =
+	p 12.6 21.948 3.187
+f v234 v241 v250 v253
+f v248 v55 v234 v253
+f v250 v251 v248 v253
+#  xform -t 0 0 .0625
+#  genbox edge_mat Sboard_down.2 6.03 .052 .062
+o
+o Sboard_down.2
+v v252 =
+	p 12.6 22 3.1875
+v v255 =
+	p 12.6 22 3.2495
+v v254 =
+	p 18.63 22 3.2495
+v v6 =
+	p 18.63 22 3.1875
+f v252 v255 v254 v6
+v v5 =
+	p 18.63 21.948 3.2495
+v v7 =
+	p 18.63 21.948 3.1875
+f v254 v5 v7 v6
+v v8 =
+	p 12.6 21.948 3.1875
+f v7 v8 v252 v6
+v v68 =
+	p 12.6 21.948 3.2495
+f v8 v7 v5 v68
+f v255 v252 v8 v68
+f v5 v254 v255 v68
+o
+o Sboard_support_horiz
+v v9 =
+	p 18.628 22 3.1873
+v v11 =
+	p 18.628 21.74 3.1873
+v v10 =
+	p 12.602 21.74 3.1873
+v v4 =
+	p 12.602 22 3.1873
+f v9 v11 v10 v4
+o
+o Sboard_support_vert
+v v12 =
+	p 18.568 21.74 3.1873
+v v19 =
+	p 12.682 21.74 3.1873
+v v18 =
+	p 12.662 21.74 3.2283
+v v23 =
+	p 18.568 21.74 3.2283
+f v12 v19 v18 v23
+# End conversion from: !xform -e -rz 180 -t 18.63 22 3.125 small_board
+# Begin conversion from: !xform -e -rz 180 -t 24.661 22 3.125 pinboard
+#  xform -e -rz 180 -t 24.661 22 3.125
+#  creation of the pinboard
+m edge_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2150
+	rs 0.2150 0.0000
+m white_mat =
+	c
+		cxy 0.3626 0.3582
+	rd 0.4603
+o
+o pinboard
+v v24 =
+	p 24.661 21.95 3.125
+v v30 =
+	p 18.661 21.95 3.125
+v v28 =
+	p 18.661 21.95 7.165
+v v33 =
+	p 24.661 21.95 7.165
+f v24 v30 v28 v33
+#  xform -t 5.938 0 0
+#  genbox edge_mat board_right .062 .052 4.04
+m edge_mat
+o
+o board_right
+v v1 =
+	p 18.661 22 3.125
+v v34 =
+	p 18.661 22 7.165
+v v39 =
+	p 18.723 22 7.165
+v v42 =
+	p 18.723 22 3.125
+f v1 v34 v39 v42
+v v67 =
+	p 18.723 21.948 7.165
+v v41 =
+	p 18.723 21.948 3.125
+f v39 v67 v41 v42
+v v40 =
+	p 18.661 21.948 3.125
+f v41 v40 v1 v42
+v v36 =
+	p 18.661 21.948 7.165
+f v40 v41 v67 v36
+f v34 v1 v40 v36
+f v67 v39 v34 v36
+#  genbox edge_mat board_left .062 .052 4.04
+o
+o board_left
+v v38 =
+	p 24.599 22 3.125
+v v2 =
+	p 24.599 22 7.165
+v v44 =
+	p 24.661 22 7.165
+v v14 =
+	p 24.661 22 3.125
+f v38 v2 v44 v14
+v v45 =
+	p 24.661 21.948 7.165
+v v46 =
+	p 24.661 21.948 3.125
+f v44 v45 v46 v14
+v v13 =
+	p 24.599 21.948 3.125
+f v46 v13 v38 v14
+v v52 =
+	p 24.599 21.948 7.165
+f v13 v46 v45 v52
+f v2 v38 v13 v52
+f v45 v44 v2 v52
+#  xform -t 0 0 3.978
+#  genbox edge_mat board_top 6 .052 .062
+o
+o board_top
+v v48 =
+	p 18.661 22 7.103
+v v51 =
+	p 24.661 22 7.103
+f v48 v34 v44 v51
+v v49 =
+	p 24.661 21.948 7.103
+f v44 v45 v49 v51
+v v53 =
+	p 18.661 21.948 7.103
+f v49 v53 v48 v51
+f v53 v49 v45 v36
+f v34 v48 v53 v36
+f v45 v44 v34 v36
+#  genbox edge_mat board_down 6 .052 .062
+o
+o board_down
+v v54 =
+	p 18.661 22 3.187
+v v58 =
+	p 24.661 22 3.187
+f v1 v54 v58 v14
+v v57 =
+	p 24.661 21.948 3.187
+f v58 v57 v46 v14
+f v46 v40 v1 v14
+v v60 =
+	p 18.661 21.948 3.187
+f v40 v46 v57 v60
+f v54 v1 v40 v60
+f v57 v58 v54 v60
+# End conversion from: !xform -e -rz 180 -t 24.661 22 3.125 pinboard
+#  creation of the corner guards
+# Begin conversion from: !xform -e -n shaft_guard.1.1 -t 10.999 21.0499 .3331 shaft_guard
+#  xform -e -n shaft_guard.1.1 -t 10.999 21.0499 .3331
+#  creation of the metal pieces on the shaft
+# void metal on_shaft_mat
+# 0
+# 0
+# 5 .4 .4 .4 .5 0
+m on_shaft_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.0400
+	rs 0.3600 0.0000
+o
+o shaft_guard.1.1
+v v59 =
+	p 11.206358805 21.0499 2.63941949
+v v62 =
+	p 11.201252943 21.0499 2.67165664
+v v61 =
+	p 11.191166943 21.0499 2.70269815
+v v64 =
+	p 11.176349154 21.0499 2.7317797
+v v63 =
+	p 11.157164441 21.0499 2.75818519
+v v66 =
+	p 11.134085194 21.0499 2.78126444
+v v65 =
+	p 11.107679701 21.0499 2.80044915
+v v70 =
+	p 11.0785981539 21.0499 2.81526694
+v v69 =
+	p 11.0475566357 21.0499 2.82535294
+v v71 =
+	p 11.0153194919 21.0499 2.83045881
+v v72 =
+	p 10.999 21.0499 2.8331
+v v81 =
+	p 10.999 21.0499 0.3331
+v v76 =
+	p 11.207 21.0499 0.3331
+v v79 =
+	p 11.207 21.0499 2.6231
+f v59 v62 v61 v64 v63 v66 v65 v70 v69 v71 v72 v81 v76 v79
+# End conversion from: !xform -e -n shaft_guard.1.1 -t 10.999 21.0499 .3331 shaft_guard
+# Begin conversion from: !xform -e -n shaft_guard.1.2 -rz 180 -t 12.2501 21.0499 .3331 shaft_guard
+#  xform -e -n shaft_guard.1.2 -rz 180 -t 12.2501 21.0499 .3331
+#  creation of the metal pieces on the shaft
+# void metal on_shaft_mat
+# 0
+# 0
+# 5 .4 .4 .4 .5 0
+m on_shaft_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.0400
+	rs 0.3600 0.0000
+o
+o shaft_guard.1.2
+v v73 =
+	p 12.042741195 21.0499 2.63941949
+v v27 =
+	p 12.047847057 21.0499 2.67165664
+v v86 =
+	p 12.057933057 21.0499 2.70269815
+v v80 =
+	p 12.072750846 21.0499 2.7317797
+v v26 =
+	p 12.091935559 21.0499 2.75818519
+v v75 =
+	p 12.115014806 21.0499 2.78126444
+v v93 =
+	p 12.141420299 21.0499 2.80044915
+v v89 =
+	p 12.1705018461 21.0499 2.81526694
+v v87 =
+	p 12.2015433643 21.0499 2.82535294
+v v78 =
+	p 12.2337805081 21.0499 2.83045881
+v v88 =
+	p 12.2501 21.0499 2.8331
+v v15 =
+	p 12.2501 21.0499 0.3331
+v v84 =
+	p 12.0421 21.0499 0.3331
+v v17 =
+	p 12.0421 21.0499 2.6231
+f v73 v27 v86 v80 v26 v75 v93 v89 v87 v78 v88 v15 v84 v17
+# End conversion from: !xform -e -n shaft_guard.1.2 -rz 180 -t 12.2501 21.0499 .3331 shaft_guard
+# Begin conversion from: !xform -e -n shaft_guard.1.3 -rz +90 -t 10.999 21.0499 .3331 shaft_guard
+#  xform -e -n shaft_guard.1.3 -rz +90 -t 10.999 21.0499 .3331
+#  creation of the metal pieces on the shaft
+# void metal on_shaft_mat
+# 0
+# 0
+# 5 .4 .4 .4 .5 0
+m on_shaft_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.0400
+	rs 0.3600 0.0000
+o
+o shaft_guard.1.3
+v v90 =
+	p 10.999 21.257258805 2.63941949
+v v77 =
+	p 10.999 21.252152943 2.67165664
+v v85 =
+	p 10.999 21.242066943 2.70269815
+v v83 =
+	p 10.999 21.227249154 2.7317797
+v v82 =
+	p 10.999 21.208064441 2.75818519
+v v108 =
+	p 10.999 21.184985194 2.78126444
+v v91 =
+	p 10.999 21.158579701 2.80044915
+v v104 =
+	p 10.999 21.1294981539 2.81526694
+v v47 =
+	p 10.999 21.0984566357 2.82535294
+v v101 =
+	p 10.999 21.0662194919 2.83045881
+v v102 =
+	p 10.999 21.2579 0.3331
+v v74 =
+	p 10.999 21.2579 2.6231
+f v90 v77 v85 v83 v82 v108 v91 v104 v47 v101 v72 v81 v102 v74
+# End conversion from: !xform -e -n shaft_guard.1.3 -rz +90 -t 10.999 21.0499 .3331 shaft_guard
+# Begin conversion from: !xform -e -n shaft_guard.1.4 -rz +90 -t 12.2501 21.0499 .3331 shaft_guard
+#  xform -e -n shaft_guard.1.4 -rz +90 -t 12.2501 21.0499 .3331
+#  creation of the metal pieces on the shaft
+# void metal on_shaft_mat
+# 0
+# 0
+# 5 .4 .4 .4 .5 0
+m on_shaft_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.0400
+	rs 0.3600 0.0000
+o
+o shaft_guard.1.4
+v v95 =
+	p 12.2501 21.257258805 2.63941949
+v v92 =
+	p 12.2501 21.252152943 2.67165664
+v v112 =
+	p 12.2501 21.242066943 2.70269815
+v v114 =
+	p 12.2501 21.227249154 2.7317797
+v v98 =
+	p 12.2501 21.208064441 2.75818519
+v v96 =
+	p 12.2501 21.184985194 2.78126444
+v v103 =
+	p 12.2501 21.158579701 2.80044915
+v v100 =
+	p 12.2501 21.1294981539 2.81526694
+v v106 =
+	p 12.2501 21.0984566357 2.82535294
+v v109 =
+	p 12.2501 21.0662194919 2.83045881
+v v94 =
+	p 12.2501 21.2579 0.3331
+v v99 =
+	p 12.2501 21.2579 2.6231
+f v95 v92 v112 v114 v98 v96 v103 v100 v106 v109 v88 v15 v94 v99
+# End conversion from: !xform -e -n shaft_guard.1.4 -rz +90 -t 12.2501 21.0499 .3331 shaft_guard
+# Begin conversion from: !xform -e -n shaft_guard.2.1 -t 10.999 1.1601 .3331 shaft_guard
+#  xform -e -n shaft_guard.2.1 -t 10.999 1.1601 .3331
+#  creation of the metal pieces on the shaft
+# void metal on_shaft_mat
+# 0
+# 0
+# 5 .4 .4 .4 .5 0
+m on_shaft_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.0400
+	rs 0.3600 0.0000
+o
+o shaft_guard.2.1
+v v111 =
+	p 11.206358805 1.1601 2.63941949
+v v110 =
+	p 11.201252943 1.1601 2.67165664
+v v107 =
+	p 11.191166943 1.1601 2.70269815
+v v97 =
+	p 11.176349154 1.1601 2.7317797
+v v105 =
+	p 11.157164441 1.1601 2.75818519
+v v117 =
+	p 11.134085194 1.1601 2.78126444
+v v115 =
+	p 11.107679701 1.1601 2.80044915
+v v129 =
+	p 11.0785981539 1.1601 2.81526694
+v v137 =
+	p 11.0475566357 1.1601 2.82535294
+v v113 =
+	p 11.0153194919 1.1601 2.83045881
+v v50 =
+	p 10.999 1.1601 2.8331
+v v123 =
+	p 10.999 1.1601 0.3331
+v v118 =
+	p 11.207 1.1601 0.3331
+v v128 =
+	p 11.207 1.1601 2.6231
+f v111 v110 v107 v97 v105 v117 v115 v129 v137 v113 v50 v123 v118 v128
+# End conversion from: !xform -e -n shaft_guard.2.1 -t 10.999 1.1601 .3331 shaft_guard
+# Begin conversion from: !xform -e -n shaft_guard.2.2 -rz 180 -t 12.58001 1.1601 .3331 shaft_guard
+#  xform -e -n shaft_guard.2.2 -rz 180 -t 12.58001 1.1601 .3331
+#  creation of the metal pieces on the shaft
+# void metal on_shaft_mat
+# 0
+# 0
+# 5 .4 .4 .4 .5 0
+m on_shaft_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.0400
+	rs 0.3600 0.0000
+o
+o shaft_guard.2.2
+v v122 =
+	p 12.372651195 1.1601 2.63941949
+v v136 =
+	p 12.377757057 1.1601 2.67165664
+v v126 =
+	p 12.387843057 1.1601 2.70269815
+v v120 =
+	p 12.402660846 1.1601 2.7317797
+v v131 =
+	p 12.421845559 1.1601 2.75818519
+v v116 =
+	p 12.444924806 1.1601 2.78126444
+v v124 =
+	p 12.471330299 1.1601 2.80044915
+v v130 =
+	p 12.5004118461 1.1601 2.81526694
+v v132 =
+	p 12.5314533643 1.1601 2.82535294
+v v127 =
+	p 12.5636905081 1.1601 2.83045881
+v v143 =
+	p 12.58001 1.1601 2.8331
+v v133 =
+	p 12.58001 1.1601 0.3331
+v v121 =
+	p 12.37201 1.1601 0.3331
+v v138 =
+	p 12.37201 1.1601 2.6231
+f v122 v136 v126 v120 v131 v116 v124 v130 v132 v127 v143 v133 v121 v138
+# End conversion from: !xform -e -n shaft_guard.2.2 -rz 180 -t 12.58001 1.1601 .3331 shaft_guard
+# Begin conversion from: !xform -e -n shaft_guard.2.3 -rz -90 -t 12.58001 1.1601 .3331 shaft_guard
+#  xform -e -n shaft_guard.2.3 -rz -90 -t 12.58001 1.1601 .3331
+#  creation of the metal pieces on the shaft
+# void metal on_shaft_mat
+# 0
+# 0
+# 5 .4 .4 .4 .5 0
+m on_shaft_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.0400
+	rs 0.3600 0.0000
+o
+o shaft_guard.2.3
+v v125 =
+	p 12.58001 0.952741195 2.63941949
+v v141 =
+	p 12.58001 0.957847057 2.67165664
+v v142 =
+	p 12.58001 0.967933057 2.70269815
+v v140 =
+	p 12.58001 0.982750846 2.7317797
+v v135 =
+	p 12.58001 1.001935559 2.75818519
+v v145 =
+	p 12.58001 1.025014806 2.78126444
+v v155 =
+	p 12.58001 1.051420299 2.80044915
+v v148 =
+	p 12.58001 1.0805018461 2.81526694
+v v149 =
+	p 12.58001 1.1115433643 2.82535294
+v v119 =
+	p 12.58001 1.1437805081 2.83045881
+v v139 =
+	p 12.58001 0.9521 0.3331
+v v43 =
+	p 12.58001 0.9521 2.6231
+f v125 v141 v142 v140 v135 v145 v155 v148 v149 v119 v143 v133 v139 v43
+# End conversion from: !xform -e -n shaft_guard.2.3 -rz -90 -t 12.58001 1.1601 .3331 shaft_guard
+# Begin conversion from: !xform -e -n shaft_guard.2.4 -rz -90 -t 10.999 1.1601 .3331 shaft_guard
+#  xform -e -n shaft_guard.2.4 -rz -90 -t 10.999 1.1601 .3331
+#  creation of the metal pieces on the shaft
+# void metal on_shaft_mat
+# 0
+# 0
+# 5 .4 .4 .4 .5 0
+m on_shaft_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.0400
+	rs 0.3600 0.0000
+o
+o shaft_guard.2.4
+v v144 =
+	p 10.999 0.952741195 2.63941949
+v v134 =
+	p 10.999 0.957847057 2.67165664
+v v160 =
+	p 10.999 0.967933057 2.70269815
+v v150 =
+	p 10.999 0.982750846 2.7317797
+v v153 =
+	p 10.999 1.001935559 2.75818519
+v v158 =
+	p 10.999 1.025014806 2.78126444
+v v147 =
+	p 10.999 1.051420299 2.80044915
+v v154 =
+	p 10.999 1.0805018461 2.81526694
+v v159 =
+	p 10.999 1.1115433643 2.82535294
+v v151 =
+	p 10.999 1.1437805081 2.83045881
+v v32 =
+	p 10.999 0.9521 0.3331
+v v146 =
+	p 10.999 0.9521 2.6231
+f v144 v134 v160 v150 v153 v158 v147 v154 v159 v151 v50 v123 v32 v146
+# End conversion from: !xform -e -n shaft_guard.2.4 -rz -90 -t 10.999 1.1601 .3331 shaft_guard
+#  addition of the door_closer on the 2 doors
+# Begin conversion from: !xform -e -t 3.65 22.04 6.40 door_closer
+#  xform -e -t 3.65 22.04 6.40
+#  Creation of the door closer
+#  units = feet
+m door_closer_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2250
+	rs 0.2250 0.0000
+o
+o closer.cyl
+v v165 =
+	p 3.65 21.998 6.482
+v v169 =
+	p 4.316 21.998 6.482
+cyl v165 0.083 v169
+o
+o ring_left
+v cent =
+	p 3.65 21.998 6.482
+	n -1 0 0
+ring cent 0 0.083
+o
+o ring_right
+v cent =
+	p 4.316 21.998 6.482
+	n 1 0 0
+ring cent 0 0.083
+o
+o closer.cyl
+v v161 =
+	p 3.983 22.04 6.482
+v v152 =
+	p 3.983 22.04 6.816
+cyl v161 0.125 v152
+o
+o ring_top
+v cent =
+	p 3.983 22.04 6.482
+	n 0 0 -1
+ring cent 0 0.125
+v cent =
+	p 3.983 22.04 6.816
+	n 0 0 1
+ring cent 0 0.125
+o
+o closer
+v v156 =
+	p 3.983 22.04 6.8155
+sph v156 0.028
+#  xform -t -.048 -.237 .474
+#  genbox door_closer_mat bracket.1 .125 .416 .031
+o
+o bracket.1
+v v3 =
+	p 3.727 21.803 6.874
+v v164 =
+	p 3.727 21.803 6.905
+v v171 =
+	p 3.602 21.803 6.905
+v v162 =
+	p 3.602 21.803 6.874
+f v3 v164 v171 v162
+v v172 =
+	p 3.602 22.219 6.905
+v v170 =
+	p 3.602 22.219 6.874
+f v171 v172 v170 v162
+v v173 =
+	p 3.727 22.219 6.874
+f v170 v173 v3 v162
+v v182 =
+	p 3.727 22.219 6.905
+f v173 v170 v172 v182
+f v164 v3 v173 v182
+f v172 v171 v164 v182
+#  xform -t -.134 .034 .474
+#  genbox door_closer_mat bracket.2 .291 .145 .031
+o
+o bracket.2
+v v176 =
+	p 3.807 22.074 6.874
+v v35 =
+	p 3.807 22.074 6.905
+v v37 =
+	p 3.516 22.074 6.905
+v v166 =
+	p 3.516 22.074 6.874
+f v176 v35 v37 v166
+v v175 =
+	p 3.516 22.219 6.905
+v v31 =
+	p 3.516 22.219 6.874
+f v37 v175 v31 v166
+v v180 =
+	p 3.807 22.219 6.874
+f v31 v180 v176 v166
+v v167 =
+	p 3.807 22.219 6.905
+f v180 v31 v175 v167
+f v35 v176 v180 v167
+f v175 v37 v35 v167
+#  xform -t -.026 -.026 0 -rz -15 -t .333 0 .434
+#  genbox door_closer_mat small_arm .916 .052 .020
+o
+o small_arm
+v v168 =
+	p 4.83594469022 21.7845369784 6.834
+v v29 =
+	p 4.83594469022 21.7845369784 6.854
+v v0 =
+	p 3.95115663334 22.0216152237 6.854
+v v187 =
+	p 3.95115663334 22.0216152237 6.834
+f v168 v29 v0 v187
+v v190 =
+	p 3.96461522369 22.0718433667 6.854
+v v177 =
+	p 3.96461522369 22.0718433667 6.834
+f v0 v190 v177 v187
+v v181 =
+	p 4.84940328057 21.8347651213 6.834
+f v177 v181 v168 v187
+v v179 =
+	p 4.84940328057 21.8347651213 6.854
+f v181 v177 v190 v179
+f v29 v168 v181 v179
+f v190 v0 v29 v179
+#  xform -t 0 -.237 .454
+#  genbox door_closer_mat upper_arm 1.166 .052 .020
+o
+o upper_arm
+v v189 =
+	p 4.816 21.803 6.854
+v v185 =
+	p 4.816 21.803 6.874
+v v188 =
+	p 3.65 21.803 6.874
+v v198 =
+	p 3.65 21.803 6.854
+f v189 v185 v188 v198
+v v186 =
+	p 3.65 21.855 6.874
+v v178 =
+	p 3.65 21.855 6.854
+f v188 v186 v178 v198
+v v25 =
+	p 4.816 21.855 6.854
+f v178 v25 v189 v198
+v v192 =
+	p 4.816 21.855 6.874
+f v25 v178 v186 v192
+f v185 v189 v25 v192
+f v186 v188 v185 v192
+#  creation of a boulon
+#  xform -s .05 -ry 90 -t .66 -.042 .082
+#  genprism door_closer_mat nut.right - -l 0 0 1
+o
+o nut.right
+v v196 =
+	p 4.31 21.998 6.432
+v v184 =
+	p 4.31 22.0413012702 6.457
+v v201 =
+	p 4.31 22.0413012702 6.507
+v v174 =
+	p 4.31 21.998 6.532
+v v194 =
+	p 4.31 21.9546987298 6.507
+v v183 =
+	p 4.31 21.9546987298 6.457
+f v196 v184 v201 v174 v194 v183
+v v22 =
+	p 4.36 21.9546987298 6.457
+v v163 =
+	p 4.36 21.9546987298 6.507
+v v21 =
+	p 4.36 21.998 6.532
+v v211 =
+	p 4.36 22.0413012702 6.507
+v v206 =
+	p 4.36 22.0413012702 6.457
+v v197 =
+	p 4.36 21.998 6.432
+f v22 v163 v21 v211 v206 v197
+f v196 v197 v206 v184
+f v184 v206 v211 v201
+f v201 v211 v21 v174
+f v174 v21 v163 v194
+f v194 v163 v22 v183
+f v183 v22 v197 v196
+#  xform -s .05 -ry -90 -t .001 -.042 .082
+#  genprism door_closer_mat nut.left - -l 0 0 1
+o
+o nut.left
+v v214 =
+	p 3.651 21.998 6.532
+v v56 =
+	p 3.651 22.0413012702 6.507
+v v200 =
+	p 3.651 22.0413012702 6.457
+v v208 =
+	p 3.651 21.998 6.432
+v v157 =
+	p 3.651 21.9546987298 6.457
+v v199 =
+	p 3.651 21.9546987298 6.507
+f v214 v56 v200 v208 v157 v199
+v v20 =
+	p 3.601 21.9546987298 6.507
+v v202 =
+	p 3.601 21.9546987298 6.457
+v v204 =
+	p 3.601 21.998 6.432
+v v191 =
+	p 3.601 22.0413012702 6.457
+v v195 =
+	p 3.601 22.0413012702 6.507
+v v207 =
+	p 3.601 21.998 6.532
+f v20 v202 v204 v191 v195 v207
+f v214 v207 v195 v56
+f v56 v195 v191 v200
+f v200 v191 v204 v208
+f v208 v204 v202 v157
+f v157 v202 v20 v199
+f v199 v20 v207 v214
+#  xform -s .03 -ry 180 -t .333 -.042 .01
+#  genprism door_closer_mat nut.down - -l 0 0 1
+o
+o nut.down
+v v216 =
+	p 3.953 21.998 6.41
+v v210 =
+	p 3.968 22.0239807621 6.41
+v v16 =
+	p 3.998 22.0239807621 6.41
+v v193 =
+	p 4.013 21.998 6.41
+v v215 =
+	p 3.998 21.9720192379 6.41
+v v212 =
+	p 3.968 21.9720192379 6.41
+f v216 v210 v16 v193 v215 v212
+v v205 =
+	p 3.968 21.9720192379 6.38
+v v218 =
+	p 3.998 21.9720192379 6.38
+v v213 =
+	p 4.013 21.998 6.38
+v v203 =
+	p 3.998 22.0239807621 6.38
+v v209 =
+	p 3.968 22.0239807621 6.38
+v v217 =
+	p 3.953 21.998 6.38
+f v205 v218 v213 v203 v209 v217
+f v216 v217 v209 v210
+f v210 v209 v203 v16
+f v16 v203 v213 v193
+f v193 v213 v218 v215
+f v215 v218 v205 v212
+f v212 v205 v217 v216
+# End conversion from: !xform -e -t 3.65 22.04 6.40 door_closer
+# Begin conversion from: !xform -e -t 25.94 22.04 6.40 door_closer
+#  xform -e -t 25.94 22.04 6.40
+#  Creation of the door closer
+#  units = feet
+m door_closer_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.2250
+	rs 0.2250 0.0000
+o
+o closer.cyl
+v v220 =
+	p 25.94 21.998 6.482
+v v219 =
+	p 26.606 21.998 6.482
+cyl v220 0.083 v219
+o
+o ring_left
+v cent =
+	p 25.94 21.998 6.482
+	n -1 0 0
+ring cent 0 0.083
+o
+o ring_right
+v cent =
+	p 26.606 21.998 6.482
+	n 1 0 0
+ring cent 0 0.083
+o
+o closer.cyl
+v v222 =
+	p 26.273 22.04 6.482
+v v221 =
+	p 26.273 22.04 6.816
+cyl v222 0.125 v221
+o
+o ring_top
+v cent =
+	p 26.273 22.04 6.482
+	n 0 0 -1
+ring cent 0 0.125
+v cent =
+	p 26.273 22.04 6.816
+	n 0 0 1
+ring cent 0 0.125
+o
+o closer
+v v224 =
+	p 26.273 22.04 6.8155
+sph v224 0.028
+#  xform -t -.048 -.237 .474
+#  genbox door_closer_mat bracket.1 .125 .416 .031
+o
+o bracket.1
+v v223 =
+	p 26.017 21.803 6.874
+v v226 =
+	p 26.017 21.803 6.905
+v v225 =
+	p 25.892 21.803 6.905
+v v227 =
+	p 25.892 21.803 6.874
+f v223 v226 v225 v227
+v v228 =
+	p 25.892 22.219 6.905
+v v231 =
+	p 25.892 22.219 6.874
+f v225 v228 v231 v227
+v v233 =
+	p 26.017 22.219 6.874
+f v231 v233 v223 v227
+v v235 =
+	p 26.017 22.219 6.905
+f v233 v231 v228 v235
+f v226 v223 v233 v235
+f v228 v225 v226 v235
+#  xform -t -.134 .034 .474
+#  genbox door_closer_mat bracket.2 .291 .145 .031
+o
+o bracket.2
+v v232 =
+	p 26.097 22.074 6.874
+v v229 =
+	p 26.097 22.074 6.905
+v v236 =
+	p 25.806 22.074 6.905
+v v240 =
+	p 25.806 22.074 6.874
+f v232 v229 v236 v240
+v v239 =
+	p 25.806 22.219 6.905
+v v244 =
+	p 25.806 22.219 6.874
+f v236 v239 v244 v240
+v v247 =
+	p 26.097 22.219 6.874
+f v244 v247 v232 v240
+v v246 =
+	p 26.097 22.219 6.905
+f v247 v244 v239 v246
+f v229 v232 v247 v246
+f v239 v236 v229 v246
+#  xform -t -.026 -.026 0 -rz -15 -t .333 0 .434
+#  genbox door_closer_mat small_arm .916 .052 .020
+o
+o small_arm
+v v245 =
+	p 27.1259446902 21.7845369784 6.834
+v v249 =
+	p 27.1259446902 21.7845369784 6.854
+v v243 =
+	p 26.2411566333 22.0216152237 6.854
+v v238 =
+	p 26.2411566333 22.0216152237 6.834
+f v245 v249 v243 v238
+v v230 =
+	p 26.2546152237 22.0718433667 6.854
+v v237 =
+	p 26.2546152237 22.0718433667 6.834
+f v243 v230 v237 v238
+v v242 =
+	p 27.1394032806 21.8347651213 6.834
+f v237 v242 v245 v238
+v v241 =
+	p 27.1394032806 21.8347651213 6.854
+f v242 v237 v230 v241
+f v249 v245 v242 v241
+f v230 v243 v249 v241
+#  xform -t 0 -.237 .454
+#  genbox door_closer_mat upper_arm 1.166 .052 .020
+o
+o upper_arm
+v v55 =
+	p 27.106 21.803 6.854
+v v234 =
+	p 27.106 21.803 6.874
+v v250 =
+	p 25.94 21.803 6.874
+v v251 =
+	p 25.94 21.803 6.854
+f v55 v234 v250 v251
+v v248 =
+	p 25.94 21.855 6.874
+v v253 =
+	p 25.94 21.855 6.854
+f v250 v248 v253 v251
+v v6 =
+	p 27.106 21.855 6.854
+f v253 v6 v55 v251
+v v7 =
+	p 27.106 21.855 6.874
+f v6 v253 v248 v7
+f v234 v55 v6 v7
+f v248 v250 v234 v7
+#  creation of a boulon
+#  xform -s .05 -ry 90 -t .66 -.042 .082
+#  genprism door_closer_mat nut.right - -l 0 0 1
+o
+o nut.right
+v v252 =
+	p 26.6 21.998 6.432
+v v8 =
+	p 26.6 22.0413012702 6.457
+v v5 =
+	p 26.6 22.0413012702 6.507
+v v254 =
+	p 26.6 21.998 6.532
+v v255 =
+	p 26.6 21.9546987298 6.507
+v v68 =
+	p 26.6 21.9546987298 6.457
+f v252 v8 v5 v254 v255 v68
+v v9 =
+	p 26.65 21.9546987298 6.457
+v v11 =
+	p 26.65 21.9546987298 6.507
+v v10 =
+	p 26.65 21.998 6.532
+v v4 =
+	p 26.65 22.0413012702 6.507
+v v12 =
+	p 26.65 22.0413012702 6.457
+v v19 =
+	p 26.65 21.998 6.432
+f v9 v11 v10 v4 v12 v19
+f v252 v19 v12 v8
+f v8 v12 v4 v5
+f v5 v4 v10 v254
+f v254 v10 v11 v255
+f v255 v11 v9 v68
+f v68 v9 v19 v252
+#  xform -s .05 -ry -90 -t .001 -.042 .082
+#  genprism door_closer_mat nut.left - -l 0 0 1
+o
+o nut.left
+v v18 =
+	p 25.941 21.998 6.532
+v v23 =
+	p 25.941 22.0413012702 6.507
+v v24 =
+	p 25.941 22.0413012702 6.457
+v v30 =
+	p 25.941 21.998 6.432
+v v28 =
+	p 25.941 21.9546987298 6.457
+v v33 =
+	p 25.941 21.9546987298 6.507
+f v18 v23 v24 v30 v28 v33
+v v42 =
+	p 25.891 21.9546987298 6.507
+v v41 =
+	p 25.891 21.9546987298 6.457
+v v67 =
+	p 25.891 21.998 6.432
+v v39 =
+	p 25.891 22.0413012702 6.457
+v v38 =
+	p 25.891 22.0413012702 6.507
+v v13 =
+	p 25.891 21.998 6.532
+f v42 v41 v67 v39 v38 v13
+f v18 v13 v38 v23
+f v23 v38 v39 v24
+f v24 v39 v67 v30
+f v30 v67 v41 v28
+f v28 v41 v42 v33
+f v33 v42 v13 v18
+#  xform -s .03 -ry 180 -t .333 -.042 .01
+#  genprism door_closer_mat nut.down - -l 0 0 1
+o
+o nut.down
+v v2 =
+	p 26.243 21.998 6.41
+v v52 =
+	p 26.258 22.0239807621 6.41
+v v51 =
+	p 26.288 22.0239807621 6.41
+v v49 =
+	p 26.303 21.998 6.41
+v v48 =
+	p 26.288 21.9720192379 6.41
+v v53 =
+	p 26.258 21.9720192379 6.41
+f v2 v52 v51 v49 v48 v53
+v v45 =
+	p 26.258 21.9720192379 6.38
+v v44 =
+	p 26.288 21.9720192379 6.38
+v v34 =
+	p 26.303 21.998 6.38
+v v36 =
+	p 26.288 22.0239807621 6.38
+v v14 =
+	p 26.258 22.0239807621 6.38
+v v46 =
+	p 26.243 21.998 6.38
+f v45 v44 v34 v36 v14 v46
+f v2 v46 v14 v52
+f v52 v14 v36 v51
+f v51 v36 v34 v49
+f v49 v34 v44 v48
+f v48 v44 v45 v53
+f v53 v45 v46 v2
+# End conversion from: !xform -e -t 25.94 22.04 6.40 door_closer
+m frame_vert_wood_mat = shaft_wood_mat
+m frame_horiz_wood_mat = shaft_wood_mat
+#  
+#  description of the window on the big shaft ( projection window )
+# 
+# Begin conversion from: !genbox frame_horiz_wood_mat outer_frame.1 .0625 5.116 .0833|xform -t 28.93 7.375 4.625
+#  xform -t 28.93 7.375 4.625
+#  genbox frame_horiz_wood_mat outer_frame.1 .0625 5.116 .0833
+o
+o outer_frame.1
+v v1 =
+	p 28.9925 7.375 4.625
+v v40 =
+	p 28.9925 7.375 4.7083
+v v57 =
+	p 28.93 7.375 4.7083
+v v58 =
+	p 28.93 7.375 4.625
+f v1 v40 v57 v58
+v v54 =
+	p 28.93 12.491 4.7083
+v v60 =
+	p 28.93 12.491 4.625
+f v57 v54 v60 v58
+v v59 =
+	p 28.9925 12.491 4.625
+f v60 v59 v1 v58
+v v62 =
+	p 28.9925 12.491 4.7083
+f v59 v60 v54 v62
+f v40 v1 v59 v62
+f v54 v57 v40 v62
+# End conversion from: !genbox frame_horiz_wood_mat outer_frame.1 .0625 5.116 .0833|xform -t 28.93 7.375 4.625
+# Begin conversion from: !genbox frame_vert_wood_mat outer_frame.2 .0625 .0833 2.266|xform -t 0 5.116 0 -t 28.93 7.375 4.625
+#  xform -t 0 5.116 0 -t 28.93 7.375 4.625
+#  genbox frame_vert_wood_mat outer_frame.2 .0625 .0833 2.266
+m frame_vert_wood_mat
+o
+o outer_frame.2
+v v61 =
+	p 28.9925 12.491 6.891
+v v64 =
+	p 28.93 12.491 6.891
+f v59 v61 v64 v60
+v v63 =
+	p 28.93 12.5743 6.891
+v v66 =
+	p 28.93 12.5743 4.625
+f v64 v63 v66 v60
+v v65 =
+	p 28.9925 12.5743 4.625
+f v66 v65 v59 v60
+v v70 =
+	p 28.9925 12.5743 6.891
+f v65 v66 v63 v70
+f v61 v59 v65 v70
+f v63 v64 v61 v70
+# End conversion from: !genbox frame_vert_wood_mat outer_frame.2 .0625 .0833 2.266|xform -t 0 5.116 0 -t 28.93 7.375 4.625
+# Begin conversion from: !genbox frame_horiz_wood_mat outer_frame.3 .0625 5.116 .0833|xform -t 0 .0833 2.266 -t 28.93 7.375 4.625
+#  xform -t 0 .0833 2.266 -t 28.93 7.375 4.625
+#  genbox frame_horiz_wood_mat outer_frame.3 .0625 5.116 .0833
+m frame_horiz_wood_mat
+o
+o outer_frame.3
+v v69 =
+	p 28.9925 7.4583 6.891
+v v71 =
+	p 28.9925 7.4583 6.9743
+v v76 =
+	p 28.93 7.4583 6.9743
+v v79 =
+	p 28.93 7.4583 6.891
+f v69 v71 v76 v79
+v v73 =
+	p 28.93 12.5743 6.9743
+f v76 v73 v63 v79
+f v63 v70 v69 v79
+v v27 =
+	p 28.9925 12.5743 6.9743
+f v70 v63 v73 v27
+f v71 v69 v70 v27
+f v73 v76 v71 v27
+# End conversion from: !genbox frame_horiz_wood_mat outer_frame.3 .0625 5.116 .0833|xform -t 0 .0833 2.266 -t 28.93 7.375 4.625
+# Begin conversion from: !genbox frame_vert_wood_mat outer_frame.4 .0625 .0833 2.266|xform -t 0 0 .0833 -t 28.93 7.375 4.625
+#  xform -t 0 0 .0833 -t 28.93 7.375 4.625
+#  genbox frame_vert_wood_mat outer_frame.4 .0625 .0833 2.266
+m frame_vert_wood_mat
+o
+o outer_frame.4
+v v86 =
+	p 28.9925 7.375 6.9743
+v v80 =
+	p 28.93 7.375 6.9743
+f v40 v86 v80 v57
+v v26 =
+	p 28.93 7.4583 4.7083
+f v80 v76 v26 v57
+v v75 =
+	p 28.9925 7.4583 4.7083
+f v26 v75 v40 v57
+f v75 v26 v76 v71
+f v86 v40 v75 v71
+f v76 v80 v86 v71
+# End conversion from: !genbox frame_vert_wood_mat outer_frame.4 .0625 .0833 2.266|xform -t 0 0 .0833 -t 28.93 7.375 4.625
+# Begin conversion from: !genbox frame_horiz_wood_mat inner_frame.1 .0416 4.9918 .0416|xform -ry -1 -t 28.9509 7.4583 4.7083 -t .02 0 0
+#  xform -ry -1 -t 28.9509 7.4583 4.7083 -t .02 0 0
+#  genbox frame_horiz_wood_mat inner_frame.1 .0416 4.9918 .0416
+m frame_horiz_wood_mat
+o
+o inner_frame.1
+v v93 =
+	p 29.0124936641 7.4583 4.70902602011
+v v89 =
+	p 29.011767644 7.4583 4.75061968423
+v v87 =
+	p 28.9701739799 7.4583 4.74989366412
+v v78 =
+	p 28.9709 7.4583 4.7083
+f v93 v89 v87 v78
+v v84 =
+	p 28.9701739799 12.4501 4.74989366412
+v v17 =
+	p 28.9709 12.4501 4.7083
+f v87 v84 v17 v78
+v v90 =
+	p 29.0124936641 12.4501 4.70902602011
+f v17 v90 v93 v78
+v v77 =
+	p 29.011767644 12.4501 4.75061968423
+f v90 v17 v84 v77
+f v89 v93 v90 v77
+f v84 v87 v89 v77
+# End conversion from: !genbox frame_horiz_wood_mat inner_frame.1 .0416 4.9918 .0416|xform -ry -1 -t 28.9509 7.4583 4.7083 -t .02 0 0
+# Begin conversion from: !genbox frame_vert_wood_mat inner_frame.2 .0416 .0416 2.1418|xform -t 0 4.9918  0 -ry -1 -t 28.9509 7.4583 4.7083 -t .02 0 0
+#  xform -t 0 4.9918 0 -ry -1 -t 28.9509 7.4583 4.7083 -t .02 0 0
+#  genbox frame_vert_wood_mat inner_frame.2 .0416 .0416 2.1418
+m frame_vert_wood_mat
+o
+o inner_frame.2
+v v85 =
+	p 28.9751141 12.4501 6.85049981359
+v v83 =
+	p 28.9335204359 12.4501 6.84977379349
+f v90 v85 v83 v17
+v v82 =
+	p 28.9335204359 12.4917 6.84977379349
+v v108 =
+	p 28.9709 12.4917 4.7083
+f v83 v82 v108 v17
+v v91 =
+	p 29.0124936641 12.4917 4.70902602011
+f v108 v91 v90 v17
+v v104 =
+	p 28.9751141 12.4917 6.85049981359
+f v91 v108 v82 v104
+f v85 v90 v91 v104
+f v82 v83 v85 v104
+# End conversion from: !genbox frame_vert_wood_mat inner_frame.2 .0416 .0416 2.1418|xform -t 0 4.9918  0 -ry -1 -t 28.9509 7.4583 4.7083 -t .02 0 0
+# Begin conversion from: !genbox frame_horiz_wood_mat inner_frame.3 .0416 4.9918 .0416|xform -t 0 .0416 2.1418 -ry -1 -t 28.9509 7.4583 4.7083 -t .02 0 0
+#  xform -t 0 .0416 2.1418 -ry -1 -t 28.9509 7.4583 4.7083 -t .02 0 0
+#  genbox frame_horiz_wood_mat inner_frame.3 .0416 4.9918 .0416
+m frame_horiz_wood_mat
+o
+o inner_frame.3
+v v47 =
+	p 28.9751141 7.4999 6.85049981359
+v v101 =
+	p 28.9743880799 7.4999 6.89209347771
+v v72 =
+	p 28.9327944158 7.4999 6.8913674576
+v v81 =
+	p 28.9335204359 7.4999 6.84977379349
+f v47 v101 v72 v81
+v v102 =
+	p 28.9327944158 12.4917 6.8913674576
+f v72 v102 v82 v81
+f v82 v104 v47 v81
+v v74 =
+	p 28.9743880799 12.4917 6.89209347771
+f v104 v82 v102 v74
+f v101 v47 v104 v74
+f v102 v72 v101 v74
+# End conversion from: !genbox frame_horiz_wood_mat inner_frame.3 .0416 4.9918 .0416|xform -t 0 .0416 2.1418 -ry -1 -t 28.9509 7.4583 4.7083 -t .02 0 0
+# Begin conversion from: !genbox frame_vert_wood_mat inner_frame.4 .0416 .0416 2.1418|xform -t 0 0 .0416 -ry -1 -t 28.9509 7.4583 4.7083 -t .02 0 0
+#  xform -t 0 0 .0416 -ry -1 -t 28.9509 7.4583 4.7083 -t .02 0 0
+#  genbox frame_vert_wood_mat inner_frame.4 .0416 .0416 2.1418
+m frame_vert_wood_mat
+o
+o inner_frame.4
+v v95 =
+	p 28.9743880799 7.4583 6.89209347771
+v v92 =
+	p 28.9327944158 7.4583 6.8913674576
+f v89 v95 v92 v87
+v v112 =
+	p 28.9701739799 7.4999 4.74989366412
+f v92 v72 v112 v87
+v v114 =
+	p 29.011767644 7.4999 4.75061968423
+f v112 v114 v89 v87
+f v114 v112 v72 v101
+f v95 v89 v114 v101
+f v72 v92 v95 v101
+# End conversion from: !genbox frame_vert_wood_mat inner_frame.4 .0416 .0416 2.1418|xform -t 0 0 .0416 -ry -1 -t 28.9509 7.4583 4.7083 -t .02 0 0
+m window_glass =
+	c
+		cxy 0.3330 0.3330
+	rs 0.0801 0
+	c
+		cxy 0.3330 0.3330
+	ts 0.8815 0
+o
+o shaft_window
+v v98 =
+	p 29.0334 7.4583 4.7083
+v v96 =
+	p 28.9953 7.4583 6.89036993171
+v v103 =
+	p 28.9953 12.4917 6.89036993171
+v v100 =
+	p 29.0334 12.4917 4.7083
+f v98 v96 v103 v100
+#  input of the exit sign
+# Begin conversion from: !xform -e -n exit_door1 -s .08333 -rx 90 -t 4.078 22 7.333 exit_sign
+#  xform -e -n exit_door1 -s .08333 -rx 90 -t 4.078 22 7.333
+#  creation of the EXIT sign above the doors
+m sign_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.4750
+	c
+	rs 0.0500 0.1000
+m alpha_mat =
+	c
+		cxy 0.6029 0.3388
+	ed 53.69
+m sign_mat_inside =
+	c
+		cxy 0.3330 0.3330
+	rd 0.3800
+	c
+	rs 0.0500 0.1000
+m support_mat =
+	c
+		cxy 0.3644 0.3522
+	rd 0.7156
+	c
+	rs 0.0500 0.1000
+#  xform -t 0 0 2.875
+#  genbox sign_mat exit_frame.1 11.5 1.5 .125
+m sign_mat
+o
+o exit_door1.exit_frame.1
+v v106 =
+	p 5.036295 21.76042625 7.333
+v v109 =
+	p 5.036295 21.75001 7.333
+v v88 =
+	p 4.078 21.75001 7.333
+v v15 =
+	p 4.078 21.76042625 7.333
+f v106 v109 v88 v15
+v v94 =
+	p 4.078 21.75001 7.457995
+v v99 =
+	p 4.078 21.76042625 7.457995
+f v88 v94 v99 v15
+v v111 =
+	p 5.036295 21.76042625 7.457995
+f v99 v111 v106 v15
+v v110 =
+	p 5.036295 21.75001 7.457995
+f v111 v99 v94 v110
+f v109 v106 v111 v110
+f v94 v88 v109 v110
+#  xform -t 11.5 0 2.875
+#  genbox sign_mat exit_frame.2 1.5 7 .125
+o
+o exit_door1.exit_frame.2
+v v107 =
+	p 5.16129 21.76042625 7.333
+v v97 =
+	p 5.16129 21.75001 7.333
+f v107 v97 v109 v106
+v v105 =
+	p 5.036295 21.75001 7.91631
+v v117 =
+	p 5.036295 21.76042625 7.91631
+f v109 v105 v117 v106
+v v115 =
+	p 5.16129 21.76042625 7.91631
+f v117 v115 v107 v106
+v v129 =
+	p 5.16129 21.75001 7.91631
+f v115 v117 v105 v129
+f v97 v107 v115 v129
+f v105 v109 v97 v129
+#  xform -t 1.5 7 2.875
+#  genbox sign_mat exit_frame.3 11.5 1.5 .125
+o
+o exit_door1.exit_frame.3
+v v137 =
+	p 4.202995 21.75001 7.91631
+v v113 =
+	p 4.202995 21.76042625 7.91631
+f v115 v129 v137 v113
+v v118 =
+	p 4.202995 21.75001 8.041305
+v v128 =
+	p 4.202995 21.76042625 8.041305
+f v137 v118 v128 v113
+v v122 =
+	p 5.16129 21.76042625 8.041305
+f v128 v122 v115 v113
+v v136 =
+	p 5.16129 21.75001 8.041305
+f v122 v128 v118 v136
+f v129 v115 v122 v136
+f v118 v137 v129 v136
+#  xform -t 0 1.5 2.875
+#  genbox sign_mat exit_frame.4 1.5 7 .125
+o
+o exit_door1.exit_frame.4
+v v126 =
+	p 4.202995 21.76042625 7.457995
+v v120 =
+	p 4.202995 21.75001 7.457995
+f v126 v120 v94 v99
+v v131 =
+	p 4.078 21.75001 8.041305
+v v116 =
+	p 4.078 21.76042625 8.041305
+f v94 v131 v116 v99
+f v116 v128 v126 v99
+f v128 v116 v131 v118
+f v120 v126 v128 v118
+f v131 v94 v120 v118
+m sign_mat_inside
+o
+o exit_door1
+v v124 =
+	p 4.202995 21.7516766 7.457995
+v v130 =
+	p 5.036295 21.7516766 7.457995
+v v132 =
+	p 5.036295 21.7516766 7.91631
+v v127 =
+	p 4.202995 21.7516766 7.91631
+f v124 v130 v132 v127
+#  xform -s 2.375 -t 1.75 1.625 2.975
+#  genprism alpha_mat E - -c -l 0 0 .1
+m alpha_mat
+o
+o exit_door1.E
+v v121 =
+	p 4.40008998047 21.75209325 7.81165923828
+v v138 =
+	p 4.40008998047 21.75209325 7.76682063606
+v v125 =
+	p 4.28567398438 21.75209325 7.76682063606
+v v141 =
+	p 4.28567398438 21.75209325 7.70652021484
+v v142 =
+	p 4.39003997624 21.75209325 7.70652021484
+v v140 =
+	p 4.39003997624 21.75209325 7.66168161263
+v v135 =
+	p 4.28567398438 21.75209325 7.66168161263
+v v145 =
+	p 4.28567398438 21.75209325 7.58746583138
+v v155 =
+	p 4.40395533627 21.75209325 7.58746583138
+v v148 =
+	p 4.40395533627 21.75209325 7.54262703125
+v v149 =
+	p 4.24238144531 21.75209325 7.54262703125
+v v119 =
+	p 4.24238144531 21.75209325 7.81165923828
+f v121 v138 v125 v141 v142 v140 v135 v145 v155 v148 v149 v119 v121
+v v143 =
+	p 4.40008998047 21.732302375 7.81165923828
+v v133 =
+	p 4.24238144531 21.732302375 7.81165923828
+v v139 =
+	p 4.24238144531 21.732302375 7.54262703125
+v v43 =
+	p 4.40395533627 21.732302375 7.54262703125
+v v144 =
+	p 4.40395533627 21.732302375 7.58746583138
+v v134 =
+	p 4.28567398438 21.732302375 7.58746583138
+v v160 =
+	p 4.28567398438 21.732302375 7.66168161263
+v v150 =
+	p 4.39003997624 21.732302375 7.66168161263
+v v153 =
+	p 4.39003997624 21.732302375 7.70652021484
+v v158 =
+	p 4.28567398438 21.732302375 7.70652021484
+v v147 =
+	p 4.28567398438 21.732302375 7.76682063606
+v v154 =
+	p 4.40008998047 21.732302375 7.76682063606
+f v143 v133 v139 v43 v144 v134 v160 v150 v153 v158 v147 v154 v143
+f v121 v143 v154 v138
+f v138 v154 v147 v125
+f v125 v147 v158 v141
+f v141 v158 v153 v142
+f v142 v153 v150 v140
+f v140 v150 v160 v135
+f v135 v160 v134 v145
+f v145 v134 v144 v155
+f v155 v144 v43 v148
+f v148 v43 v139 v149
+f v149 v139 v133 v119
+f v119 v133 v143 v121
+#  xform -s 2.375 -t 4.25 1.625 2.975
+#  genprism alpha_mat X - -c -l 0 0 .1
+o
+o exit_door1.X
+v v159 =
+	p 4.61537266048 21.75209325 7.81165923828
+v v151 =
+	p 4.55584546875 21.75209325 7.68642020638
+v v50 =
+	p 4.55584546875 21.75209325 7.68487394531
+v v123 =
+	p 4.61923821419 21.75209325 7.54262703125
+v v32 =
+	p 4.57208012142 21.75209325 7.54262703125
+v v146 =
+	p 4.53187990658 21.75209325 7.63694301888
+v v165 =
+	p 4.52956081185 21.75209325 7.63694301888
+v v169 =
+	p 4.489360597 21.75209325 7.54262703125
+v v161 =
+	p 4.44142947266 21.75209325 7.54262703125
+v v152 =
+	p 4.5048222181 21.75209325 7.68332788216
+v v156 =
+	p 4.5048222181 21.75209325 7.68796626953
+v v162 =
+	p 4.44916038216 21.75209325 7.81165923828
+v v170 =
+	p 4.49786434017 21.75209325 7.81165923828
+v v3 =
+	p 4.53187990658 21.75209325 7.72662042122
+v v173 =
+	p 4.53342616764 21.75209325 7.72662042122
+v v172 =
+	p 4.57053405827 21.75209325 7.81165923828
+f v159 v151 v50 v123 v32 v146 v165 v169 v161 v152 v156 v162 v170 v3 v173 v172 v159
+v v171 =
+	p 4.61537266048 21.732302375 7.81165923828
+v v164 =
+	p 4.57053405827 21.732302375 7.81165923828
+v v182 =
+	p 4.53342616764 21.732302375 7.72662042122
+v v166 =
+	p 4.53187990658 21.732302375 7.72662042122
+v v31 =
+	p 4.49786434017 21.732302375 7.81165923828
+v v176 =
+	p 4.44916038216 21.732302375 7.81165923828
+v v180 =
+	p 4.5048222181 21.732302375 7.68796626953
+v v175 =
+	p 4.5048222181 21.732302375 7.68332788216
+v v37 =
+	p 4.44142947266 21.732302375 7.54262703125
+v v35 =
+	p 4.489360597 21.732302375 7.54262703125
+v v167 =
+	p 4.52956081185 21.732302375 7.63694301888
+v v187 =
+	p 4.53187990658 21.732302375 7.63694301888
+v v177 =
+	p 4.57208012142 21.732302375 7.54262703125
+v v168 =
+	p 4.61923821419 21.732302375 7.54262703125
+v v181 =
+	p 4.55584546875 21.732302375 7.68487394531
+v v190 =
+	p 4.55584546875 21.732302375 7.68642020638
+f v171 v164 v182 v166 v31 v176 v180 v175 v37 v35 v167 v187 v177 v168 v181 v190 v171
+f v159 v171 v190 v151
+f v151 v190 v181 v50
+f v50 v181 v168 v123
+f v123 v168 v177 v32
+f v32 v177 v187 v146
+f v146 v187 v167 v165
+f v165 v167 v35 v169
+f v169 v35 v37 v161
+f v161 v37 v175 v152
+f v152 v175 v180 v156
+f v156 v180 v176 v162
+f v162 v176 v31 v170
+f v170 v31 v166 v3
+f v3 v166 v182 v173
+f v173 v182 v164 v172
+f v172 v164 v171 v159
+#  xform -s 2.375 -t 6.75 1.625 2.975
+#  genprism alpha_mat I - -c -l 0 0 .1
+o
+o exit_door1.I
+v v0 =
+	p 4.75875885189 21.75209325 7.81165923828
+v v29 =
+	p 4.75875885189 21.75209325 7.54262703125
+v v179 =
+	p 4.71933186653 21.75209325 7.54262703125
+v v198 =
+	p 4.71933186653 21.75209325 7.81165923828
+f v0 v29 v179 v198 v0
+v v178 =
+	p 4.75875885189 21.732302375 7.81165923828
+v v189 =
+	p 4.71933186653 21.732302375 7.81165923828
+v v25 =
+	p 4.71933186653 21.732302375 7.54262703125
+v v186 =
+	p 4.75875885189 21.732302375 7.54262703125
+f v178 v189 v25 v186 v178
+f v0 v178 v186 v29
+f v29 v186 v25 v179
+f v179 v25 v189 v198
+f v198 v189 v178 v0
+#  xform -s 2.375 -t 9 1.625 2.975
+#  genprism alpha_mat T - -c -l 0 0 .1
+o
+o exit_door1.T
+v v188 =
+	p 5.01041712891 21.75209325 7.81165923828
+v v185 =
+	p 5.01041712891 21.75209325 7.76682063606
+v v192 =
+	p 4.94934367611 21.75209325 7.76682063606
+v v184 =
+	p 4.94934367611 21.75209325 7.54262703125
+v v206 =
+	p 4.90527810547 21.75209325 7.54262703125
+v v201 =
+	p 4.90527810547 21.75209325 7.76682063606
+v v211 =
+	p 4.84420465267 21.75209325 7.76682063606
+v v174 =
+	p 4.84420465267 21.75209325 7.81165923828
+f v188 v185 v192 v184 v206 v201 v211 v174 v188
+v v21 =
+	p 5.01041712891 21.732302375 7.81165923828
+v v194 =
+	p 4.84420465267 21.732302375 7.81165923828
+v v163 =
+	p 4.84420465267 21.732302375 7.76682063606
+v v183 =
+	p 4.90527810547 21.732302375 7.76682063606
+v v22 =
+	p 4.90527810547 21.732302375 7.54262703125
+v v197 =
+	p 4.94934367611 21.732302375 7.54262703125
+v v196 =
+	p 4.94934367611 21.732302375 7.76682063606
+v v56 =
+	p 5.01041712891 21.732302375 7.76682063606
+f v21 v194 v163 v183 v22 v197 v196 v56 v21
+f v188 v21 v56 v185
+f v185 v56 v196 v192
+f v192 v196 v197 v184
+f v184 v197 v22 v206
+f v206 v22 v183 v201
+f v201 v183 v163 v211
+f v211 v163 v194 v174
+f v174 v194 v21 v188
+#  xform -t .625 .25 0
+#  genbox support_mat support_frame 1.75 8 2.875
+m support_mat
+o
+o exit_door1.support_frame
+v v195 =
+	p 4.27590875 22 7.3538325
+v v200 =
+	p 4.27590875 21.76042625 7.3538325
+v v191 =
+	p 4.13008125 21.76042625 7.3538325
+v v208 =
+	p 4.13008125 22 7.3538325
+f v195 v200 v191 v208
+v v204 =
+	p 4.13008125 21.76042625 8.0204725
+v v157 =
+	p 4.13008125 22 8.0204725
+f v191 v204 v157 v208
+v v202 =
+	p 4.27590875 22 8.0204725
+f v157 v202 v195 v208
+v v199 =
+	p 4.27590875 21.76042625 8.0204725
+f v202 v157 v204 v199
+f v200 v195 v202 v199
+f v204 v191 v200 v199
+# End conversion from: !xform -e -n exit_door1 -s .08333 -rx 90 -t 4.078 22 7.333 exit_sign
+# Begin conversion from: !xform -e -n exit_door2 -s .08333 -rx 90 -t 26.508 22 7.333 exit_sign
+#  xform -e -n exit_door2 -s .08333 -rx 90 -t 26.508 22 7.333
+#  creation of the EXIT sign above the doors
+m sign_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.4750
+	c
+	rs 0.0500 0.1000
+m alpha_mat =
+	c
+		cxy 0.6029 0.3388
+	ed 53.69
+m sign_mat_inside =
+	c
+		cxy 0.3330 0.3330
+	rd 0.3800
+	c
+	rs 0.0500 0.1000
+m support_mat =
+	c
+		cxy 0.3644 0.3522
+	rd 0.7156
+	c
+	rs 0.0500 0.1000
+#  xform -t 0 0 2.875
+#  genbox sign_mat exit_frame.1 11.5 1.5 .125
+m sign_mat
+o
+o exit_door2.exit_frame.1
+v v20 =
+	p 27.466295 21.76042625 7.333
+v v207 =
+	p 27.466295 21.75001 7.333
+v v214 =
+	p 26.508 21.75001 7.333
+v v210 =
+	p 26.508 21.76042625 7.333
+f v20 v207 v214 v210
+v v209 =
+	p 26.508 21.75001 7.457995
+v v16 =
+	p 26.508 21.76042625 7.457995
+f v214 v209 v16 v210
+v v203 =
+	p 27.466295 21.76042625 7.457995
+f v16 v203 v20 v210
+v v193 =
+	p 27.466295 21.75001 7.457995
+f v203 v16 v209 v193
+f v207 v20 v203 v193
+f v209 v214 v207 v193
+#  xform -t 11.5 0 2.875
+#  genbox sign_mat exit_frame.2 1.5 7 .125
+o
+o exit_door2.exit_frame.2
+v v213 =
+	p 27.59129 21.76042625 7.333
+v v215 =
+	p 27.59129 21.75001 7.333
+f v213 v215 v207 v20
+v v218 =
+	p 27.466295 21.75001 7.91631
+v v212 =
+	p 27.466295 21.76042625 7.91631
+f v207 v218 v212 v20
+v v205 =
+	p 27.59129 21.76042625 7.91631
+f v212 v205 v213 v20
+v v217 =
+	p 27.59129 21.75001 7.91631
+f v205 v212 v218 v217
+f v215 v213 v205 v217
+f v218 v207 v215 v217
+#  xform -t 1.5 7 2.875
+#  genbox sign_mat exit_frame.3 11.5 1.5 .125
+o
+o exit_door2.exit_frame.3
+v v216 =
+	p 26.632995 21.75001 7.91631
+v v220 =
+	p 26.632995 21.76042625 7.91631
+f v205 v217 v216 v220
+v v219 =
+	p 26.632995 21.75001 8.041305
+v v222 =
+	p 26.632995 21.76042625 8.041305
+f v216 v219 v222 v220
+v v221 =
+	p 27.59129 21.76042625 8.041305
+f v222 v221 v205 v220
+v v224 =
+	p 27.59129 21.75001 8.041305
+f v221 v222 v219 v224
+f v217 v205 v221 v224
+f v219 v216 v217 v224
+#  xform -t 0 1.5 2.875
+#  genbox sign_mat exit_frame.4 1.5 7 .125
+o
+o exit_door2.exit_frame.4
+v v227 =
+	p 26.632995 21.76042625 7.457995
+v v231 =
+	p 26.632995 21.75001 7.457995
+f v227 v231 v209 v16
+v v223 =
+	p 26.508 21.75001 8.041305
+v v233 =
+	p 26.508 21.76042625 8.041305
+f v209 v223 v233 v16
+f v233 v222 v227 v16
+f v222 v233 v223 v219
+f v231 v227 v222 v219
+f v223 v209 v231 v219
+m sign_mat_inside
+o
+o exit_door2
+v v228 =
+	p 26.632995 21.7516766 7.457995
+v v225 =
+	p 27.466295 21.7516766 7.457995
+v v226 =
+	p 27.466295 21.7516766 7.91631
+v v235 =
+	p 26.632995 21.7516766 7.91631
+f v228 v225 v226 v235
+#  xform -s 2.375 -t 1.75 1.625 2.975
+#  genprism alpha_mat E - -c -l 0 0 .1
+m alpha_mat
+o
+o exit_door2.E
+v v240 =
+	p 26.8300899805 21.75209325 7.81165923828
+v v244 =
+	p 26.8300899805 21.75209325 7.76682063606
+v v232 =
+	p 26.7156739844 21.75209325 7.76682063606
+v v247 =
+	p 26.7156739844 21.75209325 7.70652021484
+v v239 =
+	p 26.8200399762 21.75209325 7.70652021484
+v v236 =
+	p 26.8200399762 21.75209325 7.66168161263
+v v229 =
+	p 26.7156739844 21.75209325 7.66168161263
+v v246 =
+	p 26.7156739844 21.75209325 7.58746583138
+v v238 =
+	p 26.8339553363 21.75209325 7.58746583138
+v v237 =
+	p 26.8339553363 21.75209325 7.54262703125
+v v245 =
+	p 26.6723814453 21.75209325 7.54262703125
+v v242 =
+	p 26.6723814453 21.75209325 7.81165923828
+f v240 v244 v232 v247 v239 v236 v229 v246 v238 v237 v245 v242 v240
+v v230 =
+	p 26.8300899805 21.732302375 7.81165923828
+v v243 =
+	p 26.6723814453 21.732302375 7.81165923828
+v v249 =
+	p 26.6723814453 21.732302375 7.54262703125
+v v241 =
+	p 26.8339553363 21.732302375 7.54262703125
+v v251 =
+	p 26.8339553363 21.732302375 7.58746583138
+v v253 =
+	p 26.7156739844 21.732302375 7.58746583138
+v v55 =
+	p 26.7156739844 21.732302375 7.66168161263
+v v6 =
+	p 26.8200399762 21.732302375 7.66168161263
+v v248 =
+	p 26.8200399762 21.732302375 7.70652021484
+v v250 =
+	p 26.7156739844 21.732302375 7.70652021484
+v v234 =
+	p 26.7156739844 21.732302375 7.76682063606
+v v7 =
+	p 26.8300899805 21.732302375 7.76682063606
+f v230 v243 v249 v241 v251 v253 v55 v6 v248 v250 v234 v7 v230
+f v240 v230 v7 v244
+f v244 v7 v234 v232
+f v232 v234 v250 v247
+f v247 v250 v248 v239
+f v239 v248 v6 v236
+f v236 v6 v55 v229
+f v229 v55 v253 v246
+f v246 v253 v251 v238
+f v238 v251 v241 v237
+f v237 v241 v249 v245
+f v245 v249 v243 v242
+f v242 v243 v230 v240
+#  xform -s 2.375 -t 4.25 1.625 2.975
+#  genprism alpha_mat X - -c -l 0 0 .1
+o
+o exit_door2.X
+v v8 =
+	p 27.0453726605 21.75209325 7.81165923828
+v v12 =
+	p 26.9858454688 21.75209325 7.68642020638
+v v5 =
+	p 26.9858454688 21.75209325 7.68487394531
+v v4 =
+	p 27.0492382142 21.75209325 7.54262703125
+v v254 =
+	p 27.0020801214 21.75209325 7.54262703125
+v v10 =
+	p 26.9618799066 21.75209325 7.63694301888
+v v255 =
+	p 26.9595608118 21.75209325 7.63694301888
+v v11 =
+	p 26.919360597 21.75209325 7.54262703125
+v v68 =
+	p 26.8714294727 21.75209325 7.54262703125
+v v9 =
+	p 26.9348222181 21.75209325 7.68332788216
+v v19 =
+	p 26.9348222181 21.75209325 7.68796626953
+v v252 =
+	p 26.8791603822 21.75209325 7.81165923828
+v v23 =
+	p 26.9278643402 21.75209325 7.81165923828
+v v38 =
+	p 26.9618799066 21.75209325 7.72662042122
+v v24 =
+	p 26.9634261676 21.75209325 7.72662042122
+v v39 =
+	p 27.0005340583 21.75209325 7.81165923828
+f v8 v12 v5 v4 v254 v10 v255 v11 v68 v9 v19 v252 v23 v38 v24 v39 v8
+v v30 =
+	p 27.0453726605 21.732302375 7.81165923828
+v v67 =
+	p 27.0005340583 21.732302375 7.81165923828
+v v28 =
+	p 26.9634261676 21.732302375 7.72662042122
+v v41 =
+	p 26.9618799066 21.732302375 7.72662042122
+v v33 =
+	p 26.9278643402 21.732302375 7.81165923828
+v v42 =
+	p 26.8791603822 21.732302375 7.81165923828
+v v13 =
+	p 26.9348222181 21.732302375 7.68796626953
+v v18 =
+	p 26.9348222181 21.732302375 7.68332788216
+v v52 =
+	p 26.8714294727 21.732302375 7.54262703125
+v v14 =
+	p 26.919360597 21.732302375 7.54262703125
+v v51 =
+	p 26.9595608118 21.732302375 7.63694301888
+v v36 =
+	p 26.9618799066 21.732302375 7.63694301888
+v v49 =
+	p 27.0020801214 21.732302375 7.54262703125
+v v34 =
+	p 27.0492382142 21.732302375 7.54262703125
+v v48 =
+	p 26.9858454688 21.732302375 7.68487394531
+v v44 =
+	p 26.9858454688 21.732302375 7.68642020638
+f v30 v67 v28 v41 v33 v42 v13 v18 v52 v14 v51 v36 v49 v34 v48 v44 v30
+f v8 v30 v44 v12
+f v12 v44 v48 v5
+f v5 v48 v34 v4
+f v4 v34 v49 v254
+f v254 v49 v36 v10
+f v10 v36 v51 v255
+f v255 v51 v14 v11
+f v11 v14 v52 v68
+f v68 v52 v18 v9
+f v9 v18 v13 v19
+f v19 v13 v42 v252
+f v252 v42 v33 v23
+f v23 v33 v41 v38
+f v38 v41 v28 v24
+f v24 v28 v67 v39
+f v39 v67 v30 v8
+#  xform -s 2.375 -t 6.75 1.625 2.975
+#  genprism alpha_mat I - -c -l 0 0 .1
+o
+o exit_door2.I
+v v53 =
+	p 27.1887588519 21.75209325 7.81165923828
+v v45 =
+	p 27.1887588519 21.75209325 7.54262703125
+v v46 =
+	p 27.1493318665 21.75209325 7.54262703125
+v v2 =
+	p 27.1493318665 21.75209325 7.81165923828
+f v53 v45 v46 v2 v53
+v v58 =
+	p 27.1887588519 21.732302375 7.81165923828
+v v1 =
+	p 27.1493318665 21.732302375 7.81165923828
+v v54 =
+	p 27.1493318665 21.732302375 7.54262703125
+v v62 =
+	p 27.1887588519 21.732302375 7.54262703125
+f v58 v1 v54 v62 v58
+f v53 v58 v62 v45
+f v45 v62 v54 v46
+f v46 v54 v1 v2
+f v2 v1 v58 v53
+#  xform -s 2.375 -t 9 1.625 2.975
+#  genprism alpha_mat T - -c -l 0 0 .1
+o
+o exit_door2.T
+v v60 =
+	p 27.4404171289 21.75209325 7.81165923828
+v v66 =
+	p 27.4404171289 21.75209325 7.76682063606
+v v59 =
+	p 27.3793436761 21.75209325 7.76682063606
+v v65 =
+	p 27.3793436761 21.75209325 7.54262703125
+v v64 =
+	p 27.3352781055 21.75209325 7.54262703125
+v v61 =
+	p 27.3352781055 21.75209325 7.76682063606
+v v79 =
+	p 27.2742046527 21.75209325 7.76682063606
+v v63 =
+	p 27.2742046527 21.75209325 7.81165923828
+f v60 v66 v59 v65 v64 v61 v79 v63 v60
+v v69 =
+	p 27.4404171289 21.732302375 7.81165923828
+v v70 =
+	p 27.2742046527 21.732302375 7.81165923828
+v v73 =
+	p 27.2742046527 21.732302375 7.76682063606
+v v27 =
+	p 27.3352781055 21.732302375 7.76682063606
+v v57 =
+	p 27.3352781055 21.732302375 7.54262703125
+v v26 =
+	p 27.3793436761 21.732302375 7.54262703125
+v v40 =
+	p 27.3793436761 21.732302375 7.76682063606
+v v75 =
+	p 27.4404171289 21.732302375 7.76682063606
+f v69 v70 v73 v27 v57 v26 v40 v75 v69
+f v60 v69 v75 v66
+f v66 v75 v40 v59
+f v59 v40 v26 v65
+f v65 v26 v57 v64
+f v64 v57 v27 v61
+f v61 v27 v73 v79
+f v79 v73 v70 v63
+f v63 v70 v69 v60
+#  xform -t .625 .25 0
+#  genbox support_mat support_frame 1.75 8 2.875
+m support_mat
+o
+o exit_door2.support_frame
+v v76 =
+	p 26.70590875 22 7.3538325
+v v80 =
+	p 26.70590875 21.76042625 7.3538325
+v v86 =
+	p 26.56008125 21.76042625 7.3538325
+v v71 =
+	p 26.56008125 22 7.3538325
+f v76 v80 v86 v71
+v v78 =
+	p 26.56008125 21.76042625 8.0204725
+v v93 =
+	p 26.56008125 22 8.0204725
+f v86 v78 v93 v71
+v v84 =
+	p 26.70590875 22 8.0204725
+f v93 v84 v76 v71
+v v77 =
+	p 26.70590875 21.76042625 8.0204725
+f v84 v93 v78 v77
+f v80 v76 v84 v77
+f v78 v86 v80 v77
+# End conversion from: !xform -e -n exit_door2 -s .08333 -rx 90 -t 26.508 22 7.333 exit_sign
+# 
+#  Wall switches near left door
+# 
+m ivory_plastic =
+	c
+		cxy 0.3777 0.3746
+	rd 0.7025
+	c
+	rs 0.0200 0.0500
+# Begin conversion from: !xform -e -n switch1 -t 78 0 48 -s .0833 -t 0 22 0 plate
+#  xform -e -n switch1 -t 78 0 48 -s .0833 -t 0 22 0
+# 
+#  Blank wall switch plate
+# 
+#  xform -t 0 -.1 0
+o
+o switch1.plate
+v v17 =
+	p 6.8618375 21.99167 4.0088125
+v v108 =
+	p 6.8618375 21.99167 4.3628375
+v v90 =
+	p 6.5078125 21.99167 4.3628375
+v v91 =
+	p 6.5078125 21.99167 4.0088125
+f v17 v108 v90 v91
+v v83 =
+	p 6.5078125 22.0020825 4.0088125
+v v85 =
+	p 6.8618375 22.0020825 4.0088125
+cyl v83 0.0104125 v85
+v v81 =
+	p 6.5078125 22.0020825 4.3628375
+cyl v83 0.0104125 v81
+v v82 =
+	p 6.8618375 22.0020825 4.3628375
+cyl v82 0.0104125 v85
+cyl v82 0.0104125 v81
+sph v83 0.0104125
+sph v85 0.0104125
+sph v81 0.0104125
+sph v82 0.0104125
+# End conversion from: !xform -e -n switch1 -t 78 0 48 -s .0833 -t 0 22 0 plate
+# Begin conversion from: !xform -e -n switch2 -t 78 0 48 -t 4.625 0 0 -s .0833 -t 0 22 0 plate
+#  xform -e -n switch2 -t 78 0 48 -t 4.625 0 0 -s .0833 -t 0 22 0
+# 
+#  Blank wall switch plate
+# 
+#  xform -t 0 -.1 0
+o
+o switch2.plate
+v v47 =
+	p 7.2471 21.99167 4.0088125
+v v104 =
+	p 7.2471 21.99167 4.3628375
+v v102 =
+	p 6.893075 21.99167 4.3628375
+v v74 =
+	p 6.893075 21.99167 4.0088125
+f v47 v104 v102 v74
+v v87 =
+	p 6.893075 22.0020825 4.0088125
+v v112 =
+	p 7.2471 22.0020825 4.0088125
+cyl v87 0.0104125 v112
+v v89 =
+	p 6.893075 22.0020825 4.3628375
+cyl v87 0.0104125 v89
+v v114 =
+	p 7.2471 22.0020825 4.3628375
+cyl v114 0.0104125 v112
+cyl v114 0.0104125 v89
+sph v87 0.0104125
+sph v112 0.0104125
+sph v89 0.0104125
+sph v114 0.0104125
+# End conversion from: !xform -e -n switch2 -t 78 0 48 -t 4.625 0 0 -s .0833 -t 0 22 0 plate
+# Begin conversion from: !xform -e -n switch3 -t 78 0 48 -t 0 0 4.625 -s .0833 -t 0 22 0 plate
+#  xform -e -n switch3 -t 78 0 48 -t 0 0 4.625 -s .0833 -t 0 22 0
+# 
+#  Blank wall switch plate
+# 
+#  xform -t 0 -.1 0
+o
+o switch3.plate
+v v72 =
+	p 6.8618375 21.99167 4.394075
+v v92 =
+	p 6.8618375 21.99167 4.7481
+v v95 =
+	p 6.5078125 21.99167 4.7481
+v v101 =
+	p 6.5078125 21.99167 4.394075
+f v72 v92 v95 v101
+v v98 =
+	p 6.5078125 22.0020825 4.394075
+v v96 =
+	p 6.8618375 22.0020825 4.394075
+cyl v98 0.0104125 v96
+v v103 =
+	p 6.5078125 22.0020825 4.7481
+cyl v98 0.0104125 v103
+v v100 =
+	p 6.8618375 22.0020825 4.7481
+cyl v100 0.0104125 v96
+cyl v100 0.0104125 v103
+sph v98 0.0104125
+sph v96 0.0104125
+sph v103 0.0104125
+sph v100 0.0104125
+# End conversion from: !xform -e -n switch3 -t 78 0 48 -t 0 0 4.625 -s .0833 -t 0 22 0 plate
+# Begin conversion from: !xform -e -n switch4 -t 78 0 48 -t 4.625 0 4.625 -s .0833 -t 0 22 0 plate
+#  xform -e -n switch4 -t 78 0 48 -t 4.625 0 4.625 -s .0833 -t 0 22 0
+# 
+#  Blank wall switch plate
+# 
+#  xform -t 0 -.1 0
+o
+o switch4.plate
+v v15 =
+	p 7.2471 21.99167 4.394075
+v v111 =
+	p 7.2471 21.99167 4.7481
+v v88 =
+	p 6.893075 21.99167 4.7481
+v v110 =
+	p 6.893075 21.99167 4.394075
+f v15 v111 v88 v110
+v v106 =
+	p 6.893075 22.0020825 4.394075
+v v117 =
+	p 7.2471 22.0020825 4.394075
+cyl v106 0.0104125 v117
+v v107 =
+	p 6.893075 22.0020825 4.7481
+cyl v106 0.0104125 v107
+v v105 =
+	p 7.2471 22.0020825 4.7481
+cyl v105 0.0104125 v117
+cyl v105 0.0104125 v107
+sph v106 0.0104125
+sph v117 0.0104125
+sph v107 0.0104125
+sph v105 0.0104125
+# End conversion from: !xform -e -n switch4 -t 78 0 48 -t 4.625 0 4.625 -s .0833 -t 0 22 0 plate
+#  intercom speaker by left door
+# Begin conversion from: !xform -e -t 88.5 -4 94 -s .0833 -t 0 22 0 speaker
+#  xform -e -t 88.5 -4 94 -s .0833 -t 0 22 0
+# 
+#  Intercom speaker
+# 
+m dark_fabric =
+	c
+		cxy 0.3330 0.3330
+	rd 0.0800
+m wood_mat =
+	c
+		cxy 0.4041 0.3433
+	rd 0.1821
+	c
+	rs 0.0200 0.1500
+m xwood_mat = wood_mat
+m zwood_mat = wood_mat
+#  genbox xwood_mat speaker.lower 9.625 4 .75
+m xwood_mat
+o
+o speaker.lower
+v v109 =
+	p 8.1738125 21.6668 7.8302
+v v97 =
+	p 8.1738125 21.6668 7.892675
+v v113 =
+	p 7.37205 21.6668 7.892675
+v v115 =
+	p 7.37205 21.6668 7.8302
+f v109 v97 v113 v115
+v v122 =
+	p 7.37205 22 7.892675
+v v137 =
+	p 7.37205 22 7.8302
+f v113 v122 v137 v115
+v v129 =
+	p 8.1738125 22 7.8302
+f v137 v129 v109 v115
+v v136 =
+	p 8.1738125 22 7.892675
+f v129 v137 v122 v136
+f v97 v109 v129 v136
+f v122 v113 v97 v136
+#  xform -t .75 0 9.625
+#  genbox xwood_mat speaker.upper 9.625 4 .75
+o
+o speaker.upper
+v v99 =
+	p 8.2362875 21.6668 8.6319625
+v v116 =
+	p 8.2362875 21.6668 8.6944375
+v v126 =
+	p 7.434525 21.6668 8.6944375
+v v128 =
+	p 7.434525 21.6668 8.6319625
+f v99 v116 v126 v128
+v v131 =
+	p 7.434525 22 8.6944375
+v v94 =
+	p 7.434525 22 8.6319625
+f v126 v131 v94 v128
+v v120 =
+	p 8.2362875 22 8.6319625
+f v94 v120 v99 v128
+v v118 =
+	p 8.2362875 22 8.6944375
+f v120 v94 v131 v118
+f v116 v99 v120 v118
+f v131 v126 v116 v118
+#  xform -t 0 0 .75
+#  genbox zwood_mat speaker.left .75 4 9.625
+m zwood_mat
+o
+o speaker.left
+v v124 =
+	p 7.434525 21.6668 7.892675
+v v130 =
+	p 7.37205 21.6668 8.6944375
+f v124 v126 v130 v113
+v v132 =
+	p 7.37205 22 8.6944375
+f v130 v132 v122 v113
+v v127 =
+	p 7.434525 22 7.892675
+f v122 v127 v124 v113
+f v127 v122 v132 v131
+f v126 v124 v127 v131
+f v132 v130 v126 v131
+#  xform -t 9.625 0 0
+#  genbox zwood_mat speaker.right .75 4 9.625
+o
+o speaker.right
+v v138 =
+	p 8.2362875 21.6668 7.8302
+v v154 =
+	p 8.1738125 21.6668 8.6319625
+f v138 v99 v154 v109
+v v125 =
+	p 8.1738125 22 8.6319625
+f v154 v125 v129 v109
+v v147 =
+	p 8.2362875 22 7.8302
+f v129 v147 v138 v109
+f v147 v129 v125 v120
+f v99 v138 v147 v120
+f v125 v154 v99 v120
+m dark_fabric
+o
+o cover
+v v141 =
+	p 7.434525 21.687625 7.892675
+v v158 =
+	p 8.1738125 21.687625 7.892675
+v v142 =
+	p 8.1738125 21.687625 8.6319625
+v v153 =
+	p 7.434525 21.687625 8.6319625
+f v141 v158 v142 v153
+# End conversion from: !xform -e -t 88.5 -4 94 -s .0833 -t 0 22 0 speaker
+# 
+#  Fire extinguisher
+# 
+m red_paint =
+	c
+		cxy 0.5533 0.3380
+	rd 0.2764
+	c
+	rs 0.0200 0.1000
+# Begin conversion from: !genbox red_paint mount 8 .75 32 | xform -t 26.5 -.75 3.5 -s .0833 -t 0 22 0
+#  xform -t 26.5 -.75 3.5 -s .0833 -t 0 22 0
+#  genbox red_paint mount 8 .75 32
+o
+o mount
+v v140 =
+	p 2.87385 21.937525 0.29155
+v v150 =
+	p 2.87385 21.937525 2.95715
+v v135 =
+	p 2.20745 21.937525 2.95715
+v v160 =
+	p 2.20745 21.937525 0.29155
+f v140 v150 v135 v160
+v v145 =
+	p 2.20745 22 2.95715
+v v134 =
+	p 2.20745 22 0.29155
+f v135 v145 v134 v160
+v v155 =
+	p 2.87385 22 0.29155
+f v134 v155 v140 v160
+v v144 =
+	p 2.87385 22 2.95715
+f v155 v134 v145 v144
+f v150 v140 v155 v144
+f v145 v135 v150 v144
+# End conversion from: !genbox red_paint mount 8 .75 32 | xform -t 26.5 -.75 3.5 -s .0833 -t 0 22 0
+# Begin conversion from: !xform -e -t 30.5 -4.75 5 -s .0833 -t 0 22 0 extinguisher
+#  xform -e -t 30.5 -4.75 5 -s .0833 -t 0 22 0
+# 
+#  A fire extinguisher
+# 
+m stainless_steel =
+	c
+		cxy 0.3330 0.3330
+	rd 0.1400
+	rs 0.5600 0.0000
+m steel =
+	c
+		cxy 0.3330 0.3330
+	rd 0.1800
+	rs 0.4200 0.0000
+m rubber =
+	c
+		cxy 0.3330 0.3330
+	rd 0.1000
+m trans_plastic =
+	c
+		cxy 0.3330 0.3330
+	rs 0.0738 0
+	c
+		cxy 0.3330 0.3330
+	ts 0.7342 0
+m stainless_steel
+o
+o bottom
+v cent =
+	p 2.54065 21.604325 0.4165
+	n 0 0 -0.0833
+ring cent 0 0.29155
+o
+o outer
+v v148 =
+	p 2.54065 21.604325 0.4165
+v v43 =
+	p 2.54065 21.604325 2.0825
+cyl v148 0.29155 v43
+o
+o top
+sph v43 0.29155
+m steel
+o
+o neck
+v v149 =
+	p 2.54065 21.604325 2.3324
+v v139 =
+	p 2.54065 21.604325 2.4157
+cyl v149 0.12495 v139
+v cent =
+	p 2.54065 21.604325 2.4157
+	n 0 0 0.0833
+ring cent 0.04165 0.12495
+v v119 =
+	p 2.54065 21.604325 2.5823
+cyl v139 0.04165 v119
+sph v119 0.062475
+# !genbox steel trigger 4 1.5 .2 | xform -ry -20 -t 0 -.75 26
+#  xform -ry -20 -t 0 -.75 26
+#  genbox steel trigger 4 1.5 1 -b .2
+o
+o trigger
+v v133 =
+	p 2.52781500112 21.65014 2.6662744509
+v v143 =
+	p 2.52781500112 21.55851 2.6662744509
+v v121 =
+	p 2.80961002424 21.55851 2.76883945148
+v v151 =
+	p 2.80961002424 21.65014 2.76883945148
+f v133 v143 v121 v151
+v v190 =
+	p 2.51785777765 21.65014 2.64492111625
+v v50 =
+	p 2.51785777765 21.55851 2.64492111625
+f v143 v133 v190 v50
+v v181 =
+	p 2.81530807983 21.6668 2.75318417242
+v v123 =
+	p 2.53351305671 21.6668 2.65061917184
+f v151 v181 v123 v133
+v v168 =
+	p 2.83096335889 21.55851 2.758882228
+v v32 =
+	p 2.83096335889 21.65014 2.758882228
+f v168 v32 v151 v121
+v v177 =
+	p 2.53351305671 21.54185 2.65061917184
+v v146 =
+	p 2.81530807983 21.54185 2.75318417242
+f v143 v177 v146 v121
+f v50 v177 v143
+f v133 v123 v190
+f v168 v121 v146
+f v151 v32 v181
+#  genworm steel handle hermite(0,5,7,.7,t) 0 hermite(26,24.75,.043,-2.7,t) .3-.1*t 10
+o
+o handle
+sph v119 0.02499
+v v187 =
+	p 2.54100660553 21.604325 2.58229632707
+v v165 =
+	p 2.59936302868 21.604325 2.5816952734
+cone v187 0.0249874552327 v165 0.0241545400583
+v v167 =
+	p 2.59901831 21.604325 2.5816988239
+sph v167 0.024157
+v v169 =
+	p 2.59936625514 21.604325 2.58168331777
+v v35 =
+	p 2.65707282703 21.604325 2.57911163177
+cone v169 0.0241544890805 v35 0.023321575664
+v v161 =
+	p 2.65673688 21.604325 2.5791266032
+sph v161 0.023324
+v v37 =
+	p 2.65708196795 21.604325 2.57909808165
+v v152 =
+	p 2.71298893338 21.604325 2.57447736638
+cone v37 0.0233214295623 v152 0.0224885213637
+v v175 =
+	p 2.71265617 21.604325 2.5745048693
+sph v175 0.022491
+v v156 =
+	p 2.71300420665 21.604325 2.57446052104
+v v180 =
+	p 2.7659617864 21.604325 2.56771244786
+cone v156 0.022488263266 v180 0.0216553646266
+v v162 =
+	p 2.76562664 21.604325 2.5677551536
+sph v162 0.021658
+v v176 =
+	p 2.76598379507 21.604325 2.56768970236
+v v170 =
+	p 2.81484216834 21.604325 2.55873605362
+cone v176 0.0216549560237 v170 0.0208220730998
+v v31 =
+	p 2.81449875 21.604325 2.5587989875
+sph v31 0.020825
+v v3 =
+	p 2.8148716417 21.604325 2.55870290078
+v v166 =
+	p 2.85848093603 21.604325 2.54746565915
+cone v3 0.0208214395304 v166 0.0199885819492
+v v173 =
+	p 2.85812296 21.604325 2.5475579024
+sph v173 0.019992
+v v182 =
+	p 2.85851760279 21.604325 2.54741368073
+v v172 =
+	p 2.89572792934 21.604325 2.53381521727
+cone v182 0.0199875841757 v172 0.0191547681684
+v v164 =
+	p 2.89534973 21.604325 2.5339534297
+sph v164 0.019159
+v v171 =
+	p 2.89576582593 21.604325 2.53372846813
+v v159 =
+	p 2.9254275248 21.604325 2.51769192017
+cone v171 0.0191531599866 v159 0.0183204139003
+v v29 =
+	p 2.92502952 21.604325 2.5179071008
+sph v29 0.018326
+v v186 =
+	p 2.92543756316 21.604325 2.51754605145
+v v179 =
+	p 2.94640228574 21.604325 2.49899580909
+cone v186 0.0183178989011 v179 0.0174852671328
+v v25 =
+	p 2.94601279 21.604325 2.4993404471
+sph v25 0.017493
+v v198 =
+	p 2.94629650308 21.604325 2.4988012713
+v v189 =
+	p 2.95742020293 21.604325 2.47766149924
+cone v198 0.0174823867177 v189 0.0166498921121
+v v178 =
+	p 2.95715 21.604325 2.478175
+sph v178 0.01666
+o
+o valve
+v v0 =
+	p 2.54065 21.521025 2.5823
+cyl v119 0.04165 v0
+v cent =
+	p 2.54065 21.521025 2.5823
+	n 0 0.0833 0
+ring cent 0.04165 0.0833
+v v185 =
+	p 2.54065 21.45855 2.5823
+cyl v0 0.0833 v185
+m trans_plastic
+v cent =
+	p 2.54065 21.45855 2.5823
+	n 0 -0.0833 0
+ring cent 0 0.0833
+m steel
+o
+o hose
+v v56 =
+	p 2.478175 21.604325 2.5823
+cyl v119 0.0312375 v56
+m rubber
+v v192 =
+	p 2.3324 21.604325 2.5823
+cyl v56 0.0312375 v192
+#  genworm rubber hose cos(the(t))*2-2.5 0 sin(the(t))*3+23 .375 8 -e the(t)=(1+t)*PI/2
+sph v192 0.0312375
+v v196 =
+	p 2.29989795235 21.604325 2.57749824157
+cyl v192 0.0312375 v196
+sph v196 0.0312375
+v v184 =
+	p 2.26864494017 21.604325 2.56327749517
+cyl v196 0.0312375 v184
+sph v184 0.0312375
+v v197 =
+	p 2.23984199918 21.604325 2.54018425611
+cyl v184 0.0312375 v197
+sph v197 0.0312375
+v v206 =
+	p 2.21459601025 21.604325 2.50910598462
+cyl v197 0.0312375 v206
+sph v206 0.0312375
+v v22 =
+	p 2.19387716259 21.604325 2.47123700124
+cyl v206 0.0312375 v22
+sph v22 0.0312375
+v v201 =
+	p 2.17848166988 21.604325 2.42803258975
+cyl v22 0.0312375 v201
+sph v201 0.0312375
+v v183 =
+	p 2.16900117228 21.604325 2.38115307147
+cyl v201 0.0312375 v183
+sph v183 0.0312375
+v v211 =
+	p 2.1658 21.604325 2.3324
+cyl v183 0.0312375 v211
+sph v211 0.0312375
+v v163 =
+	p 2.1658 21.604325 0.6664
+cyl v211 0.0312375 v163
+m steel
+v v174 =
+	p 2.1658 21.604325 0.62475
+cyl v163 0.0312375 v174
+m trans_plastic
+o
+o nozzle
+v v194 =
+	p 2.1658 21.604325 0.45815
+cone v174 0.0312375 v194 0.020825
+# End conversion from: !xform -e -t 30.5 -4.75 5 -s .0833 -t 0 22 0 extinguisher
+# 
+#  vent panels.
+# 
+# Begin conversion from: !xform -e -n panel1 -s .0833 -t 31.5 0 2 vent_panel
+#  xform -e -n panel1 -s .0833 -t 31.5 0 2
+m vent_mat =
+	c
+		cxy 0.3389 0.3371
+	rd 0.4553
+o
+o panel1.vent
+i vent.mgf -i 1 -s .0833 -t 31.5 0 2
+v v0 =
+	p 31.5 0 2
+v v1 =
+	p 35.4984 0 2
+v v2 =
+	p 35.4984 0 1.12535
+v v3 =
+	p 31.5 0 1.12535
+f v0 v1 v2 v3
+i vent.mgf -ry 180 -t 48 0 -10.5 -i 1 -s .0833 -t 31.5 0 2
+#  xform -t -1 .01 -21
+#  genbox vent_mat panel_vert 2 .1 31.5
+o
+o panel1.panel_vert
+v v0 =
+	p 31.5833 0.000833 0.2507
+v v1 =
+	p 31.5833 0.000833 2.87465
+v v2 =
+	p 31.4167 0.000833 2.87465
+v v3 =
+	p 31.4167 0.000833 0.2507
+f v0 v1 v2 v3
+v v4 =
+	p 31.4167 0.009163 2.87465
+v v5 =
+	p 31.4167 0.009163 0.2507
+f v2 v4 v5 v3
+v v6 =
+	p 31.5833 0.009163 0.2507
+f v5 v6 v0 v3
+v v7 =
+	p 31.5833 0.009163 2.87465
+f v6 v5 v4 v7
+f v1 v0 v6 v7
+f v4 v2 v1 v7
+# End conversion from: !xform -e -n panel1 -s .0833 -t 31.5 0 2 vent_panel
+# Begin conversion from: !xform -e -n panel2 -s .0833 -t 27.5 0 2 vent_panel
+#  xform -e -n panel2 -s .0833 -t 27.5 0 2
+m vent_mat =
+	c
+		cxy 0.3389 0.3371
+	rd 0.4553
+o
+o panel2.vent
+i vent.mgf -i 1 -s .0833 -t 27.5 0 2
+v v0 =
+	p 27.5 0 2
+v v1 =
+	p 31.4984 0 2
+v v2 =
+	p 31.4984 0 1.12535
+v v3 =
+	p 27.5 0 1.12535
+f v0 v1 v2 v3
+i vent.mgf -ry 180 -t 48 0 -10.5 -i 1 -s .0833 -t 27.5 0 2
+#  xform -t -1 .01 -21
+#  genbox vent_mat panel_vert 2 .1 31.5
+o
+o panel2.panel_vert
+v v0 =
+	p 27.5833 0.000833 0.2507
+v v1 =
+	p 27.5833 0.000833 2.87465
+v v2 =
+	p 27.4167 0.000833 2.87465
+v v3 =
+	p 27.4167 0.000833 0.2507
+f v0 v1 v2 v3
+v v4 =
+	p 27.4167 0.009163 2.87465
+v v5 =
+	p 27.4167 0.009163 0.2507
+f v2 v4 v5 v3
+v v6 =
+	p 27.5833 0.009163 0.2507
+f v5 v6 v0 v3
+v v7 =
+	p 27.5833 0.009163 2.87465
+f v6 v5 v4 v7
+f v1 v0 v6 v7
+f v4 v2 v1 v7
+# End conversion from: !xform -e -n panel2 -s .0833 -t 27.5 0 2 vent_panel
+# Begin conversion from: !xform -e -n panel3 -s .0833 -t 23.5 0 2 vent_panel
+#  xform -e -n panel3 -s .0833 -t 23.5 0 2
+m vent_mat =
+	c
+		cxy 0.3389 0.3371
+	rd 0.4553
+o
+o panel3.vent
+i vent.mgf -i 1 -s .0833 -t 23.5 0 2
+v v0 =
+	p 23.5 0 2
+v v1 =
+	p 27.4984 0 2
+v v2 =
+	p 27.4984 0 1.12535
+v v3 =
+	p 23.5 0 1.12535
+f v0 v1 v2 v3
+i vent.mgf -ry 180 -t 48 0 -10.5 -i 1 -s .0833 -t 23.5 0 2
+#  xform -t -1 .01 -21
+#  genbox vent_mat panel_vert 2 .1 31.5
+o
+o panel3.panel_vert
+v v0 =
+	p 23.5833 0.000833 0.2507
+v v1 =
+	p 23.5833 0.000833 2.87465
+v v2 =
+	p 23.4167 0.000833 2.87465
+v v3 =
+	p 23.4167 0.000833 0.2507
+f v0 v1 v2 v3
+v v4 =
+	p 23.4167 0.009163 2.87465
+v v5 =
+	p 23.4167 0.009163 0.2507
+f v2 v4 v5 v3
+v v6 =
+	p 23.5833 0.009163 0.2507
+f v5 v6 v0 v3
+v v7 =
+	p 23.5833 0.009163 2.87465
+f v6 v5 v4 v7
+f v1 v0 v6 v7
+f v4 v2 v1 v7
+# End conversion from: !xform -e -n panel3 -s .0833 -t 23.5 0 2 vent_panel
+# Begin conversion from: !xform -e -n panel4 -s .0833 -t 19.5 0 2 vent_panel
+#  xform -e -n panel4 -s .0833 -t 19.5 0 2
+m vent_mat =
+	c
+		cxy 0.3389 0.3371
+	rd 0.4553
+o
+o panel4.vent
+i vent.mgf -i 1 -s .0833 -t 19.5 0 2
+v v0 =
+	p 19.5 0 2
+v v1 =
+	p 23.4984 0 2
+v v2 =
+	p 23.4984 0 1.12535
+v v3 =
+	p 19.5 0 1.12535
+f v0 v1 v2 v3
+i vent.mgf -ry 180 -t 48 0 -10.5 -i 1 -s .0833 -t 19.5 0 2
+#  xform -t -1 .01 -21
+#  genbox vent_mat panel_vert 2 .1 31.5
+o
+o panel4.panel_vert
+v v0 =
+	p 19.5833 0.000833 0.2507
+v v1 =
+	p 19.5833 0.000833 2.87465
+v v2 =
+	p 19.4167 0.000833 2.87465
+v v3 =
+	p 19.4167 0.000833 0.2507
+f v0 v1 v2 v3
+v v4 =
+	p 19.4167 0.009163 2.87465
+v v5 =
+	p 19.4167 0.009163 0.2507
+f v2 v4 v5 v3
+v v6 =
+	p 19.5833 0.009163 0.2507
+f v5 v6 v0 v3
+v v7 =
+	p 19.5833 0.009163 2.87465
+f v6 v5 v4 v7
+f v1 v0 v6 v7
+f v4 v2 v1 v7
+# End conversion from: !xform -e -n panel4 -s .0833 -t 19.5 0 2 vent_panel
+# Begin conversion from: !xform -e -n panel5 -s .0833 -t 15.5 0 2 vent_panel
+#  xform -e -n panel5 -s .0833 -t 15.5 0 2
+m vent_mat =
+	c
+		cxy 0.3389 0.3371
+	rd 0.4553
+o
+o panel5.vent
+i vent.mgf -i 1 -s .0833 -t 15.5 0 2
+v v0 =
+	p 15.5 0 2
+v v1 =
+	p 19.4984 0 2
+v v2 =
+	p 19.4984 0 1.12535
+v v3 =
+	p 15.5 0 1.12535
+f v0 v1 v2 v3
+i vent.mgf -ry 180 -t 48 0 -10.5 -i 1 -s .0833 -t 15.5 0 2
+#  xform -t -1 .01 -21
+#  genbox vent_mat panel_vert 2 .1 31.5
+o
+o panel5.panel_vert
+v v0 =
+	p 15.5833 0.000833 0.2507
+v v1 =
+	p 15.5833 0.000833 2.87465
+v v2 =
+	p 15.4167 0.000833 2.87465
+v v3 =
+	p 15.4167 0.000833 0.2507
+f v0 v1 v2 v3
+v v4 =
+	p 15.4167 0.009163 2.87465
+v v5 =
+	p 15.4167 0.009163 0.2507
+f v2 v4 v5 v3
+v v6 =
+	p 15.5833 0.009163 0.2507
+f v5 v6 v0 v3
+v v7 =
+	p 15.5833 0.009163 2.87465
+f v6 v5 v4 v7
+f v1 v0 v6 v7
+f v4 v2 v1 v7
+# End conversion from: !xform -e -n panel5 -s .0833 -t 15.5 0 2 vent_panel
+# Begin conversion from: !xform -e -n panel6 -s .0833 -t 11.5 0 2 vent_panel
+#  xform -e -n panel6 -s .0833 -t 11.5 0 2
+m vent_mat =
+	c
+		cxy 0.3389 0.3371
+	rd 0.4553
+o
+o panel6.vent
+i vent.mgf -i 1 -s .0833 -t 11.5 0 2
+v v0 =
+	p 11.5 0 2
+v v1 =
+	p 15.4984 0 2
+v v2 =
+	p 15.4984 0 1.12535
+v v3 =
+	p 11.5 0 1.12535
+f v0 v1 v2 v3
+i vent.mgf -ry 180 -t 48 0 -10.5 -i 1 -s .0833 -t 11.5 0 2
+#  xform -t -1 .01 -21
+#  genbox vent_mat panel_vert 2 .1 31.5
+o
+o panel6.panel_vert
+v v0 =
+	p 11.5833 0.000833 0.2507
+v v1 =
+	p 11.5833 0.000833 2.87465
+v v2 =
+	p 11.4167 0.000833 2.87465
+v v3 =
+	p 11.4167 0.000833 0.2507
+f v0 v1 v2 v3
+v v4 =
+	p 11.4167 0.009163 2.87465
+v v5 =
+	p 11.4167 0.009163 0.2507
+f v2 v4 v5 v3
+v v6 =
+	p 11.5833 0.009163 0.2507
+f v5 v6 v0 v3
+v v7 =
+	p 11.5833 0.009163 2.87465
+f v6 v5 v4 v7
+f v1 v0 v6 v7
+f v4 v2 v1 v7
+# End conversion from: !xform -e -n panel6 -s .0833 -t 11.5 0 2 vent_panel
+# Begin conversion from: !xform -e -n panel7 -s .0833 -t 7.5 0 2  vent_panel
+#  xform -e -n panel7 -s .0833 -t 7.5 0 2
+m vent_mat =
+	c
+		cxy 0.3389 0.3371
+	rd 0.4553
+o
+o panel7.vent
+i vent.mgf -i 1 -s .0833 -t 7.5 0 2
+v v0 =
+	p 7.5 0 2
+v v1 =
+	p 11.4984 0 2
+v v2 =
+	p 11.4984 0 1.12535
+v v3 =
+	p 7.5 0 1.12535
+f v0 v1 v2 v3
+i vent.mgf -ry 180 -t 48 0 -10.5 -i 1 -s .0833 -t 7.5 0 2
+#  xform -t -1 .01 -21
+#  genbox vent_mat panel_vert 2 .1 31.5
+o
+o panel7.panel_vert
+v v0 =
+	p 7.5833 0.000833 0.2507
+v v1 =
+	p 7.5833 0.000833 2.87465
+v v2 =
+	p 7.4167 0.000833 2.87465
+v v3 =
+	p 7.4167 0.000833 0.2507
+f v0 v1 v2 v3
+v v4 =
+	p 7.4167 0.009163 2.87465
+v v5 =
+	p 7.4167 0.009163 0.2507
+f v2 v4 v5 v3
+v v6 =
+	p 7.5833 0.009163 0.2507
+f v5 v6 v0 v3
+v v7 =
+	p 7.5833 0.009163 2.87465
+f v6 v5 v4 v7
+f v1 v0 v6 v7
+f v4 v2 v1 v7
+# End conversion from: !xform -e -n panel7 -s .0833 -t 7.5 0 2  vent_panel
+# Begin conversion from: !xform -e -n panel8 -s .0833 -t 3.5 0 2  vent_panel
+#  xform -e -n panel8 -s .0833 -t 3.5 0 2
+m vent_mat =
+	c
+		cxy 0.3389 0.3371
+	rd 0.4553
+o
+o panel8.vent
+i vent.mgf -i 1 -s .0833 -t 3.5 0 2
+v v0 =
+	p 3.5 0 2
+v v1 =
+	p 7.4984 0 2
+v v2 =
+	p 7.4984 0 1.12535
+v v3 =
+	p 3.5 0 1.12535
+f v0 v1 v2 v3
+i vent.mgf -ry 180 -t 48 0 -10.5 -i 1 -s .0833 -t 3.5 0 2
+#  xform -t -1 .01 -21
+#  genbox vent_mat panel_vert 2 .1 31.5
+o
+o panel8.panel_vert
+v v0 =
+	p 3.5833 0.000833 0.2507
+v v1 =
+	p 3.5833 0.000833 2.87465
+v v2 =
+	p 3.4167 0.000833 2.87465
+v v3 =
+	p 3.4167 0.000833 0.2507
+f v0 v1 v2 v3
+v v4 =
+	p 3.4167 0.009163 2.87465
+v v5 =
+	p 3.4167 0.009163 0.2507
+f v2 v4 v5 v3
+v v6 =
+	p 3.5833 0.009163 0.2507
+f v5 v6 v0 v3
+v v7 =
+	p 3.5833 0.009163 2.87465
+f v6 v5 v4 v7
+f v1 v0 v6 v7
+f v4 v2 v1 v7
+# End conversion from: !xform -e -n panel8 -s .0833 -t 3.5 0 2  vent_panel
+# Begin conversion from: !xform -e -n panel9 -s .0833 -t -.5 0 2  vent_panel
+#  xform -e -n panel9 -s .0833 -t -.5 0 2
+m vent_mat =
+	c
+		cxy 0.3389 0.3371
+	rd 0.4553
+o
+o panel9.vent
+i vent.mgf -i 1 -s .0833 -t -.5 0 2
+v v0 =
+	p -0.5 0 2
+v v1 =
+	p 3.4984 0 2
+v v2 =
+	p 3.4984 0 1.12535
+v v3 =
+	p -0.5 0 1.12535
+f v0 v1 v2 v3
+i vent.mgf -ry 180 -t 48 0 -10.5 -i 1 -s .0833 -t -.5 0 2
+#  xform -t -1 .01 -21
+#  genbox vent_mat panel_vert 2 .1 31.5
+o
+o panel9.panel_vert
+v v0 =
+	p -0.4167 0.000833 0.2507
+v v1 =
+	p -0.4167 0.000833 2.87465
+v v2 =
+	p -0.5833 0.000833 2.87465
+v v3 =
+	p -0.5833 0.000833 0.2507
+f v0 v1 v2 v3
+v v4 =
+	p -0.5833 0.009163 2.87465
+v v5 =
+	p -0.5833 0.009163 0.2507
+f v2 v4 v5 v3
+v v6 =
+	p -0.4167 0.009163 0.2507
+f v5 v6 v0 v3
+v v7 =
+	p -0.4167 0.009163 2.87465
+f v6 v5 v4 v7
+f v1 v0 v6 v7
+f v4 v2 v1 v7
+# End conversion from: !xform -e -n panel9 -s .0833 -t -.5 0 2  vent_panel
+m wall_mat
+o
+o behind_vent
+v v8 =
+	p 0 -0.5 0
+v v9 =
+	p 0 -0.5 2.958
+v v10 =
+	p 35.5 -0.5 2.958
+v v11 =
+	p 35.5 -0.5 0
+f v8 v9 v10 v11
+# End conversion from: conf
+# Begin conversion from: lights.fi
+# 
+#  Front inner bank of lights
+# 
+# Begin conversion from: !xform -n inner1.front1 -t 21 0 0 -t 0 90 0 -s .0833 fixture
+#  xform -n inner1.front1 -t 21 0 0 -t 0 90 0 -s .0833
+#  xform -rz 90 -t 24 12 106.7
+# 
+#  Wellmade 2 lamp fixture, model 325-AL97-248RS
+# 
+#  2x4' flush mount fluorescent with .5" metalized parabolic louver
+# 
+#  Dimensions in inches, fixture parallel to y axis, center at origin
+# 
+m lum_bright =
+	c
+		cxy 0.3330 0.3330
+	ed 2685
+o
+o inner1.front1
+v v79 =
+	p 5.643575 7.601125 8.88811
+v v73 =
+	p 1.853425 7.601125 8.88811
+v v63 =
+	p 1.853425 9.392075 8.88811
+v v70 =
+	p 5.643575 9.392075 8.88811
+f v79 v73 v63 v70
+# End conversion from: !xform -n inner1.front1 -t 21 0 0 -t 0 90 0 -s .0833 fixture
+# Begin conversion from: !xform -n inner1.front2 -t 69 0 0 -t 0 90 0 -s .0833 fixture
+#  xform -n inner1.front2 -t 69 0 0 -t 0 90 0 -s .0833
+#  xform -rz 90 -t 24 12 106.7
+# 
+#  Wellmade 2 lamp fixture, model 325-AL97-248RS
+# 
+#  2x4' flush mount fluorescent with .5" metalized parabolic louver
+# 
+#  Dimensions in inches, fixture parallel to y axis, center at origin
+# 
+m lum_bright =
+	c
+		cxy 0.3330 0.3330
+	ed 2685
+o
+o inner1.front2
+v v69 =
+	p 9.641975 7.601125 8.88811
+v v60 =
+	p 5.851825 7.601125 8.88811
+v v71 =
+	p 5.851825 9.392075 8.88811
+v v93 =
+	p 9.641975 9.392075 8.88811
+f v69 v60 v71 v93
+# End conversion from: !xform -n inner1.front2 -t 69 0 0 -t 0 90 0 -s .0833 fixture
+# Begin conversion from: !xform -n inner1.front3 -t 117 0 0 -t 0 90 0 -s .0833 fixture
+#  xform -n inner1.front3 -t 117 0 0 -t 0 90 0 -s .0833
+#  xform -rz 90 -t 24 12 106.7
+# 
+#  Wellmade 2 lamp fixture, model 325-AL97-248RS
+# 
+#  2x4' flush mount fluorescent with .5" metalized parabolic louver
+# 
+#  Dimensions in inches, fixture parallel to y axis, center at origin
+# 
+m lum_bright =
+	c
+		cxy 0.3330 0.3330
+	ed 2685
+o
+o inner1.front3
+v v76 =
+	p 13.640375 7.601125 8.88811
+v v84 =
+	p 9.850225 7.601125 8.88811
+v v78 =
+	p 9.850225 9.392075 8.88811
+v v86 =
+	p 13.640375 9.392075 8.88811
+f v76 v84 v78 v86
+# End conversion from: !xform -n inner1.front3 -t 117 0 0 -t 0 90 0 -s .0833 fixture
+# Begin conversion from: !xform -n inner2.front1 -t 21 0 0 -t 0 138 0 -s .0833 fixture
+#  xform -n inner2.front1 -t 21 0 0 -t 0 138 0 -s .0833
+#  xform -rz 90 -t 24 12 106.7
+# 
+#  Wellmade 2 lamp fixture, model 325-AL97-248RS
+# 
+#  2x4' flush mount fluorescent with .5" metalized parabolic louver
+# 
+#  Dimensions in inches, fixture parallel to y axis, center at origin
+# 
+m lum_bright =
+	c
+		cxy 0.3330 0.3330
+	ed 2685
+o
+o inner2.front1
+v v80 =
+	p 5.643575 11.599525 8.88811
+v v77 =
+	p 1.853425 11.599525 8.88811
+v v17 =
+	p 1.853425 13.390475 8.88811
+v v108 =
+	p 5.643575 13.390475 8.88811
+f v80 v77 v17 v108
+# End conversion from: !xform -n inner2.front1 -t 21 0 0 -t 0 138 0 -s .0833 fixture
+# Begin conversion from: !xform -n inner2.front2 -t 69 0 0 -t 0 138 0 -s .0833 fixture
+#  xform -n inner2.front2 -t 69 0 0 -t 0 138 0 -s .0833
+#  xform -rz 90 -t 24 12 106.7
+# 
+#  Wellmade 2 lamp fixture, model 325-AL97-248RS
+# 
+#  2x4' flush mount fluorescent with .5" metalized parabolic louver
+# 
+#  Dimensions in inches, fixture parallel to y axis, center at origin
+# 
+m lum_bright =
+	c
+		cxy 0.3330 0.3330
+	ed 2685
+o
+o inner2.front2
+v v90 =
+	p 9.641975 11.599525 8.88811
+v v91 =
+	p 5.851825 11.599525 8.88811
+v v83 =
+	p 5.851825 13.390475 8.88811
+v v85 =
+	p 9.641975 13.390475 8.88811
+f v90 v91 v83 v85
+# End conversion from: !xform -n inner2.front2 -t 69 0 0 -t 0 138 0 -s .0833 fixture
+# Begin conversion from: !xform -n inner2.front3 -t 117 0 0 -t 0 138 0 -s .0833 fixture
+#  xform -n inner2.front3 -t 117 0 0 -t 0 138 0 -s .0833
+#  xform -rz 90 -t 24 12 106.7
+# 
+#  Wellmade 2 lamp fixture, model 325-AL97-248RS
+# 
+#  2x4' flush mount fluorescent with .5" metalized parabolic louver
+# 
+#  Dimensions in inches, fixture parallel to y axis, center at origin
+# 
+m lum_bright =
+	c
+		cxy 0.3330 0.3330
+	ed 2685
+o
+o inner2.front3
+v v81 =
+	p 13.640375 11.599525 8.88811
+v v82 =
+	p 9.850225 11.599525 8.88811
+v v47 =
+	p 9.850225 13.390475 8.88811
+v v104 =
+	p 13.640375 13.390475 8.88811
+f v81 v82 v47 v104
+# End conversion from: !xform -n inner2.front3 -t 117 0 0 -t 0 138 0 -s .0833 fixture
+# End conversion from: lights.fi
+# Begin conversion from: lights.fo
+# 
+#  Front outer bank of lights
+# 
+# Begin conversion from: !xform -n outer1.front1 -t 21 0 0 -t 0 42 0 -s .0833 fixture
+#  xform -n outer1.front1 -t 21 0 0 -t 0 42 0 -s .0833
+#  xform -rz 90 -t 24 12 106.7
+# 
+#  Wellmade 2 lamp fixture, model 325-AL97-248RS
+# 
+#  2x4' flush mount fluorescent with .5" metalized parabolic louver
+# 
+#  Dimensions in inches, fixture parallel to y axis, center at origin
+# 
+m lum_bright =
+	c
+		cxy 0.3330 0.3330
+	ed 2685
+o
+o outer1.front1
+v v102 =
+	p 5.643575 3.602725 8.88811
+v v74 =
+	p 1.853425 3.602725 8.88811
+v v87 =
+	p 1.853425 5.393675 8.88811
+v v112 =
+	p 5.643575 5.393675 8.88811
+f v102 v74 v87 v112
+# End conversion from: !xform -n outer1.front1 -t 21 0 0 -t 0 42 0 -s .0833 fixture
+# Begin conversion from: !xform -n outer1.front2 -t 69 0 0 -t 0 42 0 -s .0833 fixture
+#  xform -n outer1.front2 -t 69 0 0 -t 0 42 0 -s .0833
+#  xform -rz 90 -t 24 12 106.7
+# 
+#  Wellmade 2 lamp fixture, model 325-AL97-248RS
+# 
+#  2x4' flush mount fluorescent with .5" metalized parabolic louver
+# 
+#  Dimensions in inches, fixture parallel to y axis, center at origin
+# 
+m lum_bright =
+	c
+		cxy 0.3330 0.3330
+	ed 2685
+o
+o outer1.front2
+v v89 =
+	p 9.641975 3.602725 8.88811
+v v114 =
+	p 5.851825 3.602725 8.88811
+v v72 =
+	p 5.851825 5.393675 8.88811
+v v92 =
+	p 9.641975 5.393675 8.88811
+f v89 v114 v72 v92
+# End conversion from: !xform -n outer1.front2 -t 69 0 0 -t 0 42 0 -s .0833 fixture
+# Begin conversion from: !xform -n outer1.front3 -t 117 0 0 -t 0 42 0 -s .0833 fixture
+#  xform -n outer1.front3 -t 117 0 0 -t 0 42 0 -s .0833
+#  xform -rz 90 -t 24 12 106.7
+# 
+#  Wellmade 2 lamp fixture, model 325-AL97-248RS
+# 
+#  2x4' flush mount fluorescent with .5" metalized parabolic louver
+# 
+#  Dimensions in inches, fixture parallel to y axis, center at origin
+# 
+m lum_bright =
+	c
+		cxy 0.3330 0.3330
+	ed 2685
+o
+o outer1.front3
+v v95 =
+	p 13.640375 3.602725 8.88811
+v v101 =
+	p 9.850225 3.602725 8.88811
+v v98 =
+	p 9.850225 5.393675 8.88811
+v v96 =
+	p 13.640375 5.393675 8.88811
+f v95 v101 v98 v96
+# End conversion from: !xform -n outer1.front3 -t 117 0 0 -t 0 42 0 -s .0833 fixture
+# Begin conversion from: !xform -n outer2.front1 -t 21 0 0 -t 0 186 0 -s .0833 fixture
+#  xform -n outer2.front1 -t 21 0 0 -t 0 186 0 -s .0833
+#  xform -rz 90 -t 24 12 106.7
+# 
+#  Wellmade 2 lamp fixture, model 325-AL97-248RS
+# 
+#  2x4' flush mount fluorescent with .5" metalized parabolic louver
+# 
+#  Dimensions in inches, fixture parallel to y axis, center at origin
+# 
+m lum_bright =
+	c
+		cxy 0.3330 0.3330
+	ed 2685
+o
+o outer2.front1
+v v103 =
+	p 5.643575 15.597925 8.88811
+v v100 =
+	p 1.853425 15.597925 8.88811
+v v15 =
+	p 1.853425 17.388875 8.88811
+v v111 =
+	p 5.643575 17.388875 8.88811
+f v103 v100 v15 v111
+# End conversion from: !xform -n outer2.front1 -t 21 0 0 -t 0 186 0 -s .0833 fixture
+# Begin conversion from: !xform -n outer2.front2 -t 69 0 0 -t 0 186 0 -s .0833 fixture
+#  xform -n outer2.front2 -t 69 0 0 -t 0 186 0 -s .0833
+#  xform -rz 90 -t 24 12 106.7
+# 
+#  Wellmade 2 lamp fixture, model 325-AL97-248RS
+# 
+#  2x4' flush mount fluorescent with .5" metalized parabolic louver
+# 
+#  Dimensions in inches, fixture parallel to y axis, center at origin
+# 
+m lum_bright =
+	c
+		cxy 0.3330 0.3330
+	ed 2685
+o
+o outer2.front2
+v v88 =
+	p 9.641975 15.597925 8.88811
+v v110 =
+	p 5.851825 15.597925 8.88811
+v v106 =
+	p 5.851825 17.388875 8.88811
+v v117 =
+	p 9.641975 17.388875 8.88811
+f v88 v110 v106 v117
+# End conversion from: !xform -n outer2.front2 -t 69 0 0 -t 0 186 0 -s .0833 fixture
+# Begin conversion from: !xform -n outer2.front3 -t 117 0 0 -t 0 186 0 -s .0833 fixture
+#  xform -n outer2.front3 -t 117 0 0 -t 0 186 0 -s .0833
+#  xform -rz 90 -t 24 12 106.7
+# 
+#  Wellmade 2 lamp fixture, model 325-AL97-248RS
+# 
+#  2x4' flush mount fluorescent with .5" metalized parabolic louver
+# 
+#  Dimensions in inches, fixture parallel to y axis, center at origin
+# 
+m lum_bright =
+	c
+		cxy 0.3330 0.3330
+	ed 2685
+o
+o outer2.front3
+v v107 =
+	p 13.640375 15.597925 8.88811
+v v105 =
+	p 9.850225 15.597925 8.88811
+v v115 =
+	p 9.850225 17.388875 8.88811
+v v137 =
+	p 13.640375 17.388875 8.88811
+f v107 v105 v115 v137
+# End conversion from: !xform -n outer2.front3 -t 117 0 0 -t 0 186 0 -s .0833 fixture
+# End conversion from: lights.fo
+# Begin conversion from: lights.ri
+# 
+#  Rear inner bank of lights
+# 
+# Begin conversion from: !xform -n inner1.rear1 -t 21 0 0 -t 0 90 0 -s .0833 -t 12 0 0 fixture
+#  xform -n inner1.rear1 -t 21 0 0 -t 0 90 0 -s .0833 -t 12 0 0
+#  xform -rz 90 -t 24 12 106.7
+# 
+#  Wellmade 2 lamp fixture, model 325-AL97-248RS
+# 
+#  2x4' flush mount fluorescent with .5" metalized parabolic louver
+# 
+#  Dimensions in inches, fixture parallel to y axis, center at origin
+# 
+m lum_bright =
+	c
+		cxy 0.3330 0.3330
+	ed 2685
+o
+o inner1.rear1
+v v97 =
+	p 17.643575 7.601125 8.88811
+v v136 =
+	p 13.853425 7.601125 8.88811
+v v128 =
+	p 13.853425 9.392075 8.88811
+v v94 =
+	p 17.643575 9.392075 8.88811
+f v97 v136 v128 v94
+# End conversion from: !xform -n inner1.rear1 -t 21 0 0 -t 0 90 0 -s .0833 -t 12 0 0 fixture
+# Begin conversion from: !xform -n inner1.rear2 -t 69 0 0 -t 0 90 0 -s .0833 -t 12 0 0 fixture
+#  xform -n inner1.rear2 -t 69 0 0 -t 0 90 0 -s .0833 -t 12 0 0
+#  xform -rz 90 -t 24 12 106.7
+# 
+#  Wellmade 2 lamp fixture, model 325-AL97-248RS
+# 
+#  2x4' flush mount fluorescent with .5" metalized parabolic louver
+# 
+#  Dimensions in inches, fixture parallel to y axis, center at origin
+# 
+m lum_bright =
+	c
+		cxy 0.3330 0.3330
+	ed 2685
+o
+o inner1.rear2
+v v116 =
+	p 21.641975 7.601125 8.88811
+v v118 =
+	p 17.851825 7.601125 8.88811
+v v113 =
+	p 17.851825 9.392075 8.88811
+v v122 =
+	p 21.641975 9.392075 8.88811
+f v116 v118 v113 v122
+# End conversion from: !xform -n inner1.rear2 -t 69 0 0 -t 0 90 0 -s .0833 -t 12 0 0 fixture
+# Begin conversion from: !xform -n inner1.rear3 -t 117 0 0 -t 0 90 0 -s .0833 -t 12 0 0 fixture
+#  xform -n inner1.rear3 -t 117 0 0 -t 0 90 0 -s .0833 -t 12 0 0
+#  xform -rz 90 -t 24 12 106.7
+# 
+#  Wellmade 2 lamp fixture, model 325-AL97-248RS
+# 
+#  2x4' flush mount fluorescent with .5" metalized parabolic louver
+# 
+#  Dimensions in inches, fixture parallel to y axis, center at origin
+# 
+m lum_bright =
+	c
+		cxy 0.3330 0.3330
+	ed 2685
+o
+o inner1.rear3
+v v124 =
+	p 25.640375 7.601125 8.88811
+v v127 =
+	p 21.850225 7.601125 8.88811
+v v132 =
+	p 21.850225 9.392075 8.88811
+v v130 =
+	p 25.640375 9.392075 8.88811
+f v124 v127 v132 v130
+# End conversion from: !xform -n inner1.rear3 -t 117 0 0 -t 0 90 0 -s .0833 -t 12 0 0 fixture
+# Begin conversion from: !xform -n inner2.rear1 -t 21 0 0 -t 0 138 0 -s .0833 -t 12 0 0 fixture
+#  xform -n inner2.rear1 -t 21 0 0 -t 0 138 0 -s .0833 -t 12 0 0
+#  xform -rz 90 -t 24 12 106.7
+# 
+#  Wellmade 2 lamp fixture, model 325-AL97-248RS
+# 
+#  2x4' flush mount fluorescent with .5" metalized parabolic louver
+# 
+#  Dimensions in inches, fixture parallel to y axis, center at origin
+# 
+m lum_bright =
+	c
+		cxy 0.3330 0.3330
+	ed 2685
+o
+o inner2.rear1
+v v126 =
+	p 17.643575 11.599525 8.88811
+v v131 =
+	p 13.853425 11.599525 8.88811
+v v109 =
+	p 13.853425 13.390475 8.88811
+v v129 =
+	p 17.643575 13.390475 8.88811
+f v126 v131 v109 v129
+# End conversion from: !xform -n inner2.rear1 -t 21 0 0 -t 0 138 0 -s .0833 -t 12 0 0 fixture
+# Begin conversion from: !xform -n inner2.rear2 -t 69 0 0 -t 0 138 0 -s .0833 -t 12 0 0 fixture
+#  xform -n inner2.rear2 -t 69 0 0 -t 0 138 0 -s .0833 -t 12 0 0
+#  xform -rz 90 -t 24 12 106.7
+# 
+#  Wellmade 2 lamp fixture, model 325-AL97-248RS
+# 
+#  2x4' flush mount fluorescent with .5" metalized parabolic louver
+# 
+#  Dimensions in inches, fixture parallel to y axis, center at origin
+# 
+m lum_bright =
+	c
+		cxy 0.3330 0.3330
+	ed 2685
+o
+o inner2.rear2
+v v138 =
+	p 21.641975 11.599525 8.88811
+v v147 =
+	p 17.851825 11.599525 8.88811
+v v125 =
+	p 17.851825 13.390475 8.88811
+v v154 =
+	p 21.641975 13.390475 8.88811
+f v138 v147 v125 v154
+# End conversion from: !xform -n inner2.rear2 -t 69 0 0 -t 0 138 0 -s .0833 -t 12 0 0 fixture
+# Begin conversion from: !xform -n inner2.rear3 -t 117 0 0 -t 0 138 0 -s .0833 -t 12 0 0 fixture
+#  xform -n inner2.rear3 -t 117 0 0 -t 0 138 0 -s .0833 -t 12 0 0
+#  xform -rz 90 -t 24 12 106.7
+# 
+#  Wellmade 2 lamp fixture, model 325-AL97-248RS
+# 
+#  2x4' flush mount fluorescent with .5" metalized parabolic louver
+# 
+#  Dimensions in inches, fixture parallel to y axis, center at origin
+# 
+m lum_bright =
+	c
+		cxy 0.3330 0.3330
+	ed 2685
+o
+o inner2.rear3
+v v99 =
+	p 25.640375 11.599525 8.88811
+v v120 =
+	p 21.850225 11.599525 8.88811
+v v141 =
+	p 21.850225 13.390475 8.88811
+v v158 =
+	p 25.640375 13.390475 8.88811
+f v99 v120 v141 v158
+# End conversion from: !xform -n inner2.rear3 -t 117 0 0 -t 0 138 0 -s .0833 -t 12 0 0 fixture
+# End conversion from: lights.ri
+# Begin conversion from: lights.ro
+# 
+#  Rear outer bank of lights
+# 
+# Begin conversion from: !xform -n outer1.rear1 -t 21 0 0 -t 0 42 0 -s .0833 -t 12 0 0 fixture
+#  xform -n outer1.rear1 -t 21 0 0 -t 0 42 0 -s .0833 -t 12 0 0
+#  xform -rz 90 -t 24 12 106.7
+# 
+#  Wellmade 2 lamp fixture, model 325-AL97-248RS
+# 
+#  2x4' flush mount fluorescent with .5" metalized parabolic louver
+# 
+#  Dimensions in inches, fixture parallel to y axis, center at origin
+# 
+m lum_bright =
+	c
+		cxy 0.3330 0.3330
+	ed 2685
+o
+o outer1.rear1
+v v142 =
+	p 17.643575 3.602725 8.88811
+v v153 =
+	p 13.853425 3.602725 8.88811
+v v160 =
+	p 13.853425 5.393675 8.88811
+v v134 =
+	p 17.643575 5.393675 8.88811
+f v142 v153 v160 v134
+# End conversion from: !xform -n outer1.rear1 -t 21 0 0 -t 0 42 0 -s .0833 -t 12 0 0 fixture
+# Begin conversion from: !xform -n outer1.rear2 -t 69 0 0 -t 0 42 0 -s .0833 -t 12 0 0 fixture
+#  xform -n outer1.rear2 -t 69 0 0 -t 0 42 0 -s .0833 -t 12 0 0
+#  xform -rz 90 -t 24 12 106.7
+# 
+#  Wellmade 2 lamp fixture, model 325-AL97-248RS
+# 
+#  2x4' flush mount fluorescent with .5" metalized parabolic louver
+# 
+#  Dimensions in inches, fixture parallel to y axis, center at origin
+# 
+m lum_bright =
+	c
+		cxy 0.3330 0.3330
+	ed 2685
+o
+o outer1.rear2
+v v140 =
+	p 21.641975 3.602725 8.88811
+v v155 =
+	p 17.851825 3.602725 8.88811
+v v145 =
+	p 17.851825 5.393675 8.88811
+v v135 =
+	p 21.641975 5.393675 8.88811
+f v140 v155 v145 v135
+# End conversion from: !xform -n outer1.rear2 -t 69 0 0 -t 0 42 0 -s .0833 -t 12 0 0 fixture
+# Begin conversion from: !xform -n outer1.rear3 -t 117 0 0 -t 0 42 0 -s .0833 -t 12 0 0 fixture
+#  xform -n outer1.rear3 -t 117 0 0 -t 0 42 0 -s .0833 -t 12 0 0
+#  xform -rz 90 -t 24 12 106.7
+# 
+#  Wellmade 2 lamp fixture, model 325-AL97-248RS
+# 
+#  2x4' flush mount fluorescent with .5" metalized parabolic louver
+# 
+#  Dimensions in inches, fixture parallel to y axis, center at origin
+# 
+m lum_bright =
+	c
+		cxy 0.3330 0.3330
+	ed 2685
+o
+o outer1.rear3
+v v150 =
+	p 25.640375 3.602725 8.88811
+v v144 =
+	p 21.850225 3.602725 8.88811
+v v148 =
+	p 21.850225 5.393675 8.88811
+v v43 =
+	p 25.640375 5.393675 8.88811
+f v150 v144 v148 v43
+# End conversion from: !xform -n outer1.rear3 -t 117 0 0 -t 0 42 0 -s .0833 -t 12 0 0 fixture
+# Begin conversion from: !xform -n outer2.rear1 -t 21 0 0 -t 0 186 0 -s .0833 -t 12 0 0 fixture
+#  xform -n outer2.rear1 -t 21 0 0 -t 0 186 0 -s .0833 -t 12 0 0
+#  xform -rz 90 -t 24 12 106.7
+# 
+#  Wellmade 2 lamp fixture, model 325-AL97-248RS
+# 
+#  2x4' flush mount fluorescent with .5" metalized parabolic louver
+# 
+#  Dimensions in inches, fixture parallel to y axis, center at origin
+# 
+m lum_bright =
+	c
+		cxy 0.3330 0.3330
+	ed 2685
+o
+o outer2.rear1
+v v149 =
+	p 17.643575 15.597925 8.88811
+v v139 =
+	p 13.853425 15.597925 8.88811
+v v50 =
+	p 13.853425 17.388875 8.88811
+v v177 =
+	p 17.643575 17.388875 8.88811
+f v149 v139 v50 v177
+# End conversion from: !xform -n outer2.rear1 -t 21 0 0 -t 0 186 0 -s .0833 -t 12 0 0 fixture
+# Begin conversion from: !xform -n outer2.rear2 -t 69 0 0 -t 0 186 0 -s .0833 -t 12 0 0 fixture
+#  xform -n outer2.rear2 -t 69 0 0 -t 0 186 0 -s .0833 -t 12 0 0
+#  xform -rz 90 -t 24 12 106.7
+# 
+#  Wellmade 2 lamp fixture, model 325-AL97-248RS
+# 
+#  2x4' flush mount fluorescent with .5" metalized parabolic louver
+# 
+#  Dimensions in inches, fixture parallel to y axis, center at origin
+# 
+m lum_bright =
+	c
+		cxy 0.3330 0.3330
+	ed 2685
+o
+o outer2.rear2
+v v143 =
+	p 21.641975 15.597925 8.88811
+v v133 =
+	p 17.851825 15.597925 8.88811
+v v123 =
+	p 17.851825 17.388875 8.88811
+v v190 =
+	p 21.641975 17.388875 8.88811
+f v143 v133 v123 v190
+# End conversion from: !xform -n outer2.rear2 -t 69 0 0 -t 0 186 0 -s .0833 -t 12 0 0 fixture
+# Begin conversion from: !xform -n outer2.rear3 -t 117 0 0 -t 0 186 0 -s .0833 -t 12 0 0 fixture
+#  xform -n outer2.rear3 -t 117 0 0 -t 0 186 0 -s .0833 -t 12 0 0
+#  xform -rz 90 -t 24 12 106.7
+# 
+#  Wellmade 2 lamp fixture, model 325-AL97-248RS
+# 
+#  2x4' flush mount fluorescent with .5" metalized parabolic louver
+# 
+#  Dimensions in inches, fixture parallel to y axis, center at origin
+# 
+m lum_bright =
+	c
+		cxy 0.3330 0.3330
+	ed 2685
+o
+o outer2.rear3
+v v168 =
+	p 25.640375 15.597925 8.88811
+v v121 =
+	p 21.850225 15.597925 8.88811
+v v146 =
+	p 21.850225 17.388875 8.88811
+v v151 =
+	p 25.640375 17.388875 8.88811
+f v168 v121 v146 v151
+# End conversion from: !xform -n outer2.rear3 -t 117 0 0 -t 0 186 0 -s .0833 -t 12 0 0 fixture
+# End conversion from: lights.ro
+# Begin conversion from: night.windows
+#  The windows at night
+m window_mat =
+	c
+		cxy 0.3330 0.3330
+	rs 0.0797 0
+	c
+		cxy 0.3330 0.3330
+	ts 0.8722 0
+# Begin conversion from: !xform -e -n window1 -t 32 -.54 2.83 -a 5 -t -8 0 0 window1
+#  xform -e -n window1.0 -t 32 -.54 2.83 -i 0 -t -8 0 0
+#  description of window unit number 1
+o
+o window1.0
+v v32 =
+	p 32.166 -0.54 2.83
+v v181 =
+	p 32.166 -0.54 8.89
+v v187 =
+	p 35.83 -0.54 8.89
+v v165 =
+	p 35.83 -0.54 2.83
+f v32 v181 v187 v165
+#  xform -e -n window1.1 -t 32 -.54 2.83 -i 1 -t -8 0 0
+#  description of window unit number 1
+o
+o window1.1
+v v167 =
+	p 24.166 -0.54 2.83
+v v169 =
+	p 24.166 -0.54 8.89
+v v35 =
+	p 27.83 -0.54 8.89
+v v161 =
+	p 27.83 -0.54 2.83
+f v167 v169 v35 v161
+#  xform -e -n window1.2 -t 32 -.54 2.83 -i 2 -t -8 0 0
+#  description of window unit number 1
+o
+o window1.2
+v v37 =
+	p 16.166 -0.54 2.83
+v v152 =
+	p 16.166 -0.54 8.89
+v v175 =
+	p 19.83 -0.54 8.89
+v v156 =
+	p 19.83 -0.54 2.83
+f v37 v152 v175 v156
+#  xform -e -n window1.3 -t 32 -.54 2.83 -i 3 -t -8 0 0
+#  description of window unit number 1
+o
+o window1.3
+v v180 =
+	p 8.166 -0.54 2.83
+v v162 =
+	p 8.166 -0.54 8.89
+v v176 =
+	p 11.83 -0.54 8.89
+v v170 =
+	p 11.83 -0.54 2.83
+f v180 v162 v176 v170
+#  xform -e -n window1.4 -t 32 -.54 2.83 -i 4 -t -8 0 0
+#  description of window unit number 1
+o
+o window1.4
+v v31 =
+	p 0.166 -0.54 2.83
+v v3 =
+	p 0.166 -0.54 8.89
+v v166 =
+	p 3.83 -0.54 8.89
+v v173 =
+	p 3.83 -0.54 2.83
+f v31 v3 v166 v173
+# End conversion from: !xform -e -n window1 -t 32 -.54 2.83 -a 5 -t -8 0 0 window1
+# Begin conversion from: !xform -e -n window2 -t 28 -.54 2.83 -a 4 -t -8 0 0 window2
+#  xform -e -n window2.0 -t 28 -.54 2.83 -i 0 -t -8 0 0
+#  description of window unit number 2
+o
+o window2.0.pane
+v v182 =
+	p 28.166 -0.54 2.83
+v v172 =
+	p 28.166 -0.54 4.16
+v v164 =
+	p 31.83 -0.54 4.16
+v v171 =
+	p 31.83 -0.54 2.83
+f v182 v172 v164 v171
+v v159 =
+	p 28.166 -0.54 4.33
+v v29 =
+	p 28.166 -0.54 8.89
+v v186 =
+	p 31.83 -0.54 8.89
+v v179 =
+	p 31.83 -0.54 4.33
+f v159 v29 v186 v179
+#  xform -e -n window2.1 -t 28 -.54 2.83 -i 1 -t -8 0 0
+#  description of window unit number 2
+o
+o window2.1.pane
+v v25 =
+	p 20.166 -0.54 2.83
+v v198 =
+	p 20.166 -0.54 4.16
+v v189 =
+	p 23.83 -0.54 4.16
+v v178 =
+	p 23.83 -0.54 2.83
+f v25 v198 v189 v178
+v v0 =
+	p 20.166 -0.54 4.33
+v v185 =
+	p 20.166 -0.54 8.89
+v v119 =
+	p 23.83 -0.54 8.89
+v v56 =
+	p 23.83 -0.54 4.33
+f v0 v185 v119 v56
+#  xform -e -n window2.2 -t 28 -.54 2.83 -i 2 -t -8 0 0
+#  description of window unit number 2
+o
+o window2.2.pane
+v v192 =
+	p 12.166 -0.54 2.83
+v v196 =
+	p 12.166 -0.54 4.16
+v v184 =
+	p 15.83 -0.54 4.16
+v v197 =
+	p 15.83 -0.54 2.83
+f v192 v196 v184 v197
+v v206 =
+	p 12.166 -0.54 4.33
+v v22 =
+	p 12.166 -0.54 8.89
+v v201 =
+	p 15.83 -0.54 8.89
+v v183 =
+	p 15.83 -0.54 4.33
+f v206 v22 v201 v183
+#  xform -e -n window2.3 -t 28 -.54 2.83 -i 3 -t -8 0 0
+#  description of window unit number 2
+o
+o window2.3.pane
+v v211 =
+	p 4.166 -0.54 2.83
+v v163 =
+	p 4.166 -0.54 4.16
+v v174 =
+	p 7.83 -0.54 4.16
+v v194 =
+	p 7.83 -0.54 2.83
+f v211 v163 v174 v194
+v v21 =
+	p 4.166 -0.54 4.33
+v v188 =
+	p 4.166 -0.54 8.89
+v v208 =
+	p 7.83 -0.54 8.89
+v v157 =
+	p 7.83 -0.54 4.33
+f v21 v188 v208 v157
+# End conversion from: !xform -e -n window2 -t 28 -.54 2.83 -a 4 -t -8 0 0 window2
+# End conversion from: night.windows
+o
+xf
+# End of data converted from Radiance scene input

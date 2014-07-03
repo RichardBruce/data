@@ -1,0 +1,11 @@
+# NRC Lighting Design #7
+
+# The desk lamps
+m desklamp_head_output =
+	c
+	ed 2.516e+04
+i dsklmps.mgf
+
+# The 8 4' partition-mounted indirect fixtures
+ies flexxa.ies -s 39.37 -rz 90 -t 73.5 88.5 74.4 \
+		-a 4 -t 111 0 0 -a 2 -t 0 87 0 -i 1 -s .0254

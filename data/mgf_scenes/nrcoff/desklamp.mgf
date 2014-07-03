@@ -1,0 +1,235 @@
+# The following was converted from RADIANCE scene input
+o Untitled
+# Begin conversion from: standard input
+#  xform -e -s .0254
+# 
+#  Hand-built desk lamp model.
+# 
+# 	Greg Ward	April 6, 1994
+# 
+#  Should be a Ateller International Lighting model A97 Desk,
+#  but I think Ateller went out of business so it just looks like one.
+# 
+#  Output distribution is cosine since we have no data, and the 13 watt
+#  compact fluorescent provides about 900 lux bare, and we assume a
+#  fixture efficiency of 70%.
+# 
+#  The vertical arm extends between 16" and 26", and we have it fully
+#  retracted here, tilted at a 30 degree angle from the vertical.
+# 
+#  Material black_anodized must be defined, something like:
+# 
+#  void plastic black_anodized
+#  0
+#  0
+#  5 .08 .08 .08 .01 .02
+#  
+#  Center bottom of base is at origin.
+#  Lamp extends in the negative X-direction.
+#  Z axis is vertical.
+#  Original units are in inches.
+# 
+m black_anodized =
+	sides 1
+	c
+	rd .08
+	rs .01 .02
+o
+o base_bottom
+v cent =
+	p 0 0 0
+	n 0 0 -0.0254
+ring cent 0 0.12954
+o
+o base_side
+v v0 =
+	p 0 0 0
+v v1 =
+	p 0 0 0.01905
+cone v0 0.12954 v1 0.127
+o
+o base_rim
+v v2 =
+	p 0 0 0.02159
+cone v1 0.127 v2 0.12446
+o
+o base_top
+v cent =
+	p 0 0 0.02159
+	n 0 0 0.0254
+ring cent 0.009525 0.12446
+o
+o base_inner_lip
+v v3 =
+	p 0 0 0.02413
+cone v2 0.009525 v3 0.006985
+o
+o base_nipple
+v v4 =
+	p 0 0 0.04064
+cone v3 0.006985 v4 0.00635
+o
+o base_pivot
+sph v4 0.006985
+o
+o base_joint
+v v5 =
+	p 0.006985 -0.00889 0.04064
+v v6 =
+	p 0.006985 0.00889 0.04064
+cyl v5 0.006985 v6
+o
+o base_joint_end1
+v cent =
+	p 0.006985 -0.00889 0.04064
+	n 0 -0.0254 0
+ring cent 0 0.006985
+o
+o base_joint_end2
+v cent =
+	p 0.006985 0.00889 0.04064
+	n 0 0.0254 0
+ring cent 0 0.006985
+o
+o lower_arm_end1
+v cent =
+	p 0.01397 0 0.041148
+	n 0.0127 0 -0.0219964
+ring cent 0 0.006985
+o
+o lower_arm
+v v7 =
+	p 0.01397 0 0.041148
+v v8 =
+	p -0.18923 0 0.393192
+cyl v7 0.006985 v8
+o
+o lower_arm_end2
+v cent =
+	p -0.18923 0 0.393192
+	n -0.0127 0 0.0219964
+ring cent 0 0.006985
+#  xform -t 2.5 0 -4.33
+o
+o arm_joint
+v v9 =
+	p -0.1905 -0.00889 0.392938
+v v10 =
+	p -0.1905 0.00889 0.392938
+cyl v9 0.006985 v10
+o
+o arm_joint_end1
+v cent =
+	p -0.1905 -0.00889 0.392938
+	n 0 -0.0254 0
+ring cent 0 0.006985
+o
+o arm_joint_end2
+v cent =
+	p -0.1905 0.00889 0.392938
+	n 0 0.0254 0
+ring cent 0 0.006985
+o
+o end_arm_end1
+v cent =
+	p -0.19177 0 0.404368
+	n 0.0254 0 0
+ring cent 0 0.006985
+o
+o end_arm
+v v11 =
+	p -0.19177 0 0.404368
+v v12 =
+	p -0.38227 0 0.404368
+cyl v11 0.006985 v12
+o
+o head_joiner
+v v13 =
+	p -0.38354 0 0.404368
+sph v13 0.00762
+#  xform -t -27.3 -2 20.5
+#  genbox black_anodized head 9.7 4 1
+o
+o head
+v v14 =
+	p -0.38354 -0.0508 0.410718
+v v15 =
+	p -0.38354 -0.0508 0.436118
+v v16 =
+	p -0.62992 -0.0508 0.436118
+v v17 =
+	p -0.62992 -0.0508 0.410718
+f v14 v15 v16 v17
+v v18 =
+	p -0.62992 0.0508 0.436118
+v v19 =
+	p -0.62992 0.0508 0.410718
+f v16 v18 v19 v17
+v v20 =
+	p -0.38354 0.0508 0.410718
+m desklamp_head_output
+f v19 v20 v14 v17
+m black_anodized
+v v21 =
+	p -0.38354 0.0508 0.436118
+f v20 v19 v18 v21
+f v15 v14 v20 v21
+f v18 v16 v15 v21
+#  xform -ry 90 -t -24.8 0 17.17
+#  genprism black_anodized head_curve - -l 0 0 9.7 -c
+o
+o head_curve
+v v22 =
+	p -0.62992 -0.0381 0.436118
+v v23 =
+	p -0.62992 -0.029925374744 0.439025182933
+v v24 =
+	p -0.62992 -0.0215325215018 0.441224325805
+v v25 =
+	p -0.62992 -0.0129826446976 0.442699391587
+v v26 =
+	p -0.62992 -0.0043380932542 0.443439623508
+v v27 =
+	p -0.62992 0.0043380932542 0.443439623508
+v v28 =
+	p -0.62992 0.0129826446976 0.442699391587
+v v29 =
+	p -0.62992 0.0215325215018 0.441224325805
+v v30 =
+	p -0.62992 0.029925374744 0.439025182933
+v v31 =
+	p -0.62992 0.0381 0.436118
+f v22 v23 v24 v25 v26 v27 v28 v29 v30 v31
+v v32 =
+	p -0.38354 0.0381 0.436118
+v v33 =
+	p -0.38354 0.029925374744 0.439025182933
+v v34 =
+	p -0.38354 0.0215325215018 0.441224325805
+v v35 =
+	p -0.38354 0.0129826446976 0.442699391587
+v v36 =
+	p -0.38354 0.0043380932542 0.443439623508
+v v37 =
+	p -0.38354 -0.0043380932542 0.443439623508
+v v38 =
+	p -0.38354 -0.0129826446976 0.442699391587
+v v39 =
+	p -0.38354 -0.0215325215018 0.441224325805
+v v40 =
+	p -0.38354 -0.029925374744 0.439025182933
+v v41 =
+	p -0.38354 -0.0381 0.436118
+f v32 v33 v34 v35 v36 v37 v38 v39 v40 v41
+f v22 v41 v40 v23
+f v23 v40 v39 v24
+f v24 v39 v38 v25
+f v25 v38 v37 v26
+f v26 v37 v36 v27
+f v27 v36 v35 v28
+f v28 v35 v34 v29
+f v29 v34 v33 v30
+f v30 v33 v32 v31
+# End conversion from: standard input
+o
+# End of data converted from RADIANCE scene input

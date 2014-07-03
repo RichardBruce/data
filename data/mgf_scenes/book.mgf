@@ -1,0 +1,135 @@
+# The following was converted from Radiance scene input
+o Untitled
+# Begin conversion from: book.rad
+# ###############################
+#  Copyright (c) 1991 Greg Ward #
+#  Windows and Lighting Program #
+#  Lawrence Berkeley Laboratory #
+#  Berkeley, CA	94720	       #
+# ###############################
+# 
+#  A grey cover book for putting on a shelf or something
+# 
+# 	Units = centimeters
+# 	book is lying on its side
+# 	(0,0,0) at base of binding
+# 	X-axis runs along length of book
+# 	Y-axis runs along width of book
+# 	Z-axis runs along book thickness
+# 
+#  Overall dimensions are 24 by 17 by 3.5 centimeters
+# 
+# ###############################
+#  MATERIALS:
+m cover_mat =
+	c
+		cxy 0.3522 0.3328
+	rd 0.4265
+# ###############################
+#  From book.orig:
+#  xform -e -rz 90 -ry 90 -s 2.54
+# 
+#   A 9.5" X 6.5" book.
+#   The cover material must be defined as cover_mat
+# 
+#  genbox cover_mat back_cover 6.5 .125 9.5
+o
+o back_cover
+v v0 =
+	p 6.18984962932e-32 16.51 0
+v v1 =
+	p 24.13 16.51 0
+v v2 =
+	p 24.13 0 0
+v v3 =
+	p 0 0 0
+f v0 v1 v2 v3
+v v4 =
+	p 24.13 0 0.3175
+v v5 =
+	p 0 0 0.3175
+f v2 v4 v5 v3
+v v6 =
+	p 0 16.51 0.3175
+f v5 v6 v0 v3
+v v7 =
+	p 24.13 16.51 0.3175
+f v6 v5 v4 v7
+f v1 v0 v6 v7
+f v4 v2 v1 v7
+#  xform -t 0 1.25 0
+#  genbox cover_mat front_cover 6.5 .125 9.5
+o
+o front_cover
+v v8 =
+	p 0 16.51 3.175
+v v9 =
+	p 24.13 16.51 3.175
+v v10 =
+	p 24.13 0 3.175
+v v11 =
+	p 0 0 3.175
+f v8 v9 v10 v11
+v v12 =
+	p 24.13 0 3.4925
+v v13 =
+	p 0 0 3.4925
+f v10 v12 v13 v11
+v v14 =
+	p 0 16.51 3.4925
+f v13 v14 v8 v11
+v v15 =
+	p 24.13 16.51 3.4925
+f v14 v13 v12 v15
+f v9 v8 v14 v15
+f v12 v10 v9 v15
+#  xform -t -.125 .125 0
+#  genbox cover_mat bind_cover .125 1.125 9.5
+o
+o bind_cover
+v v16 =
+	p 24.13 -0.3175 0.3175
+v v17 =
+	p 0 -0.3175 0.3175
+f v5 v4 v16 v17
+v v18 =
+	p 24.13 -0.3175 3.175
+v v19 =
+	p 0 -0.3175 3.175
+f v16 v18 v19 v17
+f v19 v11 v5 v17
+f v11 v19 v18 v10
+f v4 v5 v11 v10
+f v18 v16 v4 v10
+m page_mat =
+	c
+		cxy 0.3330 0.3330
+	rd 0.7000
+o
+o top_pages
+v v20 =
+	p 0.3175 0 3.175
+v v21 =
+	p 0.3175 16.1925 3.175
+v v22 =
+	p 0.3175 16.1925 0.3175
+v v23 =
+	p 0.3175 0 0.3175
+f v20 v21 v22 v23
+o
+o side_pages
+v v24 =
+	p 23.8125 16.1925 3.175
+v v25 =
+	p 23.8125 16.1925 0.3175
+f v21 v24 v25 v22
+o
+o bot_pages
+v v26 =
+	p 23.8125 0 3.175
+v v27 =
+	p 23.8125 0 0.3175
+f v24 v26 v27 v25
+# End conversion from: book.rad
+o
+# End of data converted from Radiance scene input

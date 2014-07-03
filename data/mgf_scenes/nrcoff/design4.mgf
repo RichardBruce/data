@@ -1,0 +1,12 @@
+# NRC Lighting Design #4
+
+# The desk lamps
+m desklamp_head_output =
+	c
+	ed 2.516e+04
+i dsklmps.mgf
+
+# The 10 2x4' fluorescent troffers
+ies itl40752.pho -t 3.6576 2.1336 2.74 -a 3 -t 2.4384 0 0 -a 2 -t 0 2.4384 0
+ies itl40752.pho -rz 90 -t 1.2192 1.8288 2.74 \
+		-a 2 -t 9.7536 0 0 -a 2 -t 0 3.048 0

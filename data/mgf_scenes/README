@@ -1,0 +1,37 @@
+		Greg Ward's Object Library #1
+
+This directory contains 27 fun and useful objects for you to include
+in your scenes.
+
+All files are fully expanded and have a brief description and list
+of dependencies at the beginning.  The picture files L1dodad.gif,
+L1fixt.gif and L1furn.gif show what each object looks like,
+but here is a synopsis:
+
+blkchair.mgf		- Black conference room chair
+bluchair.mgf		- Blue office chair
+book.mgf		- A closed book
+bookbox.mgf		- An enclosed book shelf
+coatrack.mgf		- Brass coatrack from cabin model
+conftabl.mgf		- Half table from the conference room
+coord.mgf		- A coordinate axis
+corndesk.mgf		- The corner desk set from the office model
+dafvase.mgf		- Two daffodils in a vase
+desk.mgf		- Basic desk from early office model
+desklamp.mgf		- Cheap desk lamp
+doorclsr.mgf		- Door closing device
+dresser.mgf		- Dresser from cabin model
+exitsign.mgf		- Exit sign from conference room
+exting.mgf		- Fire extinguisher from conference room
+medcab.mgf		- Medicine cabinet from bathroom
+mug.mgf			- Coffee mug
+openbook.mgf		- Open book
+orgchair.mgf		- Orange chair from office model
+pencil.mgf		- A pencil with no eraser
+podium.mgf		- Podium from conference room
+redchair.mgf		- Red chair from conference room
+speaker.mgf		- Loud speaker from conference room
+toilet.mgf		- Toilet from bathroom model
+vanity.mgf		- Sink and cabinet from bathroom
+wstbskt.mgf		- Waste basket from conference room
+whale2.mgf		- Whale #2 from Pod Life sculpture

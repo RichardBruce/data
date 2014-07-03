@@ -1,0 +1,4564 @@
+# The following was converted from RADIANCE scene input
+o Untitled
+# Begin conversion from: summerday
+#  The sky over our little cabin scene
+#  in Jasper, Alberta Canada at 12 noon (standard time) on July 12th.
+# Begin conversion from: !gensky 7 12 12 -a 52.53 -o 118.05 -m 105 -g .2
+#  gensky 7 12 12 -a 52.53 -o 118.05 -m 105 -g .2
+#  Solar altitude and azimuth: 57.6 -25.4
+#  Ground ambient level: 18.9
+m solar =
+	c
+		cxy 0.3333 0.3333
+	ed 3.948e+09
+
+# Unsupported RADIANCE primitive:
+# solar source sun
+# 0
+# 0
+# 4 0.229924 -0.483527 0.844592 0.5
+
+m sun = solar
+
+# Unsupported RADIANCE primitive:
+# void brightfunc skyfunc
+# 2 skybr skybright.cal
+# 0
+# 7 1 17.2 26.4 0.84 0.229924 -0.483527 0.844592
+
+# End conversion from: !gensky 7 12 12 -a 52.53 -o 118.05 -m 105 -g .2
+m ground_glow =
+	c
+		cxy 0.4583 0.3987
+	ed 549.1
+
+# Unsupported RADIANCE primitive:
+# ground_glow source ground
+# 0
+# 0
+# 4 0 0 -1 180
+
+m ground = ground_glow
+m sky_glow =
+	c
+		cxy 0.3182 0.3107
+	ed 457.2
+
+# Unsupported RADIANCE primitive:
+# sky_glow source sky
+# 0
+# 0
+# 4 0 0 1 180
+
+m sky = sky_glow
+#  Landscape material for summer days
+
+# Unsupported RADIANCE primitive:
+# void brightfunc filthy
+# 4 dirt dirt.cal -s 2
+# 0
+# 1 0.75
+
+
+# Unsupported RADIANCE primitive:
+# filthy colorpict needlepat
+# 9 red green blue forestfl.pic jigglepic.cal fjiggletile_u fjiggletile_v -s 2
+# 0
+# 1 0.2
+
+m groundmat =
+	c
+		cxy 0.3712 0.3583
+	rd 0.2100
+# End conversion from: summerday
+# Begin conversion from: landscape
+# 
+#  The landscape around our cabin scene.
+#  The y-axis points north, the x-axis points east.
+#  The landscape is 200 feet square, centered around
+#  the center of the cabin's foundation (13,9,-1.5)
+# 
+# Begin conversion from: !gensurf groundmat ground '-87+200*s' '-91+200*t'\
+#	'mag(s,t)*noise2(s*4,t*4)*8-1.5' 15 15 -s \
+#	-e 'mag(s,t)=(1-cos(PI/.5*sqrt(sq(.5-s)+sq(.5-t))))/2'\
+#	-e 'sq(a)=a*a' -f noise2.cal
+#  gensurf groundmat ground -87+200*s -91+200*t mag(s,t)*noise2(s*4,t*4)*8-1.5 15 15 -s -e mag(s,t)=(1-cos(PI/.5*sqrt(sq(.5-s)+sq(.5-t))))/2 -e sq(a)=a*a -f noise2.cal
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000113735 -0.000122585 -2.06197e-05 -0.0258745 -0.012298 -0.00178581 -0.0099102 -0.0174439 -0.0012599 -2.17473 -1.63431 -0.116741
+
+m Phong = groundmat
+o
+o ground
+v v0 =
+	p -73.6666667 -91 -6.41172655
+v v1 =
+	p -73.6666667 -77.6666667 -7.35436766
+v v2 =
+	p -87 -91 -6.10383614
+f v0 v1 v2
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000113735 -0.000122585 -2.06197e-05 -0.0258745 -0.012298 -0.00178581 -0.0099102 -0.0174439 -0.0012599 -2.14593 -1.6629 -0.114556
+
+v v3 =
+	p -87 -77.6666667 -7.43166042
+f v2 v1 v3
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000324359 -2.76015e-05 -4.06606e-05 0.00815084 -0.00492099 -0.00334232 0.0244308 -0.00992432 -0.00338329 0.521242 -0.945844 -0.283819
+
+v v4 =
+	p -87 -64.3333333 -6.97888697
+f v3 v1 v4
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000324359 -2.76015e-05 -4.06606e-05 0.00815084 -0.00492099 -0.00334232 0.0244308 -0.00992432 -0.00338329 0.566627 -0.900567 -0.279955
+
+v v5 =
+	p -73.6666667 -64.3333333 -6.29344279
+f v4 v1 v5
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000439035 5.06026e-05 5.99546e-06 0.0155283 0.000110139 -0.00034078 0.0335097 0.00335901 0.000531906 1.15035 0.0157667 -0.0212397
+
+v v6 =
+	p -73.6666667 -51 -4.39213776
+f v5 v6 v4
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000439035 5.06026e-05 5.99546e-06 0.0155283 0.000110139 -0.00034078 0.0335097 0.00335901 0.000531906 1.1908 -0.024292 -0.023232
+
+v v7 =
+	p -87 -51 -5.6205373
+f v4 v6 v7
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000144269 7.58529e-05 1.41911e-05 0.00049524 0.0013979 7.71989e-05 0.0100576 0.0100091 0.00136318 -0.00496593 0.275414 0.0159617
+
+v v8 =
+	p -87 -37.6666667 -4.79575002
+f v7 v6 v8
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000144269 7.58529e-05 1.41911e-05 0.00049524 0.0013979 7.71989e-05 0.0100576 0.0100091 0.00136318 0.0216801 0.302207 0.0208041
+
+v v9 =
+	p -73.6666667 -37.6666667 -3.20212442
+f v8 v6 v9
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000122886 7.4004e-05 -1.27413e-05 -0.00956761 0.00132826 -0.000937255 -0.0110533 0.00888855 -0.00107738 -0.773064 0.194341 -0.0747457
+
+v v10 =
+	p -73.6666667 -24.3333333 -2.89836658
+f v9 v10 v8
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000122886 7.4004e-05 -1.27413e-05 -0.00956761 0.00132826 -0.000937255 -0.0110533 0.00888855 -0.00107738 -0.761054 0.182146 -0.0734398
+
+v v11 =
+	p -87 -24.3333333 -4.65560777
+f v8 v10 v11
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000186874 5.58186e-05 -2.35747e-05 -0.0111246 0.000885749 -0.00120087 -0.0156626 0.00507413 -0.00202282 -0.873208 0.0753458 -0.0964931
+
+v v12 =
+	p -87 -11 -4.70352427
+f v11 v10 v12
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000186874 5.58186e-05 -2.35747e-05 -0.0111246 0.000885749 -0.00120087 -0.0156626 0.00507413 -0.00202282 -0.872711 0.0758517 -0.0964291
+
+v v13 =
+	p -73.6666667 -11 -2.93948211
+f v12 v10 v13
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000136883 5.23374e-05 -1.27922e-05 -0.0105747 0.000847455 -0.00108226 -0.0109561 0.00306361 -0.001094 -0.82094 0.0536704 -0.0862119
+
+v v14 =
+	p -73.6666667 2.33333333 -2.98147855
+f v13 v14 v12
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000136883 5.23374e-05 -1.27922e-05 -0.0105747 0.000847455 -0.00108226 -0.0109561 0.00306361 -0.001094 -0.828592 0.0614487 -0.0871883
+
+v v15 =
+	p -87 2.33333333 -4.6409676
+f v12 v14 v15
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 5.4485e-05 7.66235e-05 2.05594e-05 -0.0110213 0.000790788 -0.00116008 0.00538878 0.00445359 0.00172737 -0.866808 0.0894083 -0.0931441
+
+v v16 =
+	p -87 15.6666667 -4.15885309
+f v15 v14 v16
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 5.4485e-05 7.66235e-05 2.05594e-05 -0.0110213 0.000790788 -0.00116008 0.00538878 0.00445359 0.00172737 -0.8842 0.0717964 -0.0956335
+
+v v17 =
+	p -73.6666667 15.6666667 -2.73676706
+f v16 v14 v17
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000397306 2.7869e-05 4.79664e-05 -0.0163921 0.00155461 -0.00158946 0.0340635 0.00192892 0.00413429 -1.33346 0.121901 -0.133095
+
+v v18 =
+	p -73.6666667 29 -2.35045299
+f v17 v18 v16
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000397306 2.7869e-05 4.79664e-05 -0.0163921 0.00155461 -0.00158946 0.0340635 0.00192892 0.00413429 -1.36799 0.156627 -0.134564
+
+v v19 =
+	p -87 29 -3.30796906
+f v16 v18 v19
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000478898 -0.000109497 1.94393e-05 -0.0187583 0.00553823 -0.000762173 0.0406378 -0.00681739 0.00175984 -1.55859 0.396014 -0.0665082
+
+v v20 =
+	p -87 42.3333333 -2.64857021
+f v19 v18 v20
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000478898 -0.000109497 1.94393e-05 -0.0187583 0.00553823 -0.000762173 0.0406378 -0.00681739 0.00175984 -1.58652 0.368018 -0.0691106
+
+v v21 =
+	p -73.6666667 42.3333333 -2.06649137
+f v20 v18 v21
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000196791 -0.000133947 4.1828e-06 -0.00681575 0.00657329 -0.000116312 0.0165229 -0.00752295 0.000307104 -0.565649 0.37206 -0.00782696
+
+v v22 =
+	p -73.6666667 55.6666667 -2.12727964
+f v21 v22 v20
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000196791 -0.000133947 4.1828e-06 -0.00681575 0.00657329 -0.000116312 0.0165229 -0.00752295 0.000307104 -0.561621 0.368023 -0.00761639
+
+v v23 =
+	p -87 55.6666667 -2.76325781
+f v20 v22 v23
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000126033 8.63821e-05 -4.31064e-06 0.0111548 -0.00569172 0.000356489 -0.0106211 0.00794989 -0.000375099 0.949307 -0.545388 0.0321634
+
+v v24 =
+	p -87 69 -3.57475643
+f v23 v22 v24
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000126033 8.63821e-05 -4.31064e-06 0.0111548 -0.00569172 0.000356489 -0.0106211 0.00794989 -0.000375099 0.968862 -0.52582 0.032289
+
+v v25 =
+	p -73.6666667 69 -2.67715237
+f v24 v22 v25
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000120562 0.000163723 -4.33191e-06 -0.00586032 -0.0110283 0.000357957 0.0111737 0.011033 -0.000287891 -0.534994 -0.744225 0.0265206
+
+v v26 =
+	p -73.6666667 82.3333333 -3.30305692
+f v25 v26 v24
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000120562 0.000163723 -4.33191e-06 -0.00586032 -0.0110283 0.000357957 0.0111737 0.011033 -0.000287891 -0.561539 -0.717632 0.0241962
+
+v v27 =
+	p -87 82.3333333 -3.84427071
+f v24 v26 v27
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.00017685 -3.16293e-05 -5.11037e-06 -0.0104947 0.00505577 0.00042205 0.0163222 -0.00574051 -0.000483476 -0.985442 0.708464 0.0404052
+
+v v28 =
+	p -87 95.6666667 -3.51206929
+f v27 v26 v28
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.00017685 -3.16293e-05 -5.11037e-06 -0.0104947 0.00505577 0.00042205 0.0163222 -0.00574051 -0.000483476 -1.02408 0.669805 0.0393695
+
+v v29 =
+	p -73.6666667 95.6666667 -3.48670186
+f v28 v26 v29
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 2.84457e-05 -0.00011719 -1.01433e-05 0.00370268 0.0132411 0.000903536 0.00319822 -0.00942006 -0.000840292 0.231444 1.07965 0.0743813
+
+v v30 =
+	p -73.6666667 109 -2.8986511
+f v29 v30 v28
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 2.84457e-05 -0.00011719 -1.01433e-05 0.00370268 0.0132411 0.000903536 0.00319822 -0.00942006 -0.000840292 0.215993 1.09506 0.0752702
+
+v v31 =
+	p -87 109 -2.71764372
+f v28 v30 v31
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000122428 0.000367098 -5.72597e-06 -0.00176971 0.030223 -0.00278865 0.00748713 0.0186293 -0.000162735 -0.144976 1.49996 -0.163901
+
+v v32 =
+	p -60.3333333 -91 -3.23807796
+f v0 v32 v1
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000122428 0.000367098 -5.72597e-06 -0.00176971 0.030223 -0.00278865 0.00748713 0.0186293 -0.000162735 -0.134245 1.51127 -0.162019
+
+v v33 =
+	p -60.3333333 -77.6666667 -4.02683696
+f v1 v32 v33
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000389936 0.000238066 0.000130277 0.0190068 0.0202015 0.00777426 0.0292616 0.00964651 0.00920913 1.55726 0.891089 0.564466
+
+v v34 =
+	p -60.3333333 -64.3333333 -3.74946379
+f v33 v34 v1
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000389936 0.000238066 0.000130277 0.0190068 0.0202015 0.00777426 0.0292616 0.00964651 0.00920913 1.50201 0.948831 0.555216
+
+f v1 v34 v5
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000405699 -0.000130123 6.23513e-05 0.0200208 -0.00348531 0.00340436 0.0310539 -0.00995444 0.00468345 1.61608 -0.251368 0.270574
+
+f v5 v34 v6
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000405699 -0.000130123 6.23513e-05 0.0200208 -0.00348531 0.00340436 0.0310539 -0.00995444 0.00468345 1.54764 -0.320668 0.252675
+
+v v35 =
+	p -60.3333333 -51 -2.8151918
+f v6 v34 v35
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000161465 -0.000317842 -1.06033e-05 0.00756489 -0.013059 -0.000316326 0.0113243 -0.0189931 -0.000463349 0.54138 -0.775517 -0.00936981
+
+v v36 =
+	p -60.3333333 -37.6666667 -1.79804159
+f v35 v36 v6
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000161465 -0.000317842 -1.06033e-05 0.00756489 -0.013059 -0.000316326 0.0113243 -0.0189931 -0.000463349 0.52858 -0.762646 -0.00973534
+
+f v6 v36 v9
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -1.31979e-05 -0.000180107 -2.13331e-06 0.000985921 -0.00787096 2.7117e-06 -0.00297293 -0.00983094 -0.000295926 -0.00956689 -0.483299 -0.00706846
+
+f v9 v36 v10
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -1.31979e-05 -0.000180107 -2.13331e-06 0.000985921 -0.00787096 2.7117e-06 -0.00297293 -0.00983094 -0.000295926 0.0311871 -0.441971 -0.0001168
+
+v v37 =
+	p -60.3333333 -24.3333333 -0.934017653
+f v10 v36 v37
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -4.86934e-05 2.84726e-05 -3.12136e-07 0.000122198 -0.00279553 4.70268e-05 -0.00548331 0.00305964 -0.000309143 -0.0297695 -0.144113 -0.00131701
+
+v v38 =
+	p -60.3333333 -11 -0.284126653
+f v37 v38 v10
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -4.86934e-05 2.84726e-05 -3.12136e-07 0.000122198 -0.00279553 4.70268e-05 -0.00548331 0.00305964 -0.000309143 0.019962 -0.195303 0.00611992
+
+f v10 v38 v13
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -4.15249e-05 0.000200475 -2.74535e-06 0.000201052 -0.000903502 2.02615e-05 -0.0039314 0.0139764 -0.000353889 0.037033 -0.0752834 0.00562791
+
+f v13 v38 v14
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -4.15249e-05 0.000200475 -2.74535e-06 0.000201052 -0.000903502 2.02615e-05 -0.0039314 0.0139764 -0.000353889 0.0669818 -0.0439494 0.0124753
+
+v v39 =
+	p -60.3333333 2.33333333 0.102569876
+f v14 v38 v39
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -9.10977e-06 0.000356231 -3.01396e-06 0.000125417 -0.00126693 2.08883e-05 0.000703965 0.0250513 -9.20022e-06 0.0562554 -0.0999859 0.0112842
+
+v v40 =
+	p -60.3333333 15.6666667 0.075882533
+f v39 v40 v14
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -9.10977e-06 0.000356231 -3.01396e-06 0.000125417 -0.00126693 2.08883e-05 0.000703965 0.0250513 -9.20022e-06 0.037275 -0.0800806 0.00725065
+
+f v14 v40 v17
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 5.48697e-05 0.000268391 -9.70863e-06 -0.000876927 0.00010923 0.000125771 0.00883737 0.0196474 -0.000114435 -0.090198 0.0149648 0.00913456
+
+f v17 v40 v18
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 5.48697e-05 0.000268391 -9.70863e-06 -0.000876927 0.00010923 0.000125771 0.00883737 0.0196474 -0.000114435 -0.182758 -0.0799968 -0.00406352
+
+v v41 =
+	p -60.3333333 29 -0.820250175
+f v18 v40 v41
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000133876 -0.000104851 -4.46933e-06 -0.00316811 0.0109333 -2.61683e-05 0.0152212 -0.00647515 -1.42839e-06 -0.368132 0.650898 -0.00521627
+
+v v42 =
+	p -60.3333333 42.3333333 -2.07764674
+f v41 v42 v18
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000133876 -0.000104851 -4.46933e-06 -0.00316811 0.0109333 -2.61683e-05 0.0152212 -0.00647515 -1.42839e-06 -0.482488 0.765471 -0.0158422
+
+f v18 v42 v21
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.00014832 -0.000369607 3.04967e-07 -0.00377956 0.0221412 -0.00022828 0.0129522 -0.0248832 2.14368e-05 -0.386434 1.51889 -0.0170264
+
+f v21 v42 v22
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.00014832 -0.000369607 3.04967e-07 -0.00377956 0.0221412 -0.00022828 0.0129522 -0.0248832 2.14368e-05 -0.4443 1.46104 -0.0133598
+
+v v43 =
+	p -60.3333333 55.6666667 -2.91286816
+f v22 v42 v43
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 2.33235e-05 -6.6314e-05 6.26695e-06 0.00317856 0.00525792 -0.000560164 0.00038149 -0.00329872 0.000404116 0.255372 0.29678 -0.036293
+
+v v44 =
+	p -60.3333333 69 -3.24872171
+f v43 v44 v22
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 2.33235e-05 -6.6314e-05 6.26695e-06 0.00317856 0.00525792 -0.000560164 0.00038149 -0.00329872 0.000404116 0.271379 0.280749 -0.0365752
+
+f v22 v44 v25
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -7.17618e-06 0.000182345 -1.99125e-05 0.00528304 -0.0118995 0.00124622 0.0017636 0.0124047 -0.00143566 0.176024 -0.808469 0.0906195
+
+f v25 v44 v26
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -7.17618e-06 0.000182345 -1.99125e-05 0.00528304 -0.0118995 0.00124622 0.0017636 0.0124047 -0.00143566 0.141974 -0.842501 0.0948468
+
+v v45 =
+	p -60.3333333 82.3333333 -4.33390376
+f v26 v44 v45
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 1.41231e-05 -5.56657e-05 -5.51155e-06 0.00352939 0.00769667 6.05399e-05 0.00433467 -0.00751119 -0.00051303 -0.0698106 0.81527 0.0175883
+
+v v46 =
+	p -60.3333333 95.6666667 -5.17610961
+f v45 v46 v26
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 1.41231e-05 -5.56657e-05 -5.51155e-06 0.00352939 0.00769667 6.05399e-05 0.00433467 -0.00751119 -0.00051303 -0.118568 0.86446 0.020666
+
+f v26 v46 v29
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 1.41645e-05 -0.000314519 -1.26326e-05 0.00352544 0.0324603 0.000741785 0.00214617 -0.0239566 -0.00102367 0.0909063 2.49511 0.0703727
+
+f v29 v46 v30
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 1.41645e-05 -0.000314519 -1.26326e-05 0.00352544 0.0324603 0.000741785 0.00214617 -0.0239566 -0.00102367 0.0770396 2.48102 0.0717061
+
+v v47 =
+	p -60.3333333 109 -4.77713149
+f v30 v46 v47
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 6.69865e-05 0.000513932 -8.03869e-06 0.0068985 0.0443995 -0.000381194 0.00414215 0.0274884 -0.000302269 0.470608 2.35316 0.00833594
+
+v v48 =
+	p -47 -91 1.33491888
+v v49 =
+	p -47 -77.6666667 0.335385591
+f v48 v49 v32
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 6.69865e-05 0.000513932 -8.03869e-06 0.0068985 0.0443995 -0.000381194 0.00414215 0.0274884 -0.000302269 0.457454 2.36775 0.00295029
+
+f v32 v49 v33
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 1.87507e-05 0.000264197 4.22393e-06 0.00315218 0.0250034 0.000571203 0.00686676 0.0112231 0.00160391 0.669495 1.18039 0.149684
+
+f v33 v49 v34
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 1.87507e-05 0.000264197 4.22393e-06 0.00315218 0.0250034 0.000571203 0.00686676 0.0112231 0.00160391 0.571814 1.07564 0.126621
+
+v v50 =
+	p -47 -64.3333333 -0.828741896
+f v34 v49 v50
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -3.19707e-05 -0.000211524 4.18502e-06 -0.000110893 -0.00560136 0.0005687 0.00464786 -0.0148656 0.00117409 0.42968 -0.556275 0.0961603
+
+v v51 =
+	p -47 -51 -1.35493317
+f v50 v51 v34
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -3.19707e-05 -0.000211524 4.18502e-06 -0.000110893 -0.00560136 0.0005687 0.00464786 -0.0148656 0.00117409 0.324464 -0.448268 0.0806197
+
+f v34 v51 v35
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 3.64836e-05 -0.000353292 -1.23859e-05 0.00338027 -0.0128315 -0.00027642 0.00378381 -0.0211319 -0.000570901 0.280349 -0.761719 -0.00793145
+
+f v35 v51 v36
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 3.64836e-05 -0.000353292 -1.23859e-05 0.00338027 -0.0128315 -0.00027642 0.00378381 -0.0211319 -0.000570901 0.250915 -0.791305 -0.0125228
+
+v v52 =
+	p -47 -37.6666667 -0.738613193
+f v36 v51 v52
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000222351 -0.000134788 1.21411e-05 0.0103813 -0.00460122 0.000647431 0.0112385 -0.00709674 0.000565294 0.531531 -0.227438 0.0325121
+
+v v53 =
+	p -47 -24.3333333 0.351570769
+f v52 v53 v36
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000222351 -0.000134788 1.21411e-05 0.0103813 -0.00460122 0.000647431 0.0112385 -0.00709674 0.000565294 0.548361 -0.244307 0.0327559
+
+f v36 v53 v37
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000275414 2.61658e-05 3.37219e-05 0.0116725 -0.00068467 0.00117256 0.0140712 0.00292047 0.00174424 0.617376 -0.0164637 0.0605488
+
+f v37 v53 v38
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000275414 2.61658e-05 3.37219e-05 0.0116725 -0.00068467 0.00117256 0.0140712 0.00292047 0.00174424 0.634835 0.00113147 0.0634029
+
+v v54 =
+	p -47 -11 1.23998017
+f v38 v53 v54
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.00018187 9.16847e-05 2.37248e-05 0.0106435 3.60385e-05 0.0010626 0.00954679 0.00741273 0.00124314 0.585241 0.0205017 0.0563653
+
+v v55 =
+	p -47 2.33333333 1.72355871
+f v54 v55 v38
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.00018187 9.16847e-05 2.37248e-05 0.0106435 3.60385e-05 0.0010626 0.00954679 0.00741273 0.00124314 0.592381 0.0132696 0.0569715
+
+f v38 v55 v39
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -5.00244e-05 0.000175589 -2.49835e-05 0.0111846 -0.000159738 0.00117625 -0.00176455 0.0141526 -0.00133469 0.618824 -0.033222 0.0625772
+
+f v39 v55 v40
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -5.00244e-05 0.000175589 -2.49835e-05 0.0111846 -0.000159738 0.00117625 -0.00176455 0.0141526 -0.00133469 0.60475 -0.0474786 0.061098
+
+v v56 =
+	p -47 15.6666667 1.50570799
+f v40 v55 v56
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000349191 0.000166605 -8.01763e-05 0.0158715 -1.89907e-05 0.00204094 -0.0155409 0.0135063 -0.00436598 0.819826 -0.140966 0.115625
+
+v v57 =
+	p -47 29 -0.113218887
+f v56 v57 v40
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000349191 0.000166605 -8.01763e-05 0.0158715 -1.89907e-05 0.00204094 -0.0155409 0.0135063 -0.00436598 0.766803 -0.0880744 0.106401
+
+f v40 v57 v41
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.0004051 -1.55515e-05 -1.69258e-05 0.0174929 0.00526356 0.000206673 -0.0172971 -0.00108739 -0.00075297 0.817616 0.30835 0.00378061
+
+f v41 v57 v42
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.0004051 -1.55515e-05 -1.69258e-05 0.0174929 0.00526356 0.000206673 -0.0172971 -0.00108739 -0.00075297 0.742152 0.234162 0.012445
+
+v v58 =
+	p -47 42.3333333 -2.3853597
+f v42 v57 v58
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000188582 -0.000239834 4.09104e-05 0.00832696 0.0147582 -0.00224173 -0.00737422 -0.0170535 0.0024713 0.3219 0.967076 -0.132078
+
+v v59 =
+	p -47 55.6666667 -3.87404107
+f v58 v59 v42
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000188582 -0.000239834 4.09104e-05 0.00832696 0.0147582 -0.00224173 -0.00737422 -0.0170535 0.0024713 0.273068 1.01565 -0.133986
+
+f v42 v59 v43
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 2.03285e-05 -6.78262e-05 7.56387e-07 -0.00330238 0.00518308 -6.48766e-06 0.000200789 -0.00338996 7.1646e-05 -0.148725 0.292286 -0.00203166
+
+f v43 v59 v44
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 2.03285e-05 -6.78262e-05 7.56387e-07 -0.00330238 0.00518308 -6.48766e-06 0.000200789 -0.00338996 7.1646e-05 -0.137395 0.303661 -0.00300516
+
+v v60 =
+	p -47 69 -4.0576093
+f v44 v59 v60
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000126295 0.000156232 -5.39468e-06 0.00681463 -0.010277 0.000417936 -0.00542324 0.0108293 -0.000559753 0.250994 -0.76913 0.0460274
+
+v v61 =
+	p -47 82.3333333 -5.47346325
+f v60 v61 v44
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000126295 0.000156232 -5.39468e-06 0.00681463 -0.010277 0.000417936 -0.00542324 0.0108293 -0.000559753 0.226334 -0.744554 0.0455244
+
+f v44 v61 v45
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.00012702 -7.73122e-06 3.24625e-05 0.00687435 0.00322271 -0.00269897 -0.00418098 -0.00461914 0.00177807 0.123944 0.545382 -0.148249
+
+f v45 v61 v46
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.00012702 -7.73122e-06 3.24625e-05 0.00687435 0.00322271 -0.00269897 -0.00418098 -0.00461914 0.00177807 0.0806377 0.501889 -0.139871
+
+v v62 =
+	p -47 95.6666667 -6.91096043
+f v46 v61 v62
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -1.67971e-06 -0.000323171 4.72375e-06 -0.00511656 0.0333997 -4.5298e-05 0.00119024 -0.0244786 2.34977e-05 -0.433936 2.51636 0.0223981
+
+v v63 =
+	p -47 109 -6.79968749
+f v62 v63 v46
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -1.67971e-06 -0.000323171 4.72375e-06 -0.00511656 0.0333997 -4.5298e-05 0.00119024 -0.0244786 2.34977e-05 -0.454824 2.53766 0.0257481
+
+f v46 v63 v47
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -9.03742e-05 0.00031484 -4.61598e-05 0.00289696 0.0274164 -0.00196724 -0.0032538 0.018131 -0.00209396 0.16667 1.55256 -0.0981117
+
+v v64 =
+	p -33.6666667 -91 4.17458484
+f v48 v64 v49
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -9.03742e-05 0.00031484 -4.61598e-05 0.00289696 0.0274164 -0.00196724 -0.0032538 0.018131 -0.00209396 0.154994 1.54047 -0.0995463
+
+v v65 =
+	p -33.6666667 -77.6666667 3.01150921
+f v49 v64 v65
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000272174 0.000124873 -9.0656e-05 -0.0112228 0.0126624 -0.00542312 -0.00680669 0.00467487 -0.00285545 -0.122373 0.433487 -0.151588
+
+v v66 =
+	p -33.6666667 -64.3333333 0.988956215
+f v65 v66 v49
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000272174 0.000124873 -9.0656e-05 -0.0112228 0.0126624 -0.00542312 -0.00680669 0.00467487 -0.00285545 -0.182441 0.494406 -0.168956
+
+f v49 v66 v50
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000278609 -0.000108138 -2.03636e-05 -0.0116368 -0.00232804 -0.000900974 -0.00694416 -0.0100065 2.03034e-05 -0.190885 -0.40298 0.0131202
+
+f v50 v66 v51
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000278609 -0.000108138 -2.03636e-05 -0.0116368 -0.00232804 -0.000900974 -0.00694416 -0.0100065 2.03034e-05 -0.249965 -0.462439 0.0109629
+
+v v67 =
+	p -33.6666667 -51 -0.335077641
+f v51 v66 v67
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -2.77683e-05 -6.19215e-05 6.53858e-06 0.00115607 2.90052e-05 0.000471036 0.000763969 -0.00743753 0.000318552 0.143504 -0.212102 0.0215372
+
+v v68 =
+	p -33.6666667 -37.6666667 -0.0570413421
+f v67 v68 v51
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -2.77683e-05 -6.19215e-05 6.53858e-06 0.00115607 2.90052e-05 0.000471036 0.000763969 -0.00743753 0.000318552 0.118251 -0.186775 0.0207756
+
+f v51 v68 v52
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000219648 6.39158e-05 3.65021e-06 0.0104754 0.00476888 0.000362241 0.0111115 0.00224236 0.000166224 0.507893 0.213106 0.0172885
+
+f v52 v68 v53
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000219648 6.39158e-05 3.65021e-06 0.0104754 0.00476888 0.000362241 0.0111115 0.00224236 0.000166224 0.47006 0.175382 0.0137104
+
+v v69 =
+	p -33.6666667 -24.3333333 0.525732084
+f v53 v68 v69
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000209335 -1.00861e-05 -2.13093e-05 0.0102245 0.00296816 -0.000245106 0.0109655 0.00121663 -0.000842221 0.466516 0.125155 -0.0116128
+
+v v70 =
+	p -33.6666667 -11 0.771062627
+f v69 v70 v53
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000209335 -1.00861e-05 -2.13093e-05 0.0102245 0.00296816 -0.000245106 0.0109655 0.00121663 -0.000842221 0.418388 0.173202 -0.00904107
+
+f v53 v70 v54
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 9.44359e-05 -0.000131928 -2.32694e-05 0.00896058 0.0016279 -0.000266668 0.00543737 -0.00309709 -0.000965585 0.357524 0.0955309 -0.0119506
+
+f v54 v70 v55
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 9.44359e-05 -0.000131928 -2.32694e-05 0.00896058 0.0016279 -0.000266668 0.00543737 -0.00309709 -0.000965585 0.323596 0.0615232 -0.0108349
+
+v v71 =
+	p -33.6666667 2.33333333 0.800660621
+f v55 v70 v71
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -7.14983e-05 -0.000183544 6.64852e-06 0.00934776 0.00174833 -0.000336476 -0.00277382 -0.00272663 0.00015201 0.342766 0.0409174 -0.0132918
+
+v v72 =
+	p -33.6666667 15.6666667 0.566373758
+f v71 v72 v55
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -7.14983e-05 -0.000183544 6.64852e-06 0.00934776 0.00174833 -0.000336476 -0.00277382 -0.00272663 0.00015201 0.341541 0.042148 -0.0132271
+
+f v55 v72 v56
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000352759 -8.09854e-05 3.46112e-05 0.0137542 0.000141585 -0.000774558 -0.0157087 0.00186954 0.00102903 0.544688 -0.133803 -0.0198623
+
+f v56 v72 v57
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000352759 -8.09854e-05 3.46112e-05 0.0137542 0.000141585 -0.000774558 -0.0157087 0.00186954 0.00102903 0.575226 -0.103514 -0.0247453
+
+v v73 =
+	p -33.6666667 29 -0.638792637
+f v57 v72 v73
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000502158 5.95976e-05 -4.38524e-06 0.0180867 -0.00393532 0.000356339 -0.0218588 0.00244462 -0.000163563 0.753806 -0.169995 0.0155954
+
+v v74 =
+	p -33.6666667 42.3333333 -2.52212111
+f v73 v74 v57
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000502158 5.95976e-05 -4.38524e-06 0.0180867 -0.00393532 0.000356339 -0.0218588 0.00244462 -0.000163563 0.782696 -0.19822 0.0192746
+
+f v57 v74 v58
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000354701 5.44569e-05 -1.95066e-05 0.0118444 -0.0037177 0.000996478 -0.0151818 -0.00322189 -0.000368304 0.499956 0.0986865 0.0199075
+
+f v58 v74 v59
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000354701 5.44569e-05 -1.95066e-05 0.0118444 -0.0037177 0.000996478 -0.0151818 -0.00322189 -0.000368304 0.509336 0.107961 0.0188639
+
+v v75 =
+	p -33.6666667 55.6666667 -3.88494272
+f v59 v74 v75
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 3.22667e-06 -4.18299e-06 -5.65471e-06 -0.00808024 -0.000453412 0.000225387 -0.000602996 -0.000398726 -0.000229676 -0.302223 0.0474997 0.00597633
+
+v v76 =
+	p -33.6666667 69 -3.95143234
+f v75 v76 v59
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 3.22667e-06 -4.18299e-06 -5.65471e-06 -0.00808024 -0.000453412 0.000225387 -0.000602996 -0.000398726 -0.000229676 -0.293443 0.0387205 0.00609002
+
+f v59 v76 v60
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000133505 3.16141e-05 -7.79253e-06 0.00135428 -0.00292341 0.000372896 -0.00576213 0.00497223 -0.000672451 0.0624936 -0.423702 0.0421371
+
+f v60 v76 v61
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000133505 3.16141e-05 -7.79253e-06 0.00135428 -0.00292341 0.000372896 -0.00576213 0.00497223 -0.000672451 0.0732785 -0.413023 0.0412053
+
+v v77 =
+	p -33.6666667 82.3333333 -5.22290953
+f v61 v76 v77
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000185693 6.67688e-05 -3.84859e-06 0.00565108 -0.00581781 4.81791e-05 -0.00693861 -0.00111764 7.14496e-05 0.170113 0.0731995 -0.0184789
+
+v v78 =
+	p -33.6666667 95.6666667 -6.700017
+f v77 v78 v61
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000185693 6.67688e-05 -3.84859e-06 0.00565108 -0.00581781 4.81791e-05 -0.00693861 -0.00111764 7.14496e-05 0.167167 0.0761118 -0.0188482
+
+f v61 v78 v62
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -7.063e-05 -4.86397e-05 1.06126e-05 -0.00535665 0.00522293 -0.00133528 -0.00205042 -0.0115757 0.000300275 -0.30038 1.19212 -0.0464638
+
+f v62 v78 v63
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -7.063e-05 -4.86397e-05 1.06126e-05 -0.00535665 0.00522293 -0.00133528 -0.00205042 -0.0115757 0.000300275 -0.313136 1.17936 -0.0466093
+
+v v79 =
+	p -33.6666667 109 -6.75885839
+f v63 v78 v79
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.00013478 6.34611e-05 7.88279e-06 -0.00190603 0.00426467 0.00125161 -0.0047488 0.00966793 -0.000274526 -0.175293 0.77893 -0.011651
+
+v v80 =
+	p -20.3333333 -91 4.54200001
+v v81 =
+	p -20.3333333 -77.6666667 3.64209256
+f v80 v81 v64
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.00013478 6.34611e-05 7.88279e-06 -0.00190603 0.00426467 0.00125161 -0.0047488 0.00966793 -0.000274526 -0.155714 0.75944 -0.00941087
+
+f v64 v81 v65
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000249294 7.14336e-05 -2.85333e-05 -0.0107999 0.00488387 -0.00157671 -0.00603639 0.00287574 -0.000763982 -0.256071 0.168906 -0.0399228
+
+f v65 v81 v66
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000249294 7.14336e-05 -2.85333e-05 -0.0107999 0.00488387 -0.00157671 -0.00603639 0.00287574 -0.000763982 -0.255944 0.169031 -0.0399357
+
+v v82 =
+	p -20.3333333 -64.3333333 1.62125283
+f v66 v81 v82
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000200351 5.47682e-05 -1.49885e-05 -0.00765124 0.00381173 -0.000705323 -0.00430944 -0.00452199 0.000201266 -0.144575 -0.2628 0.0164928
+
+v v83 =
+	p -20.3333333 -51 0.20377899
+f v82 v83 v66
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000200351 5.47682e-05 -1.49885e-05 -0.00765124 0.00381173 -0.000705323 -0.00430944 -0.00452199 0.000201266 -0.151495 -0.255939 0.0154835
+
+f v66 v83 v67
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -3.75427e-05 0.000152027 1.69e-06 0.000651961 0.00877192 0.000145279 0.000434897 -0.000234593 0.000155317 0.0906551 0.0822861 0.00847453
+
+f v67 v83 v68
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -3.75427e-05 0.000152027 1.69e-06 0.000651961 0.00877192 0.000145279 0.000434897 -0.000234593 0.000155317 0.0705556 0.0621704 0.00764783
+
+v v84 =
+	p -20.3333333 -37.6666667 0.213321495
+f v68 v83 v84
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 3.5661e-06 0.000102258 -1.00192e-05 0.00220039 0.0068973 -0.000295767 0.00383673 0.00353323 -0.000293979 0.198688 0.185936 -0.00912383
+
+v v85 =
+	p -20.3333333 -24.3333333 -0.019291774
+f v84 v85 v68
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 3.5661e-06 0.000102258 -1.00192e-05 0.00220039 0.0068973 -0.000295767 0.00383673 0.00353323 -0.000293979 0.137614 0.247006 -0.00769554
+
+f v68 v85 v69
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -8.79863e-05 -9.71636e-05 -3.6767e-06 -2.73809e-05 0.0020447 -0.000141433 0.000955646 -0.00171498 -0.000248591 0.067476 0.094051 -0.00737374
+
+f v69 v85 v70
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -8.79863e-05 -9.71636e-05 -3.6767e-06 -2.73809e-05 0.0020447 -0.000141433 0.000955646 -0.00171498 -0.000248591 0.0114373 0.03775 -0.00295095
+
+v v86 =
+	p -20.3333333 -11 -0.527645103
+f v70 v85 v86
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000111863 -0.000188977 1.0898e-05 -0.00029003 0.00103476 1.88885e-05 -0.00150805 -0.00501772 0.000184717 -0.0157041 0.0149108 0.00139664
+
+v v87 =
+	p -20.3333333 2.33333333 -0.85500131
+f v86 v87 v70
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000111863 -0.000188977 1.0898e-05 -0.00029003 0.00103476 1.88885e-05 -0.00150805 -0.00501772 0.000184717 -0.0420167 0.0415425 0.00401347
+
+f v70 v87 v71
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -1.92874e-05 -0.000275033 9.59456e-06 -0.00050604 0.00123555 2.19298e-05 -0.00101606 -0.00580678 0.000251193 -0.0431462 0.0237458 0.0040068
+
+f v71 v87 v72
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -1.92874e-05 -0.000275033 9.59456e-06 -0.00050604 0.00123555 2.19298e-05 -0.00101606 -0.00580678 0.000251193 -0.0325079 0.0345327 0.00261288
+
+v v88 =
+	p -20.3333333 15.6666667 -0.944209909
+f v72 v87 v88
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 9.05884e-06 -0.000258417 2.40306e-05 -0.000950132 0.000975233 -0.000204235 -0.00352745 -0.004104 0.000672814 0.00685446 -0.00416439 -0.00384131
+
+v v89 =
+	p -20.3333333 29 -1.1947547
+f v88 v89 v72
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 9.05884e-06 -0.000258417 2.40306e-05 -0.000950132 0.000975233 -0.000204235 -0.00352745 -0.004104 0.000672814 0.0779164 -0.0754392 -0.00545332
+
+f v72 v89 v73
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000127364 -1.53135e-05 -5.94507e-06 0.00300614 -0.00607477 0.00066506 -0.00924072 -7.73909e-05 -0.000216077 0.243841 -0.24201 0.0260785
+
+f v73 v89 v74
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000127364 -1.53135e-05 -5.94507e-06 0.00300614 -0.00607477 0.00066506 -0.00924072 -7.73909e-05 -0.000216077 0.347148 -0.139504 0.0180289
+
+v v90 =
+	p -20.3333333 42.3333333 -1.69254834
+f v74 v89 v90
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000224056 0.000258876 -6.57276e-05 0.00709942 -0.0176821 0.00319586 -0.0107834 0.00366022 -0.00192441 0.41248 -0.285552 0.0899696
+
+v v91 =
+	p -20.3333333 55.6666667 -2.02741845
+f v90 v91 v74
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000224056 0.000258876 -6.57276e-05 0.00709942 -0.0176821 0.00319586 -0.0107834 0.00366022 -0.00192441 0.487682 -0.361213 0.102328
+
+f v74 v91 v75
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -8.10966e-05 0.000146848 -2.05447e-05 -0.000858654 -0.0114459 0.000680671 -0.00344188 0.00468597 -0.000730972 0.0797016 -0.322532 0.0308688
+
+f v75 v91 v76
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -8.10966e-05 0.000146848 -2.05447e-05 -0.000858654 -0.0114459 0.000680671 -0.00344188 0.00468597 -0.000730972 0.0897366 -0.312288 0.0323206
+
+v v92 =
+	p -20.3333333 69 -1.95588978
+f v76 v91 v92
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -5.65524e-05 -3.24049e-05 -1.14854e-05 -0.00255221 0.000922543 5.55783e-05 -0.00317138 0.00281693 -0.000796778 0.0707085 -0.258857 0.039289
+
+v v93 =
+	p -20.3333333 82.3333333 -2.9050279
+f v92 v93 v76
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -5.65524e-05 -3.24049e-05 -1.14854e-05 -0.00255221 0.000922543 5.55783e-05 -0.00317138 0.00281693 -0.000796778 0.0935783 -0.282169 0.044928
+
+f v76 v93 v77
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -6.11384e-05 5.68616e-05 -2.60165e-05 -0.00217463 -0.00642707 0.00125197 -0.00274527 -0.00145118 -0.00067487 0.0582349 0.0542764 0.0363878
+
+f v77 v93 v78
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -6.11384e-05 5.68616e-05 -2.60165e-05 -0.00217463 -0.00642707 0.00125197 -0.00274527 -0.00145118 -0.00067487 0.0783849 0.0748944 0.0380322
+
+v v94 =
+	p -20.3333333 95.6666667 -4.10346073
+f v78 v93 v94
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -5.67009e-05 0.000197762 -5.39795e-06 -0.00259914 -0.0199066 -0.000720535 -0.00158148 -0.00328012 -0.000238747 -0.0322111 0.337457 -0.00748804
+
+v v95 =
+	p -20.3333333 109 -4.10738934
+f v94 v95 v78
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -5.67009e-05 0.000197762 -5.39795e-06 -0.00259914 -0.0199066 -0.000720535 -0.00158148 -0.00328012 -0.000238747 -0.0283227 0.333418 -0.00671328
+
+f v78 v95 v79
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -3.81987e-05 -3.7878e-05 2.66851e-05 0.000321382 -0.00515972 0.00223638 -0.00278498 0.00760737 0.000107786 -0.222229 0.587417 0.0100892
+
+v v96 =
+	p -7 -91 3.67496686
+f v80 v96 v81
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -3.81987e-05 -3.7878e-05 2.66851e-05 0.000321382 -0.00515972 0.00223638 -0.00278498 0.00760737 0.000107786 -0.188561 0.621077 0.0067718
+
+v v97 =
+	p -7 -77.6666667 3.22732263
+f v81 v96 v97
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -4.94522e-05 5.91999e-05 1.16024e-06 -0.000552635 0.00238 0.000253958 -0.00197295 0.00262699 -0.000160213 -0.125268 0.143211 -0.00681657
+
+v v98 =
+	p -7 -64.3333333 1.55219865
+f v97 v98 v81
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -4.94522e-05 5.91999e-05 1.16024e-06 -0.000552635 0.00238 0.000253958 -0.00197295 0.00262699 -0.000160213 -0.0995385 0.117957 -0.00378416
+
+f v81 v98 v82
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -4.07631e-05 0.000104086 -1.16932e-05 6.35955e-06 0.00526765 -0.000572945 -0.0010645 -0.0035192 0.00026827 -0.0411243 -0.233312 0.0180938
+
+f v82 v98 v83
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -4.07631e-05 0.000104086 -1.16932e-05 6.35955e-06 0.00526765 -0.000572945 -0.0010645 -0.0035192 0.00026827 -0.0281705 -0.220486 0.0168311
+
+v v99 =
+	p -7 -51 0.308285228
+f v83 v98 v99
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -5.06369e-05 0.00014702 -4.93984e-06 -0.0004972 0.00745732 -0.000228525 0.00016865 -0.000336393 2.051e-05 0.0347535 0.0235447 -6.54151e-05
+
+v v100 =
+	p -7 -37.6666667 0.159204804
+f v99 v100 v83
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -5.06369e-05 0.00014702 -4.93984e-06 -0.0004972 0.00745732 -0.000228525 0.00016865 -0.000336393 2.051e-05 0.0228576 0.0354404 -0.000150134
+
+f v83 v100 v84
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000146217 1.43375e-05 -1.88805e-06 -0.00409739 0.0024596 -0.000113574 0.000791135 0.00174551 -0.000128646 0.0463051 0.0956997 -0.00561644
+
+f v84 v100 v85
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000146217 1.43375e-05 -1.88805e-06 -0.00409739 0.0024596 -0.000113574 0.000791135 0.00174551 -0.000128646 0.00708151 0.056508 -0.00323317
+
+v v101 =
+	p -7 -24.3333333 -0.597852926
+f v85 v100 v101
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000183975 -0.000127154 1.72243e-05 -0.00501617 -0.000983362 0.000351492 -0.000996132 -0.00232479 0.000176395 -0.0364124 -0.0410169 0.00410456
+
+v v102 =
+	p -7 -11 -1.33454439
+f v101 v102 v85
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000183975 -0.000127154 1.72243e-05 -0.00501617 -0.000983362 0.000351492 -0.000996132 -0.00232479 0.000176395 -0.0534902 -0.0239303 0.00419406
+
+f v85 v102 v86
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000126335 -6.48866e-05 8.56371e-06 -0.00438213 -0.000298419 0.000256226 -0.00180231 -0.00249455 0.000137254 -0.0623837 -0.0122678 0.00334106
+
+f v86 v102 v87
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000126335 -6.48866e-05 8.56371e-06 -0.00438213 -0.000298419 0.000256226 -0.00180231 -0.00249455 0.000137254 -0.0562535 -0.00612029 0.00285703
+
+v v103 =
+	p -7 2.33333333 -1.5796398
+f v87 v102 v103
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 2.74414e-05 -6.11104e-05 -3.51904e-06 -0.00474095 -0.00030723 0.000284419 -6.5904e-05 -0.00145701 -1.54501e-05 -0.0603143 0.00906677 0.00304545
+
+v v104 =
+	p -7 15.6666667 -1.58957434
+f v103 v104 v87
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 2.74414e-05 -6.11104e-05 -3.51904e-06 -0.00474095 -0.00030723 0.000284419 -6.5904e-05 -0.00145701 -1.54501e-05 -0.0543911 0.00312809 0.00276324
+
+f v87 v104 v88
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000218973 -0.000190754 -1.41611e-05 -0.0077416 0.00172385 0.000451144 0.000740793 -0.00272818 -0.00010375 -0.067022 0.0109601 0.00430019
+
+f v88 v104 v89
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000218973 -0.000190754 -1.41611e-05 -0.0077416 0.00172385 0.000451144 0.000740793 -0.00272818 -0.00010375 -0.0392169 0.0387976 0.00320693
+
+v v105 =
+	p -7 29 -1.46858543
+f v89 v104 v105
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000229097 -0.000178391 -1.91223e-06 -0.0080352 0.00136534 9.59273e-05 -0.00199267 -0.00339331 -0.000134076 0.0400664 0.0853946 0.00470707
+
+v v106 =
+	p -7 42.3333333 -0.983092665
+f v105 v106 v89
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000229097 -0.000178391 -1.91223e-06 -0.0080352 0.00136534 9.59273e-05 -0.00199267 -0.00339331 -0.000134076 0.113683 0.0117585 0.00594027
+
+f v89 v106 v90
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 7.31281e-05 9.85769e-05 1.50637e-05 -0.00143253 -0.0103597 -0.000622721 -0.00474069 0.000400808 -0.000281653 0.230036 -0.136675 0.0118084
+
+f v90 v106 v91
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 7.31281e-05 9.85769e-05 1.50637e-05 -0.00143253 -0.0103597 -0.000622721 -0.00474069 0.000400808 -0.000281653 0.319888 -0.0459829 0.0225325
+
+v v107 =
+	p -7 55.6666667 -0.0971260398
+f v91 v106 v107
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -5.05874e-05 0.000163373 9.3476e-06 0.0054543 -0.0139666 -0.000304524 -0.00282153 0.00502198 -0.000123162 0.213223 -0.324638 0.0125444
+
+v v108 =
+	p -7 69 0.4990696
+f v107 v108 v91
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -5.05874e-05 0.000163373 9.3476e-06 0.0054543 -0.0139666 -0.000304524 -0.00282153 0.00502198 -0.000123162 0.251161 -0.363573 0.0178041
+
+f v91 v108 v92
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 1.07742e-05 5.4432e-05 1.29051e-05 0.00122035 -0.00644971 -0.000549991 -0.0018024 0.00458261 -0.000300838 0.180402 -0.408369 0.0324514
+
+f v92 v108 v93
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 1.07742e-05 5.4432e-05 1.29051e-05 0.00122035 -0.00644971 -0.000549991 -0.0018024 0.00458261 -0.000300838 0.212254 -0.375343 0.0370489
+
+v v109 =
+	p -7 82.3333333 -0.00357514769
+f v93 v108 v109
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 2.71384e-05 6.84302e-05 1.41121e-06 -0.000126964 -0.00760223 0.000396339 -0.000950305 -0.00121595 -0.000117173 0.141761 0.0716352 0.0234768
+
+v v110 =
+	p -7 95.6666667 -0.923281174
+f v109 v110 v93
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 2.71384e-05 6.84302e-05 1.41121e-06 -0.000126964 -0.00760223 0.000396339 -0.000950305 -0.00121595 -0.000117173 0.160733 0.0517855 0.0293791
+
+f v93 v110 v94
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -1.4618e-05 0.000227302 1.46021e-06 0.00386773 -0.022801 0.000391651 -0.000725792 -0.00267948 -9.92983e-05 0.140137 0.278608 0.0239726
+
+f v94 v110 v95
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -1.4618e-05 0.000227302 1.46021e-06 0.00386773 -0.022801 0.000391651 -0.000725792 -0.00267948 -9.92983e-05 0.147812 0.286735 0.025867
+
+v v111 =
+	p -7 109 -0.815591341
+f v95 v110 v111
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 9.01306e-05 1.96654e-05 9.39632e-06 0.00621382 -0.000365173 0.00088043 -0.00188667 0.00801017 -1.32348e-05 -0.19012 0.687929 -0.00103267
+
+v v112 =
+	p 6.33333333 -91 2.68718094
+v v113 =
+	p 6.33333333 -77.6666667 2.68386182
+f v112 v113 v96
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 9.01306e-05 1.96654e-05 9.39632e-06 0.00621382 -0.000365173 0.00088043 -0.00188667 0.00801017 -1.32348e-05 -0.156941 0.654651 -0.00237433
+
+f v96 v113 v97
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000104266 7.13471e-05 -4.84704e-06 0.00731166 0.00364877 -0.000225804 -0.000896923 0.00271202 -0.000202264 -0.0797765 0.152135 -0.00983679
+
+f v97 v113 v98
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000104266 7.13471e-05 -4.84704e-06 0.00731166 0.00364877 -0.000225804 -0.000896923 0.00271202 -0.000202264 -0.0624335 0.169261 -0.0123924
+
+v v114 =
+	p 6.33333333 -64.3333333 1.24278335
+f v98 v113 v114
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 5.19116e-05 5.41e-05 -6.81731e-06 0.00394354 0.00253921 -0.000352558 -0.000415776 -0.0038691 0.000302401 -0.0315299 -0.231737 0.0179105
+
+v v115 =
+	p 6.33333333 -51 0.104491905
+f v114 v115 v98
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 5.19116e-05 5.41e-05 -6.81731e-06 0.00394354 0.00253921 -0.000352558 -0.000415776 -0.0038691 0.000302401 -0.0236307 -0.239577 0.0184588
+
+f v98 v115 v99
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -5.76288e-05 4.80501e-05 -1.35828e-06 -0.00164302 0.00223066 -7.41476e-05 0.000119707 -0.00102919 4.55809e-05 0.00361377 -0.0130409 0.00110128
+
+f v99 v115 v100
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -5.76288e-05 4.80501e-05 -1.35828e-06 -0.00164302 0.00223066 -7.41476e-05 0.000119707 -0.00102919 4.55809e-05 0.00155895 -0.015096 0.00115989
+
+v v116 =
+	p 6.33333333 -37.6666667 -0.0720045448
+f v100 v115 v116
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000142422 -3.19472e-05 4.3988e-06 -0.00483691 -0.000782571 0.000142702 0.000817698 0.00142151 -8.46377e-05 0.0278861 0.0246255 -0.00166426
+
+v v117 =
+	p 6.33333333 -24.3333333 -0.951673665
+f v116 v117 v100
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000142422 -3.19472e-05 4.3988e-06 -0.00483691 -0.000782571 0.000142702 0.000817698 0.00142151 -8.46377e-05 0.018702 0.0337795 -0.00202461
+
+f v100 v117 v101
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -6.46084e-05 -7.75051e-05 3.65598e-06 -0.00294344 -0.00189115 0.000124627 -0.000160563 -0.00197725 8.14173e-05 -0.00510467 -0.0474038 0.00193099
+
+f v101 v117 v102
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -6.46084e-05 -7.75051e-05 3.65598e-06 -0.00294344 -0.00189115 0.000124627 -0.000160563 -0.00197725 8.14173e-05 0.00425397 -0.0380646 0.00125443
+
+v v118 =
+	p 6.33333333 -11 -1.56319419
+f v102 v117 v118
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 1.4222e-05 2.35166e-05 -4.09402e-06 -0.00207631 -0.000779907 3.9377e-05 -0.000818406 -0.00187573 4.86497e-05 -0.0030003 0.00887831 -0.000155649
+
+v v119 =
+	p 6.33333333 2.33333333 -1.56296691
+f v118 v119 v102
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 1.4222e-05 2.35166e-05 -4.09402e-06 -0.00207631 -0.000779907 3.9377e-05 -0.000818406 -0.00187573 4.86497e-05 0.0153962 -0.00951777 -0.000132966
+
+f v102 v119 v103
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 1.63678e-05 7.06771e-05 -6.96097e-07 -0.00208131 -0.000889949 3.14485e-05 -0.000143419 -0.000534501 4.31047e-06 0.0138214 0.00498665 -0.000198139
+
+f v103 v119 v104
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 1.63678e-05 7.06771e-05 -6.96097e-07 -0.00208131 -0.000889949 3.14485e-05 -0.000143419 -0.000534501 4.31047e-06 0.0147641 0.00592934 -0.000196774
+
+v v120 =
+	p 6.33333333 15.6666667 -1.56033227
+f v104 v119 v120
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 7.96355e-05 -6.00315e-05 -2.27887e-06 -0.00307251 0.00115782 5.62453e-05 -0.000234567 -0.00181312 -2.0575e-05 0.0161921 0.0280973 0.000195802
+
+v v121 =
+	p 6.33333333 29 -1.52921453
+f v120 v121 v104
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 7.96355e-05 -6.00315e-05 -2.27887e-06 -0.00307251 0.00115782 5.62453e-05 -0.000234567 -0.00181312 -2.0575e-05 0.00945198 0.0348371 0.000242178
+
+f v104 v121 v105
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000226683 -0.000157957 -9.81231e-06 -0.00733689 0.00399767 0.000274715 -0.00200957 -0.00325027 -0.000189376 0.0609298 0.103828 0.00575849
+
+f v105 v121 v106
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000226683 -0.000157957 -9.81231e-06 -0.00733689 0.00399767 0.000274715 -0.00200957 -0.00325027 -0.000189376 0.0831962 0.126045 0.00696196
+
+v v122 =
+	p 6.33333333 42.3333333 -0.746351578
+f v106 v121 v122
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000303684 -1.60474e-05 2.43943e-05 -0.0105966 -0.00200985 -0.00117337 -0.0031268 -0.000401562 -0.000216339 0.130404 0.0623737 0.0130797
+
+v v123 =
+	p 6.33333333 55.6666667 0.804653084
+f v122 v123 v106
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000303684 -1.60474e-05 2.43943e-05 -0.0105966 -0.00200985 -0.00117337 -0.0031268 -0.000401562 -0.000216339 0.180102 0.0129963 0.010692
+
+f v106 v123 v107
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000170773 8.70091e-05 3.66698e-05 -0.0031979 -0.00774666 -0.0018567 -0.001272 0.00448744 6.80933e-05 0.0769317 -0.28074 -0.00633534
+
+f v107 v123 v108
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000170773 8.70091e-05 3.66698e-05 -0.0031979 -0.00774666 -0.0018567 -0.001272 0.00448744 6.80933e-05 0.104105 -0.25348 -0.00252812
+
+v v124 =
+	p 6.33333333 69 1.76919869
+f v108 v123 v124
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000135914 5.22444e-05 2.70344e-05 -0.000792601 -0.0053479 -0.00119186 -0.000926424 0.0045673 -0.000201933 0.0804885 -0.349607 0.013708
+
+v v125 =
+	p 6.33333333 82.3333333 1.51750808
+f v124 v125 v108
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000135914 5.22444e-05 2.70344e-05 -0.000792601 -0.0053479 -0.00119186 -0.000926424 0.0045673 -0.000201933 0.0989415 -0.368248 0.0161664
+
+f v108 v125 v109
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 7.00004e-05 2.58845e-05 1.21216e-05 0.00463428 -0.0031776 3.59592e-05 -0.00065027 -0.00151377 -4.22001e-05 0.076019 0.101483 0.00464394
+
+f v109 v125 v110
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 7.00004e-05 2.58845e-05 1.21216e-05 0.00463428 -0.0031776 3.59592e-05 -0.00065027 -0.00151377 -4.22001e-05 0.0864399 0.112008 0.00521754
+
+v v126 =
+	p 6.33333333 95.6666667 0.738938734
+f v110 v125 v126
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -8.11846e-08 0.000119842 7.28672e-06 0.0113388 -0.0121662 0.000498499 -0.000624035 -0.0034317 -5.85127e-05 0.0841192 0.370379 0.00526053
+
+v v127 =
+	p 6.33333333 109 0.967949343
+f v126 v127 v110
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -8.11846e-08 0.000119842 7.28672e-06 0.0113388 -0.0121662 0.000498499 -0.000624035 -0.0034317 -5.85127e-05 0.0930087 0.361343 0.00629506
+
+f v110 v127 v111
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000111866 8.09902e-05 -1.63232e-06 0.00674754 0.00664576 -0.000122819 -0.00202433 0.00762178 5.66132e-05 -0.131456 0.643526 0.00265833
+
+v v128 =
+	p 19.6666667 -91 2.52934406
+f v112 v128 v113
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000111866 8.09902e-05 -1.63232e-06 0.00674754 0.00664576 -0.000122819 -0.00202433 0.00762178 5.66132e-05 -0.129575 0.645407 0.00263914
+
+v v129 =
+	p 19.6666667 -77.6666667 2.55110046
+f v113 v128 v129
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 4.46303e-05 2.00448e-05 -3.67327e-06 0.00152555 0.00191234 -0.000281333 -0.000519231 0.00303693 -0.000209698 -0.0126088 0.169081 -0.0109877
+
+v v130 =
+	p 19.6666667 -64.3333333 0.958393471
+f v129 v130 v113
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 4.46303e-05 2.00448e-05 -3.67327e-06 0.00152555 0.00191234 -0.000281333 -0.000519231 0.00303693 -0.000209698 -0.0239234 0.180254 -0.0120818
+
+f v113 v130 v114
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 1.15802e-05 -5.55633e-05 4.97401e-06 -0.000600677 -0.00295178 0.000274976 -0.000160344 -0.00317456 0.000227723 -0.00088119 -0.196964 0.0138948
+
+f v114 v130 v115
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 1.15802e-05 -5.55633e-05 4.97401e-06 -0.000600677 -0.00295178 0.000274976 -0.000160344 -0.00317456 0.000227723 -0.0062882 -0.202333 0.0144977
+
+v v131 =
+	p 19.6666667 -51 -0.252486058
+f v115 v130 v131
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -2.38433e-05 -4.7386e-05 1.21641e-06 -0.00240728 -0.00253474 8.33378e-05 -9.42682e-05 -0.000424757 2.92746e-05 -0.00302768 0.0237072 0.000293451
+
+v v132 =
+	p 19.6666667 -37.6666667 -0.313998528
+f v131 v132 v115
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -2.38433e-05 -4.7386e-05 1.21641e-06 -0.00240728 -0.00253474 8.33378e-05 -9.42682e-05 -0.000424757 2.92746e-05 0.00559083 0.015085 0.000176827
+
+f v115 v132 v116
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -4.41413e-07 7.88219e-06 4.21293e-07 -0.0015258 -0.000452968 5.33886e-05 -8.15143e-05 0.00116926 -5.94468e-05 0.00610899 0.0225389 -0.00108435
+
+f v116 v132 v117
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -4.41413e-07 7.88219e-06 4.21293e-07 -0.0015258 -0.000452968 5.33886e-05 -8.15143e-05 0.00116926 -5.94468e-05 0.0174978 0.0338883 -0.00190993
+
+v v133 =
+	p 19.6666667 -24.3333333 -1.04138728
+f v117 v132 v133
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 7.99334e-05 2.90114e-05 -2.62245e-06 0.000429984 6.11763e-05 -2.0676e-05 -0.00107599 -0.00265185 0.000121181 -0.00670583 -0.0445948 0.00179996
+
+v v134 =
+	p 19.6666667 -11 -1.57482102
+f v133 v134 v117
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 7.99334e-05 2.90114e-05 -2.62245e-06 0.000429984 6.11763e-05 -2.0676e-05 -0.00107599 -0.00265185 0.000121181 -0.000853931 -0.050436 0.00202852
+
+f v117 v134 v118
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 9.25262e-05 1.61234e-05 -8.80359e-07 0.000568504 -8.05924e-05 -1.51291e-06 -0.00131433 -0.0018289 2.82965e-05 -0.00347655 0.00444932 -4.33066e-05
+
+f v118 v134 v119
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 9.25262e-05 1.61234e-05 -8.80359e-07 0.000568504 -8.05924e-05 -1.51291e-06 -0.00131433 -0.0018289 2.82965e-05 -0.00244808 0.00547779 -4.31281e-05
+
+v v135 =
+	p 19.6666667 2.33333333 -1.5608808
+f v119 v134 v135
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -1.00637e-06 4.17598e-06 4.27753e-08 0.000786746 -5.27152e-05 -3.66689e-06 -3.3383e-05 -0.000113327 -3.69059e-07 -0.00543696 0.000744351 2.32614e-05
+
+v v136 =
+	p 19.6666667 15.6666667 -1.55667958
+f v135 v136 v119
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -1.00637e-06 4.17598e-06 4.27753e-08 0.000786746 -5.27152e-05 -3.66689e-06 -3.3383e-05 -0.000113327 -3.69059e-07 -0.00531947 0.000626858 2.32565e-05
+
+f v119 v136 v120
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -5.20031e-05 1.9868e-05 8.04945e-07 0.0015857 -0.000298556 -1.56076e-05 0.000599144 -0.00231915 -4.01058e-05 -0.0152291 0.037321 0.000648503
+
+f v120 v136 v121
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -5.20031e-05 1.9868e-05 8.04945e-07 0.0015857 -0.000298556 -1.56076e-05 0.000599144 -0.00231915 -4.01058e-05 -0.0156854 0.0368647 0.000647521
+
+v v137 =
+	p 19.6666667 29 -1.53164582
+f v121 v136 v137
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 4.59714e-05 4.76312e-05 5.02545e-06 -0.00125557 -0.00110369 -0.000138002 -0.00086506 -0.00455233 -0.000283349 0.0267768 0.151439 0.00903662
+
+v v138 =
+	p 19.6666667 42.3333333 -0.841526369
+f v137 v138 v121
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 4.59714e-05 4.76312e-05 5.02545e-06 -0.00125557 -0.00110369 -0.000138002 -0.00086506 -0.00455233 -0.000283349 0.0198332 0.158362 0.0094444
+
+f v121 v138 v122
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000176428 4.3767e-05 4.08775e-06 -0.00677823 -0.000940105 -9.83064e-05 -0.00232085 -0.000780387 -8.77305e-05 0.0814971 0.0556137 0.00614147
+
+f v122 v138 v123
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000176428 4.3767e-05 4.08775e-06 -0.00677823 -0.000940105 -9.83064e-05 -0.00232085 -0.000780387 -8.77305e-05 0.0639496 0.038262 0.00455611
+
+v v139 =
+	p 19.6666667 55.6666667 0.474455267
+f v123 v138 v139
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000137947 -4.39285e-07 -1.09951e-05 -0.0046361 0.00152071 0.000741304 -0.0010641 0.00504128 0.000369971 -0.00609874 -0.334454 -0.0245257
+
+v v140 =
+	p 19.6666667 69 1.13611398
+f v139 v140 v123
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000137947 -4.39285e-07 -1.09951e-05 -0.0046361 0.00152071 0.000741304 -0.0010641 0.00504128 0.000369971 -0.0286765 -0.311931 -0.0223371
+
+f v123 v140 v124
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 1.75121e-05 -4.99013e-05 -5.02666e-06 0.00367388 0.00493359 0.000329484 -0.000176546 0.00521422 1.12056e-06 -0.0900324 -0.414787 0.000693428
+
+f v124 v140 v125
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 1.75121e-05 -4.99013e-05 -5.02666e-06 0.00367388 0.00493359 0.000329484 -0.000176546 0.00521422 1.12056e-06 -0.106969 -0.431764 0.00210696
+
+v v141 =
+	p 19.6666667 82.3333333 0.657092131
+f v125 v140 v141
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -8.25222e-05 -6.88725e-05 6.69069e-06 0.01191 0.00649556 -0.000635245 0.000315707 -0.000913645 -7.80413e-06 -0.14741 0.0453714 0.00419731
+
+v v142 =
+	p 19.6666667 95.6666667 -0.189298562
+f v141 v142 v125
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -8.25222e-05 -6.88725e-05 6.69069e-06 0.01191 0.00649556 -0.000635245 0.000315707 -0.000913645 -7.80413e-06 -0.152474 0.0504391 0.00422816
+
+f v125 v142 v126
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -6.31126e-05 -4.77658e-05 2.04236e-06 0.0100532 0.00447635 -0.000190555 -0.000224836 -0.00237019 -2.52984e-05 -0.100869 0.265067 0.00435994
+
+f v126 v142 v127
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -6.31126e-05 -4.77658e-05 2.04236e-06 0.0100532 0.00447635 -0.000190555 -0.000224836 -0.00237019 -2.52984e-05 -0.0933324 0.272633 0.00402243
+
+v v143 =
+	p 19.6666667 109 0.14074208
+f v127 v142 v143
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -3.06461e-06 -9.49676e-05 -6.64217e-06 -0.000853891 -0.0071965 -0.000529535 0.000235975 0.0110823 0.00015514 0.0475352 0.911062 0.0107552
+
+v v144 =
+	p 33 -91 2.76483886
+v v145 =
+	p 33 -77.6666667 2.69891334
+f v144 v145 v128
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -3.06461e-06 -9.49676e-05 -6.64217e-06 -0.000853891 -0.0071965 -0.000529535 0.000235975 0.0110823 0.00015514 0.0409614 0.917638 0.0106498
+
+f v128 v145 v129
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -7.68592e-05 -2.86035e-05 1.76562e-06 -0.00658527 -0.00204222 0.00012347 0.00187006 0.00399368 -0.000316663 0.167797 0.246855 -0.0189372
+
+f v129 v145 v130
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -7.68592e-05 -2.86035e-05 1.76562e-06 -0.00658527 -0.00204222 0.00012347 0.00187006 0.00399368 -0.000316663 0.169551 0.248585 -0.0191213
+
+v v146 =
+	p 33 -64.3333333 1.1297217
+f v130 v145 v146
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -5.43445e-05 -1.32167e-05 -1.35101e-06 -0.00513682 -0.00105233 -7.70337e-05 0.00113618 -0.00400738 0.000352115 0.122377 -0.236075 0.0208247
+
+v v147 =
+	p 33 -51 -0.0320706303
+f v146 v147 v130
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -5.43445e-05 -1.32167e-05 -1.35101e-06 -0.00513682 -0.00105233 -7.70337e-05 0.00113618 -0.00400738 0.000352115 0.126038 -0.239708 0.0212017
+
+f v130 v147 v131
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -1.01036e-05 3.55675e-05 -3.18421e-06 -0.00288054 0.00143566 -0.000170527 -0.000364482 -0.00205618 0.00011582 0.049572 -0.0543783 0.00506453
+
+f v131 v147 v132
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -1.01036e-05 3.55675e-05 -3.18421e-06 -0.00288054 0.00143566 -0.000170527 -0.000364482 -0.00205618 0.00011582 0.0559768 -0.047971 0.0051819
+
+v v148 =
+	p 33 -37.6666667 -0.0081380637
+f v132 v147 v148
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 8.68932e-05 7.14156e-05 -1.73828e-06 0.000773007 0.00278594 -0.000116063 -0.00179909 -8.02318e-05 -1.69753e-05 0.00189357 -0.0387577 0.00219084
+
+v v149 =
+	p 33 -24.3333333 -0.855658062
+f v148 v149 v132
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 8.68932e-05 7.14156e-05 -1.73828e-06 0.000773007 0.00278594 -0.000116063 -0.00179909 -8.02318e-05 -1.69753e-05 -0.0070861 -0.0298062 0.00149666
+
+f v132 v149 v133
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000133915 1.57599e-05 2.70226e-06 0.00191721 0.00143165 -8.01035e-06 -0.00213763 -0.00239124 1.64613e-05 -0.0153143 -0.0715444 0.00162506
+
+f v133 v149 v134
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000133915 1.57599e-05 2.70226e-06 0.00191721 0.00143165 -8.01035e-06 -0.00213763 -0.00239124 1.64613e-05 -0.034386 -0.0905698 0.0024841
+
+v v150 =
+	p 33 -11 -1.64366806
+f v134 v149 v150
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 9.5482e-05 -5.72554e-05 1.25103e-09 0.00149444 0.000628481 -3.77215e-05 -0.00137246 -0.00038579 1.09582e-05 -0.0259777 -0.0229701 0.000772298
+
+v v151 =
+	p 33 2.33333333 -1.82311745
+f v150 v151 v134
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 9.5482e-05 -5.72554e-05 1.25103e-09 0.00149444 0.000628481 -3.77215e-05 -0.00137246 -0.00038579 1.09582e-05 -0.0404786 -0.00846753 0.000862315
+
+f v134 v151 v135
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -8.1212e-06 -7.3801e-05 2.82396e-07 0.00173618 0.000667088 -3.83775e-05 0.000106542 0.00142022 -5.0816e-06 -0.0439296 -0.0134118 0.000899245
+
+f v135 v151 v136
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -8.1212e-06 -7.3801e-05 2.82396e-07 0.00173618 0.000667088 -3.83775e-05 0.000106542 0.00142022 -5.0816e-06 -0.0426296 -0.0121114 0.000875778
+
+v v152 =
+	p 33 15.6666667 -1.80157373
+f v136 v151 v152
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -8.17526e-05 -1.28592e-05 7.32267e-07 0.00288974 -0.000287666 -4.54255e-05 0.00118422 -0.00167552 -3.86764e-05 -0.0595115 0.0483971 0.00149359
+
+v v153 =
+	p 33 29 -1.6198713
+f v152 v153 v136
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -8.17526e-05 -1.28592e-05 7.32267e-07 0.00288974 -0.000287666 -4.54255e-05 0.00118422 -0.00167552 -3.86764e-05 -0.047766 0.0366505 0.00125581
+
+f v136 v153 v137
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000102742 6.9657e-05 3.17882e-06 0.00349844 -0.00268064 -0.000116375 0.00205964 -0.00498551 -0.000247032 -0.0731444 0.182451 0.00863308
+
+f v137 v153 v138
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000102742 6.9657e-05 3.17882e-06 0.00349844 -0.00268064 -0.000116375 0.00205964 -0.00498551 -0.000247032 -0.0672574 0.188321 0.00893258
+
+v v154 =
+	p 33 42.3333333 -0.851153879
+f v138 v153 v154
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -6.7575e-05 7.56966e-05 5.91374e-06 0.0020097 -0.00293631 -0.000232154 0.00247788 -0.00140834 -0.000123642 -0.0849614 0.0646146 0.00569464
+
+v v155 =
+	p 33 55.6666667 0.290143296
+f v154 v155 v138
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -6.7575e-05 7.56966e-05 5.91374e-06 0.0020097 -0.00293631 -0.000232154 0.00247788 -0.00140834 -0.000123642 -0.0979973 0.0775413 0.00698051
+
+f v138 v155 v139
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -3.06188e-05 -7.12157e-05 -2.81622e-06 -4.75353e-05 0.00524181 0.000253814 0.00225102 0.00643321 0.00020912 -0.0854188 -0.407625 -0.0151486
+
+f v139 v155 v140
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -3.06188e-05 -7.12157e-05 -2.81622e-06 -4.75353e-05 0.00524181 0.000253814 0.00225102 0.00643321 0.00020912 -0.106614 -0.4288 -0.015457
+
+v v156 =
+	p 33 69 0.66897238
+f v140 v155 v156
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000127824 -0.000171863 6.05619e-06 0.00665959 0.0121865 -0.000358382 0.00268172 0.0076128 -0.000216842 -0.136336 -0.562025 0.0138066
+
+v v157 =
+	p 33 82.3333333 0.356031326
+f v156 v157 v140
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000127824 -0.000171863 6.05619e-06 0.00665959 0.0121865 -0.000358382 0.00268172 0.0076128 -0.000216842 -0.123891 -0.57447 0.0138177
+
+f v140 v157 v141
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000166472 -5.40329e-05 -1.68618e-05 0.00984166 0.00248512 0.00152853 0.00196672 -0.00120549 0.000455395 -0.064992 0.124128 -0.0401669
+
+f v141 v157 v142
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000166472 -5.40329e-05 -1.68618e-05 0.00984166 0.00248512 0.00152853 0.00196672 -0.00120549 0.000455395 -0.0249423 0.164103 -0.0420024
+
+v v158 =
+	p 33 95.6666667 0.0444174951
+f v142 v157 v158
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -7.13115e-05 0.000199919 -1.50634e-05 0.00073796 -0.0218096 0.00135649 -6.35913e-05 -0.00724132 0.000311115 0.169268 0.821088 -0.0268925
+
+v v159 =
+	p 33 109 0.794999323
+f v158 v159 v142
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -7.13115e-05 0.000199919 -1.50634e-05 0.00073796 -0.0218096 0.00135649 -6.35913e-05 -0.00724132 0.000311115 0.200765 0.789608 -0.0271193
+
+f v142 v159 v143
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -3.08279e-05 -0.000179132 -8.7272e-07 -0.000368384 -0.0146278 -3.69513e-05 0.00115216 0.0138597 -3.52515e-05 0.0173606 1.1563 -0.00564991
+
+v v160 =
+	p 46.3333333 -91 2.81158937
+f v144 v160 v145
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -3.08279e-05 -0.000179132 -8.7272e-07 -0.000368384 -0.0146278 -3.69513e-05 0.00115216 0.0138597 -3.52515e-05 0.0203521 1.15929 -0.00564526
+
+v v161 =
+	p 46.3333333 -77.6666667 2.78555126
+f v145 v160 v161
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -5.73555e-05 -2.91811e-05 6.42982e-06 -0.0024287 -0.00298164 0.000530212 0.00122644 0.00401274 -0.000470581 0.0260879 0.295452 -0.0343436
+
+v v162 =
+	p 46.3333333 -64.3333333 1.43183561
+f v161 v162 v145
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -5.73555e-05 -2.91811e-05 6.42982e-06 -0.0024287 -0.00298164 0.000530212 0.00122644 0.00401274 -0.000470581 0.0421209 0.279606 -0.0323733
+
+f v145 v162 v146
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -5.62422e-05 1.00771e-05 -5.2265e-06 -0.00235707 -0.000456029 -0.000219677 0.0011988 -0.00477607 0.000480006 0.0404123 -0.255738 0.025704
+
+f v146 v162 v147
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -5.62422e-05 1.00771e-05 -5.2265e-06 -0.00235707 -0.000456029 -0.000219677 0.0011988 -0.00477607 0.000480006 0.054102 -0.242124 0.0250153
+
+v v163 =
+	p 46.3333333 -51 0.45297508
+f v147 v162 v163
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -5.81552e-05 9.30772e-05 -4.92383e-06 -0.00245463 0.00377698 -0.000204241 0.00122122 -0.003954 0.000173228 0.0553393 -0.113029 0.00678883
+
+v v164 =
+	p 46.3333333 -37.6666667 0.639780826
+f v163 v164 v147
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -5.81552e-05 9.30772e-05 -4.92383e-06 -0.00245463 0.00377698 -0.000204241 0.00122122 -0.003954 0.000173228 0.067525 -0.125236 0.00721006
+
+f v147 v164 v148
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -1.14303e-05 0.000150498 -1.2445e-05 -0.000694662 0.00593981 -0.000487537 0.00144558 -0.00268993 0.000336345 0.0758784 -0.142778 0.0153595
+
+f v148 v164 v149
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -1.14303e-05 0.000150498 -1.2445e-05 -0.000694662 0.00593981 -0.000487537 0.00144558 -0.00268993 0.000336345 0.0564518 -0.16213 0.016023
+
+v v165 =
+	p 46.3333333 -24.3333333 -0.467330668
+f v149 v164 v165
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 6.36254e-05 3.85135e-05 1.96465e-06 0.00113169 0.00321487 -0.000136903 0.000181927 -0.00314211 4.08026e-05 0.0256555 -0.190819 0.0104569
+
+v v166 =
+	p 46.3333333 -11 -1.81336231
+f v165 v166 v149
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 6.36254e-05 3.85135e-05 1.96465e-06 0.00113169 0.00321487 -0.000136903 0.000181927 -0.00314211 4.08026e-05 -0.0160135 -0.149412 0.00680486
+
+f v149 v166 v150
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 7.27569e-05 -0.000125315 6.34215e-06 0.00123214 0.00141275 -8.87507e-05 -0.000622534 0.00186017 -0.000198292 -0.0248835 -0.0488502 0.00252389
+
+f v150 v166 v151
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 7.27569e-05 -0.000125315 6.34215e-06 0.00123214 0.00141275 -8.87507e-05 -0.000622534 0.00186017 -0.000198292 -0.0577336 -0.0816989 0.00446523
+
+v v167 =
+	p 46.3333333 2.33333333 -2.43207057
+f v151 v166 v167
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -1.69599e-05 -0.000172857 7.83223e-07 0.00144148 0.00152369 -7.57798e-05 0.000398218 0.00468908 -2.16089e-05 -0.0601638 -0.037373 0.0029921
+
+v v168 =
+	p 46.3333333 15.6666667 -2.37038456
+f v167 v168 v151
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -1.69599e-05 -0.000172857 7.83223e-07 0.00144148 0.00152369 -7.57798e-05 0.000398218 0.00468908 -2.16089e-05 -0.0571624 -0.0403803 0.00285015
+
+f v151 v168 v152
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000110196 -7.44391e-05 -3.24856e-06 0.00290218 -1.82e-05 -1.26152e-05 0.00212285 0.00035662 9.26908e-05 -0.0841777 0.0394946 0.00115075
+
+f v152 v168 v153
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000110196 -7.44391e-05 -3.24856e-06 0.00290218 -1.82e-05 -1.26152e-05 0.00212285 0.00035662 9.26908e-05 -0.0555775 0.0680955 0.00113921
+
+v v169 =
+	p 46.3333333 29 -1.80696212
+f v153 v168 v169
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000140633 6.30109e-05 -3.64597e-06 0.00378484 -0.00400425 -1.09044e-06 0.00331002 -0.00476618 -2.18139e-05 -0.089965 0.261404 0.00735646
+
+v v170 =
+	p 46.3333333 42.3333333 -0.642948995
+f v169 v170 v153
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000140633 6.30109e-05 -3.64597e-06 0.00378484 -0.00400425 -1.09044e-06 0.00331002 -0.00476618 -2.18139e-05 -0.0604001 0.231993 0.0052492
+
+f v153 v170 v154
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000102063 0.000115831 5.18849e-06 0.00215206 -0.00624029 -0.000375082 0.00361598 -0.00273276 -9.97083e-05 -0.0733834 0.173635 0.0105316
+
+f v154 v170 v155
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000102063 0.000115831 5.18849e-06 0.00215206 -0.00624029 -0.000375082 0.00361598 -0.00273276 -9.97083e-05 -0.0669573 0.180013 0.0112192
+
+v v171 =
+	p 46.3333333 55.6666667 0.584555238
+f v155 v170 v171
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -2.0943e-05 -6.2316e-05 2.45234e-06 -0.00236362 0.00367654 -0.00022277 0.00193172 0.00613952 3.52574e-05 0.0268896 -0.38901 -0.000365378
+
+v v172 =
+	p 46.3333333 69 0.804904101
+f v171 v172 v155
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -2.0943e-05 -6.2316e-05 2.45234e-06 -0.00236362 0.00367654 -0.00022277 0.00193172 0.00613952 3.52574e-05 0.0150074 -0.377131 -0.000290218
+
+f v155 v172 v156
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 2.36399e-05 -0.000185479 -3.5627e-06 -0.00543983 0.0121748 0.000192268 -0.00231657 0.00806212 0.000100581 0.308141 -0.561652 -0.00492561
+
+f v156 v172 v157
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 2.36399e-05 -0.000185479 -3.5627e-06 -0.00543983 0.0121748 0.000192268 -0.00231657 0.00806212 0.000100581 0.336638 -0.533141 -0.00449142
+
+v v173 =
+	p 46.3333333 82.3333333 0.872269737
+f v157 v172 v173
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 6.96064e-05 -1.22571e-05 -1.57285e-05 -0.00922442 -0.00208714 0.00119392 -0.00582387 -0.00258409 0.000417997 0.625388 0.369059 -0.0301667
+
+v v174 =
+	p 46.3333333 95.6666667 1.28224115
+f v173 v174 v157
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 6.96064e-05 -1.22571e-05 -1.57285e-05 -0.00922442 -0.00208714 0.00119392 -0.00582387 -0.00258409 0.000417997 0.679131 0.315084 -0.0268355
+
+f v157 v174 v158
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 6.50013e-05 0.000301824 1.18241e-05 -0.00878385 -0.0321342 -0.00144195 -0.00456191 -0.0106042 -0.000576174 0.558284 1.16157 0.0695645
+
+f v158 v174 v159
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 6.50013e-05 0.000301824 1.18241e-05 -0.00878385 -0.0321342 -0.00144195 -0.00456191 -0.0106042 -0.000576174 0.590789 1.19429 0.075512
+
+v v175 =
+	p 46.3333333 109 2.47884461
+f v159 v174 v175
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 1.0817e-05 -0.000195395 2.40723e-06 0.00608003 -0.0161733 -4.74579e-05 -0.000777383 0.0146132 -0.000187222 -0.332237 1.23523 -0.00405868
+
+v v176 =
+	p 59.6666667 -91 2.18002336
+v v177 =
+	p 59.6666667 -77.6666667 2.21185759
+f v176 v177 v160
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 1.0817e-05 -0.000195395 2.40723e-06 0.00608003 -0.0161733 -4.74579e-05 -0.000777383 0.0146132 -0.000187222 -0.327909 1.2309 -0.00425519
+
+f v160 v177 v161
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -8.58521e-05 -5.36282e-05 1.91872e-05 -0.00142793 -0.00516274 0.00125579 0.00254679 0.00514546 -0.00106168 -0.0695131 0.396599 -0.0670725
+
+f v161 v177 v162
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -8.58521e-05 -5.36282e-05 1.91872e-05 -0.00142793 -0.00516274 0.00125579 0.00254679 0.00514546 -0.00106168 -0.0476404 0.418316 -0.069737
+
+v v178 =
+	p 59.6666667 -64.3333333 1.15229415
+f v162 v177 v178
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -9.86098e-05 -1.48185e-05 1.04618e-06 -0.00224868 -0.00266598 8.87148e-05 0.00316183 -0.00362258 0.000189372 -0.0081126 -0.116082 0.00883312
+
+v v179 =
+	p 59.6666667 -51 0.491045228
+f v178 v179 v162
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -9.86098e-05 -1.48185e-05 1.04618e-06 -0.00224868 -0.00266598 8.87148e-05 0.00316183 -0.00362258 0.000189372 0.0156703 -0.139778 0.0100748
+
+f v162 v179 v163
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -4.50129e-05 8.06612e-05 3.20338e-06 0.000484765 0.00220348 0.000198732 0.000612294 -0.00337872 -0.000203333 -0.114349 -0.0401146 -0.012539
+
+f v163 v179 v164
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -4.50129e-05 8.06612e-05 3.20338e-06 0.000484765 0.00220348 0.000198732 0.000612294 -0.00337872 -0.000203333 -0.0872322 -0.0130115 -0.0113462
+
+v v180 =
+	p 59.6666667 -37.6666667 1.03991854
+f v164 v179 v180
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000101585 0.000192122 -1.79412e-05 -0.0016461 0.00640184 -0.000597713 0.00562273 -0.00461853 0.000591003 0.101404 -0.188296 0.0215602
+
+v v181 =
+	p 59.6666667 -24.3333333 -0.131403646
+f v180 v181 v164
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000101585 0.000192122 -1.79412e-05 -0.0016461 0.00640184 -0.000597713 0.00562273 -0.00461853 0.000591003 0.0966228 -0.183546 0.0210223
+
+f v164 v181 v165
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -9.68782e-05 9.90676e-05 -9.04684e-06 -0.00153158 0.00413751 -0.000381284 0.00761859 -0.00594778 0.000551001 0.145148 -0.233579 0.0216749
+
+f v165 v181 v166
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -9.68782e-05 9.90676e-05 -9.04684e-06 -0.00153158 0.00413751 -0.000381284 0.00761859 -0.00594778 0.000551001 0.10351 -0.274608 0.0264973
+
+v v182 =
+	p 59.6666667 -11 -2.03668127
+f v166 v181 v182
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -5.70229e-05 -0.00013568 2.23998e-05 -0.00109317 0.00155529 -3.53712e-05 0.0053906 0.00234044 -0.000942295 0.0788969 -0.128488 0.00376617
+
+v v183 =
+	p 59.6666667 2.33333333 -3.19438971
+f v182 v183 v166
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -5.70229e-05 -0.00013568 2.23998e-05 -0.00109317 0.00155529 -3.53712e-05 0.0053906 0.00234044 -0.000942295 0.0385612 -0.0882757 0.00257921
+
+f v166 v183 v167
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -4.04558e-05 -0.000256763 -2.93629e-06 -0.00113183 0.00183781 2.37464e-05 0.00148686 0.0085767 0.000150729 0.0476093 -0.0519303 -0.00103018
+
+f v167 v183 v168
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -4.04558e-05 -0.000256763 -2.93629e-06 -0.00113183 0.00183781 2.37464e-05 0.00148686 0.0085767 0.000150729 0.0549398 -0.0445793 -0.00136125
+
+v v184 =
+	p 59.6666667 15.6666667 -3.03458269
+f v168 v183 v184
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 7.81093e-06 -0.000133776 -2.61549e-05 -0.00188801 -8.89858e-05 0.000387504 -0.0033448 0.00310588 0.00115402 0.130847 0.121912 -0.0128456
+
+v v185 =
+	p 59.6666667 29 -1.7910021
+f v184 v185 v168
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 7.81093e-06 -0.000133776 -2.61549e-05 -0.00188801 -8.89858e-05 0.000387504 -0.0033448 0.00310588 0.00115402 0.181581 0.0713793 -0.0174971
+
+f v168 v185 v169
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 5.33269e-05 7.89406e-05 8.18125e-07 -0.00320797 -0.00625776 -0.000394713 -0.00567677 -0.00550426 -0.00022865 0.249205 0.365825 0.0254977
+
+f v169 v185 v170
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 5.33269e-05 7.89406e-05 8.18125e-07 -0.00320797 -0.00625776 -0.000394713 -0.00567677 -0.00550426 -0.00022865 0.304748 0.420683 0.0334439
+
+v v186 =
+	p 59.6666667 42.3333333 0.122503304
+f v170 v185 v186
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 2.47404e-05 0.000193176 2.29789e-05 -0.00199781 -0.0110937 -0.00133285 -0.00225924 -0.00631642 -0.000923998 0.160276 0.427514 0.0593286
+
+v v187 =
+	p 59.6666667 55.6666667 1.65878175
+f v186 v187 v170
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 2.47404e-05 0.000193176 2.29789e-05 -0.00199781 -0.0110937 -0.00133285 -0.00225924 -0.00631642 -0.000923998 0.183308 0.404617 0.0585447
+
+f v170 v187 v171
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -5.49915e-05 5.31171e-05 -5.60327e-07 0.0024406 -0.00329711 -2.25018e-05 0.0035093 0.00079112 0.000174844 -0.137483 -0.0659468 -0.00665957
+
+f v171 v187 v172
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -5.49915e-05 5.31171e-05 -5.60327e-07 0.0024406 -0.00329711 -2.25018e-05 0.0035093 0.00079112 0.000174844 -0.151334 -0.0798715 -0.00781144
+
+v v188 =
+	p 59.6666667 69 1.69280133
+f v172 v187 v188
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 8.50374e-05 -8.42709e-05 2.35914e-06 -0.00722139 0.00618266 -0.000223945 -0.00516132 0.00337281 -0.000173798 0.446937 -0.251359 0.0162838
+
+v v189 =
+	p 59.6666667 82.3333333 1.81568609
+f v188 v189 v172
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 8.50374e-05 -8.42709e-05 2.35914e-06 -0.00722139 0.00618266 -0.000223945 -0.00516132 0.00337281 -0.000173798 0.451074 -0.255515 0.0165382
+
+f v172 v189 v173
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000203476 -1.18053e-05 1.1344e-05 -0.0169728 0.000216333 -0.0009637 -0.0120265 -0.00260502 -0.000836364 1.01627 0.262278 0.0715457
+
+f v173 v189 v174
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000203476 -1.18053e-05 1.1344e-05 -0.0169728 0.000216333 -0.0009637 -0.0120265 -0.00260502 -0.000836364 1.0321 0.278185 0.0734095
+
+v v190 =
+	p 59.6666667 95.6666667 2.43955195
+f v174 v189 v190
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000200821 0.000146367 2.08818e-05 -0.0167188 -0.0149155 -0.00187615 -0.0108549 -0.00340133 -0.000995845 0.919708 0.40493 0.0922963
+
+v v191 =
+	p 59.6666667 109 3.74564633
+f v190 v191 v174
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000200821 0.000146367 2.08818e-05 -0.0167188 -0.0149155 -0.00187615 -0.0108549 -0.00340133 -0.000995845 0.927853 0.39679 0.0922727
+
+f v174 v191 v175
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -1.06662e-05 -0.000231961 6.59611e-06 0.00380545 -0.0197463 3.23045e-06 0.000504448 0.016795 -0.000437159 -0.281129 1.4484 0.000537076
+
+v v192 =
+	p 73 -91 0.405525803
+f v176 v192 v177
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -1.06662e-05 -0.000231961 6.59611e-06 0.00380545 -0.0197463 3.23045e-06 0.000504448 0.016795 -0.000437159 -0.282016 1.4475 0.000653737
+
+v v193 =
+	p 73 -77.6666667 0.425223507
+f v177 v192 v193
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000203145 -0.000139795 3.94437e-05 -0.0111437 -0.012588 0.00255439 0.00954524 0.0102867 -0.00227031 0.42022 0.908459 -0.141211
+
+v v194 =
+	p 73 -64.3333333 -0.00681832459
+f v193 v194 v177
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000203145 -0.000139795 3.94437e-05 -0.0111437 -0.012588 0.00255439 0.00954524 0.0102867 -0.00227031 0.466626 0.861637 -0.143716
+
+f v177 v194 v178
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000214109 5.23446e-05 -3.75872e-06 -0.0118491 -0.000227061 -0.000224963 0.0100533 -0.00762998 0.000476064 0.499147 -0.26143 0.031074
+
+f v178 v194 v179
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000214109 5.23446e-05 -3.75872e-06 -0.0118491 -0.000227061 -0.000224963 0.0100533 -0.00762998 0.000476064 0.547878 -0.212539 0.0268164
+
+v v195 =
+	p 73 -51 -0.0129102783
+f v179 v194 v195
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -1.04789e-05 9.10954e-05 2.63631e-06 -0.00146395 0.00174923 0.000101184 -0.00144823 -0.00400129 -0.000169498 -0.0386096 0.0420803 -0.00371877
+
+v v196 =
+	p 73 -37.6666667 0.911294345
+f v195 v196 v179
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -1.04789e-05 9.10954e-05 2.63631e-06 -0.00146395 0.00174923 0.000101184 -0.00144823 -0.00400129 -0.000169498 -0.0105684 0.0141087 -0.00592824
+
+f v179 v196 v180
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -4.84871e-05 0.000100063 -7.50006e-07 -0.00289559 0.00208699 -2.63674e-05 0.00245458 0.000874344 -0.000434736 0.136466 0.0691209 -0.012929
+
+f v180 v196 v181
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -4.84871e-05 0.000100063 -7.50006e-07 -0.00289559 0.00208699 -2.63674e-05 0.00245458 0.000874344 -0.000434736 0.15313 0.0856797 -0.0142665
+
+v v197 =
+	p 73 -24.3333333 -0.0371096688
+f v181 v196 v197
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000136993 8.05877e-05 -9.97324e-06 -0.00504923 0.00161311 -0.000250799 0.0100121 -0.00484515 0.000606277 0.336969 -0.131172 0.0196512
+
+v v198 =
+	p 73 -11 -2.04110637
+f v197 v198 v181
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000136993 8.05877e-05 -9.97324e-06 -0.00504923 0.00161311 -0.000250799 0.0100121 -0.00484515 0.000606277 0.329647 -0.124004 0.0185757
+
+f v181 v198 v182
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000139623 -6.79904e-05 1.06518e-05 -0.00507817 -2.12535e-05 -2.39242e-05 0.0103191 -0.00169839 -0.000241331 0.333021 -0.0344336 0.00294456
+
+f v182 v198 v183
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000139623 -6.79904e-05 1.06518e-05 -0.00507817 -2.12535e-05 -2.39242e-05 0.0103191 -0.00169839 -0.000241331 0.32051 -0.0468376 0.00418227
+
+v v199 =
+	p 73 2.33333333 -3.36646978
+f v183 v198 v199
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -9.10213e-06 -0.00010745 -1.3648e-05 -0.00538271 7.0818e-05 3.27752e-05 -0.000383906 -0.000332321 0.000789859 0.345426 0.0782305 -0.00269597
+
+v v200 =
+	p 73 15.6666667 -2.97494857
+f v199 v200 v183
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -9.10213e-06 -0.00010745 -1.3648e-05 -0.00538271 7.0818e-05 3.27752e-05 -0.000383906 -0.000332321 0.000789859 0.362798 0.0608661 -0.00312817
+
+f v183 v200 v184
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000396547 1.91993e-05 2.78658e-07 -0.0117379 -0.00191335 -0.000185409 -0.0265394 -0.00602162 -0.000423184 0.772548 0.230879 0.0201256
+
+f v184 v200 v185
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000396547 1.91993e-05 2.78658e-07 -0.0117379 -0.00191335 -0.000185409 -0.0265394 -0.00602162 -0.000423184 0.798391 0.256441 0.0232939
+
+v v201 =
+	p 73 29 -1.38399396
+f v185 v200 v201
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000564826 7.91643e-05 1.05504e-05 -0.016618 -0.00365233 -0.00048329 -0.0361962 -0.00551761 -0.000809344 1.0783 0.276059 0.0391746
+
+v v202 =
+	p 73 42.3333333 0.676596523
+f v201 v202 v185
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000564826 7.91643e-05 1.05504e-05 -0.016618 -0.00365233 -0.00048329 -0.0361962 -0.00551761 -0.000809344 1.08924 0.265335 0.037971
+
+f v185 v202 v186
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000351085 1.01295e-05 -1.63896e-05 -0.00756962 -0.00072986 0.000657169 -0.0217312 0.00460535 0.00142499 0.477037 -0.190775 -0.0601757
+
+f v186 v202 v187
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000351085 1.01295e-05 -1.63896e-05 -0.00756962 -0.00072986 0.000657169 -0.0217312 0.00460535 0.00142499 0.474279 -0.193502 -0.0605968
+
+v v203 =
+	p 73 55.6666667 2.1756061
+f v187 v202 v203
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000133889 -3.97677e-06 1.01994e-05 0.0194273 5.53889e-05 -0.000822947 0.00821687 0.00419772 -0.00046715 -1.19259 -0.272251 0.0385377
+
+v v204 =
+	p 73 69 2.31170113
+f v203 v204 v187
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000133889 -3.97677e-06 1.01994e-05 0.0194273 5.53889e-05 -0.000822947 0.00821687 0.00419772 -0.00046715 -1.18495 -0.279901 0.0388141
+
+f v187 v204 v188
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.00020751 7.42326e-05 1.47749e-05 0.0245071 -0.00534106 -0.00113866 0.012294 -0.00608456 -0.000914605 -1.46627 0.436234 0.0697276
+
+f v188 v204 v189
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.00020751 7.42326e-05 1.47749e-05 0.0245071 -0.00534106 -0.00113866 0.012294 -0.00608456 -0.000914605 -1.46805 0.434458 0.0696321
+
+v v205 =
+	p 73 82.3333333 2.41088005
+f v189 v204 v205
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000127876 0.000102585 1.11761e-05 0.0179506 -0.00767538 -0.000842355 0.00774418 -0.00943029 -0.000826343 -1.09346 0.73039 0.0627264
+
+v v206 =
+	p 73 95.6666667 2.78335043
+f v205 v206 v189
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000127876 0.000102585 1.11761e-05 0.0179506 -0.00767538 -0.000842355 0.00774418 -0.00943029 -0.000826343 -1.11229 0.749217 0.0627668
+
+f v189 v206 v190
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 4.67189e-05 -4.96825e-06 -1.96004e-05 0.00124769 0.00261385 0.00210192 -0.00166013 0.00562832 0.00141959 -0.212705 -0.640656 -0.148427
+
+f v190 v206 v191
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 4.67189e-05 -4.96825e-06 -1.96004e-05 0.00124769 0.00261385 0.00210192 -0.00166013 0.00562832 0.00141959 -0.251228 -0.678943 -0.151683
+
+v v207 =
+	p 73 109 3.57374402
+f v191 v206 v207
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -1.03686e-05 -0.000340533 -9.13377e-07 -0.00169409 -0.0303542 1.59466e-05 0.000482723 0.0247208 0.000111033 0.0772808 2.23023 0.00634285
+
+v v208 =
+	p 86.3333333 -91 -1.96422253
+v v209 =
+	p 86.3333333 -77.6666667 -1.83129488
+f v208 v209 v192
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -1.03686e-05 -0.000340533 -9.13377e-07 -0.00169409 -0.0303542 1.59466e-05 0.000482723 0.0247208 0.000111033 0.0853953 2.22187 0.00488732
+
+f v192 v209 v193
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000117151 -0.000258415 -1.29388e-05 -0.00998754 -0.0239764 -0.000918028 0.00326771 0.018946 0.00155361 0.301781 1.73998 0.117429
+
+f v193 v209 v194
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000117151 -0.000258415 -1.29388e-05 -0.00998754 -0.0239764 -0.000918028 0.00326771 0.018946 0.00155361 0.396449 1.836 0.107571
+
+v v210 =
+	p 86.3333333 -64.3333333 -0.972836112
+f v194 v209 v210
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.00014819 0.00018647 -2.61971e-05 -0.0119844 0.00464454 -0.00177098 0.00524119 -0.0174211 0.00211407 0.523615 -0.468821 0.146465
+
+v v211 =
+	p 86.3333333 -51 0.35565129
+f v210 v211 v194
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.00014819 0.00018647 -2.61971e-05 -0.0119844 0.00464454 -0.00177098 0.00524119 -0.0174211 0.00211407 0.623154 -0.568166 0.139344
+
+f v194 v211 v195
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -8.81245e-06 0.000242669 1.27084e-05 -0.00487611 0.0075107 0.000213203 -0.00156989 -0.0150662 -0.000904762 0.275723 -0.378484 -0.0122255
+
+f v195 v211 v196
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -8.81245e-06 0.000242669 1.27084e-05 -0.00487611 0.0075107 0.000213203 -0.00156989 -0.0150662 -0.000904762 0.306299 -0.34807 -0.00833206
+
+v v212 =
+	p 86.3333333 -37.6666667 1.69171501
+f v196 v211 v212
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 9.40825e-06 6.48116e-05 3.13825e-06 -0.0041898 0.000811398 -0.000147273 -0.00177178 0.00344766 -0.000718579 0.298885 0.19155 -0.00458477
+
+v v213 =
+	p 86.3333333 -24.3333333 0.913097612
+f v212 v213 v196
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 9.40825e-06 6.48116e-05 3.13825e-06 -0.0041898 0.000811398 -0.000147273 -0.00177178 0.00344766 -0.000718579 0.31146 0.178975 -0.00295445
+
+f v196 v213 v197
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -7.31426e-05 1.03073e-05 -8.07852e-06 -0.00619854 -0.000514873 -0.000420215 0.00535103 0.000285323 0.000467962 0.484174 0.0245346 0.0344409
+
+f v197 v213 v198
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -7.31426e-05 1.03073e-05 -8.07852e-06 -0.00619854 -0.000514873 -0.000420215 0.00535103 0.000285323 0.000467962 0.491335 0.0315852 0.0339429
+
+v v214 =
+	p 86.3333333 -11 -0.994636519
+f v198 v213 v214
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000101729 -8.75266e-06 -1.52125e-05 -0.00651299 -0.000724533 -0.000498688 0.00755281 -0.00602275 0.00164676 0.51602 0.0132872 0.0409764
+
+v v215 =
+	p 86.3333333 2.33333333 -2.20487257
+f v214 v215 v198
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000101729 -8.75266e-06 -1.52125e-05 -0.00651299 -0.000724533 -0.000498688 0.00755281 -0.00602275 0.00164676 0.524463 0.00486329 0.0424764
+
+f v198 v215 v199
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 3.88318e-05 0.000279476 8.68122e-06 -0.00684097 -0.00139707 -0.00055444 -0.00388308 -0.0285779 -0.000840172 0.551532 0.185278 0.0438562
+
+f v199 v215 v200
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 3.88318e-05 0.000279476 8.68122e-06 -0.00684097 -0.00139707 -0.00055444 -0.00388308 -0.0285779 -0.000840172 0.562249 0.196074 0.045224
+
+v v216 =
+	p 86.3333333 15.6666667 -1.66806366
+f v200 v215 v216
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000522225 0.000435699 8.31934e-05 -0.0144141 -0.00384456 -0.0017218 -0.0357139 -0.0364261 -0.00647596 1.06097 0.307828 0.133134
+
+v v217 =
+	p 86.3333333 29 -1.28158904
+f v216 v217 v200
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000522225 0.000435699 8.31934e-05 -0.0144141 -0.00384456 -0.0017218 -0.0357139 -0.0364261 -0.00647596 0.971087 0.39747 0.135023
+
+f v200 v217 v201
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000644484 3.21754e-05 -8.04724e-05 -0.0179596 0.00785763 0.00302451 -0.0420113 -0.00208741 0.00583532 1.15367 -0.564103 -0.217316
+
+f v201 v217 v202
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000644484 3.21754e-05 -8.04724e-05 -0.0179596 0.00785763 0.00302451 -0.0420113 -0.00208741 0.00583532 1.00844 -0.709017 -0.219527
+
+v v218 =
+	p 86.3333333 42.3333333 -1.17641101
+f v202 v217 v218
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000292721 -0.000499722 -0.000154023 -0.00306833 0.0303746 0.00613814 -0.0174706 0.0418245 0.0114722 -0.0304502 -2.56502 -0.458128
+
+v v219 =
+	p 86.3333333 55.6666667 -1.03175544
+f v218 v219 v202
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000292721 -0.000499722 -0.000154023 -0.00306833 0.0303746 0.00613814 -0.0174706 0.0418245 0.0114722 -0.125301 -2.46711 -0.434213
+
+f v202 v219 v203
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000136144 -0.000499153 3.61082e-05 0.0208052 0.030343 -0.00444582 0.00838148 0.0403456 -0.0023585 -1.56577 -2.48352 0.329987
+
+f v203 v219 v204
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000136144 -0.000499153 3.61082e-05 0.0208052 0.030343 -0.00444582 0.00838148 0.0403456 -0.0023585 -1.53329 -2.44945 0.323681
+
+v v220 =
+	p 86.3333333 69 -0.432359749
+f v204 v219 v220
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000280296 -7.84499e-05 7.27033e-05 0.0307517 0.00131443 -0.00697087 0.0176074 0.00506127 -0.00514337 -2.16936 0.0248766 0.518326
+
+v v221 =
+	p 86.3333333 82.3333333 0.711038989
+f v220 v221 v204
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000280296 -7.84499e-05 7.27033e-05 0.0307517 0.00131443 -0.00697087 0.0176074 0.00506127 -0.00514337 -2.09495 -0.0514447 0.502417
+
+f v204 v221 v205
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000261777 0.000237913 5.03273e-05 0.0292269 -0.0247328 -0.00512859 0.017519 -0.0193093 -0.00368438 -2.08763 1.97538 0.382647
+
+f v205 v221 v206
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000261777 0.000237913 5.03273e-05 0.0292269 -0.0247328 -0.00512859 0.017519 -0.0193093 -0.00368438 -2.02698 2.03639 0.380353
+
+v v222 =
+	p 86.3333333 95.6666667 1.90101426
+f v206 v221 v222
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000113115 0.000205203 9.38233e-06 0.0150049 -0.0216036 -0.00121152 0.0100078 -0.00971422 -0.000696146 -1.30858 1.08079 0.0918458
+
+v v223 =
+	p 86.3333333 109 2.58387216
+f v222 v223 v206
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000113115 0.000205203 9.38233e-06 0.0150049 -0.0216036 -0.00121152 0.0100078 -0.00971422 -0.000696146 -1.31655 1.08877 0.0928455
+
+f v206 v223 v207
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 3.6111e-05 -0.00028444 -1.91046e-05 -0.00407077 -0.0255038 -0.00104986 -0.00353002 0.0198781 0.00168154 0.345716 1.81157 0.0891918
+
+v v224 =
+	p 99.6666667 -91 -3.46344242
+f v208 v224 v209
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 3.6111e-05 -0.00028444 -1.91046e-05 -0.00407077 -0.0255038 -0.00104986 -0.00353002 0.0198781 0.00168154 0.348415 1.8143 0.088923
+
+v v225 =
+	p 99.6666667 -77.6666667 -3.29390457
+f v209 v224 v225
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.00017525 -0.000266896 -9.45299e-05 0.00673567 -0.0241413 -0.00690789 -0.0219762 0.0196782 0.00859764 -1.08302 1.93613 0.637238
+
+v v226 =
+	p 99.6666667 -64.3333333 -1.25910281
+f v225 v226 v209
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.00017525 -0.000266896 -9.45299e-05 0.00673567 -0.0241413 -0.00690789 -0.0219762 0.0196782 0.00859764 -0.996629 1.85038 0.622326
+
+f v209 v226 v210
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.00014826 0.000159723 -1.71381e-07 0.00499936 0.00330458 -0.000837495 -0.0203524 -0.015112 -0.000132821 -0.892098 -0.352903 0.0635253
+
+f v210 v226 v211
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.00014826 0.000159723 -1.71381e-07 0.00499936 0.00330458 -0.000837495 -0.0203524 -0.015112 -0.000132821 -0.791641 -0.254593 0.0812511
+
+v v227 =
+	p 99.6666667 -51 1.43498029
+f v211 v226 v227
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 3.77103e-05 0.000236862 4.27529e-05 -0.000638697 0.00723867 0.00135164 -0.00558635 -0.0145648 -0.0034986 -0.0376705 -0.294234 -0.101579
+
+v v228 =
+	p 99.6666667 -37.6666667 3.18734087
+f v227 v228 v211
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 3.77103e-05 0.000236862 4.27529e-05 -0.000638697 0.00723867 0.00135164 -0.00558635 -0.0145648 -0.0034986 -0.00674852 -0.325032 -0.10216
+
+f v211 v228 v212
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -7.5402e-07 3.20334e-05 1.05974e-05 -0.00208752 -0.000476538 0.000140452 -0.000894439 0.00627751 -0.00136255 0.170342 0.303004 -0.0249239
+
+f v212 v228 v213
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -7.5402e-07 3.20334e-05 1.05974e-05 -0.00208752 -0.000476538 0.000140452 -0.000894439 0.00627751 -0.00136255 0.184248 0.31707 -0.0239878
+
+v v229 =
+	p 99.6666667 -24.3333333 2.59720363
+f v213 v228 v229
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -3.84498e-05 -2.59636e-05 -3.54233e-06 -0.00300479 -0.0018878 -0.000203615 0.00235589 0.00341672 7.63382e-05 0.262527 0.169558 0.0174528
+
+v v230 =
+	p 99.6666667 -11 0.948456849
+f v229 v230 v213
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -3.84498e-05 -2.59636e-05 -3.54233e-06 -0.00300479 -0.0018878 -0.000203615 0.00235589 0.00341672 7.63382e-05 0.280932 0.15114 0.0224117
+
+f v213 v230 v214
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -4.50984e-05 4.40834e-05 -2.20565e-05 -0.00307792 -0.00111728 -0.000407271 0.0026637 -0.0105843 0.00223763 0.285164 0.047857 0.0403818
+
+f v214 v230 v215
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -4.50984e-05 4.40834e-05 -2.20565e-05 -0.00307792 -0.00111728 -0.000407271 0.0026637 -0.0105843 0.00223763 0.307962 0.0710706 0.0421359
+
+v v231 =
+	p 99.6666667 2.33333333 0.0506666302
+f v215 v230 v231
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 1.00525e-05 0.000515804 -3.52089e-06 -0.0032066 -0.00221796 -0.000450521 -0.00139847 -0.0489808 0.000213277 0.317651 0.270215 0.0456186
+
+v v232 =
+	p 99.6666667 15.6666667 0.636853973
+f v231 v232 v215
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 1.00525e-05 0.000515804 -3.52089e-06 -0.0032066 -0.00221796 -0.000450521 -0.00139847 -0.0489808 0.000213277 0.32122 0.266549 0.0460746
+
+f v215 v232 v216
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 6.96701e-05 0.000625845 -4.77381e-05 -0.00414061 -0.00394194 0.000242215 0.0033567 -0.052842 0.00482779 0.246787 0.31595 -0.0265923
+
+f v216 v232 v217
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 6.96701e-05 0.000625845 -4.77381e-05 -0.00414061 -0.00394194 0.000242215 0.0033567 -0.052842 0.00482779 0.0871117 0.155382 -0.0327997
+
+v v233 =
+	p 99.6666667 29 -1.13902901
+f v217 v232 v233
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -8.32057e-06 -0.000114849 3.95948e-05 -0.00187888 0.0175382 -0.00229044 0.0143476 0.0106057 -0.00453048 -0.231767 -1.762 0.25201
+
+v v234 =
+	p 99.6666667 42.3333333 -3.99469079
+f v233 v234 v217
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -8.32057e-06 -0.000114849 3.95948e-05 -0.00187888 0.0175382 -0.00229044 0.0143476 0.0106057 -0.00453048 -0.449017 -1.54487 0.251427
+
+f v217 v234 v218
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -9.04264e-05 -0.000788575 0.000115769 0.00159693 0.0460592 -0.00551517 0.0156078 0.0667621 -0.0118199 -0.502363 -3.91926 0.560036
+
+f v218 v234 v219
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -9.04264e-05 -0.000788575 0.000115769 0.00159693 0.0460592 -0.00551517 0.0156078 0.0667621 -0.0118199 -0.611604 -4.03641 0.595616
+
+v v235 =
+	p 99.6666667 55.6666667 -5.50140153
+f v219 v234 v235
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -7.59612e-05 -0.000632295 -5.12808e-05 0.000791702 0.0373597 0.00378397 0.00318569 0.0518402 0.00518609 0.0797657 -2.99656 -0.351435
+
+v v236 =
+	p 99.6666667 69 -4.05011182
+f v235 v236 v219
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -7.59612e-05 -0.000632295 -5.12808e-05 0.000791702 0.0373597 0.00378397 0.00318569 0.0518402 0.00518609 0.13431 -3.05587 -0.372498
+
+f v219 v236 v220
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 8.59171e-05 -3.55771e-05 -5.52702e-05 -0.0103779 -0.00381386 0.00405923 -0.014009 0.00135992 0.005905 1.32139 0.4664 -0.419721
+
+f v220 v236 v221
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 8.59171e-05 -3.55771e-05 -5.52702e-05 -0.0103779 -0.00381386 0.00405923 -0.014009 0.00135992 0.005905 1.42335 0.571056 -0.427283
+
+v v237 =
+	p 99.6666667 82.3333333 -1.4761433
+f v221 v236 v237
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000154776 0.000285347 2.33469e-05 -0.0160473 -0.0302366 -0.00241357 -0.0184435 -0.0234044 -0.00135507 1.78774 2.5852 0.166123
+
+v v238 =
+	p 99.6666667 95.6666667 0.747071038
+f v237 v238 v221
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000154776 0.000285347 2.33469e-05 -0.0160473 -0.0302366 -0.00241357 -0.0184435 -0.0234044 -0.00135507 1.86158 2.51141 0.147481
+
+f v221 v238 v222
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 4.52577e-05 0.000213546 1.73448e-05 -0.00557004 -0.0233676 -0.00183937 -0.00366511 -0.0104344 -0.00138357 0.447557 1.23301 0.147586
+
+f v222 v238 v223
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 4.52577e-05 0.000213546 1.73448e-05 -0.00557004 -0.0233676 -0.00183937 -0.00366511 -0.0104344 -0.00138357 0.449359 1.23482 0.147526
+
+v v239 =
+	p 99.6666667 109 1.45414441
+f v223 v238 v239
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 1.57538e-05 -5.80522e-05 -6.94244e-06 -0.00355444 -0.00555224 -0.000563105 -0.00150108 -0.00268528 0.00046938 0.427397 -0.178998 0.0346272
+
+v v240 =
+	p 113 -91 -3.17789702
+v v241 =
+	p 113 -77.6666667 -3.07324667
+f v240 v241 v224
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 1.57538e-05 -5.80522e-05 -6.94244e-06 -0.00355444 -0.00555224 -0.000563105 -0.00150108 -0.00268528 0.00046938 0.422532 -0.174132 0.0345849
+
+f v224 v241 v225
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000262178 -0.000138536 -4.3259e-05 0.0155845 -0.0118031 -0.00338369 -0.0306401 0.00688494 0.00348765 -1.84079 0.707285 0.280363
+
+f v225 v241 v226
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000262178 -0.000138536 -4.3259e-05 0.0155845 -0.0118031 -0.00338369 -0.0306401 0.00688494 0.00348765 -1.8086 0.738607 0.286717
+
+v v242 =
+	p 113 -64.3333333 -0.600033967
+f v226 v241 v242
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.00026704 4.10341e-05 2.55965e-05 0.0158973 -0.000250807 0.00104601 -0.0321907 -0.00328265 -0.00270101 -1.90901 0.145515 -0.0981477
+
+v v243 =
+	p 113 -51 2.74691267
+f v242 v243 v226
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.00026704 4.10341e-05 2.55965e-05 0.0158973 -0.000250807 0.00104601 -0.0321907 -0.00328265 -0.00270101 -1.8609 0.0994661 -0.105015
+
+f v226 v243 v227
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 6.69201e-05 9.3782e-05 3.71324e-05 0.00569119 0.00243933 0.00163435 -0.00849759 -0.000304517 -0.00293843 -0.651456 0.183903 -0.128249
+
+f v227 v243 v228
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 6.69201e-05 9.3782e-05 3.71324e-05 0.00569119 0.00243933 0.00163435 -0.00849759 -0.000304517 -0.00293843 -0.636057 0.199178 -0.12448
+
+v v244 =
+	p 113 -37.6666667 4.71317672
+f v228 v243 v244
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -5.06643e-05 -1.19596e-05 9.93699e-06 0.00126218 -0.0015436 0.000609983 0.00407995 0.0106622 -0.00129673 -0.161157 0.436201 -0.0726577
+
+v v245 =
+	p 113 -24.3333333 4.29575158
+f v244 v245 v228
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -5.06643e-05 -1.19596e-05 9.93699e-06 0.00126218 -0.0015436 0.000609983 0.00407995 0.0106622 -0.00129673 -0.148549 0.423426 -0.0706507
+
+f v228 v245 v229
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -5.96584e-05 -3.5499e-05 4.74847e-07 0.00104332 -0.00211639 0.000379738 0.00446968 0.00436708 -0.000324041 -0.139884 0.192357 -0.0405568
+
+f v229 v245 v230
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -5.96584e-05 -3.5499e-05 4.74847e-07 0.00104332 -0.00211639 0.000379738 0.00446968 0.00436708 -0.000324041 -0.118796 0.213575 -0.0400396
+
+v v246 =
+	p 113 -11 2.93361509
+f v230 v245 v246
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 1.50036e-05 3.60614e-05 -5.15643e-06 0.0018646 -0.00132923 0.000317794 -0.00332647 -0.00978473 0.000553253 -0.203931 0.117551 -0.0345733
+
+v v247 =
+	p 113 2.33333333 2.38195605
+f v246 v247 v230
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 1.50036e-05 3.60614e-05 -5.15643e-06 0.0018646 -0.00132923 0.000317794 -0.00332647 -0.00978473 0.000553253 -0.179215 0.0922571 -0.0291996
+
+f v230 v247 v231
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 5.72606e-05 0.000397181 -1.29475e-05 0.001766 -0.00217184 0.000335973 -0.00610354 -0.0371581 0.0011528 -0.172519 0.265577 -0.0318358
+
+f v231 v247 v232
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 5.72606e-05 0.000397181 -1.29475e-05 0.001766 -0.00217184 0.000335973 -0.00610354 -0.0371581 0.0011528 -0.165254 0.27306 -0.0301799
+
+v v248 =
+	p 113 15.6666667 3.07067268
+f v232 v247 v248
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000461701 0.000371727 -0.000187519 0.00989639 -0.00177306 0.00307092 0.0563166 -0.027515 0.0187593 -1.14815 -0.16789 -0.278742
+
+v v249 =
+	p 113 29 -0.267169823
+f v248 v249 v232
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000461701 0.000371727 -0.000187519 0.00989639 -0.00177306 0.00307092 0.0563166 -0.027515 0.0187593 -1.25783 -0.0605141 -0.312707
+
+f v232 v249 v233
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000705795 -0.000130011 0.000117123 0.0169751 0.0127773 -0.0057637 0.0838625 0.0121168 -0.0122575 -2.05753 -1.28709 0.600117
+
+f v233 v249 v234
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000705795 -0.000130011 0.000117123 0.0169751 0.0127773 -0.0057637 0.0838625 0.0121168 -0.0122575 -2.19732 -1.4163 0.637951
+
+v v250 =
+	p 113 42.3333333 -5.0747118
+f v234 v249 v250
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000382887 -0.000541329 0.000211925 0.00330538 0.0301898 -0.00977698 0.0447564 0.04212 -0.0214034 -0.545437 -2.51627 0.980564
+
+v v251 =
+	p 113 55.6666667 -7.35513433
+f v250 v251 v234
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 -0.000382887 -0.000541329 0.000211925 0.00330538 0.0301898 -0.00977698 0.0447564 0.04212 -0.0214034 -0.602699 -2.45945 0.978798
+
+f v234 v251 v235
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.00027705 -0.000283994 -0.000116325 -0.0334311 0.0158648 0.00849562 -0.0319978 0.0171262 0.0116688 3.66989 -0.849712 -0.862661
+
+f v235 v251 v236
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.00027705 -0.000283994 -0.000116325 -0.0334311 0.0158648 0.00849562 -0.0319978 0.0171262 0.0116688 3.7258 -0.79416 -0.861233
+
+v v252 =
+	p 113 69 -5.14849344
+f v236 v251 v252
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000471001 0.000143924 -3.29542e-05 -0.0468138 -0.0136615 0.00274303 -0.0523891 -0.0165304 0.00368084 5.13388 1.59432 -0.296883
+
+v v253 =
+	p 113 82.3333333 -2.00238131
+f v252 v253 v236
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000471001 0.000143924 -3.29542e-05 -0.0468138 -0.0136615 0.00274303 -0.0523891 -0.0165304 0.00368084 5.17508 1.55481 -0.307858
+
+f v236 v253 v237
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000389841 0.000183682 1.14799e-05 -0.0401316 -0.0169349 -0.000915372 -0.0418716 -0.0132718 -0.000172333 4.30896 1.26146 0.00488543
+
+f v237 v253 v238
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 0.000389841 0.000183682 1.14799e-05 -0.0401316 -0.0169349 -0.000915372 -0.0418716 -0.0132718 -0.000172333 4.31516 1.26749 0.0056846
+
+v v254 =
+	p 113 95.6666667 0.30427341
+f v238 v253 v254
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 9.46682e-05 -1.16607e-05 -7.99567e-06 -0.0118934 0.00175287 0.000947793 -0.00858969 0.0120111 0.00114203 1.13072 -1.2925 -0.134245
+
+v v255 =
+	p 113 109 0.692907476
+f v254 v255 v238
+
+# Unsupported RADIANCE primitive:
+# groundmat texfunc Phong
+# 4 surf_dx surf_dy surf_dz surf.cal
+# 0
+# 13 2 9.46682e-05 -1.16607e-05 -7.99567e-06 -0.0118934 0.00175287 0.000947793 -0.00858969 0.0120111 0.00114203 1.10697 -1.26875 -0.132197
+
+f v238 v255 v239
+# End conversion from: !gensurf groundmat ground '-87+200*s' '-91+200*t'\
+#	'mag(s,t)*noise2(s*4,t*4)*8-1.5' 15 15 -s \
+#	-e 'mag(s,t)=(1-cos(PI/.5*sqrt(sq(.5-s)+sq(.5-t))))/2'\
+#	-e 'sq(a)=a*a' -f noise2.cal
+o
+o tree
+i tree.mgf -rz 126.03 -s 0.394384 -t -19.1078 16.1078 -1.01182
+i tree.mgf -rz 263.657 -s 0.391416 -t -30.8726 0.421569 0.449458
+i tree.mgf -rz 114.609 -s 0.447748 -t -13.2255 -9.38235 -0.99751
+i tree.mgf -rz 144.007 -s 0.323912 -t 9.81372 28.3627 -1.53105
+i tree.mgf -rz 69.0987 -s 0.329867 -t 35.3039 26.402 -1.75356
+i tree.mgf -rz 213.722 -s 0.472111 -t 41.1863 3.85294 -2.18997
+i tree.mgf -rz 347.298 -s 0.431003 -t 34.3235 -13.7941 -1.49538
+i tree.mgf -rz 298.906 -s 0.373451 -t 8.83333 -14.2843 -1.41474
+i tree.mgf -rz 49.3844 -s 0.336481 -t -33.8137 25.9118 -0.353857
+i tree.mgf -rz 300.589 -s 0.375542 -t -51.951 10.2255 1.06368
+i tree.mgf -rz 114.983 -s 0.362891 -t -53.9118 -12.8137 0.32906
+i tree.mgf -rz 50.6218 -s 0.329135 -t -63.2255 26.402 -0.977555
+i tree.mgf -rz 291.515 -s 0.385615 -t -47.5392 39.1471 -1.82994
+i tree.mgf -rz 317.079 -s 0.414317 -t -70.5784 3.36274 -2.26922
+i tree.mgf -rz 258.552 -s 0.422441 -t -79.8922 34.7353 -2.51389
+i tree.mgf -rz 259.435 -s 0.310773 -t -71.5588 54.3431 -2.16856
+i tree.mgf -rz 291.313 -s 0.430576 -t -50.4804 48.4608 -2.98917
+i tree.mgf -rz 281.433 -s 0.339655 -t -35.2843 43.0686 -2.58763
+i tree.mgf -rz 81.7267 -s 0.417662 -t -22.049 30.3235 -1.31016
+i tree.mgf -rz 66.1332 -s 0.452005 -t -19.1078 48.4608 -1.78123
+i tree.mgf -rz 261.917 -s 0.429059 -t -39.6961 66.1078 -3.95963
+i tree.mgf -rz 185.987 -s 0.364907 -t -60.2843 74.9314 -3.73566
+i tree.mgf -rz 286.788 -s 0.344997 -t -74.9902 71.5 -2.88361
+i tree.mgf -rz 22.8207 -s 0.384891 -t -75.9706 95.0294 -3.48231
+i tree.mgf -rz 273.429 -s 0.407525 -t -48.0294 97.4804 -6.76188
+i tree.mgf -rz 121.189 -s 0.432848 -t -6.85294 92.5784 -0.693484
+i tree.mgf -rz 93.2992 -s 0.399371 -t 11.7745 96.0098 0.36603
+i tree.mgf -rz 339.83 -s 0.318595 -t 14.2255 70.5196 1.36578
+i tree.mgf -rz 209.999 -s 0.336426 -t 23.049 79.8333 0.670537
+i tree.mgf -rz 323.256 -s 0.467748 -t 48.049 95.0294 1.40134
+i tree.mgf -rz 125.551 -s 0.493846 -t 41.6765 81.7941 0.689241
+i tree.mgf -rz 312.371 -s 0.49912 -t 45.598 61.6961 0.667962
+i tree.mgf -rz 332.35 -s 0.313393 -t 27.951 57.7745 0.464538
+i tree.mgf -rz 55.496 -s 0.37655 -t 74.0294 91.598 2.53845
+i tree.mgf -rz 234.863 -s 0.390554 -t 71.0882 75.9118 2.27777
+i tree.mgf -rz 233.976 -s 0.374182 -t 64.2255 52.3824 1.46625
+i tree.mgf -rz 320.904 -s 0.300427 -t 90.6961 69.049 -1.61191
+i tree.mgf -rz 287.362 -s 0.453603 -t 101.971 79.3431 -2.14432
+i tree.mgf -rz 76.5567 -s 0.321231 -t 94.6176 100.422 1.42756
+i tree.mgf -rz 117.667 -s 0.389835 -t 98.049 46.0098 -3.86787
+i tree.mgf -rz 134.972 -s 0.392519 -t 82.8529 30.8137 -1.02802
+i tree.mgf -rz 323.474 -s 0.39887 -t 99.0294 17.0882 0.440699
+i tree.mgf -rz 145.381 -s 0.40428 -t 67.1667 21.9902 -2.39848
+i tree.mgf -rz 270.256 -s 0.449702 -t 75.9902 -2.02941 -2.6723
+i tree.mgf -rz 265.285 -s 0.323416 -t 94.1274 -5.46078 -0.361566
+i tree.mgf -rz 308.296 -s 0.347481 -t 98.049 -28.9902 2.599
+i tree.mgf -rz 211.303 -s 0.469844 -t 75.5 -24.5784 0.158488
+i tree.mgf -rz 278.33 -s 0.358892 -t 58.3431 -33.402 0.625548
+i tree.mgf -rz 185.574 -s 0.338089 -t 76.9706 -43.2059 0.637097
+i tree.mgf -rz 22.862 -s 0.37386 -t 97.5588 -50.5588 1.32233
+i tree.mgf -rz 153.257 -s 0.33776 -t 98.049 -70.1667 -1.97188
+i tree.mgf -rz 120.451 -s 0.389058 -t 69.6176 -63.7941 0.260479
+i tree.mgf -rz 283.905 -s 0.438047 -t 44.6176 -53.5 0.574098
+i tree.mgf -rz 162.947 -s 0.394886 -t 33.3431 -75.5588 2.45862
+i tree.mgf -rz 303.905 -s 0.455015 -t 20.1078 -36.3431 -0.380057
+i tree.mgf -rz 341.594 -s 0.445418 -t -3.42157 -27.5196 -0.511897
+i tree.mgf -rz 202.478 -s 0.371782 -t -1.95098 -51.049 0.235687
+i tree.mgf -rz 220.472 -s 0.441904 -t 19.1274 -62.3235 0.790308
+i tree.mgf -rz 47.7246 -s 0.390589 -t 4.42157 -80.951 2.82631
+i tree.mgf -rz 154.27 -s 0.46445 -t -22.049 -64.2843 1.53468
+i tree.mgf -rz 263.588 -s 0.46987 -t -26.4608 -36.8333 0.0745356
+i tree.mgf -rz 205.554 -s 0.349024 -t -38.7157 -18.6961 0.563505
+i tree.mgf -rz 267.782 -s 0.492798 -t -62.2451 -14.2843 -0.725863
+i tree.mgf -rz 171.584 -s 0.429024 -t -77.4412 -30.4608 -3.4891
+i tree.mgf -rz 269.246 -s 0.343208 -t -53.9118 -45.6569 -1.7043
+i tree.mgf -rz 345.839 -s 0.425944 -t -71.5588 -59.3824 -5.18527
+i tree.mgf -rz 151.479 -s 0.36899 -t -66.6569 -74.5784 -5.54072
+i tree.mgf -rz 161.993 -s 0.31871 -t -42.1471 -75.5588 0.989673
+i tree.mgf -rz 128.421 -s 0.374155 -t -44.1078 -60.8529 -0.571813
+i tree.mgf -rz 105.453 -s 0.432136 -t -22.5392 -53.0098 0.314208
+i tree.mgf -rz 168.988 -s 0.465326 -t 85.795 -28.753 1.14
+i tree.mgf -rz 184.907 -s 0.488143 -t 63.475 -39.906 0.911
+i tree.mgf -rz 37.8858 -s 0.32415 -t 62.423 14.692 -3.034
+o
+o sapling
+i sapling.mgf -rz 126.03 -s 0.394384 -t -10.9609 4.20782 -1.36577
+i sapling.mgf -rz 263.657 -s 0.391416 -t -7.23883 23.7488 -1.51133
+i sapling.mgf -rz 114.609 -s 0.447748 -t 0.112283 33.6123 -1.33298
+i sapling.mgf -rz 144.007 -s 0.323912 -t 14.9076 41.1495 -0.877064
+i sapling.mgf -rz 69.0987 -s 0.329867 -t 39.4733 15.5602 -2.0779
+i sapling.mgf -rz 213.722 -s 0.472111 -t 21.7004 -21.0093 -1.14604
+i sapling.mgf -rz 347.298 -s 0.431003 -t 15.9311 -6.21402 -1.5704
+i sapling.mgf -rz 298.906 -s 0.373451 -t -19.987 -23.0565 -0.0889359
+i sapling.mgf -rz 49.3844 -s 0.336481 -t 30.8195 -27.1507 -0.726592
+# End conversion from: landscape
+# Begin conversion from: lights.off
+# 
+#  Cabin lights, switched off.
+#  
+#  Brightness for 100 watt .5 radius globe lights
+m big_globe_light =
+	c
+		cxy 0.3333 0.3333
+	rd 0.4750
+	c
+	rs 0.0500 0.0000
+#  Bedroom Overhead Light
+o
+o bedlight
+v v0 =
+	p 6 5.5 8
+sph v0 0.5
+m brass
+v v1 =
+	p 6 5.5 8.5
+v v2 =
+	p 6 5.5 13.6
+cyl v1 0.02 v2
+#  Livingroom Overhead Lights
+m big_globe_light
+o
+o lvgrmlight1
+v v3 =
+	p 19.6 6 8.5
+sph v3 0.5
+m brass
+v v4 =
+	p 19.6 6 9
+v v5 =
+	p 19.6 6 14.1
+cyl v4 0.02 v5
+m big_globe_light
+o
+o lvgrmlight2
+v v6 =
+	p 19.6 12 8.5
+sph v6 0.5
+m brass
+o
+o lvrmlight2
+v v7 =
+	p 19.6 12 9
+v v8 =
+	p 19.6 12 14.1
+cyl v7 0.02 v8
+#  Livingroom spotlight
+# Begin conversion from: !xform -n lvgrmspot -e -t 0 0 -.5 -ry 30 -t 15.25 4 11 flood.shroud
+#  xform -n lvgrmspot -e -t 0 0 -.5 -ry 30 -t 15.25 4 11
+# 
+#  Shroud to go around floodlight
+# 
+o
+o lvgrmspot.shroud
+v v9 =
+	p 14.975 4 10.5236860279
+v v10 =
+	p 15.125 4 10.7834936491
+cyl v9 0.375 v10
+v cent =
+	p 15.125 4 10.7834936491
+	n 0.5 0 0.866025403784
+ring cent 0.1875 0.375
+v v11 =
+	p 15.375 4 11.2165063509
+cyl v10 0.1875 v11
+v cent =
+	p 15.375 4 11.2165063509
+	n 0.5 0 0.866025403784
+ring cent 0 0.1875
+# End conversion from: !xform -n lvgrmspot -e -t 0 0 -.5 -ry 30 -t 15.25 4 11 flood.shroud
+o
+o lvgrmspot
+v v12 =
+	p 15.25 4 11
+v v13 =
+	p 15.25 4 12.1
+cyl v12 0.02 v13
+#  Bedroom spotlight
+# Begin conversion from: !xform -n bedroomspot -e -t 0 0 -.5 -ry 30 -t 3 4 11 flood.shroud
+#  xform -n bedroomspot -e -t 0 0 -.5 -ry 30 -t 3 4 11
+# 
+#  Shroud to go around floodlight
+# 
+o
+o bedroomspot.shroud
+v v14 =
+	p 2.725 4 10.5236860279
+v v15 =
+	p 2.875 4 10.7834936491
+cyl v14 0.375 v15
+v cent =
+	p 2.875 4 10.7834936491
+	n 0.5 0 0.866025403784
+ring cent 0.1875 0.375
+v v16 =
+	p 3.125 4 11.2165063509
+cyl v15 0.1875 v16
+v cent =
+	p 3.125 4 11.2165063509
+	n 0.5 0 0.866025403784
+ring cent 0 0.1875
+# End conversion from: !xform -n bedroomspot -e -t 0 0 -.5 -ry 30 -t 3 4 11 flood.shroud
+o
+o bedroomspot
+v v17 =
+	p 3 4 11
+v v18 =
+	p 3 4 12.1
+cyl v17 0.02 v18
+#  Brightness for 60 watt .29 radius globe lights
+m small_globe_light =
+	c
+		cxy 0.3333 0.3333
+	rd 0.4750
+	c
+	rs 0.0500 0.0000
+#  Front Porch Light
+o
+o porchlight
+v v19 =
+	p 18.5 18.9 6.5
+sph v19 0.29
+m brass
+v v20 =
+	p 18.5 18.5 6.5
+v v21 =
+	p 18.5 18.7 6.5
+cone v20 0.2 v21 0.12
+#  Bathroom lights
+m small_globe_light
+o
+o bathlight1
+v v22 =
+	p 2.7 17.6 6.75
+sph v22 0.29
+m brass
+v v23 =
+	p 2.7 17.99 6.75
+v v24 =
+	p 2.7 17.7 6.75
+cone v23 0.2 v24 0.12
+m small_globe_light
+o
+o bathlight2
+v v25 =
+	p 5.7 17.6 6.75
+sph v25 0.29
+m brass
+o
+o bathlight1
+v v26 =
+	p 5.7 17.99 6.75
+v v27 =
+	p 5.7 17.7 6.75
+cone v26 0.2 v27 0.12
+# End conversion from: lights.off
+# Begin conversion from: daywindows
+#  Adding illumination sources to cabin windows
+#  to provide sky light for cabin scene interior.
+
+# Unsupported RADIANCE primitive:
+# skyfunc brightfunc winbright
+# 2 winxmit winxmit.cal
+# 0
+# 0
+
+m window_illum =
+	ts 1 0
+#  Polygons for window illumination surfaces.
+# Begin conversion from: !gensurf window_illum southeast_window '5.5+t*(10.5-5.5)' '0' \
+	'3+s*(6-3)' 1 1
+#  gensurf window_illum southeast_window 5.5+t*(10.5-5.5) 0 3+s*(6-3) 1 1
+o
+o southeast_window
+v v28 =
+	p 5.5 0 6
+v v29 =
+	p 10.5 0 6
+v v30 =
+	p 10.5 0 3
+v v31 =
+	p 5.5 0 3
+f v28 v29 v30 v31
+# End conversion from: !gensurf window_illum southeast_window '5.5+t*(10.5-5.5)' '0' \
+	'3+s*(6-3)' 1 1
+# Begin conversion from: !gensurf window_illum southwest_window '17.5+t*(24.5-17.5)' '0' \
+	'3+s*(6-3)' 1 1
+#  gensurf window_illum southwest_window 17.5+t*(24.5-17.5) 0 3+s*(6-3) 1 1
+o
+o southwest_window
+v v32 =
+	p 17.5 0 6
+v v33 =
+	p 24.5 0 6
+v v34 =
+	p 24.5 0 3
+v v35 =
+	p 17.5 0 3
+f v32 v33 v34 v35
+# End conversion from: !gensurf window_illum southwest_window '17.5+t*(24.5-17.5)' '0' \
+	'3+s*(6-3)' 1 1
+# Begin conversion from: !gensurf window_illum northeast_window '27' '11.5+t*(16.5-11.5)' \
+	'3+s*(6-3)' 1 1
+#  gensurf window_illum northeast_window 27 11.5+t*(16.5-11.5) 3+s*(6-3) 1 1
+o
+o northeast_window
+v v36 =
+	p 27 11.5 6
+v v37 =
+	p 27 16.5 6
+v v38 =
+	p 27 16.5 3
+v v39 =
+	p 27 11.5 3
+f v36 v37 v38 v39
+# End conversion from: !gensurf window_illum northeast_window '27' '11.5+t*(16.5-11.5)' \
+	'3+s*(6-3)' 1 1
+# Begin conversion from: !gensurf window_illum north_window '13.5+s*(16.5-13.5)' '18' \
+	'3+t*(6-3)' 1 1
+#  gensurf window_illum north_window 13.5+s*(16.5-13.5) 18 3+t*(6-3) 1 1
+o
+o north_window
+v v40 =
+	p 16.5 18 3
+v v41 =
+	p 16.5 18 6
+v v42 =
+	p 13.5 18 6
+v v43 =
+	p 13.5 18 3
+f v40 v41 v42 v43
+# End conversion from: !gensurf window_illum north_window '13.5+s*(16.5-13.5)' '18' \
+	'3+t*(6-3)' 1 1
+# Begin conversion from: !gensurf window_illum bath_window '0' '14.5+s*(16.5-14.5)' \
+	'3.5+t*(6-3.5)' 1 1
+#  gensurf window_illum bath_window 0 14.5+s*(16.5-14.5) 3.5+t*(6-3.5) 1 1
+o
+o bath_window
+v v44 =
+	p 0 16.5 3.5
+v v45 =
+	p 0 16.5 6
+v v46 =
+	p 0 14.5 6
+v v47 =
+	p 0 14.5 3.5
+f v44 v45 v46 v47
+# End conversion from: !gensurf window_illum bath_window '0' '14.5+s*(16.5-14.5)' \
+	'3.5+t*(6-3.5)' 1 1
+# Begin conversion from: !gensurf window_illum westbed_window '0' '6.5+s*(9.5-6.5)' \
+	'3.5+t*(6-3)' 1 1
+#  gensurf window_illum westbed_window 0 6.5+s*(9.5-6.5) 3.5+t*(6-3) 1 1
+o
+o westbed_window
+v v48 =
+	p 0 9.5 3.5
+v v49 =
+	p 0 9.5 6.5
+v v50 =
+	p 0 6.5 6.5
+v v51 =
+	p 0 6.5 3.5
+f v48 v49 v50 v51
+# End conversion from: !gensurf window_illum westbed_window '0' '6.5+s*(9.5-6.5)' \
+	'3.5+t*(6-3)' 1 1
+# End conversion from: daywindows
+o
+# End of data converted from RADIANCE scene input

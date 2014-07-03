@@ -1,0 +1,584 @@
+# The following was converted from RADIANCE scene input
+o Untitled
+# Begin conversion from: breather.rad
+#       xmin      xmax      ymin      ymax      zmin      zmax
+#     -0.25      0.25     -0.08      0.12         0    0.6775
+#  xform -t .25 .08 0
+#  Radiance geometry file created by Vision-3D
+#  Model information
+#  Number of objects = 116
+#  x bounds of model = -0.25 -> 0.25
+#  y bounds of model = -0.08 -> 0.12
+#  z bounds of model = 0 -> 0.6775
+#  Centroid (0,0.02,0.33875)
+#  Focal point
+#  0.22063 0.0447559 -0.0827671
+#  Camera position
+#  -vp 0.543879 -7.85214 6.16831
+#  View vector
+#  -vd -0.323248 7.8969 -6.25108
+#  Lighting info
+# void light light1 0 0 3 100 100 100
+# void light light2 0 0 3 100 100 100
+# light1 sphere source1 0 0 4 0.22063 0.0447559 1.27223 0.1
+# light2 sphere source2 0 0 4 0.97063 0.364756 1.27223 0.1
+# void plastic green_paint 
+# 0
+# 0
+# 5                  0                  1                  0               0.05                0.1
+m green_paint
+o
+o obj0
+v v0 =
+	p 0 0.08 0
+v v1 =
+	p 0 0.08 0.6
+v v2 =
+	p 0.02 0.13 0.6
+v v3 =
+	p 0.02 0.13 0
+f v0 v1 v2 v3
+o
+o obj1
+v v4 =
+	p 0.05 0.145 0.6
+v v5 =
+	p 0.05 0.145 0
+f v3 v2 v4 v5
+o
+o obj2
+v v6 =
+	p 0.14 0.155 0.6
+v v7 =
+	p 0.14 0.155 0
+f v5 v4 v6 v7
+o
+o obj3
+v v8 =
+	p 0.25 0.165 0.6
+v v9 =
+	p 0.25 0.165 0
+f v7 v6 v8 v9
+o
+o obj4
+v v10 =
+	p 0.36 0.155 0.6
+v v11 =
+	p 0.36 0.155 0
+f v9 v8 v10 v11
+o
+o obj5
+v v12 =
+	p 0.45 0.145 0.6
+v v13 =
+	p 0.45 0.145 0
+f v11 v10 v12 v13
+o
+o obj6
+v v14 =
+	p 0.48 0.13 0.6
+v v15 =
+	p 0.48 0.13 0
+f v13 v12 v14 v15
+o
+o obj7
+v v16 =
+	p 0.5 0.08 0.6
+v v17 =
+	p 0.5 0.08 0
+f v15 v14 v16 v17
+o
+o obj8
+v v18 =
+	p 0.48 0.03 0.6
+v v19 =
+	p 0.48 0.03 0
+f v17 v16 v18 v19
+o
+o obj9
+v v20 =
+	p 0.45 0.015 0.6
+v v21 =
+	p 0.45 0.015 0
+f v19 v18 v20 v21
+o
+o obj10
+v v22 =
+	p 0.3575 0.01 0.6
+v v23 =
+	p 0.3575 0.01 0
+f v21 v20 v22 v23
+o
+o obj11
+v v24 =
+	p 0.25 0.02 0.6
+v v25 =
+	p 0.25 0.02 0
+f v23 v22 v24 v25
+o
+o obj12
+v v26 =
+	p 0.14 0.01 0.6
+v v27 =
+	p 0.14 0.01 0
+f v25 v24 v26 v27
+o
+o obj13
+v v28 =
+	p 0.05 0.015 0.6
+v v29 =
+	p 0.05 0.015 0
+f v27 v26 v28 v29
+o
+o obj14
+v v30 =
+	p 0.02 0.03 0.6
+v v31 =
+	p 0.02 0.03 0
+f v29 v28 v30 v31
+o
+o obj15
+f v31 v30 v1 v0
+o
+o obj16
+v v32 =
+	p 0.25 0.0875 0.6
+f v32 v2 v4
+o
+o obj17
+f v32 v4 v6
+o
+o obj18
+f v32 v6 v8
+o
+o obj19
+f v32 v8 v10
+o
+o obj20
+f v32 v10 v12
+o
+o obj21
+f v32 v12 v14
+o
+o obj22
+f v32 v14 v16
+o
+o obj23
+f v32 v16 v18
+o
+o obj24
+f v32 v18 v20
+o
+o obj25
+f v32 v20 v2
+o
+o obj26
+v v33 =
+	p 0.225 0.07 0.6
+f v33 v2 v1
+o
+o obj27
+f v33 v1 v30
+o
+o obj28
+f v33 v30 v28
+o
+o obj29
+f v33 v28 v26
+o
+o obj30
+f v33 v26 v24
+o
+o obj31
+f v33 v24 v22
+o
+o obj32
+f v33 v22 v20
+o
+o obj33
+f v33 v20 v2
+o
+o obj34
+v v34 =
+	p 0.25 0.0875 0
+f v34 v29 v27
+o
+o obj35
+f v34 v27 v25
+o
+o obj36
+f v34 v25 v23
+o
+o obj37
+f v34 v23 v21
+o
+o obj38
+f v34 v21 v19
+o
+o obj39
+f v34 v19 v17
+o
+o obj40
+f v34 v17 v15
+o
+o obj41
+f v34 v15 v13
+o
+o obj42
+f v34 v13 v11
+o
+o obj43
+f v34 v11 v29
+o
+o obj44
+v v35 =
+	p 0.18 0.09 0
+f v35 v29 v31
+o
+o obj45
+f v35 v31 v0
+o
+o obj46
+f v35 v0 v3
+o
+o obj47
+f v35 v3 v5
+o
+o obj48
+f v35 v5 v7
+o
+o obj49
+f v35 v7 v9
+o
+o obj50
+f v35 v9 v11
+o
+o obj51
+f v35 v11 v29
+o
+o obj52
+v v36 =
+	p 0.313 0.1 0.5985
+v v37 =
+	p 0.3082044 0.1241091 0.5985
+v v38 =
+	p 0.3082044 0.1241091 0.6615
+v v39 =
+	p 0.313 0.1 0.6615
+f v36 v37 v38 v39
+o
+o obj53
+v v40 =
+	p 0.2945477 0.1445477 0.5985
+v v41 =
+	p 0.2945477 0.1445477 0.6615
+f v37 v40 v41 v38
+o
+o obj54
+v v42 =
+	p 0.2741091 0.1582044 0.5985
+v v43 =
+	p 0.2741091 0.1582044 0.6615
+f v40 v42 v43 v41
+o
+o obj55
+v v44 =
+	p 0.249999997246 0.163 0.5985
+v v45 =
+	p 0.249999997246 0.163 0.6615
+f v42 v44 v45 v43
+o
+o obj56
+v v46 =
+	p 0.2258909 0.1582044 0.5985
+v v47 =
+	p 0.2258909 0.1582044 0.6615
+f v44 v46 v47 v45
+o
+o obj57
+v v48 =
+	p 0.2054523 0.1445477 0.5985
+v v49 =
+	p 0.2054523 0.1445477 0.6615
+f v46 v48 v49 v47
+o
+o obj58
+v v50 =
+	p 0.1917956 0.1241091 0.5985
+v v51 =
+	p 0.1917956 0.1241091 0.6615
+f v48 v50 v51 v49
+o
+o obj59
+v v52 =
+	p 0.187 0.1 0.5985
+v v53 =
+	p 0.187 0.1 0.6615
+f v50 v52 v53 v51
+o
+o obj60
+v v54 =
+	p 0.1917956 0.07589095 0.5985
+v v55 =
+	p 0.1917956 0.07589095 0.6615
+f v52 v54 v55 v53
+o
+o obj61
+v v56 =
+	p 0.2054523 0.0554523 0.5985
+v v57 =
+	p 0.2054523 0.0554523 0.6615
+f v54 v56 v57 v55
+o
+o obj62
+v v58 =
+	p 0.2258909 0.0417956 0.5985
+v v59 =
+	p 0.2258909 0.0417956 0.6615
+f v56 v58 v59 v57
+o
+o obj63
+v v60 =
+	p 0.250000000751 0.037 0.5985
+v v61 =
+	p 0.250000000751 0.037 0.6615
+f v58 v60 v61 v59
+o
+o obj64
+v v62 =
+	p 0.2741091 0.0417956 0.5985
+v v63 =
+	p 0.2741091 0.0417956 0.6615
+f v60 v62 v63 v61
+o
+o obj65
+v v64 =
+	p 0.2945477 0.0554523 0.5985
+v v65 =
+	p 0.2945477 0.0554523 0.6615
+f v62 v64 v65 v63
+o
+o obj66
+v v66 =
+	p 0.3082044 0.07589095 0.5985
+v v67 =
+	p 0.3082044 0.07589095 0.6615
+f v64 v66 v67 v65
+o
+o obj67
+f v66 v36 v39 v67
+o
+o obj68
+v v68 =
+	p 0.35 0.1 0.6775
+v v69 =
+	p 0.342388 0.1382683 0.6775
+v v70 =
+	p 0.25 0.1 0.6775
+f v68 v69 v70
+o
+o obj69
+v v71 =
+	p 0.35 0.1 0.6525
+v v72 =
+	p 0.342388 0.1382683 0.6525
+f v71 v72 v69 v68
+o
+o obj70
+v v73 =
+	p 0.25 0.1 0.6525
+f v72 v73 v71
+o
+o obj71
+v v74 =
+	p 0.3207107 0.1707107 0.6775
+f v69 v74 v70
+o
+o obj72
+v v75 =
+	p 0.3207107 0.1707107 0.6525
+f v72 v75 v74 v69
+o
+o obj73
+f v75 v73 v72
+o
+o obj74
+v v76 =
+	p 0.2882683 0.192388 0.6775
+f v74 v76 v70
+o
+o obj75
+v v77 =
+	p 0.2882683 0.192388 0.6525
+f v75 v77 v76 v74
+o
+o obj76
+f v77 v73 v75
+o
+o obj77
+v v78 =
+	p 0.249999995629 0.2 0.6775
+f v76 v78 v70
+o
+o obj78
+v v79 =
+	p 0.249999995629 0.2 0.6525
+f v77 v79 v78 v76
+o
+o obj79
+f v79 v73 v77
+o
+o obj80
+v v80 =
+	p 0.2117317 0.192388 0.6775
+f v78 v80 v70
+o
+o obj81
+v v81 =
+	p 0.2117317 0.192388 0.6525
+f v79 v81 v80 v78
+o
+o obj82
+f v81 v73 v79
+o
+o obj83
+v v82 =
+	p 0.1792893 0.1707107 0.6775
+f v80 v82 v70
+o
+o obj84
+v v83 =
+	p 0.1792893 0.1707107 0.6525
+f v81 v83 v82 v80
+o
+o obj85
+f v83 v73 v81
+o
+o obj86
+v v84 =
+	p 0.157612 0.1382683 0.6775
+f v82 v84 v70
+o
+o obj87
+v v85 =
+	p 0.157612 0.1382683 0.6525
+f v83 v85 v84 v82
+o
+o obj88
+f v85 v73 v83
+o
+o obj89
+v v86 =
+	p 0.15 0.1 0.6775
+f v84 v86 v70
+o
+o obj90
+v v87 =
+	p 0.15 0.1 0.6525
+f v85 v87 v86 v84
+o
+o obj91
+f v87 v73 v85
+o
+o obj92
+v v88 =
+	p 0.157612 0.0617317 0.6775
+f v86 v88 v70
+o
+o obj93
+v v89 =
+	p 0.157612 0.0617317 0.6525
+f v87 v89 v88 v86
+o
+o obj94
+f v89 v73 v87
+o
+o obj95
+v v90 =
+	p 0.1792893 0.0292893 0.6775
+f v88 v90 v70
+o
+o obj96
+v v91 =
+	p 0.1792893 0.0292893 0.6525
+f v89 v91 v90 v88
+o
+o obj97
+f v91 v73 v89
+o
+o obj98
+v v92 =
+	p 0.2117316 0.0076121 0.6775
+f v90 v92 v70
+o
+o obj99
+v v93 =
+	p 0.2117316 0.0076121 0.6525
+f v91 v93 v92 v90
+o
+o obj100
+f v93 v73 v91
+o
+o obj101
+v v94 =
+	p 0.250000001192 0 0.6775
+f v92 v94 v70
+o
+o obj102
+v v95 =
+	p 0.250000001192 0 0.6525
+f v93 v95 v94 v92
+o
+o obj103
+f v95 v73 v93
+o
+o obj104
+v v96 =
+	p 0.2882684 0.0076121 0.6775
+f v94 v96 v70
+o
+o obj105
+v v97 =
+	p 0.2882684 0.0076121 0.6525
+f v95 v97 v96 v94
+o
+o obj106
+f v97 v73 v95
+o
+o obj107
+v v98 =
+	p 0.3207107 0.0292893 0.6775
+f v96 v98 v70
+o
+o obj108
+v v99 =
+	p 0.3207107 0.0292893 0.6525
+f v97 v99 v98 v96
+o
+o obj109
+f v99 v73 v97
+o
+o obj110
+v v100 =
+	p 0.342388 0.0617317 0.6775
+f v98 v100 v70
+o
+o obj111
+v v101 =
+	p 0.342388 0.0617317 0.6525
+f v99 v101 v100 v98
+o
+o obj112
+f v101 v73 v99
+o
+o obj113
+f v100 v68 v70
+o
+o obj114
+f v101 v71 v68 v100
+o
+o obj115
+f v71 v73 v101
+# End conversion from: breather.rad
+o
+# End of data converted from RADIANCE scene input

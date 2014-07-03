@@ -1,0 +1,272 @@
+# A USI Columbia IPR-T indirect hanging fixture
+
+# Materials
+m white_enamel =
+	sides 2
+	c
+	rd .7
+	rs .04 .03
+m metal_wire =
+	sides 1
+	c
+	rd .2
+	rs .4 .08
+m specular_reflector =
+	sides 1
+	c
+	rs .9 0
+m white_fluorescent =
+	sides 1
+	c
+	ed 29300
+	rs .04 0
+	rd .6
+
+# Conversion feet to meters
+xf -s .3048
+
+# The bottom vertices
+v bv1+ =
+	p 2 -0.262492 0.0852887
+v bv1- =
+	p -2 -0.262492 0.0852887
+v bv2+ =
+	p 2 -0.274488 0.0288499
+v bv2- =
+	p -2 -0.274488 0.0288499
+v bv3+ =
+	p 2 -0.274488 -0.0288499
+v bv3- =
+	p -2 -0.274488 -0.0288499
+v bv4+ =
+	p 2 -0.262492 -0.0852887
+v bv4- =
+	p -2 -0.262492 -0.0852887
+v bv5+ =
+	p 2 -0.239023 -0.138
+v bv5- =
+	p -2 -0.239023 -0.138
+v bv6+ =
+	p 2 -0.205108 -0.18468
+v bv6- =
+	p -2 -0.205108 -0.18468
+v bv7+ =
+	p 2 -0.162229 -0.223289
+v bv7- =
+	p -2 -0.162229 -0.223289
+v bv8+ =
+	p 2 -0.112259 -0.252139
+v bv8- =
+	p -2 -0.112259 -0.252139
+v bv9+ =
+	p 2 -0.0573836 -0.269969
+v bv9- =
+	p -2 -0.0573836 -0.269969
+v bv10+ =
+	p 2      0 -0.276
+v bv10- =
+	p -2      0 -0.276
+v bv11+ =
+	p 2 0.0573836 -0.269969
+v bv11- =
+	p -2 0.0573836 -0.269969
+v bv12+ =
+	p 2 0.112259 -0.252139
+v bv12- =
+	p -2 0.112259 -0.252139
+v bv13+ =
+	p 2 0.162229 -0.223289
+v bv13- =
+	p -2 0.162229 -0.223289
+v bv14+ =
+	p 2 0.205108 -0.18468
+v bv14- =
+	p -2 0.205108 -0.18468
+v bv15+ =
+	p 2 0.239023 -0.138
+v bv15- =
+	p -2 0.239023 -0.138
+v bv16+ =
+	p 2 0.262492 -0.0852887
+v bv16- =
+	p -2 0.262492 -0.0852887
+v bv17+ =
+	p 2 0.274488 -0.0288499
+v bv17- =
+	p -2 0.274488 -0.0288499
+v bv18+ =
+	p 2 0.274488 0.0288499
+v bv18- =
+	p -2 0.274488 0.0288499
+v bv19+ =
+	p 2 0.262492 0.0852887
+v bv19- =
+	p -2 0.262492 0.0852887
+
+# The bottom and end caps
+m white_enamel
+o bottom
+	f bv1- bv2- bv2+ bv1+
+	f bv2- bv3- bv3+ bv2+
+	f bv3- bv4- bv4+ bv3+
+	f bv4- bv5- bv5+ bv4+
+	f bv5- bv6- bv6+ bv5+
+	f bv6- bv7- bv7+ bv6+
+	f bv7- bv8- bv8+ bv7+
+	f bv8- bv9- bv9+ bv8+
+	f bv9- bv10- bv10+ bv9+
+	f bv10- bv11- bv11+ bv10+
+	f bv11- bv12- bv12+ bv11+
+	f bv12- bv13- bv13+ bv12+
+	f bv13- bv14- bv14+ bv13+
+	f bv14- bv15- bv15+ bv14+
+	f bv15- bv16- bv16+ bv15+
+	f bv16- bv17- bv17+ bv16+
+	f bv17- bv18- bv18+ bv17+
+	f bv18- bv19- bv19+ bv18+
+	o end1
+		f bv1+ bv2+ bv3+ bv4+ bv5+ bv6+ bv7+ bv8+ bv9+ bv10+ bv11+ \
+			bv12+ bv13+ bv14+ bv15+ bv16+ bv17+ bv18+ bv19+
+	o
+	o end2
+		f bv19- bv18- bv17- bv16- bv15- bv14- bv13- bv12- bv11- \
+			bv10- bv9- bv8- bv7- bv6- bv5- bv4- bv3- bv2- bv1-
+	o
+o
+
+# The top vertices
+v tv1+ =
+	p 2 -0.0538449 0.270697
+v tv1- =
+	p -2 -0.0538449 0.270697
+v tv2+ =
+	p 2 -0.0270527 0.274671
+v tv2- =
+	p -2 -0.0270527 0.274671
+v tv3+ =
+	p 2      0  0.276
+v tv3- =
+	p -2      0  0.276
+v tv4+ =
+	p 2 0.0270527 0.274671
+v tv4- =
+	p -2 0.0270527 0.274671
+v tv5+ =
+	p 2 0.0538449 0.270697
+v tv5- =
+	p -2 0.0538449 0.270697
+
+# The reflector vertices
+v rv1+ =
+	p 2      0 0.08529
+v rv1- =
+	p -2      0 0.08529
+v rv2++ =
+	p 2 0.00149569 0.11619
+v rv2+- =
+	p 2 -0.00149569 0.11619
+v rv2-+ =
+	p -2 0.00149569 0.11619
+v rv2-- =
+	p -2 -0.00149569 0.11619
+v rv3++ =
+	p 2 0.00598278 0.14709
+v rv3+- =
+	p 2 -0.00598278 0.14709
+v rv3-+ =
+	p -2 0.00598278 0.14709
+v rv3-- =
+	p -2 -0.00598278 0.14709
+v rv4++ =
+	p 2 0.0134612 0.17799
+v rv4+- =
+	p 2 -0.0134612 0.17799
+v rv4-+ =
+	p -2 0.0134612 0.17799
+v rv4-- =
+	p -2 -0.0134612 0.17799
+v rv5++ =
+	p 2 0.0239311 0.20889
+v rv5+- =
+	p 2 -0.0239311 0.20889
+v rv5-+ =
+	p -2 0.0239311 0.20889
+v rv5-- =
+	p -2 -0.0239311 0.20889
+v rv6++ =
+	p 2 0.0373924 0.23979
+v rv6+- =
+	p 2 -0.0373924 0.23979
+v rv6-+ =
+	p -2 0.0373924 0.23979
+v rv6-- =
+	p -2 -0.0373924 0.23979
+v rv7++ =
+	p 2 0.053845 0.27069
+v rv7+- =
+	p 2 -0.053845 0.27069
+v rv7-+ =
+	p -2 0.053845 0.27069
+v rv7-- =
+	p -2 -0.053845 0.27069
+
+# The top
+m white_enamel
+o top
+	f tv1+ tv2+ tv2- tv1-
+	f tv2+ tv3+ tv3- tv2-
+	f tv3+ tv4+ tv4- tv3-
+	f tv4+ tv5+ tv5- tv4-
+	o end1
+		f tv5- tv4- tv3- tv2- tv1- rv7-+ rv6-+ rv5-+ rv4-+ \
+			rv3-+ rv2-+ rv1- rv2-- rv3-- rv4-- rv5-- rv6-- rv7--
+	o
+	o end2
+		f rv7+- rv6+- rv5+- rv4+- rv3+- rv2+- rv1+ rv2++ rv3++ rv4++ \
+			rv5++ rv6++ rv7++ tv1+ tv2+ tv3+ tv4+ tv5+
+	o
+o
+
+# The top reflector
+m specular_reflector
+o reflector
+	f rv1- rv2-+ rv2++ rv1+
+	f rv2-+ rv3-+ rv3++ rv2++
+	f rv3-+ rv4-+ rv4++ rv3++
+	f rv4-+ rv5-+ rv5++ rv4++
+	f rv5-+ rv6-+ rv6++ rv5++
+	f rv6-+ rv7-+ rv7++ rv6++
+	f rv1+ rv2+- rv2-- rv1-
+	f rv2+- rv3+- rv3-- rv2--
+	f rv3+- rv4+- rv4-- rv3--
+	f rv4+- rv5+- rv5-- rv4--
+	f rv5+- rv6+- rv6-- rv5--
+	f rv6+- rv7+- rv7-- rv6--
+o
+
+# The lamps
+v tv1 =
+	p -1.96 .12 0
+v tv2 =
+	p 1.96 .12 0
+m white_fluorescent
+xf -a 2 -my
+o lamp
+	cyl tv1 .0417 tv2
+o
+xf
+
+# The support lines
+v pvb =
+	p 1.85 0 .275
+v pvt =
+	p 1.85 0 1
+m metal_wire
+xf -a 2 -mx
+o support
+	cyl pvb .00325 pvt
+o
+xf
+
+# end conversion of feet to meters
+xf

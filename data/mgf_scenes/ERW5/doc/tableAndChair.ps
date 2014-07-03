@@ -1,0 +1,1862 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%BoundingBox: 25 172 575 730
+%%Title: /tmp_mnt/nfs/harp/usr/people/shirley/db/tableAndChair.ps
+%%CreationDate: 6:01 PM January 28, 1994
+%%Pages: 1
+%%EndComments
+%%BeginProlog
+%%BeginResource ShowcaseResource
+1 setlinejoin
+/M  { moveto } bind def /S { show  } bind def
+/R { rmoveto } bind def /L { lineto } bind def
+/B { newpath 0 0 M 0 1 L 1 1 L 1 0 L closepath } bind def
+/CS { closepath stroke } bind def
+/S {
+    /fixwidth exch def
+    dup length /nchars exch def
+    dup stringwidth pop
+    fixwidth exch sub nchars div
+    exch 0 exch ashow
+} def
+/bwproc {
+	rgbproc
+	dup length 3 idiv string 0 3 0
+	5 -1 roll {
+	add 2 1 roll 1 sub dup 0 eq
+	{ pop 3 idiv 3 -1 roll dup 4 -1 roll dup
+	  3 1 roll 5 -1 roll put 1 add 3 0 }
+	{ 2 1 roll } ifelse
+	} forall
+	pop pop pop
+} def
+systemdict /colorimage known not {
+	/colorimage {
+		pop
+		pop
+		/rgbproc exch def
+		{ bwproc } image
+	} def
+} if
+1 1 scale
+0 setlinewidth
+/drawtri {
+/y3 exch def
+/x3 exch def
+/y2 exch def
+/x2 exch def
+/y1 exch def
+/x1 exch def
+0 setgray
+newpath
+x1 y1 moveto
+x2 y2 lineto
+x3 y3 lineto
+closepath
+stroke
+} bind def
+/filltri {
+/y3 exch def
+/x3 exch def
+/y2 exch def
+/x2 exch def
+/y1 exch def
+/x1 exch def
+newpath
+x1 y1 moveto
+x2 y2 lineto
+x3 y3 lineto
+closepath
+fill
+} bind def
+/cliptri {
+/y3 exch def
+/x3 exch def
+/y2 exch def
+/x2 exch def
+/y1 exch def
+/x1 exch def
+0 setgray
+newpath
+x1 y1 moveto
+x2 y2 lineto
+x3 y3 lineto
+closepath
+clip
+} bind def
+/imgscanrgb {
+gsave
+translate
+/scandy exch def
+/scandx exch def
+/istr scandx 3 mul string def
+scandx scandy scale
+scandx scandy 8
+[scandx 0 0 scandy neg 0 scandy]
+{currentfile istr readhexstring pop}
+false 3
+colorimage
+grestore
+} bind def
+/imgscanbw {
+gsave
+translate
+/scandy exch def
+/scandx exch def
+/istr scandx string def
+scandx scandy scale
+scandx scandy 8
+[scandx 0 0 scandy neg 0 scandy]
+{currentfile istr readhexstring pop}
+image
+grestore
+} bind def
+/showcaseisoencoding [
+/.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef
+/space /exclam /quotedbl /numbersign
+/dollar /percent /ampersand /quoteright
+/parenleft /parenright /asterisk /plus
+/comma /minus /period /slash
+/zero /one /two /three /four /five /six /seven
+/eight /nine /colon /semicolon
+/less /equal /greater /question
+/at /A /B /C /D /E /F /G
+/H /I /J /K /L /M /N /O
+/P /Q /R /S /T /U /V /W
+/X /Y /Z /bracketleft
+/backslash /bracketright /asciicircum /underscore
+/quoteleft /a /b /c /d /e /f /g
+/h /i /j /k /l /m /n /o
+/p /q /r /s /t /u /v /w
+/x /y /z /braceleft
+/bar /braceright /asciitilde /guilsinglright
+/fraction /florin /quotesingle /quotedblleft
+/guilsinglleft /fi /fl /endash
+/dagger /daggerdbl /bullet /quotesinglbase
+/quotedblbase /quotedblright /ellipsis /trademark
+/dotlessi /grave /acute /circumflex
+/tilde /macron /breve /dotaccent
+/dieresis /perthousand /ring /cedilla
+/Ydieresis /hungarumlaut /ogonek /caron
+/emdash /exclamdown /cent /sterling
+/currency /yen /brokenbar /section
+/dieresis /copyright /ordfeminine /guillemotleft
+/logicalnot /hyphen /registered /macron
+/degree /plusminus /twosuperior /threesuperior
+/acute /mu /paragraph /periodcentered
+/cedilla /onesuperior /ordmasculine /guillemotright
+/onequarter /onehalf /threequarters /questiondown
+/Agrave /Aacute /Acircumflex /Atilde
+/Adieresis /Aring /AE /Ccedilla
+/Egrave /Eacute /Ecircumflex /Edieresis
+/Igrave /Iacute /Icircumflex /Idieresis
+/Eth /Ntilde /Ograve /Oacute
+/Ocircumflex /Otilde /Odieresis /multiply
+/Oslash /Ugrave /Uacute /Ucircumflex
+/Udieresis /Yacute /Thorn /germandbls
+/agrave /aacute /acircumflex /atilde
+/adieresis /aring /ae /ccedilla
+/egrave /eacute /ecircumflex /edieresis
+/igrave /iacute /icircumflex /idieresis
+/eth /ntilde /ograve /oacute
+/ocircumflex /otilde /odieresis /divide
+/oslash /ugrave /uacute /ucircumflex
+/udieresis /yacute /thorn /ydieresis ] def
+/showcasedingbatencoding [
+/.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef
+/.notdef /a1 /a2 /a202 /a3 /a4 /a5 /a119 /a118 /a117
+/a11 /a12 /a13 /a14 /a15 /a16 /a105 /a17 /a18 /a19
+/a20 /a21 /a22 /a23 /a24 /a25 /a26 /a27 /a28 /a6 /a7
+/a8 /a9 /a10 /a29
+/a30 /a31 /a32 /a33 /a34 /a35 /a36 /a37 /a38 /a39
+/a40 /a41 /a42 /a43 /a44 /a45 /a46 /a47 /a48 /a49
+/a50 /a51 /a52 /a53 /a54 /a55 /a56 /a57 /a58 /a59
+/a60 /a61 /a62 /a63 /a64 /a65 /a66 /a67 /a68 /a69
+/a70 /a71 /a72 /a73 /a74 /a203 /a75 /a204 /a76 /a77 /a78
+/a79 /a81 /a82 /a83 /a84 /a97 /a98 /a99 /a100 /.notdef
+/a205 /a85 /a206 /a86 /a87 /a88 /a89 /a90 /a91 /a92 /a93
+/a94 /a95 /a96
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+/.notdef /a101 /a102 /a103 /a104 /a106 /a107 /a108
+/a112 /a111 /a110 /a109
+/a120 /a121 /a122 /a123 /a124 /a125 /a126 /a127 /a128 /a129
+/a130 /a131 /a132 /a133 /a134 /a135 /a136 /a137 /a138 /a139
+/a140 /a141 /a142 /a143 /a144 /a145 /a146 /a147 /a148 /a149
+/a150 /a151 /a152 /a153 /a154 /a155 /a156 /a157 /a158 /a159
+/a160 /a161 /a163 /a164 /a196 /a165 /a192 /a166 /a167 /a168
+/a169 /a170 /a171 /a172 /a173 /a162 /a174 /a175 /a176 /a177
+/a178 /a179 /a193 /a180 /a199 /a181 /a200 /a182 /.notdef
+/a201 /a183 /a184 /a197 /a185 /a194 /a198 /a186 /a195 /a187
+/a188 /a189 /a190 /a191 /.notdef
+] def
+/Helvetica-Bold findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding showcaseisoencoding def
+  currentdict
+end
+/Helvetica-Bold-SHOWISO exch definefont pop
+/Helvetica findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding showcaseisoencoding def
+  currentdict
+end
+/Helvetica-SHOWISO exch definefont pop
+/newfont 10 dict def
+newfont begin
+
+ /FontType 3 def
+ /FontMatrix [1 0 0 1 0 0] def
+ /FontBBox [0 0 1 1] def
+ /Encoding 256 array def
+ 0 1 255 {Encoding exch /.notdef put} for
+
+ /CharProcs 1 dict def
+ CharProcs begin
+ /.notdef {} def
+
+end
+
+ /BuildChar {
+  1 0
+  0 0 1 1
+  setcachedevice
+  exch begin
+  Encoding exch get
+  CharProcs exch get
+  end
+  exec
+ } def
+end
+/PatternFont newfont definefont pop
+
+%%EndResource
+%%EndProlog
+%%BeginSetup
+/#copies 1 def
+%%EndSetup
+%%Page: label 1
+gsave
+gsave
+0.87451 0.87451 0.87451 setrgbcolor
+newpath
+299.065 714.417 M
+305.442 714.417 L
+305.442 533.767 L
+299.065 533.767 L
+closepath
+eofill
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+newpath
+299.065 714.417 M
+305.442 714.417 L
+305.442 533.767 L
+299.065 533.767 L
+closepath
+stroke
+grestore
+gsave
+0.623529 0.623529 0.623529 setrgbcolor
+newpath
+299.065 533.767 M
+292.687 539.241 L
+292.687 714.417 L
+299.065 714.417 L
+closepath
+eofill
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+newpath
+299.065 533.767 M
+292.687 539.241 L
+292.687 714.417 L
+299.065 714.417 L
+closepath
+stroke
+grestore
+gsave
+0.625 0.625 0.625 setrgbcolor
+newpath
+299.065 610.406 M
+337.329 593.984 L
+337.329 610.406 L
+299.065 626.829 L
+closepath
+eofill
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+newpath
+299.065 610.406 M
+337.329 593.984 L
+337.329 610.406 L
+299.065 626.829 L
+closepath
+stroke
+grestore
+gsave
+0.625 0.625 0.625 setrgbcolor
+newpath
+337.329 610.406 M
+337.329 511.87 L
+343.706 506.396 L
+344.297 607.973 L
+closepath
+eofill
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+newpath
+337.329 610.406 M
+337.329 511.87 L
+343.706 506.396 L
+344.297 607.973 L
+closepath
+stroke
+grestore
+gsave
+0.74902 0.74902 0.74902 setrgbcolor
+newpath
+299.065 626.829 M
+305.442 626.829 L
+349.493 608.886 L
+343.706 607.466 L
+closepath
+eofill
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+newpath
+299.065 626.829 M
+305.442 626.829 L
+349.493 608.886 L
+343.706 607.466 L
+closepath
+stroke
+grestore
+gsave
+0.87451 0.87451 0.87451 setrgbcolor
+newpath
+343.706 607.466 M
+349.493 608.48 L
+350.083 506.396 L
+343.706 506.396 L
+closepath
+eofill
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+newpath
+343.706 607.466 M
+349.493 608.48 L
+350.083 506.396 L
+343.706 506.396 L
+closepath
+stroke
+grestore
+gsave
+0.87451 0.87451 0.87451 setrgbcolor
+newpath
+228.625 707.437 M
+296.333 707.958 L
+296.333 694.937 L
+228.625 693.896 L
+closepath
+eofill
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+newpath
+228.625 707.437 M
+296.333 707.958 L
+296.333 694.937 L
+228.625 693.896 L
+closepath
+stroke
+grestore
+gsave
+0.87451 0.87451 0.87451 setrgbcolor
+newpath
+228.104 680.354 M
+295.812 680.875 L
+295.812 667.854 L
+228.104 666.812 L
+closepath
+eofill
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+newpath
+228.104 680.354 M
+295.812 680.875 L
+295.812 667.854 L
+228.104 666.812 L
+closepath
+stroke
+grestore
+gsave
+0.74902 0.74902 0.74902 setrgbcolor
+newpath
+227.583 625.146 M
+296.333 625.146 L
+338.521 607.958 L
+260.396 606.396 L
+closepath
+eofill
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+newpath
+227.583 625.146 M
+296.333 625.146 L
+338.521 607.958 L
+260.396 606.396 L
+closepath
+stroke
+grestore
+gsave
+0.623529 0.623529 0.623529 setrgbcolor
+newpath
+225.083 530.875 M
+219.458 536.5 L
+219.458 716.5 L
+225.083 716.5 L
+closepath
+eofill
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+newpath
+225.083 530.875 M
+219.458 536.5 L
+219.458 716.5 L
+225.083 716.5 L
+closepath
+stroke
+grestore
+gsave
+0.87451 0.87451 0.87451 setrgbcolor
+newpath
+225.083 716.5 M
+230.708 716.5 L
+230.708 530.875 L
+225.083 530.875 L
+closepath
+eofill
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+newpath
+225.083 716.5 M
+230.708 716.5 L
+230.708 530.875 L
+225.083 530.875 L
+closepath
+stroke
+grestore
+gsave
+0.87451 0.87451 0.87451 setrgbcolor
+newpath
+269.771 607.437 M
+343.729 607.437 L
+343.729 592.333 L
+269.25 590.771 L
+closepath
+eofill
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+newpath
+269.771 607.437 M
+343.729 607.437 L
+343.729 592.333 L
+269.25 590.771 L
+closepath
+stroke
+grestore
+gsave
+0.623529 0.623529 0.623529 setrgbcolor
+newpath
+266.646 610.562 M
+338.521 610.042 L
+343.729 607.958 L
+268.729 607.437 L
+closepath
+eofill
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+newpath
+266.646 610.562 M
+338.521 610.042 L
+343.729 607.958 L
+268.729 607.437 L
+closepath
+stroke
+grestore
+gsave
+0.74902 0.74902 0.74902 setrgbcolor
+newpath
+225.083 626.5 M
+230.708 626.5 L
+269.562 608.062 L
+264.458 606.604 L
+closepath
+eofill
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+newpath
+225.083 626.5 M
+230.708 626.5 L
+269.562 608.062 L
+264.458 606.604 L
+closepath
+stroke
+grestore
+gsave
+0.625 0.625 0.625 setrgbcolor
+newpath
+225.083 609.625 M
+258.833 592.75 L
+258.833 609.625 L
+225.083 626.5 L
+closepath
+eofill
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+newpath
+225.083 609.625 M
+258.833 592.75 L
+258.833 609.625 L
+225.083 626.5 L
+closepath
+stroke
+grestore
+gsave
+0.625 0.625 0.625 setrgbcolor
+newpath
+299.458 545.146 M
+337.375 519.417 L
+337.375 535.25 L
+299.458 558.375 L
+closepath
+eofill
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+newpath
+299.458 545.146 M
+337.375 519.417 L
+337.375 535.25 L
+299.458 558.375 L
+closepath
+stroke
+grestore
+gsave
+0.75 0.75 0.75 setrgbcolor
+newpath
+299.458 558.479 M
+306.48 558.479 L
+336.322 540.25 L
+337.492 535.042 L
+closepath
+eofill
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+newpath
+299.458 558.479 M
+306.48 558.479 L
+336.322 540.25 L
+337.492 535.042 L
+closepath
+stroke
+grestore
+gsave
+0.75 0.75 0.75 setrgbcolor
+newpath
+308.833 548.583 M
+322.896 540.25 L
+246.854 537.646 L
+234.875 546.5 L
+closepath
+eofill
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+newpath
+308.833 548.583 M
+322.896 540.25 L
+246.854 537.646 L
+234.875 546.5 L
+closepath
+stroke
+grestore
+gsave
+0.87451 0.87451 0.87451 setrgbcolor
+newpath
+322.896 540.771 M
+322.375 534.521 L
+247.896 532.958 L
+247.896 538.167 L
+closepath
+eofill
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+newpath
+322.896 540.771 M
+322.375 534.521 L
+247.896 532.958 L
+247.896 538.167 L
+closepath
+stroke
+grestore
+gsave
+0.625 0.625 0.625 setrgbcolor
+newpath
+224.979 544.281 M
+258.729 518.896 L
+258.729 534.517 L
+224.979 557.333 L
+closepath
+eofill
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+newpath
+224.979 544.281 M
+258.729 518.896 L
+258.729 534.517 L
+224.979 557.333 L
+closepath
+stroke
+grestore
+gsave
+0.75 0.75 0.75 setrgbcolor
+newpath
+224.979 557.436 M
+231.229 557.436 L
+257.792 539.451 L
+258.833 534.312 L
+closepath
+eofill
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+newpath
+224.979 557.436 M
+231.229 557.436 L
+257.792 539.451 L
+258.833 534.312 L
+closepath
+stroke
+grestore
+gsave
+0.87451 0.87451 0.87451 setrgbcolor
+newpath
+264.458 606.604 M
+269.562 607.646 L
+270.083 502.75 L
+264.458 502.75 L
+closepath
+eofill
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+newpath
+264.458 606.604 M
+269.562 607.646 L
+270.083 502.75 L
+264.458 502.75 L
+closepath
+stroke
+grestore
+gsave
+0.625 0.625 0.625 setrgbcolor
+newpath
+258.833 609.625 M
+258.833 508.375 L
+264.458 502.75 L
+264.979 607.125 L
+closepath
+eofill
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+newpath
+258.833 609.625 M
+258.833 508.375 L
+264.458 502.75 L
+264.979 607.125 L
+closepath
+stroke
+grestore
+gsave
+0 0 0 setrgbcolor
+gsave
+0 setlinejoin
+309.139 511.041 translate
+-34.249 rotate
+1.2 1.2 scale
+newpath 0 0 M -10 -3 L -10 3 L closepath fill
+grestore
+2.000000 setlinewidth
+newpath
+283.833 528.271 M
+301.7 516.106 L
+stroke
+grestore
+gsave
+0 0 0 setrgbcolor
+gsave
+0 setlinejoin
+283.833 570.937 translate
+90 rotate
+1.2 1.2 scale
+newpath 0 0 M -10 -3 L -10 3 L closepath fill
+grestore
+2.000000 setlinewidth
+newpath
+283.833 543.896 M
+283.833 561.937 L
+stroke
+grestore
+gsave
+0 0 0 setrgbcolor
+gsave
+0 setlinejoin
+314.521 528.792 translate
+0 rotate
+1.2 1.2 scale
+newpath 0 0 M -10 -3 L -10 3 L closepath fill
+grestore
+2.000000 setlinewidth
+newpath
+283.833 528.792 M
+305.521 528.792 L
+stroke
+grestore
+gsave
+0 0 0 setrgbcolor
+2.000000 setlinewidth
+newpath
+283.833 528.271 M
+283.833 534 L
+stroke
+grestore
+gsave
+gsave
+matrix currentmatrix
+[1 0 0 1 309 502.531] concat
+newpath
+0 0 M 0 12 L 7 12 L 7 0 L
+closepath setmatrix
+0 0 0 setrgbcolor
+grestore
+newpath
+307 500.531 M 307 516.531 L 318 516.531 L 318 500.531 L
+closepath clip newpath
+0 0 0 setrgbcolor
+matrix currentmatrix
+[1 0 0 1 309 502.531] concat
+/Helvetica-Bold-SHOWISO findfont 10 scalefont setfont
+0 0 0 setrgbcolor
+0 1.53846 M (z) 5 S
+setmatrix
+grestore
+gsave
+gsave
+matrix currentmatrix
+[1 0 0 1 313 521.531] concat
+newpath
+0 0 M 0 12 L 7.56 12 L 7.56 0 L
+closepath setmatrix
+0 0 0 setrgbcolor
+grestore
+newpath
+311 519.531 M 311 535.531 L 322.56 535.531 L 322.56 519.531 L
+closepath clip newpath
+0 0 0 setrgbcolor
+matrix currentmatrix
+[1 0 0 1 313 521.531] concat
+/Helvetica-Bold-SHOWISO findfont 10 scalefont setfont
+0 0 0 setrgbcolor
+0 1.53846 M (x) 5.56 S
+setmatrix
+grestore
+gsave
+gsave
+matrix currentmatrix
+[1 0 0 1 273 564.531] concat
+newpath
+0 0 M 0 12 L 7.56 12 L 7.56 0 L
+closepath setmatrix
+0 0 0 setrgbcolor
+grestore
+newpath
+271 562.531 M 271 578.531 L 282.56 578.531 L 282.56 562.531 L
+closepath clip newpath
+0 0 0 setrgbcolor
+matrix currentmatrix
+[1 0 0 1 273 564.531] concat
+/Helvetica-Bold-SHOWISO findfont 10 scalefont setfont
+0 0 0 setrgbcolor
+0 1.53846 M (y) 5.56 S
+setmatrix
+grestore
+gsave
+0 0 0 setrgbcolor
+gsave
+0 setlinejoin
+267.002 488.94 translate
+-176.583 rotate
+1.1 1.1 scale
+newpath 0 0 M -10 -3 L -10 3 L closepath fill
+grestore
+gsave
+0 setlinejoin
+352.748 494.06 translate
+3.41659 rotate
+1.1 1.1 scale
+newpath 0 0 M -10 -3 L -10 3 L closepath fill
+grestore
+1.000000 setlinewidth
+newpath
+275.986 489.477 M
+343.764 493.523 L
+stroke
+grestore
+gsave
+0 0 0 setrgbcolor
+gsave
+0 setlinejoin
+214.081 525.857 translate
+142.595 rotate
+1.1 1.1 scale
+newpath 0 0 M -10 -3 L -10 3 L closepath fill
+grestore
+gsave
+0 setlinejoin
+258.169 492.143 translate
+-37.4054 rotate
+1.1 1.1 scale
+newpath 0 0 M -10 -3 L -10 3 L closepath fill
+grestore
+1.000000 setlinewidth
+newpath
+221.23 520.39 M
+251.02 497.61 L
+stroke
+grestore
+gsave
+0 0 0 setrgbcolor
+gsave
+0 setlinejoin
+208.625 538 translate
+-90 rotate
+1.1 1.1 scale
+newpath 0 0 M -10 -3 L -10 3 L closepath fill
+grestore
+gsave
+0 setlinejoin
+208.625 715.625 translate
+90 rotate
+1.1 1.1 scale
+newpath 0 0 M -10 -3 L -10 3 L closepath fill
+grestore
+1.000000 setlinewidth
+newpath
+208.625 547 M
+208.625 706.625 L
+stroke
+grestore
+gsave
+gsave
+matrix currentmatrix
+[1 0 0 1 188 623.531] concat
+newpath
+0 0 M 0 12 L 15.9 12 L 15.9 0 L
+closepath setmatrix
+0 0 0 setrgbcolor
+grestore
+newpath
+186 621.531 M 186 637.531 L 205.9 637.531 L 205.9 621.531 L
+closepath clip newpath
+0 0 0 setrgbcolor
+matrix currentmatrix
+[1 0 0 1 188 623.531] concat
+/Helvetica-Bold-SHOWISO findfont 10 scalefont setfont
+0 0 0 setrgbcolor
+0 1.53846 M (0.8) 13.9 S
+setmatrix
+grestore
+gsave
+gsave
+matrix currentmatrix
+[1 0 0 1 215 494.531] concat
+newpath
+0 0 M 0 12 L 21.46 12 L 21.46 0 L
+closepath setmatrix
+0 0 0 setrgbcolor
+grestore
+newpath
+213 492.531 M 213 508.531 L 238.46 508.531 L 238.46 492.531 L
+closepath clip newpath
+0 0 0 setrgbcolor
+matrix currentmatrix
+[1 0 0 1 215 494.531] concat
+/Helvetica-Bold-SHOWISO findfont 10 scalefont setfont
+0 0 0 setrgbcolor
+0 1.53846 M (0.46) 19.46 S
+setmatrix
+grestore
+gsave
+gsave
+matrix currentmatrix
+[1 0 0 1 293 473.531] concat
+newpath
+0 0 M 0 12 L 21.46 12 L 21.46 0 L
+closepath setmatrix
+0 0 0 setrgbcolor
+grestore
+newpath
+291 471.531 M 291 487.531 L 316.46 487.531 L 316.46 471.531 L
+closepath clip newpath
+0 0 0 setrgbcolor
+matrix currentmatrix
+[1 0 0 1 293 473.531] concat
+/Helvetica-Bold-SHOWISO findfont 10 scalefont setfont
+0 0 0 setrgbcolor
+0 1.53846 M (0.46) 19.46 S
+setmatrix
+grestore
+gsave
+gsave
+matrix currentmatrix
+[1 0 0 1 314 640.531] concat
+newpath
+0 0 M 0 48 L 75.36 48 L 75.36 0 L
+closepath setmatrix
+0 0 0 setrgbcolor
+grestore
+newpath
+312 638.531 M 312 690.531 L 391.36 690.531 L 391.36 638.531 L
+closepath clip newpath
+0 0 0 setrgbcolor
+matrix currentmatrix
+[1 0 0 1 314 640.531] concat
+/Helvetica-Bold-SHOWISO findfont 10 scalefont setfont
+0 0 0 setrgbcolor
+0 37.5385 M (chair sits) 43.91 S
+/Helvetica-Bold-SHOWISO findfont 10 scalefont setfont
+0 25.5385 M (on XY plane) 57.24 S
+/Helvetica-Bold-SHOWISO findfont 10 scalefont setfont
+0 13.5385 M (and is centered) 73.36 S
+/Helvetica-Bold-SHOWISO findfont 10 scalefont setfont
+0 1.53846 M (on y axis) 42.8 S
+setmatrix
+grestore
+gsave
+0.87451 0.87451 0.87451 setrgbcolor
+newpath
+264.575 405.181 M
+263.905 246.466 L
+271.941 249.814 L
+274.62 405.181 L
+closepath
+eofill
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+newpath
+264.575 405.181 M
+263.905 246.466 L
+271.941 249.814 L
+274.62 405.181 L
+closepath
+stroke
+grestore
+gsave
+0.372549 0.372549 0.372549 setrgbcolor
+newpath
+263.905 245.796 M
+258.548 252.493 L
+258.548 404.511 L
+264.575 404.511 L
+closepath
+eofill
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+newpath
+263.905 245.796 M
+258.548 252.493 L
+258.548 404.511 L
+264.575 404.511 L
+closepath
+stroke
+grestore
+gsave
+0.87451 0.87451 0.87451 setrgbcolor
+newpath
+73.0452 400.493 M
+72.3755 249.145 L
+80.4117 252.493 L
+83.0905 400.493 L
+closepath
+eofill
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+newpath
+73.0452 400.493 M
+72.3755 249.145 L
+80.4117 252.493 L
+83.0905 400.493 L
+closepath
+stroke
+grestore
+gsave
+0.372549 0.372549 0.372549 setrgbcolor
+newpath
+72.3755 249.145 M
+67.0181 256.511 L
+67.0181 399.824 L
+73.0452 399.824 L
+closepath
+eofill
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+newpath
+72.3755 249.145 M
+67.0181 256.511 L
+67.0181 399.824 L
+73.0452 399.824 L
+closepath
+stroke
+grestore
+gsave
+0 0 0 setrgbcolor
+gsave
+0 setlinejoin
+255.691 209.182 translate
+-34.249 rotate
+1.2 1.2 scale
+newpath 0 0 M -10 -3 L -10 3 L closepath fill
+grestore
+2.000000 setlinewidth
+newpath
+228.635 227.603 M
+248.251 214.247 L
+stroke
+grestore
+gsave
+0 0 0 setrgbcolor
+gsave
+0 setlinejoin
+228.635 273.249 translate
+90 rotate
+1.2 1.2 scale
+newpath 0 0 M -10 -3 L -10 3 L closepath fill
+grestore
+2.000000 setlinewidth
+newpath
+228.635 228.273 M
+228.635 264.249 L
+stroke
+grestore
+gsave
+0 0 0 setrgbcolor
+gsave
+0 setlinejoin
+261.445 228.161 translate
+0 rotate
+1.2 1.2 scale
+newpath 0 0 M -10 -3 L -10 3 L closepath fill
+grestore
+2.000000 setlinewidth
+newpath
+228.635 228.161 M
+252.445 228.161 L
+stroke
+grestore
+gsave
+gsave
+matrix currentmatrix
+[1 0 0 1 259 202.531] concat
+newpath
+0 0 M 0 12 L 7 12 L 7 0 L
+closepath setmatrix
+0 0 0 setrgbcolor
+grestore
+newpath
+257 200.531 M 257 216.531 L 268 216.531 L 268 200.531 L
+closepath clip newpath
+0 0 0 setrgbcolor
+matrix currentmatrix
+[1 0 0 1 259 202.531] concat
+/Helvetica-Bold-SHOWISO findfont 10 scalefont setfont
+0 0 0 setrgbcolor
+0 1.53846 M (z) 5 S
+setmatrix
+grestore
+gsave
+gsave
+matrix currentmatrix
+[1 0 0 1 262 221.531] concat
+newpath
+0 0 M 0 12 L 7.56 12 L 7.56 0 L
+closepath setmatrix
+0 0 0 setrgbcolor
+grestore
+newpath
+260 219.531 M 260 235.531 L 271.56 235.531 L 271.56 219.531 L
+closepath clip newpath
+0 0 0 setrgbcolor
+matrix currentmatrix
+[1 0 0 1 262 221.531] concat
+/Helvetica-Bold-SHOWISO findfont 10 scalefont setfont
+0 0 0 setrgbcolor
+0 1.53846 M (x) 5.56 S
+setmatrix
+grestore
+gsave
+gsave
+matrix currentmatrix
+[1 0 0 1 233 262.531] concat
+newpath
+0 0 M 0 12 L 7.56 12 L 7.56 0 L
+closepath setmatrix
+0 0 0 setrgbcolor
+grestore
+newpath
+231 260.531 M 231 276.531 L 242.56 276.531 L 242.56 260.531 L
+closepath clip newpath
+0 0 0 setrgbcolor
+matrix currentmatrix
+[1 0 0 1 233 262.531] concat
+/Helvetica-Bold-SHOWISO findfont 10 scalefont setfont
+0 0 0 setrgbcolor
+0 1.53846 M (y) 5.56 S
+setmatrix
+grestore
+gsave
+0 0 0 setrgbcolor
+gsave
+0 setlinejoin
+55.3033 418.558 translate
+-179.067 rotate
+1.1 1.1 scale
+newpath 0 0 M -10 -3 L -10 3 L closepath fill
+grestore
+gsave
+0 setlinejoin
+262.896 421.939 translate
+0.933066 rotate
+1.1 1.1 scale
+newpath 0 0 M -10 -3 L -10 3 L closepath fill
+grestore
+1.000000 setlinewidth
+newpath
+64.3021 418.705 M
+253.897 421.793 L
+stroke
+grestore
+gsave
+0 0 0 setrgbcolor
+gsave
+0 setlinejoin
+279.033 418.903 translate
+160.835 rotate
+1.1 1.1 scale
+newpath 0 0 M -10 -3 L -10 3 L closepath fill
+grestore
+gsave
+0 setlinejoin
+390.75 380.074 translate
+-19.1655 rotate
+1.1 1.1 scale
+newpath 0 0 M -10 -3 L -10 3 L closepath fill
+grestore
+1.000000 setlinewidth
+newpath
+287.534 415.948 M
+382.249 383.029 L
+stroke
+grestore
+gsave
+0 0 0 setrgbcolor
+gsave
+0 setlinejoin
+53.6244 212.652 translate
+-90 rotate
+1.1 1.1 scale
+newpath 0 0 M -10 -3 L -10 3 L closepath fill
+grestore
+gsave
+0 setlinejoin
+53.6244 402.833 translate
+90 rotate
+1.1 1.1 scale
+newpath 0 0 M -10 -3 L -10 3 L closepath fill
+grestore
+1.000000 setlinewidth
+newpath
+53.6244 221.652 M
+53.6244 393.833 L
+stroke
+grestore
+gsave
+gsave
+matrix currentmatrix
+[1 0 0 1 341 401.531] concat
+newpath
+0 0 M 0 12 L 21.46 12 L 21.46 0 L
+closepath setmatrix
+0 0 0 setrgbcolor
+grestore
+newpath
+339 399.531 M 339 415.531 L 364.46 415.531 L 364.46 399.531 L
+closepath clip newpath
+0 0 0 setrgbcolor
+matrix currentmatrix
+[1 0 0 1 341 401.531] concat
+/Helvetica-Bold-SHOWISO findfont 10 scalefont setfont
+0 0 0 setrgbcolor
+0 1.53846 M (0.90) 19.46 S
+setmatrix
+grestore
+gsave
+gsave
+matrix currentmatrix
+[1 0 0 1 145 424.531] concat
+newpath
+0 0 M 0 12 L 21.46 12 L 21.46 0 L
+closepath setmatrix
+0 0 0 setrgbcolor
+grestore
+newpath
+143 422.531 M 143 438.531 L 168.46 438.531 L 168.46 422.531 L
+closepath clip newpath
+0 0 0 setrgbcolor
+matrix currentmatrix
+[1 0 0 1 145 424.531] concat
+/Helvetica-Bold-SHOWISO findfont 10 scalefont setfont
+0 0 0 setrgbcolor
+0 1.53846 M (1.30) 19.46 S
+setmatrix
+grestore
+gsave
+gsave
+matrix currentmatrix
+[1 0 0 1 126 268.531] concat
+newpath
+0 0 M 0 48 L 75.36 48 L 75.36 0 L
+closepath setmatrix
+0 0 0 setrgbcolor
+grestore
+newpath
+124 266.531 M 124 318.531 L 203.36 318.531 L 203.36 266.531 L
+closepath clip newpath
+0 0 0 setrgbcolor
+matrix currentmatrix
+[1 0 0 1 126 268.531] concat
+/Helvetica-Bold-SHOWISO findfont 10 scalefont setfont
+0 0 0 setrgbcolor
+0 37.5385 M (table sits) 43.35 S
+/Helvetica-Bold-SHOWISO findfont 10 scalefont setfont
+0 25.5385 M (on XY plane) 57.24 S
+/Helvetica-Bold-SHOWISO findfont 10 scalefont setfont
+0 13.5385 M (and is centered) 73.36 S
+/Helvetica-Bold-SHOWISO findfont 10 scalefont setfont
+0 1.53846 M (on y axis) 42.8 S
+setmatrix
+grestore
+gsave
+0.494118 0.494118 0.494118 setrgbcolor
+267.253906 415.895935 267.253296 415.895935 58.313477 407.190063 filltri
+gsave
+267.253296 415.895935 58.313477 407.190063 291.495850 407.190063 cliptri
+2.798925 2.798925 scale
+85 6 20 144 imgscanbw
+0000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000
+000000005a590000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000007574
+737271706f6e6d6c6b6a6968676564636261605f5e5d5c000000000000000000000000
+00000000000000000000000000000000000000000000000094939291908f8e8d8c8b8a
+8988868584838281807f7e7d7c7b7a7977767574737271706f6e6d6c6b6a6967666564
+636261605f5e000000000000000000b3b2b1b0afaeadacabaaa9a7a6a5a4a3a2a1a09f
+9e9d9c9b9a9897969594939291908f8e8d8c8b8a8887868584838281807f7e7d7c7b7a
+7877767574737271706f6e6d6c6b6968676665646362616000bebdbcbbb9b8b7b6b5b4
+b3b2b1b0afaeadacaba9a8a7a6a5a4a3a2a1a09f9e9d9c9b999897969594939291908f
+8e8d8c8a898887868584838281807f7e7d7c7a797877767574737271706f6e6d6b6a69
+6867666564c3c2000000000000ff4c2300000000000000000000b2ffff00001cff0000
+000000033300010db26800000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000006a69
+grestore
+0.749020 0.749020 0.749020 setrgbcolor
+58.312164 407.190063 58.312195 407.190063 84.844391 372.366516 filltri
+gsave
+58.312195 407.190063 291.495850 407.190063 84.844391 372.366516 cliptri
+8.000000 8.000000 scale
+31 6 6 46 imgscanbw
+c0bcb9b6b3b0adaaa7a4a19e9a9794918e8b8885827f7c7975726f6c696663c2bfbcb9
+b6b2afaca9a6a3a09d9a9794908d8a8784817e7b7875726f6b68650000bebbb8b5b2af
+aca8a5a29f9c999693908d8a8683807d7a7774000000000000c0bdbab7b4b1aeaba8a5
+a29e9b9895928f8c8900000000000000000000000000c0bdb9b6b3b0adaaa7a4a19e00
+00000000000000000000000000000000000000bfbcb9b6b30000000000000000000000
+0000000000000000000000
+grestore
+gsave
+291.495850 407.190063 84.844391 372.366516 388.465942 372.366516 cliptri
+4.005910 4.005910 scale
+78 10 20 92 imgscanbw
+0000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000006a69686766666564630000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000007473727271706f6e6d6c6c6b6a6968676600000000
+0000000000000000000000000000000000000000000000000000000000000000000000
+000000000000000000000000000000007f7e7d7c7b7a7979787776757473737271706f
+6e6d6d6c6b6a6900000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000008988878686858483828180807f7e7d7c7b
+7a7a79787776757474737271706f6e6e6d6c0000000000000000000000000000000000
+000000000000000000000000000000000000000093939291908f8e8d8d8c8b8a898887
+8786858483828181807f7e7d7c7b7b7a79787776757574737271706f6f000000000000
+000000000000000000000000000000000000000000009e9d9c9b9a9a99989796959494
+939291908f8e8e8d8c8b8a8988888786858483828281807f7e7d7c7c7b7a7978777676
+757473720000000000000000000000000000000000000000a8a7a7a6a5a4a3a2a1a1a0
+9f9e9d9c9b9b9a99989796959594939291908f8f8e8d8c8b8a89898887868584838382
+81807f7e7d7d7c7b7a7978777776750000000000000000000000b3b2b1b0afaeaeadac
+abaaa9a8a8a7a6a5a4a3a2a2a1a09f9e9d9c9c9b9a99989796969594939291908f8f8e
+8d8c8b8a8989888786858483838281807f7e7d7d7c7b7a797877000000bcbbbabab9b8
+b7b6b5b4b4b3b2b1b0afaeaeadacabaaa9a8a8a7a6a5a4a3a2a2a1a09f9e9d9c9c9b9a
+9998979696959493929190908f8e8d8c8b8a8a89888786858484838281807f7e7e7d7c
+7b7ac1c1c0bfbebdbcbbbbbab9b8b7b6b5b5b4b3b2b1b0afafaeadacabaaa9a9a8a7a6
+a5a4a3a3a2a1a09f9e9d9d9c9b9a9998979796959493929191908f8e8d8c8b8b8a8988
+8786858584838281807f
+2 1 72 102 imgscanbw
+605f
+grestore
+gsave
+84.844391 372.366516 388.465820 372.366516 101.171906 350.936646 cliptri
+8.000000 8.000000 scale
+40 5 10 43 imgscanbw
+bdbca4a3a2a2a1a09f9e9d9c9c9b9a9998979696959493929190908f8e8d8c8b8a8a89
+8887867d7cbfbdbbbab8b6b5b3b1b0aeacaba9a7a5a4a2a09f9d9b9a9896959391908e
+8c8a8987858482807f7d00bebdbbb9b8b6b4b3b1afadacaaa8a7a5a3a2a09e9d9b9998
+969492918f8d8c8a8887850000000000c0bebcbbb9b7b6b4b2b0afadabaaa8a6a5a3a1
+a09e9c00000000000000000000000000000000000000bfbebcbab8b7b5000000000000
+00000000000000000000000000000000000000000000000000
+grestore
+0.665359 0.665359 0.665359 setrgbcolor
+388.465820 372.366516 101.171906 350.936646 101.171875 350.936646 filltri
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+newpath
+58.3122 407.19 M
+267.253 415.896 L
+388.466 372.367 L
+101.172 350.937 L
+closepath
+stroke
+grestore
+gsave
+1 1 1 setrgbcolor
+newpath
+100.502 350.937 M
+387.796 373.036 L
+387.127 367.009 L
+100.502 342.231 L
+closepath
+eofill
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+newpath
+100.502 350.937 M
+387.796 373.036 L
+387.127 367.009 L
+100.502 342.231 L
+closepath
+stroke
+grestore
+gsave
+0.87451 0.87451 0.87451 setrgbcolor
+newpath
+109.208 343.57 M
+108.538 184.855 L
+116.575 186.195 L
+119.253 343.57 L
+closepath
+eofill
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+newpath
+109.208 343.57 M
+108.538 184.855 L
+116.575 186.195 L
+119.253 343.57 L
+closepath
+stroke
+grestore
+gsave
+0.372549 0.372549 0.372549 setrgbcolor
+newpath
+108.538 184.186 M
+103.181 194.9 L
+103.181 342.9 L
+109.208 342.9 L
+closepath
+eofill
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+newpath
+108.538 184.186 M
+103.181 194.9 L
+103.181 342.9 L
+109.208 342.9 L
+closepath
+stroke
+grestore
+gsave
+0.87451 0.87451 0.87451 setrgbcolor
+newpath
+359.67 365 M
+359 217 L
+367.036 221.018 L
+369.715 365 L
+closepath
+eofill
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+newpath
+359.67 365 M
+359 217 L
+367.036 221.018 L
+369.715 365 L
+closepath
+stroke
+grestore
+gsave
+0.372549 0.372549 0.372549 setrgbcolor
+newpath
+359 217 M
+353.643 221.018 L
+353.643 364.33 L
+359.67 364.33 L
+closepath
+eofill
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+newpath
+359 217 M
+353.643 221.018 L
+353.643 364.33 L
+359.67 364.33 L
+closepath
+stroke
+grestore
+gsave
+0.498039 0.498039 0.498039 setrgbcolor
+356.321045 364.330322 356.321289 364.330322 196.180420 350.266968 filltri
+gsave
+356.321289 364.330322 196.180420 350.266968 356.321289 350.266968 cliptri
+1.167453 1.167453 scale
+139 10 167 299 imgscanbw
+0000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000007a7b7b7c7c7d7d7e7e7e7f7f8080818182
+828383848485858586868787888889898a8a8b8b8c8c8c8d8d8e8e8f8f909091919200
+0000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000
+00000000007a7a7b7b7c7c7d7d7e7e7f7f808081818182828383848485858686878788
+888889898a8a8b8b8c8c8d8d8e8e8f8f8f909091919292939394949595969696970000
+0000000000000000000000000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000000000007a7b7b7c7c7d7d
+7d7e7e7f7f8080818182828383848484858586868787888889898a8a8b8b8b8c8c8d8d
+8e8e8f8f909091919292929393949495959696979798989999999a9a9b9b9c9c000000
+0000000000000000000000000000000000000000000000000000000000000000000000
+000000000000000000000000000000007a7b7b7c7c7d7d7e7e7f7f7f80808181828283
+83848485858686868787888889898a8a8b8b8c8c8d8d8d8e8e8f8f9090919192929393
+949494959596969797989899999a9a9b9b9b9c9c9d9d9e9e9f9fa0a0a1a1a200000000
+0000000000000000000000000000000000000000000000000000000000000000000000
+0000007a7b7b7b7c7c7d7d7e7e7f7f8080818182828283838484858586868787888889
+89898a8a8b8b8c8c8d8d8e8e8f8f909090919192929393949495959696979797989899
+999a9a9b9b9c9c9d9d9e9e9e9f9fa0a0a1a1a2a2a3a3a4a4a5a5a5a6a6a70000000000
+00000000000000000000000000000000000000000000000000007a7b7b7c7c7d7d7e7e
+7e7f7f8080818182828383848485858586868787888889898a8a8b8b8c8c8c8d8d8e8e
+8f8f9090919192929393939494959596969797989899999a9a9a9b9b9c9c9d9d9e9e9f
+9fa0a0a1a1a1a2a2a3a3a4a4a5a5a6a6a7a7a8a8a8a9a9aaaaababacac000000000000
+00000000000000000000000000007a7b7b7c7c7d7d7e7e7f7f80808181818282838384
+8485858686878788888889898a8a8b8b8c8c8d8d8e8e8f8f8f90909191929293939494
+95959596969797989899999a9a9b9b9c9c9c9d9d9e9e9f9fa0a0a1a1a2a2a3a3a3a4a4
+a5a5a6a6a7a7a8a8a9a9aaaaaaababacacadadaeaeafafb0b0b1b1b100000000000000
+007a7b7b7c7c7c7d7d7e7e7f7f8080818182828383838484858586868787888889898a
+8a8a8b8b8c8c8d8d8e8e8f8f909091919192929393949495959696979798989899999a
+9a9b9b9c9c9d9d9e9e9f9f9fa0a0a1a1a2a2a3a3a4a4a5a5a6a6a6a7a7a8a8a9a9aaaa
+ababacacadadadaeaeafafb0b0b1b1b2b2b3b3b4b4b4b5b5b6b6b77c7c7d7d7e7e7f7f
+7f8080818182828383848485858686868787888889898a8a8b8b8c8c8d8d8d8e8e8f8f
+9090919192929393949494959596969797989899999a9a9b9b9b9c9c9d9d9e9e9f9fa0
+a0a1a1a2a2a2a3a3a4a4a5a5a6a6a7a7a8a8a9a9a9aaaaababacacadadaeaeafafb0b0
+b0b1b1b2b2b3b3b4b4b5b5b6b6b7b7b7b8b8b9b9bababbbbbcbc818282828383848485
+858686878788888989898a8a8b8b8c8c8d8d8e8e8f8f90909091919292939394949595
+9696979797989899999a9a9b9b9c9c9d9d9e9e9e9f9fa0a0a1a1a2a2a3a3a4a4a5a5a5
+a6a6a7a7a8a8a9a9aaaaababacacacadadaeaeafafb0b0b1b1b2b2b3b3b3b4b4b5b5b6
+b6b7b7b8b8b9b9babababbbbbcbcbdbdbebebfbfc0c0c0c1c1
+40 4 266 309 imgscanbw
+000000000000000000000000000000000000000000000000000000000000000000007a
+7a7b7b7c7c00000000000000000000000000000000000000000000007a7b7b7c7c7d7d
+7d7e7e7f7f80808181820000000000000000000000007a7b7b7c7c7d7d7e7e7f7f8080
+8081818282838384848585868687877a7b7b7c7c7c7d7d7e7e7f7f8080818182828383
+838484858586868787888889898a8a8a8b8b8c8c
+grestore
+gsave
+196.180420 350.266968 356.321045 350.266968 119.923096 343.570129 cliptri
+1.167455 1.167455 scale
+204 8 102 293 imgscanbw
+0000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000007a7b7b7c7c7d7d7e
+7e7f7f7f8080818182828383848485858686868787888889898a8a8b8b8c8c8d8d8d8e
+8e8f8f9090919192929393949494959596969797989899999a9a9b9b9b9c9c9d9d9e9e
+9f9fa0a0a1a1a2a2a2a3a3a4a4a5a5a6a6a7a7a8a8a9a9a9aaaaababacacadadaeaeaf
+afb0b0b0b1b1b2b2b3b3b4b4b5b5b6b6b7b7b7b8b8b9b9bababbbbbcbc000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000007a7b7b7b7c7c7d7d7e7e7f7f8080818182828283838484858586
+86878788888989898a8a8b8b8c8c8d8d8e8e8f8f909090919192929393949495959696
+979797989899999a9a9b9b9c9c9d9d9e9e9e9f9fa0a0a1a1a2a2a3a3a4a4a5a5a5a6a6
+a7a7a8a8a9a9aaaaababacacacadadaeaeafafb0b0b1b1b2b2b2b3b3b4b4b5b5b6b6b7
+b7b8b8b9b9b9bababbbbbcbcbdbdbebebfbfc0c0c0c1c1000000000000000000000000
+0000000000000000000000000000000000000000000000000000007a7b7b7c7c7d7d7d
+7e7e7f7f8080818182828383848484858586868787888889898a8a8b8b8b8c8c8d8d8e
+8e8f8f909091919292929393949495959696979798989999999a9a9b9b9c9c9d9d9e9e
+9f9fa0a0a0a1a1a2a2a3a3a4a4a5a5a6a6a7a7a7a8a8a9a9aaaaababacacadadaeaeae
+afafb0b0b1b1b2b2b3b3b4b4b5b5b5b6b6b7b7b8b8b9b9bababbbb0000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000
+000000000000000000007a7b7b7c7c7d7d7e7e7f7f8080808181828283838484858586
+86878787888889898a8a8b8b8c8c8d8d8e8e8e8f8f9090919192929393949495959596
+969797989899999a9a9b9b9c9c9c9d9d9e9e9f9fa0a0a1a1a2a2a3a3a3a4a4a5a5a6a6
+a7a7a8a8a9a9aaaaaaababacacadadaeaeafafb0b00000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000007a7b7b7c7c7c7d7d
+7e7e7f7f8080818182828383838484858586868787888889898a8a8a8b8b8c8c8d8d8e
+8e8f8f909091919192929393949495959696979798989899999a9a9b9b9c9c9d9d9e9e
+9f9f9fa0a0a1a1a2a2a3a3a4a4a5a50000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000
+000000000000000000007a7b7b7c7c7d7d7e7e7e7f7f80808181828283838484858585
+86868787888889898a8a8b8b8c8c8c8d8d8e8e8f8f9090919192929393939494959596
+969797989899999a000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000000000000000000000007d
+7e7e7f7f808081818182828383848485858686878788888889898a8a8b8b8c8c8d8d8e
+8e8f000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000083838400000000
+0000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000
+grestore
+gsave
+356.321045 350.266968 119.923096 343.570129 295.534424 343.570129 cliptri
+1.602557 1.602557 scale
+149 7 74 213 imgscanbw
+0000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000b9ba0000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000acadadaeafafb0b0b1b2b2b3b3b4b4
+b5b6b6b7b7b8b9b9bababbbbbcbdbdbebebf0000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000000000000000000000000000000000000000000000009d9e9e9f9fa0
+a1a1a2a2a3a4a4a5a5a6a6a7a8a8a9a9aaababacacadadaeafafb0b0b1b2b2b3b3b4b4
+b5b6b6b7b7b8b9b9bababbbbbcbdbdbebebfc0c0c1c1c2c20000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000
+00008d8e8f8f90909191929393949495969697979898999a9a9b9b9c9d9d9e9e9fa0a0
+a1a1a2a2a3a4a4a5a5a6a7a7a8a8a9a9aaababacacadaeaeafafb0b0b1b2b2b3b3b4b5
+b5b6b6b7b7b8b9b9bababbbcbcbdbdbebebfc0c0c1c1c2c30000000000000000000000
+00000000000000000000007e7f7f80818182828384848585868687888889898a8b8b8c
+8c8d8d8e8f8f90909192929393949495969697979899999a9a9b9b9c9d9d9e9e9fa0a0
+a1a1a2a2a3a4a4a5a5a6a7a7a8a8a9a9aaababacacadaeaeafafb0b0b1b2b2b3b3b4b5
+b5b6b6b7b7b8b9b9bababbbcbcbdbdbebebfc0c0c1c1c2c30000000000000000000000
+000000000000000000007e7e7f7f80818182828384848585868687888889898a8b8b8c
+8c8d8d8e8f8f90909192929393949495969697979899999a9a9b9c9c9d9d9e9e9fa0a0
+a1a1a2a3a3a4a4a5a5a6a7a7a8a8a9aaaaababacacadaeaeafafb0b1b1b2b2b3b3b4b5
+b5b6b6b7b8b8b9b9bababbbcbcbdbdbebfbfc0c0c1c1c2c30000000000000000000000
+000000000000000000000000000000000000008384847d7f808183848687888a8b8d8d
+83848485858686878788888889898a8a8b8b8c8c8d8d8e8e8f7a7c7d7e808183848587
+888a8b8c8e8f91929395969897858586868787888889898a8a8b8b8c8c8c8d8d8e8e8f
+8f9090919192929393939494959596969797989899999ac3c300000000000000000000
+00000000000000000000000000000000000000000000000000000000
+grestore
+gsave
+119.923065 343.570129 295.534424 343.570129 119.253387 324.149292 cliptri
+1.602559 1.602559 scale
+84 10 73 201 imgscanbw
+009394949595969697989899999a9b9b9c9c9d9d9e9f9fa0a0a1a2a2a3a3a4a4a5a6a6
+a7a7a8a9a9aaaaababacadadaeaeafb0b0b1b1b2b2b3b4b4b5b5b6b7b7b8b8b9b9babb
+bbbcbcbdbebebfbfc0c0c1c2c2c3009899999a9b9b9c9c9d9d9e9f9fa0a0a1a2a2a3a3
+a4a4a5a6a6a7a7a8a9a9aaaaababacadadaeaeafb0b0b1b1b2b3b3b4b4b5b5b6b7b7b8
+b8b9bababbbbbcbcbdbebebfbfc0c1c1c2c2c3000000000000000000009e9e9f9fa0a0
+a1a2a2a3a3a4a5a5a6a6a7a7a8a9a9aaaaabacacadadaeaeafb0b0b1b1b2b3b3b4b4b5
+b5b6b7b7b8b8b9bababbbbbcbcbdbebebfbfc0c1c1c2c2c30000000000000000000000
+0000000000000000a3a3a4a5a5a6a6a7a7a8a9a9aaaaabacacadadaeafafb0b0b1b1b2
+b3b3b4b4b5b6b6b7b7b8b8b9bababbbbbcbdbdbebebfbfc0c1c1c2c2c3000000000000
+00000000000000000000000000000000000000000000a8a9a9aaaaabacacadadaeafaf
+b0b0b1b1b2b3b3b4b4b5b6b6b7b7b8b8b9bababbbbbcbdbdbebebfbfc0c1c1c2c2c300
+0000000000000000000000000000000000000000000000000000000000000000000000
+00adaeafafb0b0b1b2b2b3b3b4b4b5b6b6b7b7b8b9b9bababbbbbcbdbdbebebfc0c0c1
+c1c2c20000000000000000000000000000000000000000000000000000000000000000
+000000000000000000000000000000b3b3b4b4b5b6b6b7b7b8b9b9bababbbbbcbdbdbe
+bebfc0c0c1c1c2c2000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000b8b9b9bababb
+bcbcbdbdbebebfc0c0c1c1c2c300000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000
+00000000000000bdbdbebebfc0c0c1c1c2c30000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000c2c3000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000
+0000000000000000000000000000000000000000000000000000000000000000000000
+
+111 4 74 211 imgscanbw
+7e7e7f7f80818182828384848585868687888889898a8b8b8c8c8d8d8e8f8f90909192
+929393949495969697979899999a9a9b9c9c9d9d9e9e9fa0a0a1a1a2a3a3a4a4a5a5a6
+a7a7a8a8a9aaaaababacacadaeaeafafb0b1b1b2b2b3b3b4b5b5b6b6b7b8b8b9b9baba
+bbbcbcbdbdbe8384848585868787888889898a8b8b8c8c8d8e8e8f8f90909192929393
+949595969697979899999a9a9b9c9c9d9d9e9e9fa0a0a1a1a2a3a3a4a4a5a5a6a7a7a8
+a8a9aaaaababacacadaeaeafafb0b1b1b2b2b3b3b4b5b5b6b6b7b8b8b9b9bababbbcbc
+bdbdbebfbfc0c0c1c2c2c3c38889898a8b8b8c8c8d8e8e8f8f90909192929393949595
+969697989899999a9a9b9c9c9d9d9e9f9fa0a0a1a1a2a3a3a4a4a5a6a6a7a7a8a8a9aa
+aaababacadadaeaeafafb0b1b1b2b2b3b4b4b5b5b6b6b7b8b8b9b9babbbbbcbcbdbdbe
+bfbfc0c0c1c2c2c3000000000000000000008e8e8f8f90919192929393949595969697
+989899999a9a9b9c9c9d9d9e9f9fa0a0a1a1a2a3a3a4a4a5a6a6a7a7a8a8a9aaaaabab
+acadadaeaeafafb0b1b1b2b2b3b4b4b5b5b6b7b7b8b8b9b9babbbbbcbcbdbebebfbfc0
+c0c1c2c2c300000000000000000000000000000000000000
+grestore
+0.749020 0.749020 0.749020 setrgbcolor
+295.534424 343.570129 119.253387 324.149292 119.253174 324.149292 filltri
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+newpath
+119.923 343.57 M
+119.253 324.149 L
+356.321 350.267 L
+356.321 364.33 L
+closepath
+stroke
+grestore
+gsave
+0.247059 0.247059 0.247059 setrgbcolor
+77.733032 373.036194 77.733063 373.036194 77.733032 363.660645 filltri
+gsave
+77.733063 373.036194 77.733032 363.660645 85.650177 363.660645 cliptri
+1.000000 1.000000 scale
+10 10 77 363 imgscanbw
+271b0000000000000000312519000000000000003b2f231700000000000046392d2115
+00000000005044382b1f00000000005a4e42362a1d0000000064584c4034281b000000
+6e62564a3e32261a0000796d6054483c3024180c83776b5f52463a2e2216
+2 1 77 373 imgscanbw
+1d10
+grestore
+gsave
+77.733047 363.660645 92.342056 342.900452 103.180969 342.900452 cliptri
+1.000000 1.000000 scale
+19 10 85 342 imgscanbw
+867d746b625950483f0000000000000000000000837a71685f574e453c000000000000
+000000000080776f665d544b423900000000000000000000007e756c635a5148403700
+000000000000000000847b726960584f463d342b000000000000000000817870675e55
+4c433a32290000000000000000007f766d645b524941382f260000000000000000857c
+736a615950473e352c230000000000000000827971685f564d443b332a211800000000
+00008880776e655c534a423930271e
+14 10 78 352 imgscanbw
+857c73000000000000000000000000837a7168000000000000000000000080776e6500
+000000000000000000007d746c6300000000000000000000847b726960000000000000
+0000000081786f665d550000000000000000007e756d645b520000000000000000857c
+736a61584f0000000000000000827970675e564d00000000000000007f766e655c534a
+
+3 3 77 362 imgscanbw
+7b7200827900007f76
+grestore
+gsave
+77.733047 363.660645 85.650177 363.660645 103.180969 342.900452 cliptri
+1.000000 1.000000 scale
+12 10 92 342 imgscanbw
+483c3024170000000000000000463a2e2216000000000000000044382c200000000000
+0000000042362a1e0000000000000000000034281c0000000000000000000032261a00
+000000000000000000312418000000000000000000002f231600000000000000000000
+2d2114000000000000000000002b1f
+17 10 79 352 imgscanbw
+7f73675b4f43362a1e000000000000000000007165594d4135281c0000000000000000
+00006f63574b3f33271a000000000000000000006d6155493d31251900000000000000
+0000006c5f53473b2f2317000000000000000000006a5e5145392d2115000000000000
+00000000005c5043372b1f0000000000000000000000005a4e4135291d000000000000
+000000000000584c4033271b000000000000000000000000564a3e322519
+10 3 77 362 imgscanbw
+796d6054483c3024180c83776b5f52463a2e2216008175695d5144382c20
+grestore
+0.121569 0.121569 0.121569 setrgbcolor
+85.650177 363.660645 103.180969 342.900452 103.181000 342.900452 filltri
+gsave
+92.342056 342.900452 103.180969 342.900452 103.180984 327.497742 cliptri
+1.000000 1.000000 scale
+7 10 97 326 imgscanbw
+7f766d645c534a857c736b62595000837a71685f56000080776e655c0000007d746c63
+000000847b72690000000081786f00000000007e750000000000857c00000000008b82
+
+13 8 91 336 imgscanbw
+827971685f564d443b332a21188880776e655c534a423930271e00867d746b625a5148
+3f362d240000837a716960574e453c332b00000081786f665d544b433a31000000007e
+756c635b5249403700000000847b726a61584f463d0000000000827970675e554c44
+grestore
+0.247059 0.247059 0.247059 setrgbcolor
+103.180969 342.900452 103.180977 342.900452 103.180984 327.497742 filltri
+0.372549 0.372549 0.372549 setrgbcolor
+103.180977 342.900452 103.180984 327.497742 103.180977 327.497742 filltri
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+newpath
+77.733 373.036 M
+77.733 363.661 L
+103.181 327.498 L
+103.181 342.9 L
+closepath
+stroke
+grestore
+gsave
+0.372549 0.372549 0.372549 setrgbcolor
+newpath
+58.9819 407.19 M
+58.3122 400.493 L
+100.502 341.561 L
+100.502 350.937 L
+closepath
+eofill
+0 0 0 setrgbcolor
+1.000000 setlinewidth
+newpath
+58.9819 407.19 M
+58.3122 400.493 L
+100.502 341.561 L
+100.502 350.937 L
+closepath
+stroke
+grestore
+gsave
+gsave
+matrix currentmatrix
+[1 0 0 1 28 296.461] concat
+newpath
+0 0 M 0 12 L 21.46 12 L 21.46 0 L
+closepath setmatrix
+0 0 0 setrgbcolor
+grestore
+newpath
+26 294.461 M 26 310.461 L 51.46 310.461 L 51.46 294.461 L
+closepath clip newpath
+0.121569 0.121569 0.121569 setrgbcolor
+matrix currentmatrix
+[1 0 0 1 28 296.461] concat
+/Helvetica-Bold-SHOWISO findfont 10 scalefont setfont
+0.121569 0.121569 0.121569 setrgbcolor
+0 1.53846 M (0.76) 19.46 S
+setmatrix
+grestore
+gsave
+matrix currentmatrix
+[221 0 0 -268 176 730] concat
+B
+setmatrix
+0 0 0 setrgbcolor
+2.000000 setlinewidth
+gsave stroke grestore
+grestore
+gsave
+matrix currentmatrix
+[373 0 0 -277 25 449] concat
+B
+setmatrix
+0 0 0 setrgbcolor
+2.000000 setlinewidth
+gsave stroke grestore
+grestore
+gsave
+gsave
+matrix currentmatrix
+[1 0 0 1 403 590.461] concat
+newpath
+0 0 M 0 48 L 171.5 48 L 171.5 0 L
+closepath setmatrix
+0 0 0 setrgbcolor
+grestore
+newpath
+400.5 587.961 M 400.5 640.961 L 577 640.961 L 577 587.961 L
+closepath clip newpath
+0 0 0 setrgbcolor
+matrix currentmatrix
+[1 0 0 1 403 590.461] concat
+/Helvetica-Bold-SHOWISO findfont 10 scalefont setfont
+0 0 0 setrgbcolor
+0 37.5385 M (chair ) 26.68 S
+/Helvetica-SHOWISO findfont 10 scalefont setfont
+26.68 37.5385 M (geometry used in se) 90.04 S
+/Helvetica-SHOWISO findfont 10 scalefont setfont
+116.72 37.5385 M (veral) 21.67 S
+/Helvetica-SHOWISO findfont 10 scalefont setfont
+0 25.5385 M (scenes \(someinstanc) 93.92 S
+/Helvetica-SHOWISO findfont 10 scalefont setfont
+93.92 25.5385 M (es are) 27.79 S
+/Helvetica-SHOWISO findfont 10 scalefont setfont
+0 13.5385 M (translated and rota) 83.38 S
+/Helvetica-SHOWISO findfont 10 scalefont setfont
+83.38 13.5385 M (ted\).  The chair) 67.25 S
+/Helvetica-SHOWISO findfont 10 scalefont setfont
+0 1.53846 M (geometry by itself ) 81.14 S
+/Helvetica-SHOWISO findfont 10 scalefont setfont
+81.14 1.53846 M (is in file chair.ge) 71.69 S
+/Helvetica-SHOWISO findfont 10 scalefont setfont
+152.83 1.53846 M (om.) 16.67 S
+setmatrix
+grestore
+gsave
+gsave
+matrix currentmatrix
+[1 0 0 1 415 341] concat
+newpath
+0 0 M 0 48 L 158.73 48 L 158.73 0 L
+closepath setmatrix
+0 0 0 setrgbcolor
+grestore
+newpath
+412.5 338.5 M 412.5 391.5 L 576.23 391.5 L 576.23 338.5 L
+closepath clip newpath
+0 0 0 setrgbcolor
+matrix currentmatrix
+[1 0 0 1 415 341] concat
+/Helvetica-Bold-SHOWISO findfont 10 scalefont setfont
+0 0 0 setrgbcolor
+0 37.5385 M (table) 23.34 S
+/Helvetica-SHOWISO findfont 10 scalefont setfont
+23.34 37.5385 M ( geometry used in s) 87.26 S
+/Helvetica-SHOWISO findfont 10 scalefont setfont
+110.6 37.5385 M (everal) 27.23 S
+/Helvetica-SHOWISO findfont 10 scalefont setfont
+0 25.5385 M (scenes \(some instan) 91.7 S
+/Helvetica-SHOWISO findfont 10 scalefont setfont
+91.7 25.5385 M (ces are) 32.79 S
+/Helvetica-SHOWISO findfont 10 scalefont setfont
+0 13.5385 M (translated and rota) 83.38 S
+/Helvetica-SHOWISO findfont 10 scalefont setfont
+83.38 13.5385 M (ted\).  The table) 67.26 S
+/Helvetica-SHOWISO findfont 10 scalefont setfont
+0 1.53846 M (geometry by itself ) 81.14 S
+/Helvetica-SHOWISO findfont 10 scalefont setfont
+81.14 1.53846 M ( is in table.geom.) 75.59 S
+setmatrix
+grestore
+grestore
+showpage
+%%EOF

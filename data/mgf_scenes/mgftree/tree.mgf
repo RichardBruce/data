@@ -1,0 +1,316 @@
+# The following was converted from RADIANCE scene input
+o Untitled
+# Begin conversion from: standard input
+#  xform -s .0435
+#  growpine
+m bark_mat =
+	c
+		cxy 0.3635 0.3532
+	rd 0.2600
+#  xform -ry 6.25 -t 0 0 33.1776
+#  xform -ry 8.33333333 -t 0 0 13.824
+o
+o sapling
+i sapling.mgf -i 1 -ry 8.33333333 -t 0 0 13.824 -i 1 -ry 6.25 -t 0 0 33.1776 -i 1 -s .0435
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 21 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s 0.36476 -i 1 -ry 6.25 -t 0 0 33.1776 -i 1 -s .0435
+# 0
+# 2 1.52252 1
+
+m my_bark_mat = bark_mat
+o
+o level2
+v v0 =
+	p 0 0 1.4432256
+v v1 =
+	p 0.0654664419908 0 2.04099541465
+cone v0 0.01586706 v1 0.0068469
+#  xform -n b1 -s 1.1 -rz 213.721604 -ry -80 -rz 263.656731 -rz 5 -t 0 0 5.80608
+o
+o b1
+i sapling.mgf -i 1 -s 1.1 -rz 213.721604 -ry -80 -rz 263.656731 -rz 5 -t 0 0 5.80608 -i 1 -ry 6.25 -t 0 0 33.1776 -i 1 -s .0435
+#  xform -n b2 -s 1.1 -rz 300.588789 -ry -78 -rz 263.656731 -rz 128 -t 0 0 6.08256
+o
+o b2
+i sapling.mgf -i 1 -s 1.1 -rz 300.588789 -ry -78 -rz 263.656731 -rz 128 -t 0 0 6.08256 -i 1 -ry 6.25 -t 0 0 33.1776 -i 1 -s .0435
+#  xform -n b3 -s 1.1 -rz 317.078539 -ry -75 -rz 263.656731 -rz 255 -t 0 0 5.5296
+o
+o b3
+i sapling.mgf -i 1 -s 1.1 -rz 317.078539 -ry -75 -rz 263.656731 -rz 255 -t 0 0 5.5296 -i 1 -ry 6.25 -t 0 0 33.1776 -i 1 -s .0435
+#  xform -n b4 -rz 281.433172 -ry -80 -rz 263.656731 -rz 58 -t 0 0 12.71808
+o
+o b4
+i sapling.mgf -i 1 -rz 281.433172 -ry -80 -rz 263.656731 -rz 58 -t 0 0 12.71808 -i 1 -ry 6.25 -t 0 0 33.1776 -i 1 -s .0435
+#  xform -n b5 -rz 185.987404 -ry -78 -rz 263.656731 -rz 181 -t 0 0 11.61216
+o
+o b5
+i sapling.mgf -i 1 -rz 185.987404 -ry -78 -rz 263.656731 -rz 181 -t 0 0 11.61216 -i 1 -ry 6.25 -t 0 0 33.1776 -i 1 -s .0435
+#  xform -n b6 -rz 121.189209 -ry -75 -rz 263.656731 -rz 297 -t 0 0 12.16512
+o
+o b6
+i sapling.mgf -i 1 -rz 121.189209 -ry -75 -rz 263.656731 -rz 297 -t 0 0 12.16512 -i 1 -ry 6.25 -t 0 0 33.1776 -i 1 -s .0435
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 13 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s 0.862424 -i 1 -s .0435
+# 0
+# 2 1.52252 1
+
+o
+o level3
+v v0 =
+	p 0 0 0
+v v1 =
+	p 0 0 1.4432256
+cone v0 0.037515444 v1 0.01586706
+#  xform -n b1 -s 1.1 -rz 347.297586 -ry -80 -rz 114.609306 -rz 5 -t 0 0 13.934592
+#  xform -ry 8.33333333 -t 0 0 13.824
+o
+o b1
+i sapling.mgf -i 1 -ry 8.33333333 -t 0 0 13.824 -i 1 -s 1.1 -rz 347.297586 -ry -80 -rz 114.609306 -rz 5 -t 0 0 13.934592 -i 1 -s .0435
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 29 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s 0.36476 -i 1 -s 1.1 -rz 347.297586 -ry -80 -rz 114.609306 -rz 5 -t 0 0 13.934592 -i 1 -s .0435
+# 0
+# 2 1.52252 1
+
+v v0 =
+	p 0 0 0.606154752
+v v1 =
+	p 0.321860077201 -0.566361992642 0.721019270727
+cone v0 0.017453766 v1 0.00753159
+#  xform -n b1 -s 1.1 -rz 213.721604 -ry -80 -rz 263.656731 -rz 5 -t 0 0 5.80608
+o
+o b1.b1
+i sapling.mgf -i 1 -s 1.1 -rz 213.721604 -ry -80 -rz 263.656731 -rz 5 -t 0 0 5.80608 -i 1 -s 1.1 -rz 347.297586 -ry -80 -rz 114.609306 -rz 5 -t 0 0 13.934592 -i 1 -s .0435
+#  xform -n b2 -s 1.1 -rz 300.588789 -ry -78 -rz 263.656731 -rz 128 -t 0 0 6.08256
+o
+o b1.b2
+i sapling.mgf -i 1 -s 1.1 -rz 300.588789 -ry -78 -rz 263.656731 -rz 128 -t 0 0 6.08256 -i 1 -s 1.1 -rz 347.297586 -ry -80 -rz 114.609306 -rz 5 -t 0 0 13.934592 -i 1 -s .0435
+#  xform -n b3 -s 1.1 -rz 317.078539 -ry -75 -rz 263.656731 -rz 255 -t 0 0 5.5296
+o
+o b1.b3
+i sapling.mgf -i 1 -s 1.1 -rz 317.078539 -ry -75 -rz 263.656731 -rz 255 -t 0 0 5.5296 -i 1 -s 1.1 -rz 347.297586 -ry -80 -rz 114.609306 -rz 5 -t 0 0 13.934592 -i 1 -s .0435
+#  xform -n b4 -rz 281.433172 -ry -80 -rz 263.656731 -rz 58 -t 0 0 12.71808
+o
+o b1.b4
+i sapling.mgf -i 1 -rz 281.433172 -ry -80 -rz 263.656731 -rz 58 -t 0 0 12.71808 -i 1 -s 1.1 -rz 347.297586 -ry -80 -rz 114.609306 -rz 5 -t 0 0 13.934592 -i 1 -s .0435
+#  xform -n b5 -rz 185.987404 -ry -78 -rz 263.656731 -rz 181 -t 0 0 11.61216
+o
+o b1.b5
+i sapling.mgf -i 1 -rz 185.987404 -ry -78 -rz 263.656731 -rz 181 -t 0 0 11.61216 -i 1 -s 1.1 -rz 347.297586 -ry -80 -rz 114.609306 -rz 5 -t 0 0 13.934592 -i 1 -s .0435
+#  xform -n b6 -rz 121.189209 -ry -75 -rz 263.656731 -rz 297 -t 0 0 12.16512
+o
+o b1.b6
+i sapling.mgf -i 1 -rz 121.189209 -ry -75 -rz 263.656731 -rz 297 -t 0 0 12.16512 -i 1 -s 1.1 -rz 347.297586 -ry -80 -rz 114.609306 -rz 5 -t 0 0 13.934592 -i 1 -s .0435
+#  xform -n b2 -s 1.1 -rz 114.983006 -ry -78 -rz 114.609306 -rz 128 -t 0 0 14.598144
+#  xform -ry 8.33333333 -t 0 0 13.824
+o
+o b2
+i sapling.mgf -i 1 -ry 8.33333333 -t 0 0 13.824 -i 1 -s 1.1 -rz 114.983006 -ry -78 -rz 114.609306 -rz 128 -t 0 0 14.598144 -i 1 -s .0435
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 29 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s 0.36476 -i 1 -s 1.1 -rz 114.983006 -ry -78 -rz 114.609306 -rz 128 -t 0 0 14.598144 -i 1 -s .0435
+# 0
+# 2 1.52252 1
+
+v v0 =
+	p 0 0 0.635019264
+v v1 =
+	p 0.297666775755 0.57448578135 0.772548356586
+cone v0 0.017453766 v1 0.00753159
+#  xform -n b1 -s 1.1 -rz 213.721604 -ry -80 -rz 263.656731 -rz 5 -t 0 0 5.80608
+o
+o b2.b1
+i sapling.mgf -i 1 -s 1.1 -rz 213.721604 -ry -80 -rz 263.656731 -rz 5 -t 0 0 5.80608 -i 1 -s 1.1 -rz 114.983006 -ry -78 -rz 114.609306 -rz 128 -t 0 0 14.598144 -i 1 -s .0435
+#  xform -n b2 -s 1.1 -rz 300.588789 -ry -78 -rz 263.656731 -rz 128 -t 0 0 6.08256
+o
+o b2.b2
+i sapling.mgf -i 1 -s 1.1 -rz 300.588789 -ry -78 -rz 263.656731 -rz 128 -t 0 0 6.08256 -i 1 -s 1.1 -rz 114.983006 -ry -78 -rz 114.609306 -rz 128 -t 0 0 14.598144 -i 1 -s .0435
+#  xform -n b3 -s 1.1 -rz 317.078539 -ry -75 -rz 263.656731 -rz 255 -t 0 0 5.5296
+o
+o b2.b3
+i sapling.mgf -i 1 -s 1.1 -rz 317.078539 -ry -75 -rz 263.656731 -rz 255 -t 0 0 5.5296 -i 1 -s 1.1 -rz 114.983006 -ry -78 -rz 114.609306 -rz 128 -t 0 0 14.598144 -i 1 -s .0435
+#  xform -n b4 -rz 281.433172 -ry -80 -rz 263.656731 -rz 58 -t 0 0 12.71808
+o
+o b2.b4
+i sapling.mgf -i 1 -rz 281.433172 -ry -80 -rz 263.656731 -rz 58 -t 0 0 12.71808 -i 1 -s 1.1 -rz 114.983006 -ry -78 -rz 114.609306 -rz 128 -t 0 0 14.598144 -i 1 -s .0435
+#  xform -n b5 -rz 185.987404 -ry -78 -rz 263.656731 -rz 181 -t 0 0 11.61216
+o
+o b2.b5
+i sapling.mgf -i 1 -rz 185.987404 -ry -78 -rz 263.656731 -rz 181 -t 0 0 11.61216 -i 1 -s 1.1 -rz 114.983006 -ry -78 -rz 114.609306 -rz 128 -t 0 0 14.598144 -i 1 -s .0435
+#  xform -n b6 -rz 121.189209 -ry -75 -rz 263.656731 -rz 297 -t 0 0 12.16512
+o
+o b2.b6
+i sapling.mgf -i 1 -rz 121.189209 -ry -75 -rz 263.656731 -rz 297 -t 0 0 12.16512 -i 1 -s 1.1 -rz 114.983006 -ry -78 -rz 114.609306 -rz 128 -t 0 0 14.598144 -i 1 -s .0435
+#  xform -n b3 -s 1.1 -rz 258.551839 -ry -75 -rz 114.609306 -rz 255 -t 0 0 13.27104
+#  xform -ry 8.33333333 -t 0 0 13.824
+o
+o b3
+i sapling.mgf -i 1 -ry 8.33333333 -t 0 0 13.824 -i 1 -s 1.1 -rz 258.551839 -ry -75 -rz 114.609306 -rz 255 -t 0 0 13.27104 -i 1 -s .0435
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 29 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s 0.36476 -i 1 -s 1.1 -rz 258.551839 -ry -75 -rz 114.609306 -rz 255 -t 0 0 13.27104 -i 1 -s .0435
+# 0
+# 2 1.52252 1
+
+v v0 =
+	p 0 0 0.57729024
+v v1 =
+	p -0.629974076019 -0.106657389957 0.748493447842
+cone v0 0.017453766 v1 0.00753159
+#  xform -n b1 -s 1.1 -rz 213.721604 -ry -80 -rz 263.656731 -rz 5 -t 0 0 5.80608
+o
+o b3.b1
+i sapling.mgf -i 1 -s 1.1 -rz 213.721604 -ry -80 -rz 263.656731 -rz 5 -t 0 0 5.80608 -i 1 -s 1.1 -rz 258.551839 -ry -75 -rz 114.609306 -rz 255 -t 0 0 13.27104 -i 1 -s .0435
+#  xform -n b2 -s 1.1 -rz 300.588789 -ry -78 -rz 263.656731 -rz 128 -t 0 0 6.08256
+o
+o b3.b2
+i sapling.mgf -i 1 -s 1.1 -rz 300.588789 -ry -78 -rz 263.656731 -rz 128 -t 0 0 6.08256 -i 1 -s 1.1 -rz 258.551839 -ry -75 -rz 114.609306 -rz 255 -t 0 0 13.27104 -i 1 -s .0435
+#  xform -n b3 -s 1.1 -rz 317.078539 -ry -75 -rz 263.656731 -rz 255 -t 0 0 5.5296
+o
+o b3.b3
+i sapling.mgf -i 1 -s 1.1 -rz 317.078539 -ry -75 -rz 263.656731 -rz 255 -t 0 0 5.5296 -i 1 -s 1.1 -rz 258.551839 -ry -75 -rz 114.609306 -rz 255 -t 0 0 13.27104 -i 1 -s .0435
+#  xform -n b4 -rz 281.433172 -ry -80 -rz 263.656731 -rz 58 -t 0 0 12.71808
+o
+o b3.b4
+i sapling.mgf -i 1 -rz 281.433172 -ry -80 -rz 263.656731 -rz 58 -t 0 0 12.71808 -i 1 -s 1.1 -rz 258.551839 -ry -75 -rz 114.609306 -rz 255 -t 0 0 13.27104 -i 1 -s .0435
+#  xform -n b5 -rz 185.987404 -ry -78 -rz 263.656731 -rz 181 -t 0 0 11.61216
+o
+o b3.b5
+i sapling.mgf -i 1 -rz 185.987404 -ry -78 -rz 263.656731 -rz 181 -t 0 0 11.61216 -i 1 -s 1.1 -rz 258.551839 -ry -75 -rz 114.609306 -rz 255 -t 0 0 13.27104 -i 1 -s .0435
+#  xform -n b6 -rz 121.189209 -ry -75 -rz 263.656731 -rz 297 -t 0 0 12.16512
+o
+o b3.b6
+i sapling.mgf -i 1 -rz 121.189209 -ry -75 -rz 263.656731 -rz 297 -t 0 0 12.16512 -i 1 -s 1.1 -rz 258.551839 -ry -75 -rz 114.609306 -rz 255 -t 0 0 13.27104 -i 1 -s .0435
+#  xform -n b4 -rz 81.7267497 -ry -80 -rz 114.609306 -rz 58 -t 0 0 30.523392
+#  xform -ry 8.33333333 -t 0 0 13.824
+o
+o b4
+i sapling.mgf -i 1 -ry 8.33333333 -t 0 0 13.824 -i 1 -rz 81.7267497 -ry -80 -rz 114.609306 -rz 58 -t 0 0 30.523392 -i 1 -s .0435
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 27 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s 0.36476 -i 1 -rz 81.7267497 -ry -80 -rz 114.609306 -rz 58 -t 0 0 30.523392 -i 1 -s .0435
+# 0
+# 2 1.52252 1
+
+v v0 =
+	p 0 0 1.327767552
+v v1 =
+	p 0.58728820789 -0.0761784261771 1.43218984175
+cone v0 0.01586706 v1 0.0068469
+#  xform -n b1 -s 1.1 -rz 213.721604 -ry -80 -rz 263.656731 -rz 5 -t 0 0 5.80608
+o
+o b4.b1
+i sapling.mgf -i 1 -s 1.1 -rz 213.721604 -ry -80 -rz 263.656731 -rz 5 -t 0 0 5.80608 -i 1 -rz 81.7267497 -ry -80 -rz 114.609306 -rz 58 -t 0 0 30.523392 -i 1 -s .0435
+#  xform -n b2 -s 1.1 -rz 300.588789 -ry -78 -rz 263.656731 -rz 128 -t 0 0 6.08256
+o
+o b4.b2
+i sapling.mgf -i 1 -s 1.1 -rz 300.588789 -ry -78 -rz 263.656731 -rz 128 -t 0 0 6.08256 -i 1 -rz 81.7267497 -ry -80 -rz 114.609306 -rz 58 -t 0 0 30.523392 -i 1 -s .0435
+#  xform -n b3 -s 1.1 -rz 317.078539 -ry -75 -rz 263.656731 -rz 255 -t 0 0 5.5296
+o
+o b4.b3
+i sapling.mgf -i 1 -s 1.1 -rz 317.078539 -ry -75 -rz 263.656731 -rz 255 -t 0 0 5.5296 -i 1 -rz 81.7267497 -ry -80 -rz 114.609306 -rz 58 -t 0 0 30.523392 -i 1 -s .0435
+#  xform -n b4 -rz 281.433172 -ry -80 -rz 263.656731 -rz 58 -t 0 0 12.71808
+o
+o b4.b4
+i sapling.mgf -i 1 -rz 281.433172 -ry -80 -rz 263.656731 -rz 58 -t 0 0 12.71808 -i 1 -rz 81.7267497 -ry -80 -rz 114.609306 -rz 58 -t 0 0 30.523392 -i 1 -s .0435
+#  xform -n b5 -rz 185.987404 -ry -78 -rz 263.656731 -rz 181 -t 0 0 11.61216
+o
+o b4.b5
+i sapling.mgf -i 1 -rz 185.987404 -ry -78 -rz 263.656731 -rz 181 -t 0 0 11.61216 -i 1 -rz 81.7267497 -ry -80 -rz 114.609306 -rz 58 -t 0 0 30.523392 -i 1 -s .0435
+#  xform -n b6 -rz 121.189209 -ry -75 -rz 263.656731 -rz 297 -t 0 0 12.16512
+o
+o b4.b6
+i sapling.mgf -i 1 -rz 121.189209 -ry -75 -rz 263.656731 -rz 297 -t 0 0 12.16512 -i 1 -rz 81.7267497 -ry -80 -rz 114.609306 -rz 58 -t 0 0 30.523392 -i 1 -s .0435
+#  xform -n b5 -rz 286.787941 -ry -78 -rz 114.609306 -rz 181 -t 0 0 27.869184
+#  xform -ry 8.33333333 -t 0 0 13.824
+o
+o b5
+i sapling.mgf -i 1 -ry 8.33333333 -t 0 0 13.824 -i 1 -rz 286.787941 -ry -78 -rz 114.609306 -rz 181 -t 0 0 27.869184 -i 1 -s .0435
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 27 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s 0.36476 -i 1 -rz 286.787941 -ry -78 -rz 114.609306 -rz 181 -t 0 0 27.869184 -i 1 -s .0435
+# 0
+# 2 1.52252 1
+
+v v0 =
+	p 0 0 1.212309504
+v v1 =
+	p -0.254240370417 0.530419482803 1.3373359518
+cone v0 0.01586706 v1 0.0068469
+#  xform -n b1 -s 1.1 -rz 213.721604 -ry -80 -rz 263.656731 -rz 5 -t 0 0 5.80608
+o
+o b5.b1
+i sapling.mgf -i 1 -s 1.1 -rz 213.721604 -ry -80 -rz 263.656731 -rz 5 -t 0 0 5.80608 -i 1 -rz 286.787941 -ry -78 -rz 114.609306 -rz 181 -t 0 0 27.869184 -i 1 -s .0435
+#  xform -n b2 -s 1.1 -rz 300.588789 -ry -78 -rz 263.656731 -rz 128 -t 0 0 6.08256
+o
+o b5.b2
+i sapling.mgf -i 1 -s 1.1 -rz 300.588789 -ry -78 -rz 263.656731 -rz 128 -t 0 0 6.08256 -i 1 -rz 286.787941 -ry -78 -rz 114.609306 -rz 181 -t 0 0 27.869184 -i 1 -s .0435
+#  xform -n b3 -s 1.1 -rz 317.078539 -ry -75 -rz 263.656731 -rz 255 -t 0 0 5.5296
+o
+o b5.b3
+i sapling.mgf -i 1 -s 1.1 -rz 317.078539 -ry -75 -rz 263.656731 -rz 255 -t 0 0 5.5296 -i 1 -rz 286.787941 -ry -78 -rz 114.609306 -rz 181 -t 0 0 27.869184 -i 1 -s .0435
+#  xform -n b4 -rz 281.433172 -ry -80 -rz 263.656731 -rz 58 -t 0 0 12.71808
+o
+o b5.b4
+i sapling.mgf -i 1 -rz 281.433172 -ry -80 -rz 263.656731 -rz 58 -t 0 0 12.71808 -i 1 -rz 286.787941 -ry -78 -rz 114.609306 -rz 181 -t 0 0 27.869184 -i 1 -s .0435
+#  xform -n b5 -rz 185.987404 -ry -78 -rz 263.656731 -rz 181 -t 0 0 11.61216
+o
+o b5.b5
+i sapling.mgf -i 1 -rz 185.987404 -ry -78 -rz 263.656731 -rz 181 -t 0 0 11.61216 -i 1 -rz 286.787941 -ry -78 -rz 114.609306 -rz 181 -t 0 0 27.869184 -i 1 -s .0435
+#  xform -n b6 -rz 121.189209 -ry -75 -rz 263.656731 -rz 297 -t 0 0 12.16512
+o
+o b5.b6
+i sapling.mgf -i 1 -rz 121.189209 -ry -75 -rz 263.656731 -rz 297 -t 0 0 12.16512 -i 1 -rz 286.787941 -ry -78 -rz 114.609306 -rz 181 -t 0 0 27.869184 -i 1 -s .0435
+#  xform -n b6 -rz 93.2991823 -ry -75 -rz 114.609306 -rz 297 -t 0 0 29.196288
+#  xform -ry 8.33333333 -t 0 0 13.824
+o
+o b6
+i sapling.mgf -i 1 -ry 8.33333333 -t 0 0 13.824 -i 1 -rz 93.2991823 -ry -75 -rz 114.609306 -rz 297 -t 0 0 29.196288 -i 1 -s .0435
+
+# Unsupported RADIANCE primitive:
+# void colorpict bark_pat
+# 27 red green blue pinebark.pic cyl.cal cyl_match_u cyl_match_v -s 0.36476 -i 1 -rz 93.2991823 -ry -75 -rz 114.609306 -rz 297 -t 0 0 29.196288 -i 1 -s .0435
+# 0
+# 2 1.52252 1
+
+v v0 =
+	p 0 0 1.270038528
+v v1 =
+	p -0.36072204615 -0.45526983902 1.42567780786
+cone v0 0.01586706 v1 0.0068469
+#  xform -n b1 -s 1.1 -rz 213.721604 -ry -80 -rz 263.656731 -rz 5 -t 0 0 5.80608
+o
+o b6.b1
+i sapling.mgf -i 1 -s 1.1 -rz 213.721604 -ry -80 -rz 263.656731 -rz 5 -t 0 0 5.80608 -i 1 -rz 93.2991823 -ry -75 -rz 114.609306 -rz 297 -t 0 0 29.196288 -i 1 -s .0435
+#  xform -n b2 -s 1.1 -rz 300.588789 -ry -78 -rz 263.656731 -rz 128 -t 0 0 6.08256
+o
+o b6.b2
+i sapling.mgf -i 1 -s 1.1 -rz 300.588789 -ry -78 -rz 263.656731 -rz 128 -t 0 0 6.08256 -i 1 -rz 93.2991823 -ry -75 -rz 114.609306 -rz 297 -t 0 0 29.196288 -i 1 -s .0435
+#  xform -n b3 -s 1.1 -rz 317.078539 -ry -75 -rz 263.656731 -rz 255 -t 0 0 5.5296
+o
+o b6.b3
+i sapling.mgf -i 1 -s 1.1 -rz 317.078539 -ry -75 -rz 263.656731 -rz 255 -t 0 0 5.5296 -i 1 -rz 93.2991823 -ry -75 -rz 114.609306 -rz 297 -t 0 0 29.196288 -i 1 -s .0435
+#  xform -n b4 -rz 281.433172 -ry -80 -rz 263.656731 -rz 58 -t 0 0 12.71808
+o
+o b6.b4
+i sapling.mgf -i 1 -rz 281.433172 -ry -80 -rz 263.656731 -rz 58 -t 0 0 12.71808 -i 1 -rz 93.2991823 -ry -75 -rz 114.609306 -rz 297 -t 0 0 29.196288 -i 1 -s .0435
+#  xform -n b5 -rz 185.987404 -ry -78 -rz 263.656731 -rz 181 -t 0 0 11.61216
+o
+o b6.b5
+i sapling.mgf -i 1 -rz 185.987404 -ry -78 -rz 263.656731 -rz 181 -t 0 0 11.61216 -i 1 -rz 93.2991823 -ry -75 -rz 114.609306 -rz 297 -t 0 0 29.196288 -i 1 -s .0435
+#  xform -n b6 -rz 121.189209 -ry -75 -rz 263.656731 -rz 297 -t 0 0 12.16512
+o
+o b6.b6
+i sapling.mgf -i 1 -rz 121.189209 -ry -75 -rz 263.656731 -rz 297 -t 0 0 12.16512 -i 1 -rz 93.2991823 -ry -75 -rz 114.609306 -rz 297 -t 0 0 29.196288 -i 1 -s .0435
+# End conversion from: standard input
+o
+# End of data converted from RADIANCE scene input
